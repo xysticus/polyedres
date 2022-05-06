@@ -5,8 +5,11 @@ def aspiro(chemin):
     with open(chemin) as fp:
         soup = BeautifulSoup(fp, 'html.parser')
 
-        constantes = soup.find(class_="Constants",attrs="value")['value'].split(',')
-        constantes = [chaine.strip() for chaine in constantes]
+        if soup.find(class_="Constants",attrs="value"):
+            constantes = soup.find(class_="Constants",attrs="value")['value'].split(',')
+            constantes = [chaine.strip() for chaine in constantes]
+        else:
+            constantes = []
         print(constantes)
 
         sommets = soup.find(class_="Vertices",attrs="value")['value'].split(',')
