@@ -21,12 +21,13 @@ largeur = [0.0]*12
 largeur[10] = 0
 largeur[6] = 2.3
 largeur[4] = 2.5
-sphere_ext_ry = 4.6
-sphere_int_ry = 4.45
+sphere_ext_ry = 4.8
+sphere_int_ry = 4.0
 trou_perle = .42
 
 (sommets, les_faces) = aspiro(racine + nom_polyedre + ".html")
 
+# une face c'est la liste des sommets dans l'ordre et il faut retourner au premmier
 les_faces = [ l + [l[0]] for l in les_faces ]
 
 print(sommets)
@@ -61,14 +62,18 @@ def Polyedre():
 
             le_tout = le_tout.union(dessus)
 
-    sphere_ext = cq.Workplane().sphere(sphere_ext_ry)
-    sphere_int = cq.Workplane().sphere(sphere_int_ry)
 
     if trou_perle > 0:
-        le_tout = le_tout.union(sphere_ext).cut(sphere_int).workplane().circle(trou_perle).cutThruAll()
+        #le_tout = le_tout.union(sphere_ext)
+        sphere_ext = cq.Workplane().sphere(sphere_ext_ry).circle(trou_perle).cutThruAll()
+        sphere_int = cq.Workplane().sphere(sphere_int_ry).circle(trou_perle).cutThruAll()
+        le_tout = le_tout.circle(trou_perle).cutThruAll()   
+        le_tout = le_tout.union(sphere_ext).cut(sphere_int)
     else:
+        sphere_ext = cq.Workplane().sphere(sphere_ext_ry)
+        sphere_int = cq.Workplane().sphere(sphere_int_ry)
         le_tout = le_tout.union(sphere_ext).cut(sphere_int)
 
     return le_tout
 
-exporters.export(Polyedre(),"./stl/" + nom_polyedre + ".stl",tolerance=0.8)
+exporters.export(Polyedre(),"./stl/" + nom_polyedre + ".stl",tolerance=0.2)
