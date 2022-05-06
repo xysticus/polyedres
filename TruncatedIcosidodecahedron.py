@@ -11,7 +11,7 @@ racine = "./dmccooey.com/polyhedra/"
 nom_polyedre= "TruncatedIcosidodecahedron"
 marge = [0.0]*12
 marge[10] = 0.0
-marge[6] = 0.2
+marge[6] = 0.4
 marge[4] = 0
 epaisseur = [0.0]*12
 epaisseur[10] = 0.3
@@ -19,10 +19,11 @@ epaisseur[6] = 0.15
 epaisseur[4] = 0.15
 largeur = [0.0]*12
 largeur[10] = 0
-largeur[6] = 2.4
+largeur[6] = 2.3
 largeur[4] = 2.5
 sphere_ext_ry = 4.6
 sphere_int_ry = 4.45
+trou_perle = .42
 
 (sommets, les_faces) = aspiro(racine + nom_polyedre + ".html")
 
@@ -62,6 +63,12 @@ def Polyedre():
 
     sphere_ext = cq.Workplane().sphere(sphere_ext_ry)
     sphere_int = cq.Workplane().sphere(sphere_int_ry)
-    return le_tout.union(sphere_ext).cut(sphere_int).workplane().circle(.3).cutThruAll()
+
+    if trou_perle > 0:
+        le_tout = le_tout.union(sphere_ext).cut(sphere_int).workplane().circle(trou_perle).cutThruAll()
+    else:
+        le_tout = le_tout.union(sphere_ext).cut(sphere_int)
+
+    return le_tout
 
 exporters.export(Polyedre(),"./stl/" + nom_polyedre + ".stl",tolerance=0.8)
