@@ -3,3 +3,6 @@ stl/
 stl-save01/
 .ipynb_checkpoints/
 __pycache__/
+blend/
+img/
+
