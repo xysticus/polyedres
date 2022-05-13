@@ -16,12 +16,12 @@ nom_polyedre= "TruncatedGreatDodecahedron"
 facteur = 1.4
 
 marge = [0.0]*12
-marge[10] = 0.4
-marge[5] = 0.4
+marge[10] = 0.5
+marge[5] = 0.5
 
 epaisseur = [0.0]*12
-epaisseur[10] = 1
-epaisseur[5] = 1
+epaisseur[10] = .8
+epaisseur[5] = .8
 
 largeur = [0.0]*12
 largeur[10] = 1
@@ -71,6 +71,6 @@ def Polyedre():
 
             le_tout = le_tout.add(dessus)
 
-    return le_tout
+    return Workplane().union(le_tout)
 
 exporters.export(Polyedre(),"./stl/" + nom_polyedre + ".stl",tolerance=0.2)
