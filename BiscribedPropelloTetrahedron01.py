@@ -1,6 +1,5 @@
 from moulinette import aspiro
 
-import cadquery as cq
 from cadquery import exporters
 from cadquery import Edge
 from cadquery import Wire
@@ -15,13 +14,13 @@ import time
 racine = "./dmccooey.com/polyhedra/"
 nom_polyedre= "BiscribedPropelloTetrahedron"
 sortie = "./stl/" + nom_polyedre + "BisProp01.stl"
-pluspetit = "./stl/" + nom_polyedre + "BisProp01.stl"
+pluspetit = "./stl/" + nom_polyedre + "BisProp01bin.stl"
 
 facteur_d_echelle = 1
 
 epaisseur = [0.0]*12
-epaisseur[4] = .3
-epaisseur[3] = .3
+epaisseur[4] = .4
+epaisseur[3] = .4
 
 epaisseur_arriere = [0.0]*12
 epaisseur_arriere[4] = 0.3
@@ -34,9 +33,6 @@ trou_face[3] = 0.1
 largeur = [0.0]*12
 largeur[4] = .09
 largeur[3] = .09
-
-sphere_int_ry = 0 # 7.3
-sphere_ext_ry = 0 #7.64 #6.18
 
 trou_perle = 0
 
