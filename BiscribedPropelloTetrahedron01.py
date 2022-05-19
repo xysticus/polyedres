@@ -19,25 +19,25 @@ pluspetit = "./stl/" + nom_polyedre + "BisProp01bin.stl"
 facteur_d_echelle = 1
 
 epaisseur = [0.0]*12
-epaisseur[4] = .4
-epaisseur[3] = .4
+epaisseur[4] = .25
+epaisseur[3] = .25
 
 epaisseur_arriere = [0.0]*12
-epaisseur_arriere[4] = 0.3
-epaisseur_arriere[3] = 0.3
+epaisseur_arriere[4] = 0
+epaisseur_arriere[3] = 0
 
 trou_face = [0.0]*12
 trou_face[4] = 0.1
 trou_face[3] = 0.1
 
-largeur = [0.0]*12
-largeur[4] = .09
-largeur[3] = .09
+offset_face = [0.0]*12
+offset_face[4] = .08
+offset_face[3] = .07
 
 trou_perle = 0
 
 chanfrein = 0
-arrondi = 0.03
+arrondi = 0
 
 finesse = 0.1
 
@@ -72,15 +72,18 @@ def Polyedre():
 
         nb_faces = len(ixs) - 1
 
-        if largeur[nb_faces] > 0:
+        if offset_face[nb_faces] > 0:
             dessus = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
-            offset2D(largeur[nb_faces],"arc").extrude(epaisseur[nb_faces]) #.workplane().\
-            #add(une_face).wires().toPending().offset2D(largeur[nb_faces]-trou_face[nb_faces],"arc").\
-            #twistExtrude(epaisseur[nb_faces],-20,combine="cut")
+            offset2D(offset_face[nb_faces],"arc").extrude(epaisseur[nb_faces]) .workplane().\
+            add(une_face).wires().toPending().offset2D(offset_face[nb_faces]-trou_face[nb_faces],"arc").\
+            extrude(epaisseur[nb_faces],combine="cut")
 
             if epaisseur_arriere[nb_faces]:
                 dessous = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
-                offset2D(largeur[nb_faces],"arc").extrude(-epaisseur_arriere[nb_faces])
+                offset2D(offset_face[nb_faces],"arc").extrude(-epaisseur_arriere[nb_faces]).workplane().\
+                add(une_face).wires().toPending().offset2D(offset_face[nb_faces]-trou_face[nb_faces],"arc").\
+                extrude(-epaisseur_arriere[nb_faces],combine="cut")
+
 
                 piece = Workplane().add(dessus).union(dessous)
             else:
