@@ -15,25 +15,25 @@ import time
 racine = "./dmccooey.com/polyhedra/"
 nom_polyedre= "TruncatedIcosidodecahedron"
 
-facteur = 1.4
+facteur = 2 #1.8
 
 marge = [0.0]*12
-marge[10] = 0.4
-marge[6] = 0.4
-marge[4] = 0.4
+marge[10] = 1.4
+marge[6] = 1.4
+marge[4] = 1.25
 
 epaisseur = [0.0]*12
-epaisseur[10] = 0.3
-epaisseur[6] = 0.3
-epaisseur[4] = 0.3
+epaisseur[10] = 0.5
+epaisseur[6] = 1
+epaisseur[4] = 1
 
 largeur = [0.0]*12
-largeur[10] = 1.9
+largeur[10] = 0
 largeur[6] = 2.3
 largeur[4] = 2.45
 
-sphere_int_ry = 5.8
-sphere_ext_ry = 6.18
+sphere_int_ry = 0 # 7.3
+sphere_ext_ry = 0 #7.64 #6.18
 
 trou_perle = 0
 
@@ -70,40 +70,31 @@ def Polyedre():
 
         if largeur[nb_faces] > 0:
             if marge[nb_faces] > 0:
+
                     dessus = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
-                    offset2D(largeur[nb_faces],"arc").extrude(epaisseur[nb_faces]).faces().end().workplane().\
-                    add(une_face).wires().toPending().offset2D(largeur[nb_faces]-marge[nb_faces],"arc").extrude(epaisseur[nb_faces],combine="cut")
+                    offset2D(largeur[nb_faces],"arc").twistExtrude(epaisseur[nb_faces],18).workplane().\
+                    add(une_face).wires().toPending().offset2D(largeur[nb_faces]-marge[nb_faces],"intersection").\
+                    extrude(epaisseur[nb_faces],combine="cut").edges().fillet(.08)
+                    dessous = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
+                    offset2D(largeur[nb_faces],"arc").extrude(-epaisseur[nb_faces]/3)
+
             else:   
                     dessus = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
                     offset2D(largeur[nb_faces],"arc").extrude(epaisseur[nb_faces])
 
-            tic = time.perf_counter()
-            le_tout = le_tout.add(dessus)
-            toc = time.perf_counter()
-            print(f" {toc - tic:0.4f} seconds")
+            le_tout = le_tout.union(dessus).union(dessous)
 
         bar.next()
 
     bar.finish()
 
-    if trou_perle > 0:
-        #le_tout = le_tout.union(sphere_ext)
-        sphere_ext = cq.Workplane().sphere(sphere_ext_ry).circle(trou_perle).cutThruAll()
-        sphere_int = cq.Workplane().sphere(sphere_int_ry).circle(trou_perle).cutThruAll()
-        le_tout = le_tout.circle(trou_perle).cutThruAll()   
-        le_tout = le_tout.union(sphere_ext).cut(sphere_int)
-    else:
-        if sphere_int_ry > 0:
-            sphere_ext = cq.Workplane().sphere(sphere_ext_ry)
-            sphere_int = cq.Workplane().sphere(sphere_int_ry)
-            tic = time.perf_counter()
-            le_tout = le_tout.union(sphere_ext).cut(sphere_int)
-            toc = time.perf_counter()
-            print(f"Etape finale en {toc - tic:0.4f} seconds")
-
     dernier_toc = time.perf_counter()
     print(f"Le tout en {dernier_toc - premier_tic:0.4f} seconds")
 
-    return le_tout
+    return le_tout.combine()
 
-exporters.export(Polyedre(),"./stl/" + nom_polyedre + "essai2.stl",tolerance=0.2)
+design = Polyedre()
+sortie = "./stl/" + nom_polyedre + "Chris05.stl"
+
+print("On écrit le fichier", sortie)
+exporters.export(design, sortie,angularTolerance=0.4)

@@ -25,7 +25,7 @@ epaisseur[5] = .8
 
 largeur = [0.0]*12
 largeur[10] = 1
-largeur[5] = 1
+largeur[5] = 0
 
 sphere_int_ry = 0
 sphere_ext_ry = 0

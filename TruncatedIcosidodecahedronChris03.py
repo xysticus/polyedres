@@ -14,20 +14,20 @@ import time
 
 racine = "./dmccooey.com/polyhedra/"
 nom_polyedre= "TruncatedIcosidodecahedron"
-sortie = "./stl/" + nom_polyedre + "Chris04.stl"
-pluspetit = "./stl/" + nom_polyedre + "Chris04bin.stl"
+sortie = "./stl/" + nom_polyedre + "Chris03.stl"
+pluspetit = "./stl/" + nom_polyedre + "Chris03bin.stl"
 
 facteur = 2 #1.8
 
 marge = [0.0]*12
 marge[10] = 1.4
 marge[6] = 1.4
-marge[4] = 1.25
+marge[4] = 1.4
 
 epaisseur = [0.0]*12
 epaisseur[10] = 0.5
-epaisseur[6] = 1
-epaisseur[4] = 1
+epaisseur[6] = 0.5
+epaisseur[4] = 0.5
 
 largeur = [0.0]*12
 largeur[10] = 0
@@ -72,15 +72,10 @@ def Polyedre():
 
         if largeur[nb_faces] > 0:
             if marge[nb_faces] > 0:
- #                   dessus = Workplane(une_face).workplane().add(une_face).wires().toPending().\
- #                   offset2D(largeur[nb_faces],"arc").twistExtrude(epaisseur[nb_faces],18).edges().chamfer(.12,.12 ).workplane().\
- #                   add(une_face).wires().toPending().offset2D(largeur[nb_faces]-marge[nb_faces],"intersection").\
- #                   extrude(epaisseur[nb_faces],combine="cut").edges().chamfer(.12)
                     dessus = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
-                    offset2D(largeur[nb_faces],"arc").twistExtrude(epaisseur[nb_faces],18).workplane().\
-                    add(une_face).wires().toPending().offset2D(largeur[nb_faces]-marge[nb_faces],"intersection").\
-                    extrude(epaisseur[nb_faces],combine="cut").edges().fillet(.1)
-
+                    offset2D(largeur[nb_faces],"arc").twistExtrude(epaisseur[nb_faces],30).faces().end().workplane().\
+                    add(une_face).wires().toPending().offset2D(largeur[nb_faces]-marge[nb_faces],"arc").\
+                    twistExtrude(epaisseur[nb_faces],30,combine="cut")
             else:   
                     dessus = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
                     offset2D(largeur[nb_faces],"arc").extrude(epaisseur[nb_faces])
@@ -109,9 +104,10 @@ def Polyedre():
     dernier_toc = time.perf_counter()
     print(f"Le tout en {dernier_toc - premier_tic:0.4f} seconds")
 
-    return le_tout.combine()
+    return le_tout
 
-exporters.export(Polyedre(),"./stl/" + nom_polyedre + "Chris04.stl",angularTolerance=0.2)
+exporters.export(Polyedre(),"./stl/" + nom_polyedre + "Chris03.stl",angularTolerance=0.2)
+
 
 import pymeshlab
 print("On fait travailler mechlab")

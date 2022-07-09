@@ -85,7 +85,7 @@ def Polyedre():
                     offset2D(largeur[nb_faces],"arc").extrude(epaisseur[nb_faces])
 
             piece = Workplane().add(dessus).union(dessous).edges().chamfer(0.05)
-            le_tout = le_tout.add(piece)
+            le_tout = le_tout.union(piece)
 
         bar.next()
 
@@ -98,7 +98,7 @@ def Polyedre():
 
 design = Polyedre()
 
-anneau = Solid.makeTorus(1.1, .45, Vector(9.8,0,0),Vector(0,1.0,0))
+anneau = Solid.makeTorus(1.1, .45, Vector(9.7,0,0),Vector(0,1.0,0))
 design = design.union(anneau)
 
 print("On écrit le fichier", sortie)

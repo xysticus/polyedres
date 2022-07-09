@@ -14,8 +14,11 @@ import time
 
 racine = "./dmccooey.com/polyhedra/"
 nom_polyedre= "TruncatedIcosidodecahedron"
+sortie = "./stl/" + nom_polyedre + "Chris02.stl"
+pluspetit = "./stl/" + nom_polyedre + "Chris02bin.stl"
 
-facteur = 1.8
+
+facteur = 2 #1.8
 
 marge = [0.0]*12
 marge[10] = 1.4
@@ -104,4 +107,31 @@ def Polyedre():
 
     return le_tout
 
-exporters.export(Polyedre(),"./stl/" + nom_polyedre + "Chris02.stl",tolerance=0.2)
+exporters.export(Polyedre(),"./stl/" + nom_polyedre + "Chris02.stl",angularTolerance=0.2)
+
+import pymeshlab
+print("On fait travailler mechlab")
+
+ms = pymeshlab.MeshSet()
+ms.load_new_mesh(sortie)
+
+geo_dict = ms.get_geometric_measures()
+mesh_volume = geo_dict['mesh_volume']
+print(geo_dict)
+
+topo_dict = ms.get_topological_measures()
+nb_compo = topo_dict['connected_components_number']
+faces_number = topo_dict['faces_number']
+print(topo_dict)
+
+if pluspetit:
+    ms.save_current_mesh(pluspetit, save_face_color=False)
+
+print(f"Volume: {mesh_volume}")
+print(f"Composants: {nb_compo}")
+print(f"Faces: {faces_number:,} sur un max d'un million de faces".replace(',',' '))
+
+import os
+print(f"Taile du fichier :{os.path.getsize(pluspetit)//1024:,}Ko sur un max de 50 000".replace(',',' '))
+
+ms.show_polyscope()

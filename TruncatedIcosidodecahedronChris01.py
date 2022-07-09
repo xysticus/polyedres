@@ -14,28 +14,26 @@ import time
 
 racine = "./dmccooey.com/polyhedra/"
 nom_polyedre= "TruncatedIcosidodecahedron"
-sortie = "./stl/" + nom_polyedre + "Chris04.stl"
-pluspetit = "./stl/" + nom_polyedre + "Chris04bin.stl"
 
-facteur = 2 #1.8
+facteur = 1.4
 
 marge = [0.0]*12
-marge[10] = 1.4
-marge[6] = 1.4
-marge[4] = 1.25
+marge[10] = 0.4
+marge[6] = 0.4
+marge[4] = 0.4
 
 epaisseur = [0.0]*12
-epaisseur[10] = 0.5
-epaisseur[6] = 1
-epaisseur[4] = 1
+epaisseur[10] = 0.3
+epaisseur[6] = 0.3
+epaisseur[4] = 0.3
 
 largeur = [0.0]*12
-largeur[10] = 0
+largeur[10] = 1.9
 largeur[6] = 2.3
 largeur[4] = 2.45
 
-sphere_int_ry = 0 # 7.3
-sphere_ext_ry = 0 #7.64 #6.18
+sphere_int_ry = 5.8
+sphere_ext_ry = 6 #6.18
 
 trou_perle = 0
 
@@ -72,20 +70,14 @@ def Polyedre():
 
         if largeur[nb_faces] > 0:
             if marge[nb_faces] > 0:
- #                   dessus = Workplane(une_face).workplane().add(une_face).wires().toPending().\
- #                   offset2D(largeur[nb_faces],"arc").twistExtrude(epaisseur[nb_faces],18).edges().chamfer(.12,.12 ).workplane().\
- #                   add(une_face).wires().toPending().offset2D(largeur[nb_faces]-marge[nb_faces],"intersection").\
- #                   extrude(epaisseur[nb_faces],combine="cut").edges().chamfer(.12)
                     dessus = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
-                    offset2D(largeur[nb_faces],"arc").twistExtrude(epaisseur[nb_faces],18).workplane().\
-                    add(une_face).wires().toPending().offset2D(largeur[nb_faces]-marge[nb_faces],"intersection").\
-                    extrude(epaisseur[nb_faces],combine="cut").edges().fillet(.1)
-
+                    offset2D(largeur[nb_faces],"arc").extrude(epaisseur[nb_faces]).faces().end().workplane().\
+                    add(une_face).wires().toPending().offset2D(largeur[nb_faces]-marge[nb_faces],"arc").extrude(epaisseur[nb_faces],combine="cut")
             else:   
                     dessus = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
                     offset2D(largeur[nb_faces],"arc").extrude(epaisseur[nb_faces])
 
-            le_tout = le_tout.union(dessus)
+            le_tout = le_tout.add(dessus)
 
         bar.next()
 
@@ -109,33 +101,6 @@ def Polyedre():
     dernier_toc = time.perf_counter()
     print(f"Le tout en {dernier_toc - premier_tic:0.4f} seconds")
 
-    return le_tout.combine()
+    return le_tout
 
-exporters.export(Polyedre(),"./stl/" + nom_polyedre + "Chris04.stl",angularTolerance=0.2)
-
-import pymeshlab
-print("On fait travailler mechlab")
-
-ms = pymeshlab.MeshSet()
-ms.load_new_mesh(sortie)
-
-geo_dict = ms.get_geometric_measures()
-mesh_volume = geo_dict['mesh_volume']
-print(geo_dict)
-
-topo_dict = ms.get_topological_measures()
-nb_compo = topo_dict['connected_components_number']
-faces_number = topo_dict['faces_number']
-print(topo_dict)
-
-if pluspetit:
-    ms.save_current_mesh(pluspetit, save_face_color=False)
-
-print(f"Volume: {mesh_volume}")
-print(f"Composants: {nb_compo}")
-print(f"Faces: {faces_number:,} sur un max d'un million de faces".replace(',',' '))
-
-import os
-print(f"Taile du fichier :{os.path.getsize(pluspetit)//1024:,}Ko sur un max de 50 000".replace(',',' '))
-
-ms.show_polyscope()
+exporters.export(Polyedre(),"./stl/" + nom_polyedre + "Chris01.stl",tolerance=0.2)

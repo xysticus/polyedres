@@ -14,25 +14,32 @@ import time
 
 racine = "./dmccooey.com/polyhedra/"
 nom_polyedre= "TruncatedIcosidodecahedron"
-sortie = "./stl/" + nom_polyedre + "Chris04.stl"
-pluspetit = "./stl/" + nom_polyedre + "Chris04bin.stl"
+sortie = "./stl/" + nom_polyedre + "Chris10.stl"
+pluspetit = "./stl/" + nom_polyedre + "Chris10bin.stl"
+
 
 facteur = 2 #1.8
 
 marge = [0.0]*12
 marge[10] = 1.4
-marge[6] = 1.4
-marge[4] = 1.25
+marge[6] = 1.3
+marge[4] = 1
 
 epaisseur = [0.0]*12
 epaisseur[10] = 0.5
-epaisseur[6] = 1
-epaisseur[4] = 1
+epaisseur[6] = .3
+epaisseur[4] = .3
+
+epaisseur_arriere = [0.0]*12
+epaisseur_arriere[10] = 0.5
+epaisseur_arriere[6] = .2
+epaisseur_arriere[4] = .2
+
 
 largeur = [0.0]*12
 largeur[10] = 0
-largeur[6] = 2.3
-largeur[4] = 2.45
+largeur[6] = 2.9
+largeur[4] = 2.7
 
 sphere_int_ry = 0 # 7.3
 sphere_ext_ry = 0 #7.64 #6.18
@@ -71,47 +78,29 @@ def Polyedre():
         nb_faces = len(ixs) - 1
 
         if largeur[nb_faces] > 0:
-            if marge[nb_faces] > 0:
- #                   dessus = Workplane(une_face).workplane().add(une_face).wires().toPending().\
- #                   offset2D(largeur[nb_faces],"arc").twistExtrude(epaisseur[nb_faces],18).edges().chamfer(.12,.12 ).workplane().\
- #                   add(une_face).wires().toPending().offset2D(largeur[nb_faces]-marge[nb_faces],"intersection").\
- #                   extrude(epaisseur[nb_faces],combine="cut").edges().chamfer(.12)
-                    dessus = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
-                    offset2D(largeur[nb_faces],"arc").twistExtrude(epaisseur[nb_faces],18).workplane().\
-                    add(une_face).wires().toPending().offset2D(largeur[nb_faces]-marge[nb_faces],"intersection").\
-                    extrude(epaisseur[nb_faces],combine="cut").edges().fillet(.1)
+            dessus = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
+            offset2D(largeur[nb_faces],"arc").twistExtrude(epaisseur[nb_faces],18).workplane().\
+            add(une_face).wires().toPending().offset2D(largeur[nb_faces]-marge[nb_faces],"arc").\
+            twistExtrude(epaisseur[nb_faces],-20,combine="cut")
+            dessous = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
+            offset2D(largeur[nb_faces],"arc").extrude(-epaisseur_arriere[nb_faces])
 
-            else:   
-                    dessus = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
-                    offset2D(largeur[nb_faces],"arc").extrude(epaisseur[nb_faces])
-
-            le_tout = le_tout.union(dessus)
+            piece = Workplane().add(dessus).union(dessous).edges().chamfer(0.05)
+            le_tout = le_tout.union(piece)
 
         bar.next()
 
     bar.finish()
-
-    if trou_perle > 0:
-        #le_tout = le_tout.union(sphere_ext)
-        sphere_ext = cq.Workplane().sphere(sphere_ext_ry).circle(trou_perle).cutThruAll()
-        sphere_int = cq.Workplane().sphere(sphere_int_ry).circle(trou_perle).cutThruAll()
-        le_tout = le_tout.circle(trou_perle).cutThruAll()   
-        le_tout = le_tout.union(sphere_ext).cut(sphere_int)
-    else:
-        if sphere_int_ry > 0:
-            sphere_ext = cq.Workplane().sphere(sphere_ext_ry)
-            sphere_int = cq.Workplane().sphere(sphere_int_ry)
-            tic = time.perf_counter()
-            le_tout = le_tout.union(sphere_ext).cut(sphere_int)
-            toc = time.perf_counter()
-            print(f"Etape finale en {toc - tic:0.4f} seconds")
 
     dernier_toc = time.perf_counter()
     print(f"Le tout en {dernier_toc - premier_tic:0.4f} seconds")
 
     return le_tout.combine()
 
-exporters.export(Polyedre(),"./stl/" + nom_polyedre + "Chris04.stl",angularTolerance=0.2)
+design = Polyedre()
+
+print("On écrit le fichier", sortie)
+exporters.export(design, sortie, angularTolerance=0.2)
 
 import pymeshlab
 print("On fait travailler mechlab")

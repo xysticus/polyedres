@@ -10,7 +10,6 @@ def aspiro(chemin):
             constantes = [chaine.strip() for chaine in constantes]
         else:
             constantes = []
-        print(constantes)
 
         sommets = soup.find(class_="Vertices",attrs="value")['value'].split(',')
         sommets = [s.split() for s in sommets]

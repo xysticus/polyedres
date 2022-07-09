@@ -61,21 +61,20 @@ def Polyedre():
         nb_faces = len(ixs) - 1
 
         if offset_face[nb_faces] > 0:
-            dessus = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
-            offset2D(offset_face[nb_faces],"arc").extrude(epaisseur[nb_faces])
+            dessus = Workplane(une_face).workplane().add(une_face).wires().toPending().\
+            offset2D(offset_face[nb_faces],"arc").twistExtrude(epaisseur[nb_faces],twist)
             if trou_face[nb_faces]:
                 dessus = dessus.workplane().add(une_face).wires().toPending().\
                     offset2D(offset_face[nb_faces]-trou_face[nb_faces],"arc").\
-                    extrude(epaisseur[nb_faces],combine="cut")
-
+                    twistExtrude(epaisseur[nb_faces], twist, combine="cut")
             if epaisseur_arriere[nb_faces]:
-                dessous = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
-                offset2D(offset_face[nb_faces],"arc").extrude(-epaisseur_arriere[nb_faces])
+                dessous = Workplane(une_face).workplane().add(une_face).workplane().add(une_face).wires().toPending().\
+                offset2D(offset_face[nb_faces],"arc").twistExtrude(-epaisseur_arriere[nb_faces],twist)
                 
                 if trou_face[nb_faces]:
                     dessous = dessous.workplane().add(une_face).wires().toPending().\
                     offset2D(offset_face[nb_faces]-trou_face[nb_faces],"arc").\
-                    extrude(-epaisseur_arriere[nb_faces],combine="cut")
+                    twistExtrude(-epaisseur_arriere[nb_faces], twist, combine="cut")
 
                 piece = Workplane().add(dessus).union(dessous)
             else:
@@ -137,13 +136,17 @@ def dessine():
 
     compression()
 
+twist = 18
+
 # premier calcul
 
-sortie = "./stl/" + nom_polyedre + "BisProp01.stl"
-pluspetit = "./stl/" + nom_polyedre + "BisProp01bin.stl"
+sortie = "./stl/" + nom_polyedre + "BisProp11.stl"
+pluspetit = "./stl/" + nom_polyedre + "BisProp11bin.stl"
 propre = None
 
-facteur_d_echelle = 1.2
+facteur_d_echelle = 1
+
+eloigne = 0
 
 sommets = [(a * facteur_d_echelle, b * facteur_d_echelle, c * facteur_d_echelle) for (a, b, c) in sommets]
 
@@ -166,7 +169,7 @@ offset_face[3] = .07
 trou_perle = 0
 
 chanfrein = 0
-arrondi = 0.02
+arrondi = 0
 
 finesse = 0.1
 
@@ -174,20 +177,16 @@ dessine()
 
 # deuxième calcul
 
-sortie = "./stl/" + nom_polyedre + "BisProp02.stl"
-pluspetit = "./stl/" + nom_polyedre + "BisProp02bin.stl"
-propre = "./stl/" + nom_polyedre + "BisProp02propre.stl"
-
-facteur_d_echelle = 1.2
-
-sommets = [(a * facteur_d_echelle, b * facteur_d_echelle, c * facteur_d_echelle) for (a, b, c) in sommets]
+sortie = "./stl/" + nom_polyedre + "BisProp12.stl"
+pluspetit = "./stl/" + nom_polyedre + "BisProp12bin.stl"
+propre = "./stl/" + nom_polyedre + "BisProp12propre.stl"
 
 epaisseur = [0.0]*12
 epaisseur[4] = .4
 epaisseur[3] = .4
 
 epaisseur_arriere = [0.0]*12
-epaisseur_arriere[4] = 1.0
+epaisseur_arriere[4] = 0
 epaisseur_arriere[3] = 0
 
 trou_face = [0.0]*12
@@ -198,32 +197,21 @@ offset_face = [0.0]*12
 offset_face[4] = .08
 offset_face[3] = .065
 
-trou_perle = 0
-
-chanfrein = 0
-arrondi = 0.02
-
-finesse = 0.1
-
 dessine()
 
 # troisième calcul
 
-sortie = "./stl/" + nom_polyedre + "BisProp03.stl"
-pluspetit = "./stl/" + nom_polyedre + "BisProp03bin.stl"
-propre = "./stl/" + nom_polyedre + "BisProp03propre.stl"
-
-facteur_d_echelle = 1.2
-
-sommets = [(a * facteur_d_echelle, b * facteur_d_echelle, c * facteur_d_echelle) for (a, b, c) in sommets]
+sortie = "./stl/" + nom_polyedre + "BisProp13.stl"
+pluspetit = "./stl/" + nom_polyedre + "BisProp13bin.stl"
+propre = "./stl/" + nom_polyedre + "BisProp13propre.stl"
 
 epaisseur = [0.0]*12
 epaisseur[4] = .4
 epaisseur[3] = .4
 
 epaisseur_arriere = [0.0]*12
-epaisseur_arriere[4] = 0.1
-epaisseur_arriere[3] = 0.1
+epaisseur_arriere[4] = 0
+epaisseur_arriere[3] = 0
 
 trou_face = [0.0]*12
 trou_face[4] = 0
@@ -232,12 +220,5 @@ trou_face[3] = 0
 offset_face = [0.0]*12
 offset_face[4] = .08
 offset_face[3] = .08
-
-trou_perle = 0
-
-chanfrein = 0
-arrondi = 0.02
-
-finesse = 0.1
 
 dessine()
