@@ -1,0 +1,243 @@
+<!-- File:   JoinedTruncatedIcosidodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Joined Truncated Icosidodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='JoinedRsnubDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Hull.html"><B>Archimedean-Catalan Hulls</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='JoinedTruncatedTetrahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Joined Truncated Icosidodecahedron
+
+	(120) SHORT EDGE = sqrt(271 - 12 * sqrt(5)) / 22
+	(120) MEDIUM EDGE = sqrt(31 - 12 * sqrt(5)) / 2
+	(120) LONG EDGE = sqrt(5 * (35 + 12 * sqrt(5))) / 10
+	KITE1 LENGTH = sqrt(15 * (85 - 31 * sqrt(5))) / 11
+	KITE1 WIDTH = 1
+	KITE2 LENGTH = 3 * sqrt(15 * (65 + 19 * sqrt(5))) / 55
+	KITE2 WIDTH = 1
+	KITE3 LENGTH = 2 * sqrt(15 * (5 - sqrt(5))) / 5
+	KITE3 WIDTH = 1
+	(120) [3]-VERTEX RADIUS = sqrt(31 + 12 * sqrt(5)) / 2
+	(30) [4]-VERTEX RADIUS = 3 * (5 + 4 * sqrt(5)) / 11
+	(20) [6]-VERTEX RADIUS = sqrt(15)
+	(12) [10]-VERTEX RADIUS = 3 * sqrt(5 * (5 + 2 * sqrt(5))) / 5
+	INRADIUS = sqrt(6 * (5 + 2 * sqrt(5))) / 2
+	VOLUME = 30 * (27 + 26 * sqrt(5)) / 11
+	LONG EDGE ANGLE = acos(-(21 + sqrt(5)) / 24)
+		= 165.505002882829577203728291421 degrees
+	MEDIUM EDGE ANGLE = acos(-(15 + 2 * sqrt(5)) / 20)
+		= 166.807000959255878728995626672 degrees
+	SHORT EDGE ANGLE = acos(-(25 + 2 * sqrt(5)) / 30)
+		= 169.235920192858903138565315208 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="19 182 180">
+<INPUT type=hidden class=Constants value="1.17518645301134929748244365923,
+1.30901699437494742410229341718,
+1.38196601125010515179541316563,
+1.61803398874989484820458683437,
+1.80901699437494742410229341718,
+1.901491624090794379859549273853,
+2.11803398874989484820458683437,
+2.17082039324993690892275210062,
+2.23606797749978969640917366873,
+2.427050983124842272306880251548,
+2.61803398874989484820458683437,
+2.927050983124842272306880251548,
+3.07667807710214367734199293309,
+3.11803398874989484820458683437,
+3.427050983124842272306880251548,
+3.51246117974981072676825630186,
+3.61803398874989484820458683437,
+3.73606797749978969640917366873,
+3.80298324818158875971909854771">
+<!--
+	C0 = 3 * (15 + sqrt(5)) / 44
+	C1 = (3 + sqrt(5)) / 4
+	C2 = (5 - sqrt(5)) / 2
+	C3 = (1 + sqrt(5)) / 2
+	C4 = (5 + sqrt(5)) / 4
+	C5 = 3 * (5 + 4 * sqrt(5)) / 22
+	C6 = (2 + sqrt(5)) / 2
+	C7 = 3 * (5 + sqrt(5)) / 10
+	C8 = sqrt(5)
+	C9 = 3 * (1 + sqrt(5)) / 4
+	C10 = (3 + sqrt(5)) / 2
+	C11 = (5 + 3 * sqrt(5)) / 4
+	C12 = 3 * (25 + 9 * sqrt(5)) / 44
+	C13 = (4 + sqrt(5)) / 2
+	C14 = (7 + 3 * sqrt(5)) / 4
+	C15 = 3 * (5 + 3 * sqrt(5)) / 10
+	C16 = (5 + sqrt(5)) / 2
+	C17 = (3 + 2 * sqrt(5)) / 2
+	C18 = 3 * (5 + 4 * sqrt(5)) / 11
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C18,0.0 0.0 -C18,C18 0.0 0.0,
+-C18 0.0 0.0,0.0 C18 0.0,0.0 -C18 0.0,0.5 0.5 C17,0.5 0.5 -C17,0.5 -0.5 C17,
+0.5 -0.5 -C17,-0.5 0.5 C17,-0.5 0.5 -C17,-0.5 -0.5 C17,-0.5 -0.5 -C17,
+C17 0.5 0.5,C17 0.5 -0.5,C17 -0.5 0.5,C17 -0.5 -0.5,-C17 0.5 0.5,-C17 0.5 -0.5,
+-C17 -0.5 0.5,-C17 -0.5 -0.5,0.5 C17 0.5,0.5 C17 -0.5,0.5 -C17 0.5,
+0.5 -C17 -0.5,-0.5 C17 0.5,-0.5 C17 -0.5,-0.5 -C17 0.5,-0.5 -C17 -0.5,
+0.0 C2 C16,0.0 C2 -C16,0.0 -C2 C16,0.0 -C2 -C16,C16 0.0 C2,C16 0.0 -C2,
+-C16 0.0 C2,-C16 0.0 -C2,C2 C16 0.0,C2 -C16 0.0,-C2 C16 0.0,-C2 -C16 0.0,
+C7 0.0 C15,C7 0.0 -C15,-C7 0.0 C15,-C7 0.0 -C15,C15 C7 0.0,C15 -C7 0.0,
+-C15 C7 0.0,-C15 -C7 0.0,0.0 C15 C7,0.0 C15 -C7,0.0 -C15 C7,0.0 -C15 -C7,
+1.0 C1 C14,1.0 C1 -C14,1.0 -C1 C14,1.0 -C1 -C14,-1.0 C1 C14,-1.0 C1 -C14,
+-1.0 -C1 C14,-1.0 -C1 -C14,C14 1.0 C1,C14 1.0 -C1,C14 -1.0 C1,C14 -1.0 -C1,
+-C14 1.0 C1,-C14 1.0 -C1,-C14 -1.0 C1,-C14 -1.0 -C1,C1 C14 1.0,C1 C14 -1.0,
+C1 -C14 1.0,C1 -C14 -1.0,-C1 C14 1.0,-C1 C14 -1.0,-C1 -C14 1.0,-C1 -C14 -1.0,
+0.5 C6 C13,0.5 C6 -C13,0.5 -C6 C13,0.5 -C6 -C13,-0.5 C6 C13,-0.5 C6 -C13,
+-0.5 -C6 C13,-0.5 -C6 -C13,C13 0.5 C6,C13 0.5 -C6,C13 -0.5 C6,C13 -0.5 -C6,
+-C13 0.5 C6,-C13 0.5 -C6,-C13 -0.5 C6,-C13 -0.5 -C6,C6 C13 0.5,C6 C13 -0.5,
+C6 -C13 0.5,C6 -C13 -0.5,-C6 C13 0.5,-C6 C13 -0.5,-C6 -C13 0.5,-C6 -C13 -0.5,
+C0 C5 C12,C0 C5 -C12,C0 -C5 C12,C0 -C5 -C12,-C0 C5 C12,-C0 C5 -C12,-C0 -C5 C12,
+-C0 -C5 -C12,C12 C0 C5,C12 C0 -C5,C12 -C0 C5,C12 -C0 -C5,-C12 C0 C5,
+-C12 C0 -C5,-C12 -C0 C5,-C12 -C0 -C5,C5 C12 C0,C5 C12 -C0,C5 -C12 C0,
+C5 -C12 -C0,-C5 C12 C0,-C5 C12 -C0,-C5 -C12 C0,-C5 -C12 -C0,C4 C3 C11,
+C4 C3 -C11,C4 -C3 C11,C4 -C3 -C11,-C4 C3 C11,-C4 C3 -C11,-C4 -C3 C11,
+-C4 -C3 -C11,C11 C4 C3,C11 C4 -C3,C11 -C4 C3,C11 -C4 -C3,-C11 C4 C3,
+-C11 C4 -C3,-C11 -C4 C3,-C11 -C4 -C3,C3 C11 C4,C3 C11 -C4,C3 -C11 C4,
+C3 -C11 -C4,-C3 C11 C4,-C3 C11 -C4,-C3 -C11 C4,-C3 -C11 -C4,C1 C9 C10,
+C1 C9 -C10,C1 -C9 C10,C1 -C9 -C10,-C1 C9 C10,-C1 C9 -C10,-C1 -C9 C10,
+-C1 -C9 -C10,C10 C1 C9,C10 C1 -C9,C10 -C1 C9,C10 -C1 -C9,-C10 C1 C9,
+-C10 C1 -C9,-C10 -C1 C9,-C10 -C1 -C9,C9 C10 C1,C9 C10 -C1,C9 -C10 C1,
+C9 -C10 -C1,-C9 C10 C1,-C9 C10 -C1,-C9 -C10 C1,-C9 -C10 -C1,C8 C8 C8,C8 C8 -C8,
+C8 -C8 C8,C8 -C8 -C8,-C8 C8 C8,-C8 C8 -C8,-C8 -C8 C8,-C8 -C8 -C8">
+<INPUT type=hidden class=Faces value="42 6 0 8 #,42 56 104 128 #,
+42 160 112 88 #,42 86 110 158 #,42 126 102 54 #,43 9 1 7 #,43 55 103 127 #,
+43 159 111 87 #,43 89 113 161 #,43 129 105 57 #,44 12 0 10 #,44 58 106 130 #,
+44 162 114 90 #,44 92 116 164 #,44 132 108 60 #,45 11 1 13 #,45 61 109 133 #,
+45 165 117 93 #,45 91 115 163 #,45 131 107 59 #,46 14 2 15 #,46 63 111 135 #,
+46 167 119 95 #,46 94 118 166 #,46 134 110 62 #,47 17 2 16 #,47 64 112 136 #,
+47 168 120 96 #,47 97 121 169 #,47 137 113 65 #,48 19 3 18 #,48 66 114 138 #,
+48 170 122 98 #,48 99 123 171 #,48 139 115 67 #,49 20 3 21 #,49 69 117 141 #,
+49 173 125 101 #,49 100 124 172 #,49 140 116 68 #,50 22 4 26 #,50 74 122 146 #,
+50 154 106 82 #,50 78 102 150 #,50 142 118 70 #,51 27 4 23 #,51 71 119 143 #,
+51 151 103 79 #,51 83 107 155 #,51 147 123 75 #,52 28 5 24 #,52 72 120 144 #,
+52 152 104 80 #,52 84 108 156 #,52 148 124 76 #,53 25 5 29 #,53 77 125 149 #,
+53 157 109 85 #,53 81 105 153 #,53 145 121 73 #,42 8 32 56 #,42 128 176 160 #,
+42 88 34 86 #,42 158 174 126 #,42 54 30 6 #,43 7 31 55 #,43 127 175 159 #,
+43 87 35 89 #,43 161 177 129 #,43 57 33 9 #,44 10 30 58 #,44 130 178 162 #,
+44 90 36 92 #,44 164 180 132 #,44 60 32 12 #,45 13 33 61 #,45 133 181 165 #,
+45 93 37 91 #,45 163 179 131 #,45 59 31 11 #,46 15 35 63 #,46 135 175 167 #,
+46 95 38 94 #,46 166 174 134 #,46 62 34 14 #,47 16 34 64 #,47 136 176 168 #,
+47 96 39 97 #,47 169 177 137 #,47 65 35 17 #,48 18 36 66 #,48 138 178 170 #,
+48 98 40 99 #,48 171 179 139 #,48 67 37 19 #,49 21 37 69 #,49 141 181 173 #,
+49 101 41 100 #,49 172 180 140 #,49 68 36 20 #,50 26 40 74 #,50 146 178 154 #,
+50 82 30 78 #,50 150 174 142 #,50 70 38 22 #,51 23 38 71 #,51 143 175 151 #,
+51 79 31 83 #,51 155 179 147 #,51 75 40 27 #,52 24 39 72 #,52 144 176 152 #,
+52 80 32 84 #,52 156 180 148 #,52 76 41 28 #,53 29 41 77 #,53 149 181 157 #,
+53 85 33 81 #,53 153 177 145 #,53 73 39 25 #,30 10 0 6 #,30 54 102 78 #,
+30 82 106 58 #,31 7 1 11 #,31 59 107 83 #,31 79 103 55 #,32 8 0 12 #,
+32 60 108 84 #,32 80 104 56 #,33 13 1 9 #,33 57 105 81 #,33 85 109 61 #,
+34 16 2 14 #,34 62 110 86 #,34 88 112 64 #,35 15 2 17 #,35 65 113 89 #,
+35 87 111 63 #,36 18 3 20 #,36 68 116 92 #,36 90 114 66 #,37 21 3 19 #,
+37 67 115 91 #,37 93 117 69 #,38 23 4 22 #,38 70 118 94 #,38 95 119 71 #,
+39 24 5 25 #,39 73 121 97 #,39 96 120 72 #,40 26 4 27 #,40 75 123 99 #,
+40 98 122 74 #,41 29 5 28 #,41 76 124 100 #,41 101 125 77 #,174 150 102 126 #,
+174 158 110 134 #,174 166 118 142 #,175 127 103 151 #,175 143 119 167 #,
+175 135 111 159 #,176 128 104 152 #,176 144 120 168 #,176 136 112 160 #,
+177 153 105 129 #,177 161 113 137 #,177 169 121 145 #,178 130 106 154 #,
+178 146 122 170 #,178 138 114 162 #,179 155 107 131 #,179 163 115 139 #,
+179 171 123 147 #,180 156 108 132 #,180 164 116 140 #,180 172 124 148 #,
+181 133 109 157 #,181 149 125 173 #,181 141 117 165 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Joined Truncated Icosidodecahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>182 &nbsp;(120[3] + 30[4] + 20[6] + 12[10])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>180 &nbsp;(60 short kites + 60 medium kites + 60 long kites)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>360 &nbsp;(120 short + 120 medium + 120 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Long Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(21+sqrt(5))/24) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;165.505002883 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Medium Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(15+2*sqrt(5))/20) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;166.807000959 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(25+2*sqrt(5))/30) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;169.235920193 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length <A href="TruncatedIcosidodecahedron.html">Truncated Icosidodecahedron</A>)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (120): &nbsp;</NOBR></TD><TD><NOBR>sqrt(271&#8722;12*sqrt(5))/22 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.71026590334213456264</TD></TR>
+<TR><TD><NOBR>Medium Edge (120): &nbsp;</NOBR></TD><TD><NOBR>sqrt(31&#8722;12*sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0206841173941284126</TD></TR>
+<TR><TD><NOBR>Long Edge (120): &nbsp;</NOBR></TD><TD><NOBR>sqrt(5*(35+12*sqrt(5)))/10 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.7583062265998701222</TD></TR>
+<TR><TD><NOBR>Short Kite Length: &nbsp;</NOBR></TD><TD><NOBR>sqrt(15*(85&#8722;31*sqrt(5)))/11 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3942870166557737040</TD></TR>
+<TR><TD><NOBR>Short Kite Width: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Medium Kite Length: &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(15*(65+19*sqrt(5)))/55 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.19017447980650378252</TD></TR>
+<TR><TD><NOBR>Medium Kite Width: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Long Kite Length: &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(15*(5&#8722;sqrt(5)))/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.5755459331956214849</TD></TR>
+<TR><TD><NOBR>Long Kite Width: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (120): &nbsp;</NOBR></TD><TD><NOBR>sqrt(31+12*sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.8023944998512935848</TD></TR>
+<TR><TD><NOBR>[4]-Vertex Radius (30): &nbsp;</NOBR></TD><TD><NOBR>3*(5+4*sqrt(5))/11 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.8029832481815887597</TD></TR>
+<TR><TD><NOBR>[6]-Vertex Radius (20): &nbsp;</NOBR></TD><TD><NOBR>sqrt(15) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.8729833462074168852</TD></TR>
+<TR><TD><NOBR>[10]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(5*(5+2*sqrt(5)))/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.1291457614135206146</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(5+2*sqrt(5)))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.7693771279217166027</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>30*(27+26*sqrt(5))/11 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;232.19391113180326938</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='JoinedTruncatedIcosidodecahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://www.georgehart.com/virtual-polyhedra/conway_notation.html>Conway Notation for Polyhedra (George Hart)</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

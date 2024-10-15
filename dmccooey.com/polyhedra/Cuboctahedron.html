@@ -1,0 +1,122 @@
+<!-- File:   Cuboctahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Cuboctahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='TruncatedTetrahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Archimedean.html"><B>Archimedean Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='TruncatedOctahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Cuboctahedron
+
+	(24) EDGE = 1
+	RADIUS = 1
+	MIDRADIUS = sqrt(3) / 2
+	SQUARE CENTER RADIUS = sqrt(2) / 2
+	TRIANGLE CENTER RADIUS = sqrt(6) / 3
+	VOLUME = 5 * sqrt(2) / 3
+	DIHEDRAL ANGLE = acos(-sqrt(3) / 3)
+		= 125.264389682754654315377000330 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:   24
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 9
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Octahedral (Oh)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="1 12 14">
+<INPUT type=hidden class=Constants value="0.7071067811865475244008443621048">
+<!--
+	C0 = sqrt(2) / 2
+-->
+<INPUT type=hidden class=Vertices value="C0 0.0 C0,C0 0.0 -C0,-C0 0.0 C0,
+-C0 0.0 -C0,C0 C0 0.0,C0 -C0 0.0,-C0 C0 0.0,-C0 -C0 0.0,0.0 C0 C0,0.0 C0 -C0,
+0.0 -C0 C0,0.0 -C0 -C0">
+<INPUT type=hidden class=Faces value="0 5 1 4 #,0 8 2 10 #,7 2 6 3 #,
+7 11 5 10 #,9 1 11 3 #,9 6 8 4 #,0 4 8 #,1 5 11 #,2 7 10 #,3 6 9 #,4 1 9 #,
+5 0 10 #,6 2 8 #,7 3 11 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #7)</NOBR></TD>
+<TD width=40% align=center>Cuboctahedron</TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>12 &nbsp;(12[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>14 &nbsp;(8 equilateral triangles + 6 squares)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>24</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Octahedral &nbsp;(Oh)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(3)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;125.264389683 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="RhombicDodecahedron.html">Rhombic Dodecahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(3)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.86602540378443864676</TD></TR>
+<TR><TD><NOBR>Square Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.70710678118654752440</TD></TR>
+<TR><TD><NOBR>Triangle Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6)/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.81649658092772603273</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>5*sqrt(2)/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.3570226039551584147</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='Cuboctahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

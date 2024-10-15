@@ -1,0 +1,142 @@
+<!-- File:   RegularFaceToroid.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Toroid with regular faces</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='IsohedralToroid24.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalNonRegular.html"><B>Non-Regular Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='KnottedDodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Toroid with regular faces
+
+	(36) EDGE = 1
+	RADIUS = sqrt(10) / 2
+	VOLUME = 21 * sqrt(2) / 4
+	DIHEDRAL ANGLE 1 = acos(5 * sqrt(3) / 9)
+		= 15.7931690482639629461310009901 degrees
+	DIHEDRAL ANGLE 2 = acos(7/9) = 38.9424412689813827384919986799 degrees
+	DIHEDRAL ANGLE 3 = acos(1/3) = 70.5287793655093086307540006600 degrees
+	DIHEDRAL ANGLE 4 = acos(-1/3) = 109.471220634490691369245999340 degrees
+	DIHEDRAL ANGLE 5 = acos(-sqrt(3) / 3)
+		= 125.264389682754654315377000330 degrees
+	DIHEDRAL ANGLE 6 = acos(-sqrt(3) / 3)
+		= 234.735610317245345684622999670 degrees
+	DIHEDRAL ANGLE 7 = acos(-1/3) = 250.528779365509308630754000660 degrees
+	DIHEDRAL ANGLE 8 = acos(1/3) = 289.471220634490691369245999340 degrees
+
+	EULER CHARACTERISTIC:          0
+	ROTATION SYMMETRIES:           3
+	MIRROR ROTATION SYMMETRIES:    3
+	ROTATION AXES:                 1 (1[3])
+	MIRROR PLANES:                 3
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  3-fold Pyramidal (C3v)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="5 30 24">
+<INPUT type=hidden class=Constants value="0.235702260395515841466948120702,
+0.471404520791031682933896241403,
+0.7071067811865475244008443621048,
+1.17851130197757920733474060351,
+1.41421356237309504880168872421">
+<!--
+	C0 = sqrt(2) / 6
+	C1 = sqrt(2) / 3
+	C2 = sqrt(2) / 2
+	C3 = 5 * sqrt(2) / 6
+	C4 = sqrt(2)
+-->
+<INPUT type=hidden class=Vertices value="C2 0.0 C4,C2 0.0 -C4,-C2 0.0 C4,
+-C2 0.0 -C4,C4 C2 0.0,C4 -C2 0.0,-C4 C2 0.0,-C4 -C2 0.0,0.0 C4 C2,0.0 C4 -C2,
+0.0 -C4 C2,0.0 -C4 -C2,0.0 C2 C4,0.0 C2 -C4,0.0 -C2 C4,0.0 -C2 -C4,C4 0.0 C2,
+C4 0.0 -C2,-C4 0.0 C2,-C4 0.0 -C2,C2 C4 0.0,C2 -C4 0.0,-C2 C4 0.0,-C2 -C4 0.0,
+-C0 -C0 -C3,C3 -C0 C0,-C0 C3 C0,-C1 C0 C1,-C1 -C1 -C0,C0 -C1 C1">
+<INPUT type=hidden class=Faces value="0 14 10 21 5 16 #,0 16 4 20 8 12 #,
+1 24 28 29 25 17 #,1 17 5 21 11 15 #,2 12 8 22 6 18 #,3 15 11 23 7 19 #,
+3 19 6 22 9 13 #,4 25 29 27 26 20 #,9 26 27 28 24 13 #,0 12 2 14 #,1 15 3 13 #,
+2 27 29 14 #,4 16 5 17 #,6 19 7 18 #,7 28 27 18 #,8 20 9 22 #,10 29 28 23 #,
+10 23 11 21 #,24 1 13 #,25 4 17 #,26 9 20 #,27 2 18 #,28 7 23 #,29 10 14 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="71 -35 35 50">
+</DIV>
+<BR>
+<CENTER>
+Toroid with regular faces
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>30 &nbsp;(15[3] + 15[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>24 &nbsp;(6 equilateral triangles + 9 squares + 9 regular hexagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>54 &nbsp;(all same length)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>3-fold Pyramidal &nbsp;(C3v)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 1 (3): &nbsp;</NOBR></TD><TD><NOBR>acos(5*sqrt(3)/9) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;15.793169048 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 2 (6): &nbsp;</NOBR></TD><TD><NOBR>acos(7/9) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;38.942441269 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 3 (3): &nbsp;</NOBR></TD><TD><NOBR>acos(1/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;70.528779366 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 4 (6): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;1/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;109.471220634 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 5 (21): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(3)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;125.264389683 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 6 (6): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(3)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;234.735610317 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 7 (6): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;1/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;250.528779366 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 8 (3): &nbsp;</NOBR></TD><TD><NOBR>acos(1/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;289.471220634 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>21*sqrt(2)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;7.4246212024587490062</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RegularFaceToroid.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://symmetry-us.com/Journals/visbook/szilassi/index.html>On Some Regular Toroids (Lajos Szilassi)</A></TD></TR>
+<TR><TD></TD><TD valign=top>[2]</TD><TD>Lajos Szilassi, On Three Classes of Regular Toroids,<BR><I>3rd International Conference APLIMAT</I> 2004.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

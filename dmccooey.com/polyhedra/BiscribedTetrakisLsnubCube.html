@@ -1,0 +1,160 @@
+<!-- File:   BiscribedTetrakisLsnubCube.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Biscribed Tetrakis Snub Cube (laevo)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='BiscribedPropelloIcosahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="BiscribedChiral.html"><B>Biscribed Chiral Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='BiscribedPentakisLsnubDodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Biscribed Tetrakis Snub Cube (laevo) with radius = 1
+
+	(12) EDGE 1 = 0.503199592882444312650233614570
+		= square-root of a root of the polynomial:  9*(x^9) - 768*(x^8)
+		+ 27820*(x^7) - 216104*(x^6) + 834224*(x^5) - 2426944*(x^4)
+		+ 4386880*(x^3) - 3448448*(x^2) + 5683200*x - 1280000
+	(24) EDGE 2 = 0.637873728738232254904664580736
+		= square-root of a root of the polynomial:  3*(x^9) - 24*(x^8)
+		+ 4*(x^7) + 520*(x^6) - 2080*(x^5) + 1920*(x^4) + 15104*(x^3)
+		- 70144*(x^2) + 106496*x - 32768
+	(24) EDGE 3 = 0.744294116552664789315182214641
+		= square-root of a root of the polynomial:  (x^9) - 46*(x^8)
+		+ 4420*(x^7) - 68024*(x^6) + 487152*(x^5) - 1999008*(x^4)
+		+ 4957632*(x^3) - 7226496*(x^2) + 5474304*x - 1492992
+	(24) EDGE 4 = 0.854978913768892423621508989928
+		= square-root of a root of the polynomial:  9*(x^9) + 132*(x^8)
+		- 1604*(x^7) - 8968*(x^6) + 190080*(x^5) - 885504*(x^4) + 2125824*(x^3)
+		- 2770944*(x^2) + 1900544*x - 524288
+	RADIUS = 1
+	INRADIUS = 0.902962950156333609259365044610
+		= square-root of a root of the polynomial:  27*(x^9) + 171*(x^8)
+		+ 10920*(x^7) - 15472*(x^6) + 12918*(x^5) - 7970*(x^4) + 1712*(x^3)
+		- 280*(x^2) + 23*x - 1
+	VOLUME = 3.38530434461857775062092623583
+		= root of the polynomial:  243*(x^9) - 6480*(x^8) + 11442384*(x^7)
+		- 298150848*(x^6) + 7478422272*(x^5) - 106918264832*(x^4)
+		+ 855258173440*(x^3) - 3894106669056*(x^2) + 9632480493568*x
+		- 10054418825216
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="3 30 56">
+<INPUT type=hidden class=Constants value="0.195257470867588789802389149481,
+0.572161683062672686355388355154,
+0.796558553092792047161621888206">
+<!--
+	C0 = root of the polynomial:  3*(x^9) - 15*(x^8) - 11*(x^7) + 188*(x^6)
+		- 182*(x^5) - 461*(x^4) + 1104*(x^3) - 912*(x^2) + 324*x - 36
+	C1 = root of the polynomial:  3*(x^9) + 3*(x^8) + 61*(x^7) - 62*(x^6)
+		+ 290*(x^5) + (x^4) + 28*(x^3) - 208*(x^2) + 192*x - 64
+	C2 = root of the polynomial:  3*(x^9) - 15*(x^8) + 13*(x^7) + 12*(x^6)
+		- 13*(x^5) + 42*(x^4) + 91*(x^3) + 12*(x^2) - 54*x - 27
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 1.0,0.0 0.0 -1.0,1.0 0.0 0.0,
+-1.0 0.0 0.0,0.0 1.0 0.0,0.0 -1.0 0.0,C1 C0 C2,C1 -C0 -C2,-C1 -C0 C2,
+-C1 C0 -C2,C2 C1 C0,C2 -C1 -C0,-C2 -C1 C0,-C2 C1 -C0,C0 C2 C1,C0 -C2 -C1,
+-C0 -C2 C1,-C0 C2 -C1,C0 -C1 C2,C0 C1 -C2,-C0 C1 C2,-C0 -C1 -C2,C2 -C0 C1,
+C2 C0 -C1,-C2 C0 C1,-C2 -C0 -C1,C1 -C2 C0,C1 C2 -C0,-C1 C2 C0,-C1 -C2 -C0">
+<INPUT type=hidden class=Faces value="0 6 20 #,0 20 8 #,0 8 18 #,0 18 6 #,
+1 7 21 #,1 21 9 #,1 9 19 #,1 19 7 #,2 10 22 #,2 22 11 #,2 11 23 #,2 23 10 #,
+3 12 24 #,3 24 13 #,3 13 25 #,3 25 12 #,4 14 27 #,4 27 17 #,4 17 28 #,
+4 28 14 #,5 15 26 #,5 26 16 #,5 16 29 #,5 29 15 #,6 18 22 #,7 19 23 #,
+8 20 24 #,9 21 25 #,10 23 27 #,11 22 26 #,12 25 29 #,13 24 28 #,14 28 20 #,
+15 29 21 #,16 26 18 #,17 27 19 #,18 8 16 #,19 9 17 #,20 6 14 #,21 7 15 #,
+22 10 6 #,23 11 7 #,24 12 8 #,25 13 9 #,26 15 11 #,27 14 10 #,28 17 13 #,
+29 16 12 #,14 6 10 #,15 7 11 #,16 8 12 #,17 9 13 #,18 26 22 #,19 27 23 #,
+20 28 24 #,21 29 25 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Biscribed Tetrakis Snub Cube (laevo)
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="canonical form" onClick="window.location.href='TetrakisLsnubCube.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>biscribed form</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>30 &nbsp;(6[4] + 24[6])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>56 &nbsp;(8 equilateral triangles + 24 isosceles triangles + 24 acute triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>84 &nbsp;(12 short + 24 medium1 + 24 medium2 + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="BiscribedRhexpropelloCube.html">Biscribed Hexpropello Cube (dextro)</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on circumscribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[9th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.5031995928824443126502</TD></TR>
+<TR><TD><NOBR>Medium1 Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[9th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.63787372873823225490</TD></TR>
+<TR><TD><NOBR>Medium2 Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[9th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.74429411655266478932</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[9th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.85497891376889242362</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[9th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.90296295015633360926</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>root[9th-order polynomial] &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.3853043446185777506</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='BiscribedTetrakisLsnubCube.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

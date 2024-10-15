@@ -1,0 +1,147 @@
+<!-- File:   SmallDitrigonalDodecacronicHexecontahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Small Ditrigonal Dodecacronic Hexecontahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='GreatDodecacronicHexecontahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="SelfIntersectingQuasiQuasiRegularDual.html"><B>Self-Intersecting Quasi-Quasi-Regular Duals</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='GreatDitrigonalDodecacronicHexecontahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Small Ditrigonal Dodecacronic Hexecontahedron
+
+	(60) SHORT EDGE = 3 * sqrt(6 * (85 + 31 * sqrt(5))) / 22
+	(60) LONG EDGE = 3 * sqrt(3 * (145 + 62 * sqrt(5))) / 19
+	DART LENGTH = 3 * sqrt(10 * (3517 - 585 * sqrt(5))) / 418
+	DART WIDTH = 3 * (3 + sqrt(5)) / 2
+	(12) INNER VERTEX RADIUS = 3 * sqrt(5 * (25 + 2 * sqrt(5))) / 22
+	(20) MIDDLE VERTEX RADIUS = 3 * (10 * sqrt(3) + sqrt(15)) / 38
+	(12) OUTER VERTEX RADIUS = 3 * sqrt(5 + 2 * sqrt(5)) / 2
+	EDGE-SCRIBED RADIUS = sqrt(6 * (5 + sqrt(5))) / 4
+	INRADIUS = 3 * sqrt(305 * (9 + 2 * sqrt(5))) / 122
+	DIHEDRAL ANGLE = acos(-0.831282031680317526052910180429)
+		= acos(-(44 + 3 * sqrt(5)) / 61)
+		= 146.230659755529322586204815283 degrees
+
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="7 44 60">
+<INPUT type=hidden class=Constants value="0.597024149901241076355890645470,
+0.870268092443196157063010886223,
+0.966005366644720239190197921216,
+1.40812335289762690055892379644,
+1.56302951654596131554608856669,
+2.427050983124842272306880251548,
+3.927050983124842272306880251548">
+<!--
+	C0 = 3 * (9 * sqrt(5) - 5) / 76
+	C1 = 3 * (15 - sqrt(5)) / 44
+	C2 = 3 * (10 + sqrt(5)) / 38
+	C3 = 3 * (5 + 7 * sqrt(5)) / 44
+	C4 = 3 * (15 + 11 * sqrt(5)) / 76
+	C5 = 3 * (1 + sqrt(5)) / 4
+	C6 = 3 * (3 + sqrt(5)) / 4
+-->
+<INPUT type=hidden class=Vertices value="C5 0.0 C6,C5 0.0 -C6,-C5 0.0 C6,
+-C5 0.0 -C6,C6 C5 0.0,C6 -C5 0.0,-C6 C5 0.0,-C6 -C5 0.0,0.0 C6 C5,0.0 C6 -C5,
+0.0 -C6 C5,0.0 -C6 -C5,0.0 C0 C4,0.0 C0 -C4,0.0 -C0 C4,0.0 -C0 -C4,C4 0.0 C0,
+C4 0.0 -C0,-C4 0.0 C0,-C4 0.0 -C0,C0 C4 0.0,C0 -C4 0.0,-C0 C4 0.0,-C0 -C4 0.0,
+C1 0.0 C3,C1 0.0 -C3,-C1 0.0 C3,-C1 0.0 -C3,C3 C1 0.0,C3 -C1 0.0,-C3 C1 0.0,
+-C3 -C1 0.0,0.0 C3 C1,0.0 C3 -C1,0.0 -C3 C1,0.0 -C3 -C1,C2 C2 C2,C2 C2 -C2,
+C2 -C2 C2,C2 -C2 -C2,-C2 C2 C2,-C2 C2 -C2,-C2 -C2 C2,-C2 -C2 -C2">
+<INPUT type=hidden class=Faces value="24 2 38 4 #,24 4 12 10 #,24 10 16 8 #,
+24 8 14 5 #,24 5 36 2 #,25 4 39 3 #,25 3 37 5 #,25 5 15 9 #,25 9 17 11 #,
+25 11 13 4 #,26 0 40 7 #,26 7 14 8 #,26 8 18 10 #,26 10 12 6 #,26 6 42 0 #,
+27 1 43 6 #,27 6 13 11 #,27 11 19 9 #,27 9 15 7 #,27 7 41 1 #,28 0 17 9 #,
+28 9 36 5 #,28 5 37 8 #,28 8 16 1 #,28 1 20 0 #,29 0 21 1 #,29 1 16 10 #,
+29 10 39 4 #,29 4 38 11 #,29 11 17 0 #,30 2 22 3 #,30 3 18 8 #,30 8 41 7 #,
+30 7 40 9 #,30 9 19 2 #,31 2 19 11 #,31 11 42 6 #,31 6 43 10 #,31 10 18 3 #,
+31 3 23 2 #,32 0 20 6 #,32 6 12 4 #,32 4 22 2 #,32 2 36 9 #,32 9 40 0 #,
+33 1 41 8 #,33 8 37 3 #,33 3 22 4 #,33 4 13 6 #,33 6 20 1 #,34 0 42 11 #,
+34 11 38 2 #,34 2 23 5 #,34 5 14 7 #,34 7 21 0 #,35 1 21 7 #,35 7 15 5 #,
+35 5 23 3 #,35 3 39 10 #,35 10 43 1 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Small Ditrigonal Dodecacronic Hexecontahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>44 &nbsp;(20[3] + 12[5] + 12[10])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>60 &nbsp;(darts)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>120 &nbsp;(60 short + 60 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(44+3*sqrt(5))/61) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;146.230659756 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="SmallDitrigonalDodecicosidodecahedron.html">Small Ditrigonal Dodecicosidodecahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length Small Ditrigonal Dodecicosidodecahedron)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(6*(85+31*sqrt(5)))/22 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.1493745905168598767</TD></TR>
+<TR><TD><NOBR>Long Edge (60): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(3*(145+62*sqrt(5)))/19 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.6058429091724452830</TD></TR>
+<TR><TD><NOBR>Dart Length: &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(10*(3517&#8722;585*sqrt(5)))/418 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0666772275746133833</TD></TR>
+<TR><TD><NOBR>Dart Width: &nbsp;</NOBR></TD><TD><NOBR>3*(3+sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;7.8541019662496845446</TD></TR>
+<TR><TD><NOBR>[5]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(5*(25+2*sqrt(5)))/22 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.6553482804837096024</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (20): &nbsp;</NOBR></TD><TD><NOBR>3*(10*sqrt(3)+sqrt(15))/38 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.6731703754128570911</TD></TR>
+<TR><TD><NOBR>[10]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(5+2*sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.6165253057628801039</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(5+sqrt(5)))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.6472782070926638518</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(305*(9+2*sqrt(5)))/122 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.5762662330971825539</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SmallDitrigonalDodecacronicHexecontahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

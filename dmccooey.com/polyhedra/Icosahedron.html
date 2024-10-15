@@ -1,0 +1,120 @@
+<!-- File:   Icosahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Icosahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='Cube.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Platonic.html"><B>Platonic Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='Dodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Icosahedron
+
+	(30) EDGE = 1
+	RADIUS = sqrt(2 * (5 + sqrt(5))) / 4
+	MIDRADIUS = (1 + sqrt(5)) / 4
+	INRADIUS = (3 * sqrt(3) + sqrt(15)) / 12
+	VOLUME = 5 * (3 + sqrt(5)) / 12
+	DIHEDRAL ANGLE = acos(-sqrt(5) / 3)
+		= 138.189685104221401934142083269 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="1 12 20">
+<INPUT type=hidden class=Constants value="0.809016994374947424102293417183">
+<!--
+	C0 = (1 + sqrt(5)) / 4
+-->
+<INPUT type=hidden class=Vertices value="0.5 0.0 C0,0.5 0.0 -C0,-0.5 0.0 C0,
+-0.5 0.0 -C0,C0 0.5 0.0,C0 -0.5 0.0,-C0 0.5 0.0,-C0 -0.5 0.0,0.0 C0 0.5,
+0.0 C0 -0.5,0.0 -C0 0.5,0.0 -C0 -0.5">
+<INPUT type=hidden class=Faces value="0 2 10 #,0 10 5 #,0 5 4 #,0 4 8 #,
+0 8 2 #,3 1 11 #,3 11 7 #,3 7 6 #,3 6 9 #,3 9 1 #,2 6 7 #,2 7 10 #,10 7 11 #,
+10 11 5 #,5 11 1 #,5 1 4 #,4 1 9 #,4 9 8 #,8 9 6 #,8 6 2 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #22)</NOBR></TD>
+<TD width=40% align=center>Icosahedron</TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>12 &nbsp;(12[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>20 &nbsp;(equilateral triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>30</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(5)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;138.189685104 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="Dodecahedron.html">Dodecahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(5+sqrt(5)))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.95105651629515357212</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>(1+sqrt(5))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.80901699437494742410</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>(3*sqrt(3)+sqrt(15))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.75576131407617073048</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>5*(3+sqrt(5))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.181694990624912373504</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='Icosahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

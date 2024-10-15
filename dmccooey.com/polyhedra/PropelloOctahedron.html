@@ -1,0 +1,149 @@
+<!-- File:   PropelloOctahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Propello Octahedron (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='PropelloCube.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Propellor.html"><B>Propellor Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='PropelloDodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Propello Octahedron (canonical)
+
+	(36) SHORT EDGE = 0.650301729422763799018041695238
+		= square-root of a root of the polynomial:
+		(x^5) + 12*(x^4) + 96*(x^3) - 4608*(x^2) + 4352*x - 1024
+	(24) LONG EDGE = 0.712389085940244065811732964223
+		= square-root of a root of the polynomial:
+		(x^5) - 28*(x^4) + 40*(x^3) - 80*(x^2) + 160*x - 64
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 3.96215088426656282973785165464
+		= square-root of a root of the polynomial:
+		59049*(x^5) - 85660416*(x^4) + 173175128064*(x^3)
+		- 69842277236736*(x^2) + 6704546357182464*x - 88704666086408192
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="4 30 32">
+<INPUT type=hidden class=Constants value="0.287043888801606088758465508082,
+0.5991047193446304191312615779153,
+0.815108843028464629670427146294,
+1.07235882053559535092556626067">
+<!--
+	C0 = square-root of a root of the polynomial:
+		(x^5) - 32*(x^4) + 312*(x^3) - 362*(x^2) + 52*x - 2
+	C1 = square-root of a root of the polynomial:
+		(x^5) + 14*(x^4) + 128*(x^3) - 166*(x^2) + 48*x - 2
+	C2 = square-root of a root of the polynomial:
+		(x^5) + 16*(x^4) + 28*(x^3) - 298*(x^2) + 256*x - 50
+	C3 = square-root of a root of the polynomial:
+		(x^5) - 34*(x^4) + 80*(x^3) - 54*(x^2) + 8*x - 2
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C3,0.0 0.0 -C3,C3 0.0 0.0,
+-C3 0.0 0.0,0.0 C3 0.0,0.0 -C3 0.0,C1 -C0 C2,C1 C0 -C2,-C1 C0 C2,-C1 -C0 -C2,
+C2 -C1 C0,C2 C1 -C0,-C2 C1 C0,-C2 -C1 -C0,C0 -C2 C1,C0 C2 -C1,-C0 C2 C1,
+-C0 -C2 -C1,C0 C1 C2,C0 -C1 -C2,-C0 -C1 C2,-C0 C1 -C2,C2 C0 C1,C2 -C0 -C1,
+-C2 -C0 C1,-C2 C0 -C1,C1 C2 C0,C1 -C2 -C0,-C1 -C2 C0,-C1 C2 -C0">
+<INPUT type=hidden class=Faces value="0 6 22 18 #,0 18 16 8 #,0 8 24 20 #,
+0 20 14 6 #,1 7 23 19 #,1 19 17 9 #,1 9 25 21 #,1 21 15 7 #,2 10 27 23 #,
+2 23 7 11 #,2 11 26 22 #,2 22 6 10 #,3 12 29 25 #,3 25 9 13 #,3 13 28 24 #,
+3 24 8 12 #,4 15 21 29 #,4 29 12 16 #,4 16 18 26 #,4 26 11 15 #,5 14 20 28 #,
+5 28 13 17 #,5 17 19 27 #,5 27 10 14 #,14 10 6 #,15 11 7 #,16 12 8 #,17 13 9 #,
+18 22 26 #,19 23 27 #,20 24 28 #,21 25 29 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Propello Octahedron (canonical)
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>canonical form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="biscribed form" onClick="window.location.href='BiscribedPropelloOctahedron.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="rhombic form" onClick="window.location.href='RhombicPropelloOctahedron.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>30 &nbsp;(6[4] + 24[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>32 &nbsp;(8 equilateral triangles + 24 tri-equiangular kites)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>60 &nbsp;(36 short + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="PropelloCube.html">Propello Cube</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (36): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[(x^5)+12*(x^4)+96*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;4608*(x^2)+4352*x&#8722;1024]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.65030172942276379902</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[(x^5)&#8722;28*(x^4) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +40*(x^3)&#8722;80*(x^2)+160*x&#8722;64]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.71238908594024406581</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(root[59049*(x^5)&#8722;85660416*(x^4) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +173175128064*(x^3)&#8722;69842277236736*(x^2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +6704546357182464*x&#8722;88704666086408192]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.9621508842665628297</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='PropelloOctahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://www.georgehart.com/propello/propello.html>Sculpture Based on Propellorized Polyhedra (George Hart)</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,168 @@
+<!-- File:   BiscribedOrthotruncatedPropelloOctahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Biscribed Orthotruncated Propello Octahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='BiscribedLsnubDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="BiscribedChiral.html"><B>Biscribed Chiral Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='BiscribedOrthotruncatedPropelloIcosahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Biscribed Orthotruncated Propello Octahedron with inradius = 1
+
+	(24) EDGE 1 = 0.109596627900824349836109429260
+		= square-root of a root of the polynomial:  9*(x^8) - 936*(x^7)
+		+ 17928*(x^6) - 35088*(x^5) - 2084336*(x^4) - 8330688*(x^3)
+		+ 28655680*(x^2) - 22167552*x + 262144
+	(24) EDGE 2 = 0.678263659568201169293926537106
+		= square-root of a root of the polynomial:  (x^8) - 48*(x^7)
+		+ 240*(x^6) + 3072*(x^5) - 16640*(x^4) - 159744*(x^3) - 307200*(x^2)
+		- 393216*x + 262144
+	(24) EDGE 3 = 0.830699938507445078277416173538
+		= square-root of a root of the polynomial:  (x^8) - 72*(x^7)
+		+ 540*(x^6) + 10368*(x^5) - 84240*(x^4) - 1213056*(x^3) - 3499200*(x^2)
+		- 6718464*x + 6718464
+	(12) EDGE 4 = 0.845974478785402329490154507947
+		= square-root of a root of the polynomial:  81*(x^8) - 9720*(x^7)
+		+ 302040*(x^6) - 3964176*(x^5) + 27546640*(x^4) - 123868608*(x^3)
+		+ 210253120*(x^2) - 148339200*x + 37356544
+	RADIUS = 1.10906302613757003056735110680
+		= square-root of a root of the polynomial:  (x^8) - 32*(x^7)
+		+ 256*(x^6) - 536*(x^5) - 1150*(x^4) + 912*(x^3) + 1528*(x^2) - 2904*x
+		+ 2949
+	INRADIUS = 1
+	VOLUME = 4.61650794678833619316783374954502
+		= root of the polynomial:  81*(x^8) - 32832*(x^7) + 1614816*(x^6)
+		+ 32838144*(x^5) - 1627735808*(x^4) - 68137123840*(x^3)
+		- 714816122880*(x^2) + 75104780288*x + 22247689682944
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="5 48 38">
+<INPUT type=hidden class=Constants value="0.234949180837599727240954529170,
+0.282152472335426478330716865588,
+0.418114432146470167651142777046,
+0.502117182654888432283233487608,
+0.947781152578562382913495988310">
+<!--
+	C0 = root of the polynomial:  49*(x^8) + 532*(x^7) + 2377*(x^6)
+		+ 6304*(x^5) + 12176*(x^4) + 18852*(x^3) + 22588*(x^2) + 12984*x - 4584
+	C1 = root of the polynomial:  9*(x^8) - 36*(x^7) - 18*(x^6)
+		+ 294*(x^5) - 239*(x^4) - 1342*(x^3) + 2125*(x^2) - 2520*x + 573
+	C2 = root of the polynomial:  49*(x^8) + 252*(x^7) + 571*(x^6)
+		+ 826*(x^5) + 1202*(x^4) + 2636*(x^3) + 3648*(x^2) + 896*x - 1256
+	C3 = root of the polynomial:  9*(x^8) - 36*(x^7) + 144*(x^6)
+		- 324*(x^5) + 703*(x^4) - 1206*(x^3) + 1129*(x^2) - 648*x + 157
+	C4 = root of the polynomial:  9*(x^8) + 72*(x^7) + 162*(x^6)
+		- 24*(x^5) - 227*(x^4) + 748*(x^3) + 1461*(x^2) - 470*x - 1475
+-->
+<INPUT type=hidden class=Vertices value="C2 -C0 1.0,C2 C0 -1.0,-C2 C0 1.0,
+-C2 -C0 -1.0,1.0 -C2 C0,1.0 C2 -C0,-1.0 C2 C0,-1.0 -C2 -C0,C0 -1.0 C2,
+C0 1.0 -C2,-C0 1.0 C2,-C0 -1.0 -C2,C0 C2 1.0,C0 -C2 -1.0,-C0 -C2 1.0,
+-C0 C2 -1.0,1.0 C0 C2,1.0 -C0 -C2,-1.0 -C0 C2,-1.0 C0 -C2,C2 1.0 C0,
+C2 -1.0 -C0,-C2 -1.0 C0,-C2 1.0 -C0,C3 -C1 C4,C3 C1 -C4,-C3 C1 C4,-C3 -C1 -C4,
+C4 -C3 C1,C4 C3 -C1,-C4 C3 C1,-C4 -C3 -C1,C1 -C4 C3,C1 C4 -C3,-C1 C4 C3,
+-C1 -C4 -C3,C1 C3 C4,C1 -C3 -C4,-C1 -C3 C4,-C1 C3 -C4,C4 C1 C3,C4 -C1 -C3,
+-C4 -C1 C3,-C4 C1 -C3,C3 C4 C1,C3 -C4 -C1,-C3 -C4 C1,-C3 C4 -C1">
+<INPUT type=hidden class=Faces value="24 28 4 16 40 #,24 40 36 12 0 #,
+24 0 14 38 32 #,25 29 5 17 41 #,25 41 37 13 1 #,25 1 15 39 33 #,
+26 30 6 18 42 #,26 42 38 14 2 #,26 2 12 36 34 #,27 31 7 19 43 #,
+27 43 39 15 3 #,27 3 13 37 35 #,44 40 16 5 29 #,44 29 33 9 20 #,
+44 20 10 34 36 #,45 41 17 4 28 #,45 28 32 8 21 #,45 21 11 35 37 #,
+46 42 18 7 31 #,46 31 35 11 22 #,46 22 8 32 38 #,47 43 19 6 30 #,
+47 30 34 10 23 #,47 23 9 33 39 #,2 14 0 12 #,3 15 1 13 #,4 17 5 16 #,
+7 18 6 19 #,8 22 11 21 #,9 23 10 20 #,32 28 24 #,33 29 25 #,34 30 26 #,
+35 31 27 #,36 40 44 #,37 41 45 #,38 42 46 #,39 43 47 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Biscribed Orthotruncated Propello Octahedron
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="canonical form" onClick="window.location.href='OrthotruncatedPropelloOctahedron.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>biscribed form</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>48 &nbsp;(24[3] + 24[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>38 &nbsp;(8 equilateral triangles + 6 squares + 24 irregular pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>84 &nbsp;(24 short + 24 medium1 + 24 medium2 + 12 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="BiscribedOrthokisPropelloCube.html">Biscribed Orthokis Propello Cube</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on inscribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[8th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.10959662790082434984</TD></TR>
+<TR><TD><NOBR>Medium1 Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[8th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.67826365956820116929</TD></TR>
+<TR><TD><NOBR>Medium2 Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[8th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.83069993850744507828</TD></TR>
+<TR><TD><NOBR>Long Edge (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[8th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.84597447878540232949</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[8th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1090630261375700306</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>root[8th-order polynomial] &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.6165079467883361932</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='BiscribedOrthotruncatedPropelloOctahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

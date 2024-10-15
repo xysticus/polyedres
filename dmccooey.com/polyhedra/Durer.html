@@ -1,0 +1,141 @@
+<!-- File:   Durer.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Durer's Solid</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='StewartsG3.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Other.html"><B>Other Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='Jessen.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Durer's Solid with 3*pi/7 apex angle and 4/7 truncation
+
+	(6) SHORT EDGE = 3 / 7
+	(6) MEDIUM EDGE = 0.712559773552838320600005581719
+		= root of the polynomial: 343*(x^3) + 196*(x^2) - 224*x - 64
+	(6) LONG EDGE = 1
+	VOLUME = 2.14302460913137971292558905670
+		= square-root of a root of the polynomial:  1550515608655304256*(x^3)
+		- 7159114742220680400*(x^2) + 807539696082015625
+	PENTAGON APEX ANGLE = 540/7 degrees
+		= 77.1428571428571428571428571429 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:           6
+	MIRROR ROTATION SYMMETRIES:    6
+	ROTATION AXES:                 4 (1[3] + 3[2])
+	MIRROR PLANES:                 3
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  3-fold Antiprismatic (D3v)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="8 12 8">
+<INPUT type=hidden class=Constants value="0.205698288537214990965172182329,
+0.347016074064856157129977942028,
+0.356279886776419160300002790860,
+0.359972004940126234189051319076,
+0.411396577074429981930344364658,
+0.623489801858733530525004884004,
+0.644458423263304291812816178052,
+0.719944009880252468378102638152">
+<!--
+	C0 = square-root of a root of the polynomial:  3176523*(x^3)
+		- 432180*(x^2) + 14112*x - 64
+	C1 = square-root of a root of the polynomial:  1728*(x^3) - 576*(x^2)
+		+ 36*x + 1
+	C2 = root of the polynomial:  343*(x^3) + 98*(x^2) - 56*x - 8
+	C3 = square-root of a root of the polynomial:  1728*(x^3) - 720*(x^2)
+		+ 72*x - 1
+	C4 = square-root of a root of the polynomial:  3176523*(x^3)
+		- 1728720*(x^2) + 225792*x - 4096
+	C5 = root of the polynomial:  8*(x^3) + 4*(x^2) - 4*x - 1
+	C6 = square-root of a root of the polynomial:  203297472*(x^3)
+		- 233722944*(x^2) + 50381604*x + 4826809
+	C7 = square-root of a root of the polynomial:  27*(x^3) - 45*(x^2)
+		+ 18*x - 1
+-->
+<INPUT type=hidden class=Vertices value="0.0 C7 -C1,0.0 -C7 C1,C5 C3 C1,
+C5 -C3 -C1,-C5 C3 C1,-C5 -C3 -C1,-C2 C0 C6,C2 -C0 -C6,C2 C0 C6,-C2 -C0 -C6,
+0.0 -C4 C6,0.0 C4 -C6">
+<INPUT type=hidden class=Faces value="0 11 9 5 4 #,1 10 6 4 5 #,2 8 10 1 3 #,
+3 7 11 0 2 #,4 6 8 2 0 #,5 9 7 3 1 #,6 10 8 #,7 9 11 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="78 -58 -14 -17">
+</DIV>
+<BR>
+<CENTER>
+D&uuml;rer's Solid
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>12 &nbsp;(6[3] + 6[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>8 &nbsp;(2 equilateral triangles + 6 mirror-symmetric pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>18 &nbsp;(6 short + 6 medium + 6 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>3-fold Antiprismatic &nbsp;(D3v)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(This interpretation uses an apex angle of 540/7 degrees and a truncation of 4/7)</NOBR></TD></TR>
+<TR><TD><NOBR>Pentagon Apex Angle: &nbsp;</NOBR></TD><TD><NOBR>540/7 degrees &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;77.142857143 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on long edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (6): &nbsp;</NOBR></TD><TD><NOBR>3/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.42857142857142857143</TD></TR>
+<TR><TD><NOBR>Medium Edge (6): &nbsp;</NOBR></TD><TD><NOBR>root[343*(x^3)+196*(x^2)&#8722;224*x&#8722;64] &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.71255977355283832060</TD></TR>
+<TR><TD><NOBR>Long Edge (6): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(root[1550515608655304256*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;7159114742220680400*(x^2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +807539696082015625]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.1430246091313797129</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='Durer.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://www.albrecht-durer.org/Melancholy-I.html>Albrecht D&uuml;rer: Melancholy I</A></TD></TR>
+<TR><TD></TD><TD valign=top>[2]</TD><TD><A href=http://www.metmuseum.org/toah/works-of-art/43.106.1>Melencolia I</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

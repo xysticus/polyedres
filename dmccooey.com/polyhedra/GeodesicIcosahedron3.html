@@ -1,0 +1,182 @@
+<!-- File:   GeodesicIcosahedron3.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Geodesic Icosahedron Pattern 3 [2,1] (Pentakis Snub Dodecahedron)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='GeodesicIcosahedron2.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="GeodesicIcosahedra.html"><B>Geodesic Icosahedra</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='GeodesicIcosahedron4.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Geodesic Icosahedron Pattern 3 [2,1] (Pentakis Snub Dodecahedron)
+
+	(60) SHORT EDGE = 2 * sqrt((x^2) * (902519 * phi - 5634334)
+		+ x * (2006015 * phi - 341623) - 16 * (159428 * phi - 727195)) / 2201
+	(150) LONG EDGE = 2 * sqrt(3 - (x^2))
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 20 * (48 * (x^2) * (10 - 151 * phi) + x * (10907 + 1920 * phi)
+		+ (7501 * phi - 1692)) / 6603
+
+	WHERE:	phi = (1 + sqrt(5)) / 2
+			x = cbrt((phi + sqrt(phi-5/27))/2) + cbrt((phi - sqrt(phi-5/27))/2)
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Icosahedral (I)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="16 72 140">
+<INPUT type=hidden class=Constants value="0.0919831947610306166536978645902,
+0.157802827551188752848878549936,
+0.1787372607291718755716205007246,
+0.2707204554902024922253183653148,
+0.306634763068337552375856521956,
+0.347313533259692355979268469051,
+0.404162274015810538852548576480,
+0.5260507939888642315508889697754,
+0.5335632139999518363605442871496,
+0.595837725984189461147451423520,
+0.6748827295060130310778669417953,
+0.693365236931662447624143478044,
+0.785348431692693064277841342634,
+0.832685557057201783926745491732,
+0.863323415398555806964420242008,
+0.943151259243881817126719892570">
+<!--
+	C0 = phi * (3 - (x^2))
+	C1 = x * phi - 1 - phi
+	C2 = (1 + phi - x) / (x^3)
+	C3 = x * phi * (x - phi)
+	C4 = (1 + phi - x) / (x^2)
+	C5 = (phi^2) * (x - 1 - 1 / x)
+	C6 = ((x^2) + x - (1 + phi)) / (x^3)
+	C7 = (x^2) * phi - 1 - 2 * phi
+	C8 = (x * (290+23*phi) + 4 * (290*phi-267) + (4/x) * (21*phi-118)) / 2201
+	C9 = (1 + phi) * ((x^2) - x - 1)
+	C10 = 2 + phi - (x^2)
+	C11 = ((x^2) + x - (1 + phi)) / (x^2)
+	C12 = phi * (phi - x + 1 / x)
+	C13 = x * phi + 1 - (x^2)
+	C14 = (x * (23+313*phi) + 4 * (290+23*phi) - (4/x) * (97*phi-21)) / 2201
+	C15 = phi / x
+	WHERE:	phi = (1 + sqrt(5)) / 2
+			x = cbrt((phi + sqrt(phi-5/27))/2) + cbrt((phi - sqrt(phi-5/27))/2)
+-->
+<INPUT type=hidden class=Vertices value="C2 -C1 1.0,C2 C1 -1.0,-C2 C1 1.0,
+-C2 -C1 -1.0,1.0 -C2 C1,1.0 C2 -C1,-1.0 C2 C1,-1.0 -C2 -C1,C1 -1.0 C2,
+C1 1.0 -C2,-C1 1.0 C2,-C1 -1.0 -C2,C3 C4 C15,C3 -C4 -C15,-C3 -C4 C15,
+-C3 C4 -C15,C15 C3 C4,C15 -C3 -C4,-C15 -C3 C4,-C15 C3 -C4,C4 C15 C3,
+C4 -C15 -C3,-C4 -C15 C3,-C4 C15 -C3,C8 0.0 C14,C8 0.0 -C14,-C8 0.0 C14,
+-C8 0.0 -C14,C14 C8 0.0,C14 -C8 0.0,-C14 C8 0.0,-C14 -C8 0.0,0.0 C14 C8,
+0.0 C14 -C8,0.0 -C14 C8,0.0 -C14 -C8,C0 -C9 C13,C0 C9 -C13,-C0 C9 C13,
+-C0 -C9 -C13,C13 -C0 C9,C13 C0 -C9,-C13 C0 C9,-C13 -C0 -C9,C9 -C13 C0,
+C9 C13 -C0,-C9 C13 C0,-C9 -C13 -C0,C7 -C6 C12,C7 C6 -C12,-C7 C6 C12,
+-C7 -C6 -C12,C12 -C7 C6,C12 C7 -C6,-C12 C7 C6,-C12 -C7 -C6,C6 -C12 C7,
+C6 C12 -C7,-C6 C12 C7,-C6 -C12 -C7,C10 C5 C11,C10 -C5 -C11,-C10 -C5 C11,
+-C10 C5 -C11,C11 C10 C5,C11 -C10 -C5,-C11 -C10 C5,-C11 C10 -C5,C5 C11 C10,
+C5 -C11 -C10,-C5 -C11 C10,-C5 C11 -C10">
+<INPUT type=hidden class=Faces value="24 0 48 #,24 48 40 #,24 40 60 #,
+24 60 12 #,24 12 0 #,25 1 49 #,25 49 41 #,25 41 61 #,25 61 13 #,25 13 1 #,
+26 2 50 #,26 50 42 #,26 42 62 #,26 62 14 #,26 14 2 #,27 3 51 #,27 51 43 #,
+27 43 63 #,27 63 15 #,27 15 3 #,28 5 53 #,28 53 45 #,28 45 64 #,28 64 16 #,
+28 16 5 #,29 4 52 #,29 52 44 #,29 44 65 #,29 65 17 #,29 17 4 #,30 6 54 #,
+30 54 46 #,30 46 67 #,30 67 19 #,30 19 6 #,31 7 55 #,31 55 47 #,31 47 66 #,
+31 66 18 #,31 18 7 #,32 10 58 #,32 58 38 #,32 38 68 #,32 68 20 #,32 20 10 #,
+33 9 57 #,33 57 37 #,33 37 71 #,33 71 23 #,33 23 9 #,34 8 56 #,34 56 36 #,
+34 36 70 #,34 70 22 #,34 22 8 #,35 11 59 #,35 59 39 #,35 39 69 #,35 69 21 #,
+35 21 11 #,0 2 14 #,1 3 15 #,2 0 12 #,3 1 13 #,4 5 16 #,5 4 17 #,6 7 18 #,
+7 6 19 #,8 11 21 #,9 10 20 #,10 9 23 #,11 8 22 #,12 68 38 #,13 69 39 #,
+14 70 36 #,15 71 37 #,16 60 40 #,17 61 41 #,18 62 42 #,19 63 43 #,20 64 45 #,
+21 65 44 #,22 66 47 #,23 67 46 #,36 48 0 #,37 49 1 #,38 50 2 #,39 51 3 #,
+40 52 4 #,41 53 5 #,42 54 6 #,43 55 7 #,44 56 8 #,45 57 9 #,46 58 10 #,
+47 59 11 #,48 36 56 #,49 37 57 #,50 38 58 #,51 39 59 #,52 40 48 #,53 41 49 #,
+54 42 50 #,55 43 51 #,56 44 52 #,57 45 53 #,58 46 54 #,59 47 55 #,60 68 12 #,
+61 69 13 #,62 70 14 #,63 71 15 #,64 60 16 #,65 61 17 #,66 62 18 #,67 63 19 #,
+68 64 20 #,69 65 21 #,70 66 22 #,71 67 23 #,0 14 36 #,1 15 37 #,2 12 38 #,
+3 13 39 #,4 16 40 #,5 17 41 #,6 18 42 #,7 19 43 #,8 21 44 #,9 20 45 #,
+10 23 46 #,11 22 47 #,56 52 48 #,57 53 49 #,58 54 50 #,59 55 51 #,60 64 68 #,
+61 65 69 #,62 66 70 #,63 67 71 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Geodesic Icosahedron <NOBR>Pattern 3 [2,1]</NOBR>
+<BR><NOBR>(Pentakis Snub Dodecahedron)</NOBR>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>72 &nbsp;(12[5] + 60[6])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>140 &nbsp;(80 equilateral triangles + 60 isosceles triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>210 &nbsp;(60 short + 150 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Icosahedral &nbsp;(I)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="DualGeodesicIcosahedron3.html">Dual Geodesic Icosahedron Pattern 3 [2,1]</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt((x^2)*(902519*phi&#8722;5634334) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +x*(2006015*phi&#8722;341623) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;16*(159428*phi&#8722;727195))/2201 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.41168395435817470342</TD></TR>
+<TR><TD><NOBR>Long Edge (150): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(3&#8722;(x^2)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.47685947932747728014</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>20*(48*(x^2)*(10&#8722;151*phi) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +x*(10907+1920*phi) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +(7501*phi&#8722;1692))/6603 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.1889585424732162521</TD></TR>
+<TR><TD></TD><TD colspan=2>
+<TABLE style="font-size:100%">
+<TR><TD>where: &nbsp;</TD><TD>phi = (1+sqrt(5))/2</TD></TR>
+<TR><TD></TD><TD>x = cbrt((phi+sqrt(phi&#8722;5/27))/2)+cbrt((phi&#8722;sqrt(phi&#8722;5/27))/2)</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='GeodesicIcosahedron3.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

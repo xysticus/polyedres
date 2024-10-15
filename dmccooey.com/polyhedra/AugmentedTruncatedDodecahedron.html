@@ -1,0 +1,148 @@
+<!-- File:   AugmentedTruncatedDodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2019 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Augmented Truncated Dodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='BiaugmentedTruncatedCube.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="JohnsonPage4.html"><B>Johnson Solids (Page 4)</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='ParabiaugmentedTruncatedDodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Augmented Truncated Dodecahedron
+
+	(105) EDGE = 1
+	VOLUME = 87.3637098777040746856191001251 = (505 + 243 * sqrt(5)) / 12
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:           5
+	MIRROR ROTATION SYMMETRIES:    5
+	ROTATION AXES:                 1 (1[5])
+	MIRROR PLANES:                 5
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  5-fold Pyramidal (C5v)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="12 65 42">
+<INPUT type=hidden class=Constants value="0.809016994374947424102293417183,
+0.861803398874989484820458683437,
+1.30901699437494742410229341718,
+1.36180339887498948482045868344,
+1.61803398874989484820458683437,
+2.11803398874989484820458683437,
+2.17082039324993690892275210062,
+2.20344418537486330266596288468,
+2.61803398874989484820458683437,
+2.70344418537486330266596288468,
+2.927050983124842272306880251548,
+3.01246117974981072676825630186">
+<!--
+	C0 = (1 + sqrt(5)) / 4
+	C1 = (15 + sqrt(5)) / 20
+	C2 = (3 + sqrt(5)) / 4
+	C3 = (25 + sqrt(5)) / 20
+	C4 = (1 + sqrt(5)) / 2
+	C5 = (2 + sqrt(5)) / 2
+	C6 = 3 * (5 + sqrt(5)) / 10
+	C7 = (15 + 13 * sqrt(5)) / 20
+	C8 = (3 + sqrt(5)) / 2
+	C9 = (25 + 13 * sqrt(5)) / 20
+	C10 = (5 + 3 * sqrt(5)) / 4
+	C11 = (10 + 9 * sqrt(5)) / 10
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.5 C10,0.0 0.5 -C10,0.0 -0.5 C10,
+0.0 -0.5 -C10,C10 0.0 0.5,C10 0.0 -0.5,-C10 0.0 0.5,-C10 0.0 -0.5,0.5 C10 0.0,
+0.5 -C10 0.0,-0.5 C10 0.0,-0.5 -C10 0.0,0.5 C2 C8,0.5 C2 -C8,0.5 -C2 C8,
+0.5 -C2 -C8,-0.5 C2 C8,-0.5 C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,C8 0.5 C2,
+C8 0.5 -C2,C8 -0.5 C2,C8 -0.5 -C2,-C8 0.5 C2,-C8 0.5 -C2,-C8 -0.5 C2,
+-C8 -0.5 -C2,C2 C8 0.5,C2 C8 -0.5,C2 -C8 0.5,C2 -C8 -0.5,-C2 C8 0.5,
+-C2 C8 -0.5,-C2 -C8 0.5,-C2 -C8 -0.5,C2 C4 C5,C2 C4 -C5,C2 -C4 C5,C2 -C4 -C5,
+-C2 C4 C5,-C2 C4 -C5,-C2 -C4 C5,-C2 -C4 -C5,C5 C2 C4,C5 C2 -C4,C5 -C2 C4,
+C5 -C2 -C4,-C5 C2 C4,-C5 C2 -C4,-C5 -C2 C4,-C5 -C2 -C4,C4 C5 C2,C4 C5 -C2,
+C4 -C5 C2,C4 -C5 -C2,-C4 C5 C2,-C4 C5 -C2,-C4 -C5 C2,-C4 -C5 -C2,C0 C9 C3,
+-C0 C9 C3,0.5 C7 C6,-0.5 C7 C6,0.0 C11 C1">
+<INPUT type=hidden class=Faces value="0 2 14 38 46 22 20 44 36 12 #,
+1 3 19 43 51 27 25 49 41 17 #,2 0 16 40 48 24 26 50 42 18 #,
+3 1 13 37 45 21 23 47 39 15 #,4 5 21 45 53 29 28 52 44 20 #,
+5 4 22 46 54 30 31 55 47 23 #,6 7 27 51 59 35 34 58 50 26 #,
+7 6 24 48 56 32 33 57 49 25 #,9 11 35 59 43 19 15 39 55 31 #,
+10 8 29 53 37 13 17 41 57 33 #,11 9 30 54 38 14 18 42 58 34 #,60 64 61 63 62 #,
+60 62 36 52 #,61 64 10 32 #,62 63 16 12 #,63 61 56 40 #,64 60 28 8 #,0 12 16 #,
+1 17 13 #,2 18 14 #,3 15 19 #,4 20 22 #,5 23 21 #,6 26 24 #,7 25 27 #,
+8 28 29 #,9 31 30 #,10 33 32 #,11 34 35 #,36 44 52 #,37 53 45 #,38 54 46 #,
+39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #,60 52 28 #,61 32 56 #,
+62 12 36 #,63 40 16 #,64 8 10 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=10% align=left style="font-size:60%"><NOBR>(J68)</NOBR></TD>
+<TD width=80% align=center>Augmented Truncated Dodecahedron</TD>
+<TD width=10% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>65 &nbsp;({10 * 3 + 5 * 4}[3] + {10 + 5}[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>42 &nbsp;({5 * 5} equilateral triangles + 5 squares</NOBR><BR><NOBR> &nbsp; &nbsp; + 1 regular pentagon + {5 * 2 + 1} regular decagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>105</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>5-fold Pyramidal &nbsp;(C5v)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>(505+243*sqrt(5))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;87.363709877704074686</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='AugmentedTruncatedDodecahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

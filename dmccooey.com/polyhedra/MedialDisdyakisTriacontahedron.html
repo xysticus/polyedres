@@ -1,0 +1,160 @@
+<!-- File:   MedialDisdyakisTriacontahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Medial Disdyakis Triacontahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='TridyakisIcosahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="SelfIntersectingTruncatedQuasiRegularDual.html"><B>Self-Intersecting Truncated Quasi-Regular Duals</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='GreatDisdyakisTriacontahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Medial Disdyakis Triacontahedron
+
+	(60) SHORT EDGE = 5 * (3 * sqrt(2) - sqrt(10)) / 6
+	(60) MEDIUM EDGE = 5 * (3 * sqrt(2) + sqrt(10)) / 6
+	(60) LONG EDGE = 2 * sqrt(10)
+	(12) INNER VERTEX RADIUS = sqrt(5 * (5 - 2 * sqrt(5)))
+	(30) MIDDLE VERTEX RADIUS = 5 / 3
+	(12) OUTER VERTEX RADIUS = sqrt(5 * (5 + 2 * sqrt(5)))
+	EDGE-SCRIBED RADIUS = sqrt(10) / 2
+	INRADIUS = 5 * sqrt(11) / 11
+	DIHEDRAL ANGLE 1 = acos(-0.818181818181818181818181818182)
+		= acos(-9/11)
+		= 144.903198772415403871295925667 degrees
+	DIHEDRAL ANGLE 2 = acos(0.818181818181818181818181818182)
+		= acos(9/11)
+		= 215.096801227584596128704074333 degrees
+
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="8 54 120">
+<INPUT type=hidden class=Constants value="0.5150283239582457068371556953047,
+0.833333333333333333333333333333,
+0.854101966249684544613760503097,
+1.34836165729157904017048902864,
+1.38196601125010515179541316563,
+1.66666666666666666666666666667,
+3.61803398874989484820458683437,
+5.85410196624968454461376050310">
+<!--
+	C0 = 5 * (sqrt(5) - 1) / 12
+	C1 = 5 / 6
+	C2 = (3 * sqrt(5) - 5) / 2
+	C3 = 5 * (1 + sqrt(5)) / 12
+	C4 = (5 - sqrt(5)) / 2
+	C5 = 5 / 3
+	C6 = (5 + sqrt(5)) / 2
+	C7 = (5 + 3 * sqrt(5)) / 2
+-->
+<INPUT type=hidden class=Vertices value="C6 0.0 C7,C6 0.0 -C7,-C6 0.0 C7,
+-C6 0.0 -C7,C7 C6 0.0,C7 -C6 0.0,-C7 C6 0.0,-C7 -C6 0.0,0.0 C7 C6,0.0 C7 -C6,
+0.0 -C7 C6,0.0 -C7 -C6,0.0 0.0 C5,0.0 0.0 -C5,C5 0.0 0.0,-C5 0.0 0.0,
+0.0 C5 0.0,0.0 -C5 0.0,C2 0.0 C4,C2 0.0 -C4,-C2 0.0 C4,-C2 0.0 -C4,C4 C2 0.0,
+C4 -C2 0.0,-C4 C2 0.0,-C4 -C2 0.0,0.0 C4 C2,0.0 C4 -C2,0.0 -C4 C2,0.0 -C4 -C2,
+C0 C1 C3,C0 C1 -C3,C0 -C1 C3,C0 -C1 -C3,-C0 C1 C3,-C0 C1 -C3,-C0 -C1 C3,
+-C0 -C1 -C3,C3 C0 C1,C3 C0 -C1,C3 -C0 C1,C3 -C0 -C1,-C3 C0 C1,-C3 C0 -C1,
+-C3 -C0 C1,-C3 -C0 -C1,C1 C3 C0,C1 C3 -C0,C1 -C3 C0,C1 -C3 -C0,-C1 C3 C0,
+-C1 C3 -C0,-C1 -C3 C0,-C1 -C3 -C0">
+<INPUT type=hidden class=Faces value="0 14 22 #,0 22 46 #,0 46 26 #,0 26 34 #,
+0 34 20 #,0 20 36 #,0 36 28 #,0 28 48 #,0 48 23 #,0 23 14 #,1 14 23 #,
+1 23 49 #,1 49 29 #,1 29 37 #,1 37 21 #,1 21 35 #,1 35 27 #,1 27 47 #,
+1 47 22 #,1 22 14 #,2 15 25 #,2 25 52 #,2 52 28 #,2 28 32 #,2 32 18 #,
+2 18 30 #,2 30 26 #,2 26 50 #,2 50 24 #,2 24 15 #,3 15 24 #,3 24 51 #,
+3 51 27 #,3 27 31 #,3 31 19 #,3 19 33 #,3 33 29 #,3 29 53 #,3 53 25 #,
+3 25 15 #,4 16 26 #,4 26 30 #,4 30 18 #,4 18 40 #,4 40 23 #,4 23 41 #,
+4 41 19 #,4 19 31 #,4 31 27 #,4 27 16 #,5 17 29 #,5 29 33 #,5 33 19 #,
+5 19 39 #,5 39 22 #,5 22 38 #,5 38 18 #,5 18 32 #,5 32 28 #,5 28 17 #,
+6 16 27 #,6 27 35 #,6 35 21 #,6 21 45 #,6 45 25 #,6 25 44 #,6 44 20 #,
+6 20 34 #,6 34 26 #,6 26 16 #,7 17 28 #,7 28 36 #,7 36 20 #,7 20 42 #,
+7 42 24 #,7 24 43 #,7 43 21 #,7 21 37 #,7 37 29 #,7 29 17 #,8 12 18 #,
+8 18 38 #,8 38 22 #,8 22 47 #,8 47 27 #,8 27 51 #,8 51 24 #,8 24 42 #,
+8 42 20 #,8 20 12 #,9 13 21 #,9 21 43 #,9 43 24 #,9 24 50 #,9 50 26 #,
+9 26 46 #,9 46 22 #,9 22 39 #,9 39 19 #,9 19 13 #,10 12 20 #,10 20 44 #,
+10 44 25 #,10 25 53 #,10 53 29 #,10 29 49 #,10 49 23 #,10 23 40 #,10 40 18 #,
+10 18 12 #,11 13 19 #,11 19 41 #,11 41 23 #,11 23 48 #,11 48 28 #,11 28 52 #,
+11 52 25 #,11 25 45 #,11 45 21 #,11 21 13 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Medial Disdyakis Triacontahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>54 &nbsp;(30[4] + 12[10] + 12[10])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>120 &nbsp;(obtuse triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>180 &nbsp;(60 short + 60 medium + 60 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 1 (120): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;9/11) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;144.903198772 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 2 (60): &nbsp;</NOBR></TD><TD><NOBR>acos(9/11) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;215.096801228 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="TruncatedDodecadodecahedron.html">Truncated Dodecadodecahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length Truncated Dodecadodecahedron)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD><NOBR>5*(3*sqrt(2)&#8722;sqrt(10))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.90030252245908817867</TD></TR>
+<TR><TD><NOBR>Medium Edge (60): &nbsp;</NOBR></TD><TD><NOBR>5*(3*sqrt(2)+sqrt(10))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;6.1707652894063870653</TD></TR>
+<TR><TD><NOBR>Long Edge (60): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(10) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;6.3245553203367586640</TD></TR>
+<TR><TD><NOBR>[10]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(5*(5&#8722;2*sqrt(5))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.6245984811645316308</TD></TR>
+<TR><TD><NOBR>[4]-Vertex Radius (30): &nbsp;</NOBR></TD><TD><NOBR>5/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.6666666666666666667</TD></TR>
+<TR><TD><NOBR>[10]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(5*(5+2*sqrt(5))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;6.8819096023558676910</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(10)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.5811388300841896660</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>5*sqrt(11)/11 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.5075567228888181132</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='MedialDisdyakisTriacontahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

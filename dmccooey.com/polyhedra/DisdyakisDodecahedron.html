@@ -1,0 +1,147 @@
+<!-- File:   DisdyakisDodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Disdyakis Dodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RhombicTriacontahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Catalan.html"><B>Catalan Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='PentakisDodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Disdyakis Dodecahedron
+
+	(24) SHORT EDGE = 2 * sqrt(3 * (10 - sqrt(2))) / 7
+	(24) MIDDLE EDGE = 3 * sqrt(6 * (2 + sqrt(2))) / 7
+	(24) LONG EDGE = 2 * sqrt(6 * (10 + sqrt(2))) / 7
+	(12) INNER VERTEX RADIUS = 3 * (4 + sqrt(2)) / 7
+	(8) MIDDLE VERTEX RADIUS = sqrt(6)
+	(6) OUTER VERTEX RADIUS = 3 * (2 + 3 * sqrt(2)) / 7
+	EDGE-SCRIBED RADIUS = sqrt(6 * (2 + sqrt(2))) / 2
+	INRADIUS = sqrt(1746 * (15 + 8 * sqrt(2))) / 97
+	VOLUME = 144 * (1 + sqrt(2)) / 7
+	DIHEDRAL ANGLE = acos(-(71 + 12 * sqrt(2)) / 97)
+		= 155.082179616618412198942993482 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:   24
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 9
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Octahedral (Oh)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="3 26 48">
+<INPUT type=hidden class=Constants value="1.41421356237309504880168872421,
+1.64075448203408147040144747789,
+2.67541743733683649131645693113">
+<!--
+	C0 = sqrt(2)
+	C1 = 3 * (1 + 2 * sqrt(2)) / 7
+	C2 = 3 * (2 + 3 * sqrt(2)) / 7
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C2,0.0 0.0 -C2,C2 0.0 0.0,
+-C2 0.0 0.0,0.0 C2 0.0,0.0 -C2 0.0,C1 0.0 C1,C1 0.0 -C1,-C1 0.0 C1,-C1 0.0 -C1,
+C1 C1 0.0,C1 -C1 0.0,-C1 C1 0.0,-C1 -C1 0.0,0.0 C1 C1,0.0 C1 -C1,0.0 -C1 C1,
+0.0 -C1 -C1,C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0,-C0 C0 C0,-C0 C0 -C0,
+-C0 -C0 C0,-C0 -C0 -C0">
+<INPUT type=hidden class=Faces value="0 6 18 #,0 18 14 #,0 14 22 #,0 22 8 #,
+0 8 24 #,0 24 16 #,0 16 20 #,0 20 6 #,1 7 21 #,1 21 17 #,1 17 25 #,1 25 9 #,
+1 9 23 #,1 23 15 #,1 15 19 #,1 19 7 #,2 6 20 #,2 20 11 #,2 11 21 #,2 21 7 #,
+2 7 19 #,2 19 10 #,2 10 18 #,2 18 6 #,3 8 22 #,3 22 12 #,3 12 23 #,3 23 9 #,
+3 9 25 #,3 25 13 #,3 13 24 #,3 24 8 #,4 10 19 #,4 19 15 #,4 15 23 #,4 23 12 #,
+4 12 22 #,4 22 14 #,4 14 18 #,4 18 10 #,5 11 20 #,5 20 16 #,5 16 24 #,
+5 24 13 #,5 13 25 #,5 25 17 #,5 17 21 #,5 21 11 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Disdyakis Dodecahedron
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>canonical form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="biscribed form" onClick="window.location.href='BiscribedDisdyakisDodecahedron.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>26 &nbsp;(12[4] + 8[6] + 6[8])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>48 &nbsp;(acute triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>72 &nbsp;(24 short + 24 medium + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Octahedral &nbsp;(Oh)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(71+12*sqrt(2))/97) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;155.082179617 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="TruncatedCuboctahedron.html">Truncated Cuboctahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length Truncated Cuboctahedron)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(3*(10&#8722;sqrt(2)))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4500488186822163018</TD></TR>
+<TR><TD><NOBR>Medium Edge (24): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(6*(2+sqrt(2)))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.9397429472460411059</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(6*(10+sqrt(2)))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.3644524131865197592</TD></TR>
+<TR><TD><NOBR>[4]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>3*(4+sqrt(2))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.3203772410170407352</TD></TR>
+<TR><TD><NOBR>[6]-Vertex Radius (8): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.4494897427831780982</TD></TR>
+<TR><TD><NOBR>[8]-Vertex Radius (6): &nbsp;</NOBR></TD><TD><NOBR>3*(2+3*sqrt(2))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.6754174373368364913</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(2+sqrt(2)))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.2630334384537146236</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(1746*(15+8*sqrt(2)))/97 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.2097412102566332828</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>144*(1+sqrt(2))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;49.663821854532241004</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='DisdyakisDodecahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Eug&egrave;ne Catalan, M&eacute;moire sur la Th&eacute;orie des Poly&egrave;dres,<BR><I>Journal de l'&Eacute;cole polytechnique</I> <B>41</B> (1865), 1-71, +7 plates.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,158 @@
+<!-- File:   SimplestO_1.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Simplest Canonical Polyhedron with O Symmetry (1 of 4) (Snub Cube)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='SimplestTh_1.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Simplest.html"><B>Simplest Canonical Polyhedra of Each Symmetry Type</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SimplestOh_1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Simplest Canonical Polyhedron with O Symmetry (1 of 4) (Snub Cube)
+
+	(60) EDGE = 2*sqrt(3 * (5 - cbrt(19+3*sqrt(33)) - cbrt(19-3*sqrt(33)))) / 3
+	RADIUS = sqrt(3 * (8 - cbrt(19 + 3*sqrt(33)) - cbrt(19 - 3*sqrt(33)))) / 3
+	MIDRADIUS = 1
+	SQUARE CENTER RADIUS
+		= sqrt(3 * (cbrt(19 + 3 * sqrt(33)) + cbrt(19 - 3 * sqrt(33))-2)) / 3
+	TRIANGLE CENTER RADIUS
+		= sqrt(4 + cbrt(19 + 3 * sqrt(33)) + cbrt(19 - 3 * sqrt(33))) / 3
+	VOLUME = 4.06645272523048840298624742202
+		= 8 * sqrt(3 * (cbrt(1124803 + 344589 * sqrt(33))
+			- cbrt(344589 * sqrt(33) - 1124803) - 44)) / 9
+	SQUARE-TRIANGLE ANGLE
+		= acos(-sqrt(11-2*cbrt(17+3*sqrt(33))-2*cbrt(17-3*sqrt(33)))/3)
+		= 142.983430073504618041686305394 degrees
+	TRIANGLE-TRIANGLE ANGLE
+		= acos(-sqrt(3*(11+4*cbrt(17+3*sqrt(33))+4*cbrt(17-3*sqrt(33))))/9)
+		= 153.234587713420031017696478491 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="3 24 38">
+<INPUT type=hidden class=Constants value="0.270804762516625885699035798286,
+0.498087612945746313497376531276,
+0.916125949427348735304312192934">
+<!--
+	C0 = sqrt(3 * (10 - cbrt(233 + 39*sqrt(33)) - cbrt(233 - 39*sqrt(33)))) / 3
+	C1 = sqrt(3 * (cbrt(3 * (9+7*sqrt(33))) - cbrt(3 * (7*sqrt(33)-9)))) / 3
+	C2 = sqrt(3 * (cbrt(19 + 3 * sqrt(33)) + cbrt(19 - 3 * sqrt(33)) - 2)) / 3
+-->
+<INPUT type=hidden class=Vertices value="C1 C0 C2,C1 -C0 -C2,-C1 -C0 C2,
+-C1 C0 -C2,C2 C1 C0,C2 -C1 -C0,-C2 -C1 C0,-C2 C1 -C0,C0 C2 C1,C0 -C2 -C1,
+-C0 -C2 C1,-C0 C2 -C1,C0 -C1 C2,C0 C1 -C2,-C0 C1 C2,-C0 -C1 -C2,C2 -C0 C1,
+C2 C0 -C1,-C2 C0 C1,-C2 -C0 -C1,C1 -C2 C0,C1 C2 -C0,-C1 C2 C0,-C1 -C2 -C0">
+<INPUT type=hidden class=Faces value="2 12 0 14 #,3 13 1 15 #,4 16 5 17 #,
+7 19 6 18 #,8 21 11 22 #,9 20 10 23 #,0 8 14 #,1 9 15 #,2 10 12 #,3 11 13 #,
+4 0 16 #,5 1 17 #,6 2 18 #,7 3 19 #,8 4 21 #,9 5 20 #,10 6 23 #,11 7 22 #,
+12 16 0 #,13 17 1 #,14 18 2 #,15 19 3 #,16 20 5 #,17 21 4 #,18 22 7 #,
+19 23 6 #,20 12 10 #,21 13 11 #,22 14 8 #,23 15 9 #,8 0 4 #,9 1 5 #,10 2 6 #,
+11 3 7 #,12 20 16 #,13 21 17 #,14 22 18 #,15 23 19 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Simplest Canonical Polyhedron with O Symmetry
+<BR>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #12)</NOBR></TD>
+<TD width=40% align=center><NOBR>(Snub Cube)</NOBR></TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>(1 of 4)</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="(2 of 4)" onClick="window.location.href='SimplestO_2.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="(3 of 4)" onClick="window.location.href='SimplestO_3.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="(4 of 4)" onClick="window.location.href='SimplestO_4.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>24 &nbsp;(24[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>38 &nbsp;(32 equilateral triangles + 6 squares)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>60</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD><NOBR>Square-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(11&#8722;2*cbrt(17+3*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;2*cbrt(17&#8722;3*sqrt(33)))/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;142.983430074 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Triangle-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(3*(11+4*cbrt(17+3*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +4*cbrt(17&#8722;3*sqrt(33))))/9) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;153.234587713 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="SimplestO_2.html">Pentagonal Icositetrahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on midscribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge Length: &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(3*(5&#8722;cbrt(19+3*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;cbrt(19&#8722;3*sqrt(33))))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.801781129201327280647</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(8&#8722;cbrt(19+3*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;cbrt(19&#8722;3*sqrt(33))))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0773640261238718692</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Square Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(cbrt(19+3*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(19&#8722;3*sqrt(33))&#8722;2))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.91612594942734873530</TD></TR>
+<TR><TD><NOBR>Triangle Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(4+cbrt(19+3*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(19&#8722;3*sqrt(33)))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.97284578346453266494</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>8*sqrt(3*(cbrt(1124803+344589*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;cbrt(344589*sqrt(33)&#8722;1124803)&#8722;44))/9 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.0664527252304884030</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SimplestO_1.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

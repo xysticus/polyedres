@@ -1,0 +1,159 @@
+<!-- File:   SimplestS6_1.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Simplest Canonical Polyhedron with S6 Symmetry (1 of 2)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='SimplestS4_1.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Simplest.html"><B>Simplest Canonical Polyhedra of Each Symmetry Type</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SimplestD2.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Simplest Canonical Polyhedron with S6 Symmetry (1 of 2)
+
+	(12) EDGE 1 = 0.793701146547355757873040497364
+		= square-root of a root of the polynomial:
+			3*(x^4) + 128*(x^3) + 1376*(x^2) - 512*x - 256
+	(6) EDGE 2 = 1.202742657274359659574415726554
+		= square-root of a root of the polynomial:
+			3*(x^4) + 8*(x^3) + 16*(x^2) + 128*x - 256
+	(6) EDGE 3 = 1.41354612936918910782803478102
+		= square-root of a root of the polynomial:
+			(x^4) + 64*(x^3) + 896*(x^2) + 4096*x - 12288
+	(6) EDGE 4 = 1.82258764009619300952941001021
+		= square-root of a root of the polynomial:
+			3*(x^4) + 200*(x^3) - 944*(x^2) + 896*x - 256
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 4.04165135745673492595433236987
+		= square-root of a root of the polynomial:
+			3*(x^4) + 416*(x^3) + 139520*(x^2) + 12525568*x - 243859456
+
+	ROTATION SYMMETRIES:           3
+	MIRROR ROTATION SYMMETRIES:    3
+	ROTATION AXES:                 1 (1[3])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  3-fold Rotoreflection (S6)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="11 14 18">
+<INPUT type=hidden class=Constants value="0.141278125175494146352842765224,
+0.168268064627586454868507740488,
+0.3198187355323895332378477211052,
+0.484744171635910150510848811436,
+0.564519626334421103536532029529,
+0.577350269189625764509148780502,
+0.695220424330026628724846126999,
+0.836498549505520775077688892223,
+0.884338361866810636774379750634,
+1.15470053837925152901829756100,
+1.57840719694683269184883551007">
+<!--
+	C0 = square-root of a root of the polynomial:
+		27*(x^4) + 1674*(x^3) + 25377*(x^2) - 18694*x + 363
+	C1 = square-root of a root of the polynomial:
+		27*(x^4) + 54*(x^3) + 45*(x^2) + 34*x - 1
+	C2 = root of the polynomial:  (x^4) - 4*(x^3) + 18*(x^2) + 4*x - 3
+	C3 = square-root of a root of the polynomial:
+		27*(x^4) - 162*(x^3) + 3309*(x^2) - 254*x - 121
+	C4 = root of the polynomial:  (x^4) - 6*(x^3) + 47*(x^2) - 62*x + 21
+	C5 = sqrt(3) / 3
+	C6 = square-root of a root of the polynomial:
+		27*(x^4) - 702*(x^3) + 6225*(x^2) - 2854*x + 3
+	C7 = square-root of a root of the polynomial:
+		27*(x^4) + 324*(x^3) + 33738*(x^2) - 45388*x + 15123
+	C8 = root of the polynomial:  (x^4) - 10*(x^3) + 35*(x^2) - 34*x + 9
+	C9 = 2 * sqrt(3) / 3
+	C10 = square-root of a root of the polynomial:
+		(x^4) + 50*(x^3) - 177*(x^2) + 126*x - 27
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C10,0.0 0.0 -C10,-C7 -C2 C3,
+C7 C2 -C3,C6 -C4 C3,-C6 C4 -C3,C0 C8 C3,-C0 -C8 -C3,C9 0.0 C1,-C9 0.0 -C1,
+-C5 1.0 C1,C5 1.0 -C1,-C5 -1.0 C1,C5 -1.0 -C1">
+<INPUT type=hidden class=Faces value="0 8 11 6 #,0 10 9 2 #,0 12 13 4 #,
+1 3 8 13 #,1 5 10 11 #,1 7 12 9 #,2 9 12 #,2 12 0 #,3 1 11 #,3 11 8 #,4 13 8 #,
+4 8 0 #,5 1 9 #,5 9 10 #,6 11 10 #,6 10 0 #,7 1 13 #,7 13 12 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Simplest Canonical Polyhedron with S6 Symmetry
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>(1 of 2)</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="(2 of 2)" onClick="window.location.href='SimplestS6_2.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>14 &nbsp;(6[3] + 6[5] + 2[6])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>18 &nbsp;(6 isosceles triangles + {3 opposite * 2} obtuse triangles</NOBR><BR><NOBR> &nbsp; &nbsp; + {3 opposite * 2} irregular tetragons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>30 &nbsp;(4 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>3-fold Rotoreflection &nbsp;(S6)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="SimplestS6_2.html">Simplest S6 (2 of 2)</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[3*(x^4)+128*(x^3)+1376*(x^2)&#8722;512*x&#8722;256]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.79370114654735575787</TD></TR>
+<TR><TD><NOBR>Edge 2 (6): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[3*(x^4)+8*(x^3)+16*(x^2)+128*x&#8722;256]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2027426572743596596</TD></TR>
+<TR><TD><NOBR>Edge 3 (6): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[(x^4)+64*(x^3)+896*(x^2)+4096*x&#8722;12288]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4135461293691891078</TD></TR>
+<TR><TD><NOBR>Edge 4 (6): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[3*(x^4)+200*(x^3)&#8722;944*(x^2)+896*x&#8722;256]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.82258764009619300953</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(root[3*(x^4)+416*(x^3)+139520*(x^2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +12525568*x&#8722;243859456]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.0416513574567349260</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SimplestS6_1.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

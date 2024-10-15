@@ -1,0 +1,154 @@
+<!-- File:   SelfDualEnneahedron1.html
+
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Self-Dual Enneahedron #1 (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+<H3>Symmetric Canonical Self-Dual Enneahedra</H3>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR>
+<TD>11 total:</TD>
+<TD style="font-family:Monaco,Lucida Console;font-size:75%">
+<INPUT type=button value="<<" style="background-color:#a04000" onClick="window.location.href='SelfDualEnneahedron6.html'">
+</TD>
+<TD style="font-family:Monaco,Lucida Console;font-size:75%">
+<INPUT type=button value="<" style="background-color:#c08040" onClick="window.location.href='SelfDualEnneahedron11.html'">
+</TD>
+<TD style="font-family:Monaco,Lucida Console;font-size:75%">
+<INPUT type=button value="7" onClick="window.location.href='SelfDualEnneahedron7.html'">
+</TD>
+<TD style="font-family:Monaco,Lucida Console;font-size:75%">
+<INPUT type=button value="8" onClick="window.location.href='SelfDualEnneahedron8.html'">
+</TD>
+<TD style="font-family:Monaco,Lucida Console;font-size:75%">
+<INPUT type=button value="9" onClick="window.location.href='SelfDualEnneahedron9.html'">
+</TD>
+<TD style="font-family:Monaco,Lucida Console;font-size:75%">
+<INPUT type=button value="10" onClick="window.location.href='SelfDualEnneahedron10.html'">
+</TD>
+<TD style="font-family:Monaco,Lucida Console;font-size:75%">
+<INPUT type=button value="11" onClick="window.location.href='SelfDualEnneahedron11.html'">
+</TD>
+<TD align=center style="font-family:Monaco,Lucida Console;font-size:75%">&nbsp;1&nbsp;</TD>
+<TD style="font-family:Monaco,Lucida Console;font-size:75%">
+<INPUT type=button value="2" onClick="window.location.href='SelfDualEnneahedron2.html'">
+</TD>
+<TD style="font-family:Monaco,Lucida Console;font-size:75%">
+<INPUT type=button value="3" onClick="window.location.href='SelfDualEnneahedron3.html'">
+</TD>
+<TD style="font-family:Monaco,Lucida Console;font-size:75%">
+<INPUT type=button value="4" onClick="window.location.href='SelfDualEnneahedron4.html'">
+</TD>
+<TD style="font-family:Monaco,Lucida Console;font-size:75%">
+<INPUT type=button value="5" onClick="window.location.href='SelfDualEnneahedron5.html'">
+</TD>
+<TD style="font-family:Monaco,Lucida Console;font-size:75%">
+<INPUT type=button value="6" onClick="window.location.href='SelfDualEnneahedron6.html'">
+</TD>
+<TD style="font-family:Monaco,Lucida Console;font-size:75%">
+<INPUT type=button value=">" style="background-color:#c08040" onClick="window.location.href='SelfDualEnneahedron2.html'">
+</TD>
+<TD style="font-family:Monaco,Lucida Console;font-size:75%">
+<INPUT type=button value=">>" style="background-color:#a04000" onClick="window.location.href='SelfDualEnneahedron7.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR>
+<TD>This is the only one with C8v symmetry</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR>
+<TD>This is the only one with 2 edge lengths</TD>
+</TR>
+</TABLE><BR>
+</CENTER>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Self-Dual Enneahedron #1 (canonical)
+
+	(8) SHORT EDGE = 0.811872897896679237582393165387
+		= 2 * sqrt(2 * (sqrt(2 * (2 - sqrt(2))) - 1))
+	(8) LONG EDGE = 5.33281602623538554536310939786
+		= 2 * sqrt(2 + sqrt(2) + 2 * sqrt(2 + sqrt(2)))
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 5.54435269278176018535848900243
+		= 32 * (4 + 2 * sqrt(2) - sqrt(2 * (10 + 7 * sqrt(2)))) / 3
+
+	ROTATION SYMMETRIES:           8
+	MIRROR ROTATION SYMMETRIES:    8
+	ROTATION AXES:                 1 (1[8])
+	MIRROR PLANES:                 8
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  8-fold Pyramidal (C8v)
+	TOPOLOGICALLY SELF-DUAL:     YES
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="4 9 9">
+<INPUT type=hidden class=Constants value="0.1989123673796580069115976226447,
+0.750072753367367658725719017071,
+1.06076306057866094173251453912,
+5.02733949212584810451497507106">
+<!--
+	C0 = sqrt(2 * (2 + sqrt(2))) - 1 - sqrt(2)
+	C1 = sqrt(2 * (2 * sqrt(2 + sqrt(2)) - 2 - sqrt(2)))
+	C2 = 2 * sqrt(2 * sqrt(2 + sqrt(2)) - 2 - sqrt(2))
+	C3 = 1 + sqrt(2) + sqrt(2 * (2 + sqrt(2)))
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C3,C2 0.0 -C0,-C2 0.0 -C0,
+0.0 C2 -C0,0.0 -C2 -C0,C1 C1 -C0,C1 -C1 -C0,-C1 C1 -C0,-C1 -C1 -C0">
+<INPUT type=hidden class=Faces value="1 6 4 8 2 7 3 5 #,0 1 5 #,0 5 3 #,
+0 3 7 #,0 7 2 #,0 2 8 #,0 8 4 #,0 4 6 #,0 6 1 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Self-Dual Enneahedron #1 (canonical)
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<INPUT type=button value="coordinates" onClick="window.location.href='SelfDualEnneahedron1.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,173 @@
+<!-- File:   BiscribedDisdyakisTriacontahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Biscribed Disdyakis Triacontahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='BiscribedPentakisDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="BiscribedNonChiral.html"><B>Biscribed Non-Chiral Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='BiscribedTruncatedOctahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Biscribed Disdyakis Triacontahedron with radius = 1
+
+	(60) SHORT EDGE = sqrt(3 * (6 - sqrt(3) - sqrt(15))) / 3
+	(60) MEDIUM EDGE = sqrt(5 * (10 - sqrt(10 * (5 + sqrt(5))))) / 5
+	(60) LONG EDGE = sqrt(30 * (15 - sqrt(15 * (5 + 2 * sqrt(5))))) / 15
+	RADIUS = 1
+	INRADIUS = 1 / sqrt(13-4*sqrt(3)+4*sqrt(5)-2*sqrt(15)-2*sqrt(5+2*sqrt(5)))
+	VOLUME = 4 * sqrt(15 * (5 - 2 * sqrt(5))) / 3
+	SHORT EDGE ANGLE = acos(-0.855210593637698156080456082754)
+		= acos(-root[3533281*(x^8)-8854216*(x^7)+4299724*(x^6)+5578088*(x^5)
+			-5918666*(x^4)+821576*(x^3)+743596*(x^2)-199528*x-3599])
+		= 148.7830080517177564114417700146 degrees
+	MEDIUM EDGE ANGLE = acos(-0.9389379314967252433974427076751)
+		= acos(-root[3533281*(x^8)-7057032*(x^7)+164108*(x^6)+7179176*(x^5)
+			-3574410*(x^4)-955384*(x^3)+729708*(x^2)+14168*x-33359])
+		= 159.87395402650025106124885003496 degrees
+	LONG EDGE ANGLE = acos(-0.999436162041045560028000209356)
+		= acos(-root[3533281*(x^8)-3711412*(x^7)-4113572*(x^6)+4658756*(x^5)
+			+847150*(x^4)-1308844*(x^3)-2612*(x^2)+102428*x-4919])
+		= 178.0758665329761428694826649752 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="7 62 120">
+<INPUT type=hidden class=Constants value="0.309016994374947424102293417183,
+0.356822089773089931941969843046,
+0.525731112119133606025669084848,
+0.577350269189625764509148780502,
+0.809016994374947424102293417183,
+0.850650808352039932181540497063,
+0.934172358962715696451118623548">
+<!--
+	C0 = (sqrt(5) - 1) / 4
+	C1 = (sqrt(15) - sqrt(3)) / 6
+	C2 = sqrt(10 * (5 - sqrt(5))) / 10
+	C3 = sqrt(3) / 3
+	C4 = (1 + sqrt(5)) / 4
+	C5 = sqrt(10 * (5 + sqrt(5))) / 10
+	C6 = (sqrt(3) + sqrt(15)) / 6
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 1.0,0.0 0.0 -1.0,1.0 0.0 0.0,
+-1.0 0.0 0.0,0.0 1.0 0.0,0.0 -1.0 0.0,0.0 C1 C6,0.0 C1 -C6,0.0 -C1 C6,
+0.0 -C1 -C6,C6 0.0 C1,C6 0.0 -C1,-C6 0.0 C1,-C6 0.0 -C1,C1 C6 0.0,C1 -C6 0.0,
+-C1 C6 0.0,-C1 -C6 0.0,C2 0.0 C5,C2 0.0 -C5,-C2 0.0 C5,-C2 0.0 -C5,C5 C2 0.0,
+C5 -C2 0.0,-C5 C2 0.0,-C5 -C2 0.0,0.0 C5 C2,0.0 C5 -C2,0.0 -C5 C2,0.0 -C5 -C2,
+C0 0.5 C4,C0 0.5 -C4,C0 -0.5 C4,C0 -0.5 -C4,-C0 0.5 C4,-C0 0.5 -C4,-C0 -0.5 C4,
+-C0 -0.5 -C4,C4 C0 0.5,C4 C0 -0.5,C4 -C0 0.5,C4 -C0 -0.5,-C4 C0 0.5,
+-C4 C0 -0.5,-C4 -C0 0.5,-C4 -C0 -0.5,0.5 C4 C0,0.5 C4 -C0,0.5 -C4 C0,
+0.5 -C4 -C0,-0.5 C4 C0,-0.5 C4 -C0,-0.5 -C4 C0,-0.5 -C4 -C0,C3 C3 C3,C3 C3 -C3,
+C3 -C3 C3,C3 -C3 -C3,-C3 C3 C3,-C3 C3 -C3,-C3 -C3 C3,-C3 -C3 -C3">
+<INPUT type=hidden class=Faces value="18 0 8 #,18 8 32 #,18 32 56 #,18 56 40 #,
+18 40 10 #,18 10 38 #,18 38 54 #,18 54 30 #,18 30 6 #,18 6 0 #,19 1 7 #,
+19 7 31 #,19 31 55 #,19 55 39 #,19 39 11 #,19 11 41 #,19 41 57 #,19 57 33 #,
+19 33 9 #,19 9 1 #,20 0 6 #,20 6 34 #,20 34 58 #,20 58 42 #,20 42 12 #,
+20 12 44 #,20 44 60 #,20 60 36 #,20 36 8 #,20 8 0 #,21 1 9 #,21 9 37 #,
+21 37 61 #,21 61 45 #,21 45 13 #,21 13 43 #,21 43 59 #,21 59 35 #,21 35 7 #,
+21 7 1 #,22 2 11 #,22 11 39 #,22 39 55 #,22 55 47 #,22 47 14 #,22 14 46 #,
+22 46 54 #,22 54 38 #,22 38 10 #,22 10 2 #,23 2 10 #,23 10 40 #,23 40 56 #,
+23 56 48 #,23 48 15 #,23 15 49 #,23 49 57 #,23 57 41 #,23 41 11 #,23 11 2 #,
+24 3 12 #,24 12 42 #,24 42 58 #,24 58 50 #,24 50 16 #,24 16 51 #,24 51 59 #,
+24 59 43 #,24 43 13 #,24 13 3 #,25 3 13 #,25 13 45 #,25 45 61 #,25 61 53 #,
+25 53 17 #,25 17 52 #,25 52 60 #,25 60 44 #,25 44 12 #,25 12 3 #,26 4 16 #,
+26 16 50 #,26 50 58 #,26 58 34 #,26 34 6 #,26 6 30 #,26 30 54 #,26 54 46 #,
+26 46 14 #,26 14 4 #,27 4 14 #,27 14 47 #,27 47 55 #,27 55 31 #,27 31 7 #,
+27 7 35 #,27 35 59 #,27 59 51 #,27 51 16 #,27 16 4 #,28 5 15 #,28 15 48 #,
+28 48 56 #,28 56 32 #,28 32 8 #,28 8 36 #,28 36 60 #,28 60 52 #,28 52 17 #,
+28 17 5 #,29 5 17 #,29 17 53 #,29 53 61 #,29 61 37 #,29 37 9 #,29 9 33 #,
+29 33 57 #,29 57 49 #,29 49 15 #,29 15 5 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Biscribed Disdyakis Triacontahedron
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="canonical form" onClick="window.location.href='DisdyakisTriacontahedron.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>biscribed form</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>62 &nbsp;(30[4] + 20[6] + 12[10])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>120 &nbsp;(acute triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>180 &nbsp;(60 short + 60 medium + 60 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(root[8th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;148.783008052 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Medium Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(root[8th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;159.873954027 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Long Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(root[8th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;178.075866533 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="BiscribedTruncatedIcosidodecahedron.html">Biscribed Truncated Icosidodecahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on circumscribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(6&#8722;sqrt(3)&#8722;sqrt(15)))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.36284332992983157096</TD></TR>
+<TR><TD><NOBR>Medium Edge (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(5*(10&#8722;sqrt(10*(5+sqrt(5)))))/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.546533057825343384449</TD></TR>
+<TR><TD><NOBR>Long Edge (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(30*(15&#8722;sqrt(15*(5+2*sqrt(5)))))/15 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.64085182017098754129</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>1/sqrt(13&#8722;4*sqrt(3)+4*sqrt(5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;2*sqrt(15)&#8722;2*sqrt(5+2*sqrt(5))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.94714004379880998659</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>4*sqrt(15*(5&#8722;2*sqrt(5)))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.7518494817015979972</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='BiscribedDisdyakisTriacontahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

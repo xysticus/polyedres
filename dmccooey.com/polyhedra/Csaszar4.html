@@ -1,0 +1,151 @@
+<!-- File:   Csaszar4.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Csaszar Polyhedron (version 4)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='AntiOctagonalIrisToroid2.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalRegularTriangular.html"><B>Regular Triangular Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RegularTriangularToroid16.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Csaszar Polyhedron (version 4)
+
+	(2) EDGE 1 = sqrt(1238) / 6
+	(1) EDGE 2 = 10
+	(4) EDGE 3 = 3 * sqrt(70) / 2
+	(2) EDGE 4 = 2 * sqrt(374) / 3
+	(2) EDGE 5 = 2 * sqrt(662) / 3
+	(2) EDGE 6 = 3 * sqrt(134) / 2
+	(2) EDGE 7 = sqrt(1398) / 2
+	(6) EDGE 8 = 24
+	VOLUME = 2644 * sqrt(2) / 3
+	MIN DIHEDRAL ANGLE = 41.6598818109757158891515860886 degrees
+	MAX DIHEDRAL ANGLE = 340.13921686788356634539469083549 degrees
+
+	ROTATION SYMMETRIES:           2
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                 1 (1[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  2-fold Cyclic (C2)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="3 7 14">
+<INPUT type=hidden class=Constants value="0.7071067811865475244008443621048,
+3.77123616632825346347116993123,
+8.48528137423857029281013234526">
+<!--
+	C0 = sqrt(2) / 2
+	C1 = 8 * sqrt(2) / 3
+	C2 = 6 * sqrt(2)
+-->
+<INPUT type=hidden class=Vertices value="12.0 0.0 -C2,-12.0 0.0 -C2,
+0.0 12.0 C2,0.0 -12.0 C2,-4.0 -3.0 C0,4.0 3.0 C0,0.0 0.0 C1">
+<INPUT type=hidden class=Faces value="0 1 2 #,0 2 5 #,0 5 4 #,0 4 6 #,0 6 3 #,
+0 3 1 #,1 3 4 #,1 4 5 #,1 5 6 #,1 6 2 #,2 6 4 #,2 4 3 #,2 3 5 #,5 3 6 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="-15 62 32 70">
+</DIV>
+<BR>
+<CENTER>
+Cs&aacute;sz&aacute;r Polyhedron <NOBR>(version 4)</NOBR>
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="version 1" onClick="window.location.href='Csaszar1.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="version 2" onClick="window.location.href='Csaszar2.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="version 3" onClick="window.location.href='Csaszar3.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>version 4</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="version 5" onClick="window.location.href='Csaszar5.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>7 &nbsp;(2[6] + 2[6] + 2[6] + 1[6])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>14 &nbsp;(triangles: 2 equilateral + 2 isosceles + 2 * 5 obtuse)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>21 &nbsp;(8 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>2-fold Cyclic &nbsp;(C2)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Toroid: &nbsp;</NOBR></TD><TD colspan=2><A href="Szilassi1.html">Szilassi Polyhedron</A></TD></TR>
+<TR><TD colspan=3 align=center>(values below based on the description from "On Three Classes of Regular Toroids", 2004, by Lajos Szilassi)</TD></TR>
+<TR><TD><NOBR>Minimum Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>&#8776;41.659881811 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Maximum Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>&#8776;340.139216868 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (2): &nbsp;</NOBR></TD><TD><NOBR>sqrt(1238)/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;5.8642040285863936582</TD></TR>
+<TR><TD><NOBR>Edge 2 (1): &nbsp;</NOBR></TD><TD>10</TD></TR>
+<TR><TD><NOBR>Edge 3 (4): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(70)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;12.549900398011133220</TD></TR>
+<TR><TD><NOBR>Edge 4 (2): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(374)/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;12.892719737209144120</TD></TR>
+<TR><TD><NOBR>Edge 5 (2): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(662)/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;17.152907107024809578</TD></TR>
+<TR><TD><NOBR>Edge 6 (2): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(134)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;17.363755354185338210</TD></TR>
+<TR><TD><NOBR>Edge 7 (2): &nbsp;</NOBR></TD><TD><NOBR>sqrt(1398)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;18.694919095839917542</TD></TR>
+<TR><TD><NOBR>Edge 8 (6): &nbsp;</NOBR></TD><TD>24</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>2644*sqrt(2)/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1246.3935529714877697</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='Csaszar4.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://symmetry-us.com/Journals/visbook/csaszar/index.html>A Polyhedron Without Diagonals</A></TD></TR>
+<TR><TD></TD><TD valign=top>[2]</TD><TD>&Aacute;kos Cs&aacute;sz&aacute;r, A polyhedron without diagonals,<BR><I>Acta Scientiarum Mathematicarum</I> (Szeged) <B>13</B> (1949), 140-142.</TD></TR>
+<TR><TD></TD><TD valign=top>[3]</TD><TD>Lajos Szilassi, On Three Classes of Regular Toroids,<BR><I>3rd International Conference APLIMAT</I> 2004.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

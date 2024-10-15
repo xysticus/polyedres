@@ -1,0 +1,151 @@
+<!-- File:   HeptagonalPrism.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Heptagonal Prism</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='HexagonalPrism.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="PrismAntiprism.html"><B>Prisms &amp; Antiprisms</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='OctagonalPrism.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Heptagonal Prism
+
+	(21) EDGE = 1
+	RADIUS = 1.25617883981767570920187999584
+		= square-root of a root of the polynomial:
+			448*(x^3) - 1232*(x^2) + 980*x - 239
+		= sqrt(1 + 1 / (sin(pi/7)^2)) / 2
+	MIDRADIUS = 1.15238243548124325262057511177
+		= square-root of a root of the polynomial:  7*(x^3)-14*(x^2)+7*x-1
+		= 1 / (2 * sin(pi/7))
+	HEPTAGON CENTER RADIUS = 1 / 2
+	SQUARE CENTER RADIUS = 1.03826069828616828358176943074
+		= square-root of a root of the polynomial:  448*(x^3)-560*(x^2)+84*x-1
+		= cot(pi/7) / 2
+		= tan(5*pi/14) / 2
+	VOLUME = 3.63391244400158899253619300760
+		= square-root of a root of the polynomial:
+			4096*(x^3) - 62720*(x^2) + 115248*x - 16807
+		= 7 * cot(pi/7) / 4
+	HEPTAGON-SQUARE ANGLE = acos(0) = 90 degrees
+	SQUARE-SQUARE ANGLE = acos(-0.623489801858733530525004884004)
+		= acos(-root[8*(x^3) + 4*(x^2) - 4*x - 1]) = 900/7 degrees
+
+	ROTATION SYMMETRIES:          14
+	MIRROR ROTATION SYMMETRIES:   14
+	ROTATION AXES:                 8 (1[7] + 7[2])
+	MIRROR PLANES:                 8
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  7-fold Prismatic (D7h)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="6 14 9">
+<INPUT type=hidden class=Constants value="0.256429215818138474873324904069,
+0.7184986963636851321448067789251,
+0.900968867902419126236102319507,
+1.03826069828616828358176943074,
+1.12348980185873353052500488400,
+1.15238243548124325262057511177">
+<!--
+	C0 = square-root of a root of the polynomial:  448*(x^3)-224*(x^2)+28*x-1
+		= 1 / (4 * cos(pi/14))
+	C1 = square-root of a root of the polynomial:  448*(x^3)-336*(x^2)+56*x-1
+		= (1 + cos(pi/7)) * sqrt(7) / 7
+	C2 = root of the polynomial:  8*(x^3) - 4*(x^2) - 4*x + 1
+		= cos(pi/7)
+	C3 = square-root of a root of the polynomial:  448*(x^3)-560*(x^2)+84*x-1
+		= cot(pi/7) / 2
+		= tan(5*pi/14) / 2
+	C4 = root of the polynomial:  8*(x^3) - 8*(x^2) - 2*x + 1
+		= 1 / (4 * sin(pi/14))
+	C5 = square-root of a root of the polynomial:  7*(x^3) - 14*(x^2) + 7*x - 1
+		= 1 / (2 * sin(pi/7))
+-->
+<INPUT type=hidden class=Vertices value="C4 -C0 0.5,C4 -C0 -0.5,-C4 -C0 0.5,
+-C4 -C0 -0.5,C2 C1 0.5,C2 C1 -0.5,-C2 C1 0.5,-C2 C1 -0.5,0.5 -C3 0.5,
+0.5 -C3 -0.5,-0.5 -C3 0.5,-0.5 -C3 -0.5,0.0 C5 0.5,0.0 C5 -0.5">
+<INPUT type=hidden class=Faces value="0 4 12 6 2 10 8 #,1 9 11 3 7 13 5 #,
+0 1 5 4 #,4 5 13 12 #,12 13 7 6 #,6 7 3 2 #,2 3 11 10 #,10 11 9 8 #,8 9 1 0 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="12 -3 -4 0">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #76)</NOBR></TD>
+<TD width=40% align=center>Heptagonal Prism</TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>14 &nbsp;(14[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>9 &nbsp;(7 squares + 2 regular heptagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>21</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>7-fold Prismatic &nbsp;(D7h)</NOBR></TD></TR>
+<TR><TD><NOBR>Heptagon-Square Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(0) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>90 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Square-Square Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(-root[8*(x^3)+4*(x^2)&#8722;4*x&#8722;1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = 900/7 degrees &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;128.571428571 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="HeptagonalDipyramid.html">Heptagonal Dipyramid</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[448*(x^3)&#8722;1232*(x^2)+980*x&#8722;239]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = sqrt(1+1/(sin(&#960;/7)^2))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2561788398176757092</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[7*(x^3)&#8722;14*(x^2)+7*x&#8722;1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = 1/(2*sin(&#960;/7)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1523824354812432526</TD></TR>
+<TR><TD><NOBR>Heptagon Center Radius: &nbsp;</NOBR></TD><TD><NOBR>1/2 &nbsp; &nbsp;</NOBR></TD><TD>0.5</TD></TR>
+<TR><TD><NOBR>Square Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[448*(x^3)&#8722;560*(x^2)+84*x&#8722;1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = cot(&#960;/7)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0382606982861682836</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(root[4096*(x^3)&#8722;62720*(x^2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +115248*x&#8722;16807]) = 7*cot(&#960;/7)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.63391244400158899254</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='HeptagonalPrism.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

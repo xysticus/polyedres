@@ -1,0 +1,252 @@
+<!-- File:   RhexpropelloDodecahedron1.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Hexpropello Dodecahedron (dextro) (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RhexpropelloCube1.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Derived.html"><B>Derived Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='OrthokisPropelloCube.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Hexpropello Dodecahedron (dextro) (canonical)
+
+	(60) SHORT EDGE = 2 * phi * sqrt((898 - 533 * phi) - (371 + 1385 * phi) / x
+			+ 8 * (956 - 81 * phi) / (x^2)) / (209 * x)
+	(60) MEDIUM EDGE = 2 * sqrt((898 - 533 * phi) - (371 + 1385 * phi) / x
+			+ 8 * (956 - 81 * phi) / (x^2)) / 209
+	(90) LONG EDGE = 2 * sqrt(3 - (x^2)) / x
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 4 * (-(6322931 + 24137593 * phi)
+		+ 9 * (9379039 - 873668 * phi) / x
+		+ 2 * (4386229 + 8951287 * phi) / (x^2)) / 9129329
+
+	WHERE:	phi = (1 + sqrt(5)) / 2
+			x = cbrt((phi + sqrt(phi-5/27))/2) + cbrt((phi - sqrt(phi-5/27))/2)
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Icosahedral (I)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="32 140 72">
+<INPUT type=hidden class=Constants value="0.0478487627793223584957428264710,
+0.0820874952323578596367661535721,
+0.0919831947610306166536978645902,
+0.104185866120626902522184256527,
+0.159508419728932319992375824582,
+0.1787372607291718755716205007246,
+0.180669120116622322543727539983,
+0.210241281833874424403594384522,
+0.2707204554902024922253183653148,
+0.34319353022244057407246218081548,
+0.347313533259692355979268469051,
+0.3602517244988994027025508153653,
+0.393388829036478811293779158091,
+0.425281025454798433709228334388,
+0.439296728020722972632966333641,
+0.457779235446372389179242869890,
+0.502701949951372894064838005397,
+0.542220764553627610820757130110,
+0.5828995347449824144241690772051,
+0.606611170963521188706220841909,
+0.635522307288672858112822718909,
+0.683371070067995216608565545380,
+0.728499690936574881404561235204,
+0.735967916735595431954156281793,
+0.765540078452847533814023126332,
+0.785348431692693064277841342634,
+0.832685557057201783926745491732,
+0.847627573685205393450789279904,
+0.889534297813319966800025599161,
+0.8954763364645277519465321063751,
+0.943151259243881817126719892570,
+0.9462091985694698563577506663151">
+<!--
+	C0 = (-(x^2) * (321 + 8*phi) + x * (149*phi - 4) + 4 * (153 - 4*phi)) / 209
+	C1 = ((x^2) * (149*phi - 4) - 2 * x * (15 + 16*phi) - (8 + 329*phi)) / 209
+	C2 = phi * (3 - (x^2))
+	C3 = phi * (2 * x - phi - 3 / x)
+	C4 = (-12*(x^2) * (1 + 15*phi) + x*(119 + 113*phi) + 3*(89*phi - 8)) / 209
+	C5 = (1 + phi - x) / (x^3)
+	C6 = (3 * x * (29*phi - 12) - (61 + 79*phi) + (137 - 35*phi) / x) / 209
+	C7 = (x * (117 + 83 * phi) - (63 + 109 * phi) - (184 + 43 * phi) / x) / 209
+	C8 = x * phi * (x - phi)
+	C9 = ((x^2) * (59*phi - 10) - 5*x * (15 + 16*phi) + 2*(59*phi - 10)) / 209
+	C10 = (phi^2) * (x - 1 - 1 / x)
+	C11 = 1 / (x * phi)
+	C12 = phi * (1 - 1 / x) / x
+	C13 = (2*(x^2) * (104*phi - 7) - 7*x*(15 + 16*phi) - (28 + 211*phi)) / 209
+	C14 = (phi^3) / (x^2) - 1
+	C15 = phi * (1 / (x^2) + phi / x - 1)
+	C16 = (x * (4 + 3 * phi) + (13 * phi - 8) - (11 + 13 * phi) / x) / 19
+	C17 = phi * (phi - phi / x - 1 / (x^2))
+	C18 = 1 / x
+	C19 = 1 - phi / x + phi / (x^2)
+	C20 = (-x * (29*phi - 12) + (96*phi - 119) + (24 + 151*phi) / x) / 209
+	C21 = (8 * x * (1 + 15*phi) + (64*phi - 149) - 2 * (89*phi - 8) / x) / 209
+	C22 = phi * (1 - phi / (x^2))
+	C23 = (-4 * x * (29 + 17*phi) + (175 + 117*phi) + (186 + 73*phi) / x) / 209
+	C24 = (-x * (72*phi - 37) + (173 + 87*phi) + 5 * (13*phi - 27) / x) / 209
+	C25 = phi * (phi - x + 1 / x)
+	C26 = x * phi + 1 - (x^2)
+	C27 = (-x * (104*phi - 7) + (157 + 56*phi) + 14 * (1 + 15*phi) / x) / 209
+	C28 = (phi / x)^2
+	C29 = (3 * x * (1 + 15*phi) + (127 + 24*phi) - (119*phi - 6) / x) / 209
+	C30 = phi / x
+	C31 = (2 * (x^2) * (14 + phi) + x * (1 + 15 * phi) + 4 * (14 + phi)) / 209
+	WHERE:	phi = (1 + sqrt(5)) / 2
+			x = cbrt((phi + sqrt(phi-5/27))/2) + cbrt((phi - sqrt(phi-5/27))/2)
+-->
+<INPUT type=hidden class=Vertices value="C2 C3 1.0,C2 -C3 -1.0,-C2 -C3 1.0,
+-C2 C3 -1.0,1.0 C2 C3,1.0 -C2 -C3,-1.0 -C2 C3,-1.0 C2 -C3,C3 1.0 C2,
+C3 -1.0 -C2,-C3 -1.0 C2,-C3 1.0 -C2,C9 C0 C31,C9 -C0 -C31,-C9 -C0 C31,
+-C9 C0 -C31,C31 C9 C0,C31 -C9 -C0,-C31 -C9 C0,-C31 C9 -C0,C0 C31 C9,
+C0 -C31 -C9,-C0 -C31 C9,-C0 C31 -C9,0.0 C11 C30,0.0 C11 -C30,0.0 -C11 C30,
+0.0 -C11 -C30,C30 0.0 C11,C30 0.0 -C11,-C30 0.0 C11,-C30 0.0 -C11,C11 C30 0.0,
+C11 -C30 0.0,-C11 C30 0.0,-C11 -C30 0.0,C13 -C6 C29,C13 C6 -C29,-C13 C6 C29,
+-C13 -C6 -C29,C29 -C13 C6,C29 C13 -C6,-C29 C13 C6,-C29 -C13 -C6,C6 -C29 C13,
+C6 C29 -C13,-C6 C29 C13,-C6 -C29 -C13,C8 -C12 C28,C8 C12 -C28,-C8 C12 C28,
+-C8 -C12 -C28,C28 -C8 C12,C28 C8 -C12,-C28 C8 C12,-C28 -C8 -C12,C12 -C28 C8,
+C12 C28 -C8,-C12 C28 C8,-C12 -C28 -C8,C16 C7 C27,C16 -C7 -C27,-C16 -C7 C27,
+-C16 C7 -C27,C27 C16 C7,C27 -C16 -C7,-C27 -C16 C7,-C27 C16 -C7,C7 C27 C16,
+C7 -C27 -C16,-C7 -C27 C16,-C7 C27 -C16,C5 C17 C26,C5 -C17 -C26,-C5 -C17 C26,
+-C5 C17 -C26,C26 C5 C17,C26 -C5 -C17,-C26 -C5 C17,-C26 C5 -C17,C17 C26 C5,
+C17 -C26 -C5,-C17 -C26 C5,-C17 C26 -C5,C14 C15 C25,C14 -C15 -C25,-C14 -C15 C25,
+-C14 C15 -C25,C25 C14 C15,C25 -C14 -C15,-C25 -C14 C15,-C25 C14 -C15,
+C15 C25 C14,C15 -C25 -C14,-C15 -C25 C14,-C15 C25 -C14,C20 -C4 C24,C20 C4 -C24,
+-C20 C4 C24,-C20 -C4 -C24,C24 -C20 C4,C24 C20 -C4,-C24 C20 C4,-C24 -C20 -C4,
+C4 -C24 C20,C4 C24 -C20,-C4 C24 C20,-C4 -C24 -C20,C21 C1 C23,C21 -C1 -C23,
+-C21 -C1 C23,-C21 C1 -C23,C23 C21 C1,C23 -C21 -C1,-C23 -C21 C1,-C23 C21 -C1,
+C1 C23 C21,C1 -C23 -C21,-C1 -C23 C21,-C1 C23 -C21,C10 -C19 C22,C10 C19 -C22,
+-C10 C19 C22,-C10 -C19 -C22,C22 -C10 C19,C22 C10 -C19,-C22 C10 C19,
+-C22 -C10 -C19,C19 -C22 C10,C19 C22 -C10,-C19 C22 C10,-C19 -C22 -C10,
+C18 C18 C18,C18 C18 -C18,C18 -C18 C18,C18 -C18 -C18,-C18 C18 C18,-C18 C18 -C18,
+-C18 -C18 C18,-C18 -C18 -C18">
+<INPUT type=hidden class=Faces value="24 0 12 60 84 72 #,
+24 72 116 106 122 50 #,24 50 38 14 2 0 #,25 3 15 63 87 75 #,
+25 75 119 105 121 49 #,25 49 37 13 1 3 #,26 2 14 62 86 74 #,
+26 74 118 104 120 48 #,26 48 36 12 0 2 #,27 1 13 61 85 73 #,
+27 73 117 107 123 51 #,27 51 39 15 3 1 #,28 4 16 64 88 76 #,
+28 76 108 96 124 52 #,28 52 40 17 5 4 #,29 5 17 65 89 77 #,
+29 77 109 97 125 53 #,29 53 41 16 4 5 #,30 6 18 66 90 78 #,
+30 78 110 98 126 54 #,30 54 42 19 7 6 #,31 7 19 67 91 79 #,
+31 79 111 99 127 55 #,31 55 43 18 6 7 #,32 8 20 68 92 80 #,
+32 80 112 101 129 57 #,32 57 45 23 11 8 #,33 9 21 69 93 81 #,
+33 81 113 100 128 56 #,33 56 44 22 10 9 #,34 11 23 71 95 83 #,
+34 83 115 102 130 58 #,34 58 46 20 8 11 #,35 10 22 70 94 82 #,
+35 82 114 103 131 59 #,35 59 47 21 9 10 #,132 84 60 108 76 88 #,
+132 88 64 112 80 92 #,132 92 68 116 72 84 #,133 121 105 45 57 129 #,
+133 129 101 41 53 125 #,133 125 97 37 49 121 #,134 120 104 44 56 128 #,
+134 128 100 40 52 124 #,134 124 96 36 48 120 #,135 85 61 109 77 89 #,
+135 89 65 113 81 93 #,135 93 69 117 73 85 #,136 122 106 46 58 130 #,
+136 130 102 42 54 126 #,136 126 98 38 50 122 #,137 87 63 111 79 91 #,
+137 91 67 115 83 95 #,137 95 71 119 75 87 #,138 86 62 110 78 90 #,
+138 90 66 114 82 94 #,138 94 70 118 74 86 #,139 123 107 47 59 131 #,
+139 131 103 43 55 127 #,139 127 99 39 51 123 #,12 36 96 108 60 #,
+13 37 97 109 61 #,14 38 98 110 62 #,15 39 99 111 63 #,16 41 101 112 64 #,
+17 40 100 113 65 #,18 43 103 114 66 #,19 42 102 115 67 #,20 46 106 116 68 #,
+21 47 107 117 69 #,22 44 104 118 70 #,23 45 105 119 71 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Hexpropello Dodecahedron (dextro)
+<BR>(canonical)
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>version 1</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="version 2" onClick="window.location.href='RhexpropelloDodecahedron2.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="version 3" onClick="window.location.href='RhexpropelloDodecahedron3.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="version 4" onClick="window.location.href='RhexpropelloDodecahedron4.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="biscribed form" onClick="window.location.href='BiscribedRhexpropelloDodecahedron.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>140 &nbsp;(20[3] + 60[3] + 60[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>72 &nbsp;(12 regular pentagons + 60 mirror-symmetric hexagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>210 &nbsp;(60 short + 60 medium + 90 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Icosahedral &nbsp;(I)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="PentakisLsnubDodecahedron.html">Pentakis Snub Dodecahedron (laevo)</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD><NOBR>2*phi*sqrt((898&#8722;533*phi) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;(371+1385*phi)/x &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +8*(956&#8722;81*phi)/(x^2))/(209*x) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.24805766058343397098</TD></TR>
+<TR><TD><NOBR>Medium Edge (60): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt((898&#8722;533*phi)&#8722;(371+1385*phi)/x &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +8*(956&#8722;81*phi)/(x^2))/209 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.26300941461107751861</TD></TR>
+<TR><TD><NOBR>Long Edge (90): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(3&#8722;(x^2))/x &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.27796116863872106624</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>4*(&#8722;(6322931+24137593*phi) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +9*(9379039&#8722;873668*phi)/x &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +2*(4386229+8951287*phi)/(x^2)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; /9129329 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.0448745806384879023</TD></TR>
+<TR><TD></TD><TD colspan=2>
+<TABLE style="font-size:100%">
+<TR><TD>where: &nbsp;</TD><TD>phi = (1+sqrt(5))/2</TD></TR>
+<TR><TD></TD><TD>x = cbrt((phi+sqrt(phi&#8722;5/27))/2)+cbrt((phi&#8722;sqrt(phi&#8722;5/27))/2)</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RhexpropelloDodecahedron1.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

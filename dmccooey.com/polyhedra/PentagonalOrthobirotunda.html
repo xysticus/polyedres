@@ -1,0 +1,140 @@
+<!-- File:   PentagonalOrthobirotunda.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2019 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Pentagonal Orthobirotunda</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='PentagonalGyrocupolarotunda.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="JohnsonPage2.html"><B>Johnson Solids (Page 2)</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='ElongatedTriangularOrthobicupola.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Pentagonal Orthobirotunda
+
+	(60) EDGE = 1
+	RADIUS = 1.61803398874989484820458683437 = (1 + sqrt(5)) / 2
+	MIDRADIUS = 1.53884176858762670128514528802 = sqrt(5 + 2 * sqrt(5)) / 2
+	VOLUME = 13.8355259362494041398259920614 = (45 + 17 * sqrt(5)) / 6
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          10
+	MIRROR ROTATION SYMMETRIES:   10
+	ROTATION AXES:                 6 (1[5] + 5[2])
+	MIRROR PLANES:                 6
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  5-fold Prismatic (D5h)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="11 30 32">
+<INPUT type=hidden class=Constants value="0.262865556059566803012834542424,
+0.425325404176019966090770248532,
+0.6881909602355867691036047909554,
+0.809016994374947424102293417183,
+0.850650808352039932181540497063,
+0.951056516295153572116439333379,
+1.11351636441160673519437503949,
+1.30901699437494742410229341718,
+1.37638192047117353820720958191,
+1.53884176858762670128514528802,
+1.61803398874989484820458683437">
+<!--
+	C0 = sqrt(10 * (5 - sqrt(5))) / 20
+	C1 = sqrt(10 * (5 + sqrt(5))) / 20
+	C2 = sqrt(5 * (5 + 2 * sqrt(5))) / 10
+	C3 = (1 + sqrt(5)) / 4
+	C4 = sqrt(10 * (5 + sqrt(5))) / 10
+	C5 = sqrt(2 * (5 + sqrt(5))) / 4
+	C6 = sqrt(10 * (25 + 11 * sqrt(5))) / 20
+	C7 = (3 + sqrt(5)) / 4
+	C8 = sqrt(5 * (5 + 2 * sqrt(5))) / 5
+	C9 = sqrt(5 + 2 * sqrt(5)) / 2
+	C10 = (1 + sqrt(5)) / 2
+-->
+<INPUT type=hidden class=Vertices value="C10 0.0 0.0,-C10 0.0 0.0,C7 C5 0.0,
+C7 -C5 0.0,-C7 C5 0.0,-C7 -C5 0.0,0.5 C9 0.0,0.5 -C9 0.0,-0.5 C9 0.0,
+-0.5 -C9 0.0,C3 C0 C8,C3 C0 -C8,-C3 C0 C8,-C3 C0 -C8,0.5 -C2 C8,0.5 -C2 -C8,
+-0.5 -C2 C8,-0.5 -C2 -C8,0.0 C4 C8,0.0 C4 -C8,C7 -C1 C4,C7 -C1 -C4,-C7 -C1 C4,
+-C7 -C1 -C4,C3 C6 C4,C3 C6 -C4,-C3 C6 C4,-C3 C6 -C4,0.0 -C8 C4,0.0 -C8 -C4">
+<INPUT type=hidden class=Faces value="18 12 16 14 10 #,19 11 15 17 13 #,
+26 18 24 6 8 #,22 12 26 4 1 #,28 16 22 5 9 #,20 14 28 7 3 #,24 10 20 0 2 #,
+25 19 27 8 6 #,21 11 25 2 0 #,29 15 21 3 7 #,23 17 29 9 5 #,27 13 23 1 4 #,
+26 8 4 #,22 1 5 #,28 9 7 #,20 3 0 #,24 2 6 #,26 12 18 #,22 16 12 #,28 14 16 #,
+20 10 14 #,24 18 10 #,25 6 2 #,21 0 3 #,29 7 9 #,23 5 1 #,27 4 8 #,25 11 19 #,
+21 15 11 #,29 17 15 #,23 13 17 #,27 19 13 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="809016994 -587785252 0 0">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=10% align=left style="font-size:60%"><NOBR>(J34)</NOBR></TD>
+<TD width=80% align=center>Pentagonal Orthobirotunda</TD>
+<TD width=10% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>30 &nbsp;({10 * 3}[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>32 &nbsp;({10 * 2} equilateral triangles</NOBR><BR><NOBR> &nbsp; &nbsp; + {10 + 2} regular pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>60</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>5-fold Prismatic &nbsp;(D5h)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>(1+sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.6180339887498948482</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(5+2*sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.5388417685876267013</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>(45+17*sqrt(5))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;13.835525936249404140</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='PentagonalOrthobirotunda.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

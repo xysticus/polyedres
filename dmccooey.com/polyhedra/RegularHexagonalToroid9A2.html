@@ -1,0 +1,127 @@
+<!-- File:   RegularHexagonalToroid9A2.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Regular Hexagonal Toroid with 9 faces (type A) (triangular form)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RegularHexagonalToroid9A1.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalRegularHexagonal.html"><B>Regular Hexagonal Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RegularHexagonalToroid9B.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Regular Hexagonal Toroid with 9 faces (type A) (triangular form)
+
+	(12) EDGE 1 = 2
+	(6) EDGE 2 = 4 * sqrt(2)
+	(6) EDGE 3 = 8
+	(3) EDGE 4 = 6 * sqrt(3)
+	RADIUS = sqrt(59)
+	VOLUME = 120
+	DIHEDRAL ANGLE 1 = acos(sqrt(2) / 2) = 45 degrees
+	DIHEDRAL ANGLE 2 = acos(1/2) = 60 degrees
+	DIHEDRAL ANGLE 3 = acos(0) = 90 degrees
+	DIHEDRAL ANGLE 4 = acos(0) = 270 degrees
+
+	ROTATION SYMMETRIES:           6
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                 4 (1[3] + 3[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  3-fold Dihedral (D3)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="0 18 9">
+<INPUT type=hidden class=Vertices value="1 1 1,-1 -1 1,1 -1 -1,-1 1 1,1 1 -1,
+-1 -1 -1,1 3 1,-1 -3 -1,3 1 -1,-3 -1 1,-1 1 3,1 -1 -3,1 3 -7,-1 -7 3,-3 7 1,
+7 -3 -1,-7 -1 -3,3 1 7">
+<INPUT type=hidden class=Faces value="0 3 1 9 14 6 #,0 6 12 11 2 4 #,
+0 4 8 17 10 3 #,5 1 3 10 13 7 #,5 7 15 8 4 2 #,5 2 11 16 9 1 #,
+12 6 14 17 8 15 #,12 15 7 13 16 11 #,9 16 13 10 17 14 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="68 -50 -25 48">
+</DIV>
+<BR>
+<CENTER>
+Regular Hexagonal Toroid with 9 faces <NOBR>(type A)</NOBR> <NOBR>(triangular form)</NOBR>
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="cubic form" onClick="window.location.href='RegularHexagonalToroid9A1.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>triangular form</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>18 &nbsp;(18[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>9 &nbsp;({6 + 3} nonconvex hexagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>27 &nbsp;(4 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>3-fold Dihedral &nbsp;(D3)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 1 (6): &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(2)/2) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>45 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 2 (3): &nbsp;</NOBR></TD><TD><NOBR>acos(1/2) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>60 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 3 (12): &nbsp;</NOBR></TD><TD><NOBR>acos(0) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>90 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 4 (6): &nbsp;</NOBR></TD><TD><NOBR>acos(0) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>270 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Toroid: &nbsp;</NOBR></TD><TD colspan=2><A href="RegularTriangularToroid18A2.html">Regular Triangular Toroid with 18 faces (type A)</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on short edge length = 2)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (12): &nbsp;</NOBR></TD><TD>2</TD></TR>
+<TR><TD><NOBR>Edge 2 (6): &nbsp;</NOBR></TD><TD><NOBR>4*sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;5.6568542494923801952</TD></TR>
+<TR><TD><NOBR>Edge 3 (6): &nbsp;</NOBR></TD><TD>8</TD></TR>
+<TR><TD><NOBR>Edge 4 (3): &nbsp;</NOBR></TD><TD><NOBR>6*sqrt(3) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;10.392304845413263761</TD></TR>
+<TR><TD>Volume:</TD><TD colspan=2><NOBR>120 &nbsp;[EXACT]</NOBR></TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RegularHexagonalToroid9A2.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,143 @@
+<!-- File:   JoinedTruncatedCube.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Joined Truncated Cube</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='JoinedTruncatedOctahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Hull.html"><B>Archimedean-Catalan Hulls</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='JoinedRhombicuboctahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Joined Truncated Cube
+
+	(24) SHORT EDGE = sqrt(7 - 4 * sqrt(2)) / 2
+	(48) LONG EDGE = sqrt(7 + 4 * sqrt(2)) / 2
+	RHOMBUS LENGTH = 2 + sqrt(2)
+	RHOMBUS WIDTH = 1
+	KITE LENGTH = 2
+	KITE WIDTH = 1
+	(8) INNER VERTEX RADIUS = sqrt(3)
+	(24) MIDDLE VERTEX RADIUS = sqrt(7 + 4 * sqrt(2)) / 2
+	(6) OUTER VERTEX RADIUS = 1 + sqrt(2)
+	INRADIUS = (2 + sqrt(2)) / 2
+	VOLUME = 14 + 8 * sqrt(2)
+	LONG EDGE ANGLE = acos(-(2 + sqrt(2)) / 4)
+		= 148.600285190080957790230159992 degrees
+	SHORT EDGE ANGLE = acos(-(1 + sqrt(2)) / 4)
+		= 163.1578837637011564384683456053 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:   24
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 9
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Octahedral (Oh)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="2 38 36">
+<INPUT type=hidden class=Constants value="1.20710678118654752440084436210,
+2.41421356237309504880168872421">
+<!--
+	C0 = (1 + sqrt(2)) / 2
+	C1 = 1 + sqrt(2)
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C1,0.0 0.0 -C1,C1 0.0 0.0,
+-C1 0.0 0.0,0.0 C1 0.0,0.0 -C1 0.0,C0 0.5 C0,C0 0.5 -C0,C0 -0.5 C0,C0 -0.5 -C0,
+-C0 0.5 C0,-C0 0.5 -C0,-C0 -0.5 C0,-C0 -0.5 -C0,C0 C0 0.5,C0 C0 -0.5,
+C0 -C0 0.5,C0 -C0 -0.5,-C0 C0 0.5,-C0 C0 -0.5,-C0 -C0 0.5,-C0 -C0 -0.5,
+0.5 C0 C0,0.5 C0 -C0,0.5 -C0 C0,0.5 -C0 -C0,-0.5 C0 C0,-0.5 C0 -C0,-0.5 -C0 C0,
+-0.5 -C0 -C0,1.0 1.0 1.0,1.0 1.0 -1.0,1.0 -1.0 1.0,1.0 -1.0 -1.0,-1.0 1.0 1.0,
+-1.0 1.0 -1.0,-1.0 -1.0 1.0,-1.0 -1.0 -1.0">
+<INPUT type=hidden class=Faces value="30 6 2 14 #,30 14 4 22 #,30 22 0 6 #,
+31 7 1 23 #,31 23 4 15 #,31 15 2 7 #,32 8 0 24 #,32 24 5 16 #,32 16 2 8 #,
+33 9 2 17 #,33 17 5 25 #,33 25 1 9 #,34 10 0 26 #,34 26 4 18 #,34 18 3 10 #,
+35 11 3 19 #,35 19 4 27 #,35 27 1 11 #,36 12 3 20 #,36 20 5 28 #,36 28 0 12 #,
+37 13 1 29 #,37 29 5 21 #,37 21 3 13 #,0 8 2 6 #,0 10 3 12 #,1 7 2 9 #,
+1 13 3 11 #,2 15 4 14 #,2 16 5 17 #,3 18 4 19 #,3 21 5 20 #,4 26 0 22 #,
+4 23 1 27 #,5 24 0 28 #,5 29 1 25 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Joined Truncated Cube
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>38 &nbsp;(8[3] + 24[3] + 6[8])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>36 &nbsp;(24 kites + 12 rhombi)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>72 &nbsp;(24 short + 48 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Octahedral &nbsp;(Oh)</NOBR></TD></TR>
+<TR><TD><NOBR>Long Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(2+sqrt(2))/4) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;148.600285190 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(1+sqrt(2))/4) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;163.157883764 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length <A href="TruncatedCube.html">Truncated Cube</A>)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(7&#8722;4*sqrt(2))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.57947082551833871527</TD></TR>
+<TR><TD><NOBR>Long Edge (48): &nbsp;</NOBR></TD><TD><NOBR>sqrt(7+4*sqrt(2))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.7788236456639244509</TD></TR>
+<TR><TD><NOBR>Rhombus Length: &nbsp;</NOBR></TD><TD><NOBR>2+sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.4142135623730950488</TD></TR>
+<TR><TD><NOBR>Rhombus Width: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Kite Length: &nbsp;</NOBR></TD><TD>2</TD></TR>
+<TR><TD><NOBR>Kite Width: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (8): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.73205080756887729353</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(7+4*sqrt(2))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.7788236456639244509</TD></TR>
+<TR><TD><NOBR>[8]-Vertex Radius (6): &nbsp;</NOBR></TD><TD><NOBR>1+sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.4142135623730950488</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>(2+sqrt(2))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.7071067811865475244</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>14+8*sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;25.313708498984760390</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='JoinedTruncatedCube.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://www.georgehart.com/virtual-polyhedra/conway_notation.html>Conway Notation for Polyhedra (George Hart)</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

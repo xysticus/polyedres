@@ -1,0 +1,186 @@
+<!-- File:   BiscribedPropelloTruncatedOctahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Biscribed Propello Truncated Octahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='BiscribedPentakisLsnubDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="BiscribedChiral.html"><B>Biscribed Chiral Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='BiscribedPropelloTruncatedCuboctahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Biscribed Propello Truncated Octahedron with inradius = 1
+
+	(24) EDGE 1 = 0.124850971347158555537416659418
+	(24) EDGE 2 = 0.166712213085368340785492697017
+	(24) EDGE 3 = 0.427235776976196620533655808391
+	(24) EDGE 4 = 0.428458441091171046091220038306
+	(24) EDGE 5 = 0.459752683803365194296976203488
+	(24) EDGE 6 = 0.4608994160776468956553431577846
+	(24) EDGE 7 = 0.644928923905445881612369867191
+	(12) EDGE 8 = 0.645121915084937618088885905932
+	RADIUS = 1.05151617445106309136339115106
+	INRADIUS = 1
+	VOLUME = 4.42188245516591980419270221504
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="11 96 86">
+<INPUT type=hidden class=Constants value="0.0152584769261873028725789367246,
+0.0235077885080192309427565574319,
+0.316677574953900797723456936129,
+0.324243194241083165575240373030,
+0.326133565478902072946716251002,
+0.440318073442744685633567786587,
+0.6287241385005654175681339754551,
+0.664322547932675283168326393184,
+0.751050684682301212635663012193,
+0.777193103589409803012596115049,
+0.954763550945343354539943651009">
+<!--
+	C0 = 0.0152584769261873028725789367246
+	C1 = 0.0235077885080192309427565574319
+	C2 = 0.316677574953900797723456936129
+	C3 = 0.324243194241083165575240373030
+	C4 = 0.326133565478902072946716251002
+	C5 = 0.440318073442744685633567786587
+	C6 = 0.6287241385005654175681339754551
+	C7 = 0.664322547932675283168326393184
+	C8 = 0.751050684682301212635663012193
+	C9 = 0.777193103589409803012596115049
+	C10 = 0.954763550945343354539943651009
+-->
+<INPUT type=hidden class=Vertices value="C3 -C1 1.0,C3 C1 -1.0,-C3 C1 1.0,
+-C3 -C1 -1.0,1.0 -C3 C1,1.0 C3 -C1,-1.0 C3 C1,-1.0 -C3 -C1,C1 -1.0 C3,
+C1 1.0 -C3,-C1 1.0 C3,-C1 -1.0 -C3,C1 C3 1.0,C1 -C3 -1.0,-C1 -C3 1.0,
+-C1 C3 -1.0,1.0 C1 C3,1.0 -C1 -C3,-1.0 -C1 C3,-1.0 C1 -C3,C3 1.0 C1,
+C3 -1.0 -C1,-C3 -1.0 C1,-C3 1.0 -C1,C5 -C0 C10,C5 C0 -C10,-C5 C0 C10,
+-C5 -C0 -C10,C10 -C5 C0,C10 C5 -C0,-C10 C5 C0,-C10 -C5 -C0,C0 -C10 C5,
+C0 C10 -C5,-C0 C10 C5,-C0 -C10 -C5,C0 C5 C10,C0 -C5 -C10,-C0 -C5 C10,
+-C0 C5 -C10,C10 C0 C5,C10 -C0 -C5,-C10 -C0 C5,-C10 C0 -C5,C5 C10 C0,
+C5 -C10 -C0,-C5 -C10 C0,-C5 C10 -C0,C6 C4 C9,C6 -C4 -C9,-C6 -C4 C9,-C6 C4 -C9,
+C9 C6 C4,C9 -C6 -C4,-C9 -C6 C4,-C9 C6 -C4,C4 C9 C6,C4 -C9 -C6,-C4 -C9 C6,
+-C4 C9 -C6,C4 -C6 C9,C4 C6 -C9,-C4 C6 C9,-C4 -C6 -C9,C9 -C4 C6,C9 C4 -C6,
+-C9 C4 C6,-C9 -C4 -C6,C6 -C9 C4,C6 C9 -C4,-C6 C9 C4,-C6 -C9 -C4,C7 -C2 C8,
+C7 C2 -C8,-C7 C2 C8,-C7 -C2 -C8,C8 -C7 C2,C8 C7 -C2,-C8 C7 C2,-C8 -C7 -C2,
+C2 -C8 C7,C2 C8 -C7,-C2 C8 C7,-C2 -C8 -C7,C2 C7 C8,C2 -C7 -C8,-C2 -C7 C8,
+-C2 C7 -C8,C8 C2 C7,C8 -C2 -C7,-C8 -C2 C7,-C8 C2 -C7,C7 C8 C2,C7 -C8 -C2,
+-C7 -C8 C2,-C7 C8 -C2">
+<INPUT type=hidden class=Faces value="56 84 48 88 52 92 #,57 85 49 89 53 93 #,
+58 86 50 90 54 94 #,59 87 51 91 55 95 #,60 80 68 76 64 72 #,
+61 81 69 77 65 73 #,62 82 70 78 66 74 #,63 83 71 79 67 75 #,2 14 0 12 #,
+3 15 1 13 #,4 17 5 16 #,7 18 6 19 #,8 22 11 21 #,9 23 10 20 #,0 60 72 24 #,
+1 61 73 25 #,2 62 74 26 #,3 63 75 27 #,4 64 76 28 #,5 65 77 29 #,6 66 78 30 #,
+7 67 79 31 #,8 68 80 32 #,9 69 81 33 #,10 70 82 34 #,11 71 83 35 #,
+12 48 84 36 #,13 49 85 37 #,14 50 86 38 #,15 51 87 39 #,16 52 88 40 #,
+17 53 89 41 #,18 54 90 42 #,19 55 91 43 #,20 56 92 44 #,21 57 93 45 #,
+22 58 94 46 #,23 59 95 47 #,24 72 88 48 #,25 73 89 49 #,26 74 90 50 #,
+27 75 91 51 #,28 76 93 53 #,29 77 92 52 #,30 78 95 55 #,31 79 94 54 #,
+32 80 86 58 #,33 81 87 59 #,34 82 84 56 #,35 83 85 57 #,36 84 82 62 #,
+37 85 83 63 #,38 86 80 60 #,39 87 81 61 #,40 88 72 64 #,41 89 73 65 #,
+42 90 74 66 #,43 91 75 67 #,44 92 77 69 #,45 93 76 68 #,46 94 79 71 #,
+47 95 78 70 #,48 12 0 24 #,49 13 1 25 #,50 14 2 26 #,51 15 3 27 #,52 16 5 29 #,
+53 17 4 28 #,54 18 7 31 #,55 19 6 30 #,56 20 10 34 #,57 21 11 35 #,
+58 22 8 32 #,59 23 9 33 #,60 0 14 38 #,61 1 15 39 #,62 2 12 36 #,63 3 13 37 #,
+64 4 16 40 #,65 5 17 41 #,66 6 18 42 #,67 7 19 43 #,68 8 21 45 #,69 9 20 44 #,
+70 10 23 47 #,71 11 22 46 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Biscribed Propello Truncated Octahedron
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="canonical form" onClick="window.location.href='PropelloTruncatedOctahedron.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>biscribed form</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>96 &nbsp;(24[3] + 24[4] + 24[4] + 24[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>86 &nbsp;(6 squares + {24 * 3} irregular tetragons + 8 ditrigons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>180 &nbsp;(8 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="BiscribedPropelloTetrakisHexahedron.html">Biscribed Propello Tetrakis Hexahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on inscribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[44th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.12485097134715855554</TD></TR>
+<TR><TD><NOBR>Edge 2 (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[44th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.16671221308536834079</TD></TR>
+<TR><TD><NOBR>Edge 3 (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[44th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.42723577697619662053</TD></TR>
+<TR><TD><NOBR>Edge 4 (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[44th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.42845844109117104609</TD></TR>
+<TR><TD><NOBR>Edge 5 (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[44th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.45975268380336519430</TD></TR>
+<TR><TD><NOBR>Edge 6 (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[44th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.46089941607764689566</TD></TR>
+<TR><TD><NOBR>Edge 7 (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[44th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.64492892390544588161</TD></TR>
+<TR><TD><NOBR>Edge 8 (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[44th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.64512191508493761809</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[44th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0515161744510630914</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(root[44th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.4218824551659198042</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='BiscribedPropelloTruncatedOctahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://www.georgehart.com/propello/propello.html>Sculpture Based on Propellorized Polyhedra (George Hart)</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

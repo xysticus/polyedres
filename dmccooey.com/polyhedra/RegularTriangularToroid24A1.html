@@ -1,0 +1,127 @@
+<!-- File:   RegularTriangularToroid24A1.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Regular Triangular Toroid with 24 faces (type A) (square form)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RegularTriangularToroid22.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalRegularTriangular.html"><B>Regular Triangular Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RegularTriangularToroid24B.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Regular Triangular Toroid with 24 faces (type A) (square form)
+
+	(12) EDGE 1 = sqrt(6)
+	(4) EDGE 2 = 2 * sqrt(2)
+	(8) EDGE 3 = sqrt(10)
+	(8) EDGE 4 = sqrt(14)
+	(4) EDGE 5 = 4 * sqrt(2)
+	RADIUS = 4
+	VOLUME = 64 / 3
+
+	EULER CHARACTERISTIC:          0
+	ROTATION SYMMETRIES:           8
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                 5 (1[4] + 4[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  4-fold Dihedral (D4)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="0 12 24">
+<INPUT type=hidden class=Vertices value="1 2 1,-1 -2 1,-1 2 -1,4 0 0,-4 0 0,
+1 -2 -1,-2 1 1,0 4 0,0 -4 0,2 -1 1,-2 -1 -1,2 1 -1">
+<INPUT type=hidden class=Faces value="0 11 9 #,0 9 3 #,0 3 7 #,0 7 6 #,
+1 10 6 #,1 6 4 #,1 4 8 #,1 8 9 #,2 7 11 #,2 11 0 #,2 0 6 #,2 6 10 #,3 9 8 #,
+3 8 5 #,3 5 11 #,3 11 7 #,4 6 7 #,4 7 2 #,4 2 10 #,4 10 8 #,5 8 10 #,5 10 1 #,
+5 1 9 #,5 9 11 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Regular Triangular Toroid with 24 faces <NOBR>(type A)</NOBR> <NOBR>(square form)</NOBR>
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>square form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="D4 antiprismatic form" onClick="window.location.href='RegularTriangularToroid24A2.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="D6 antiprismatic form" onClick="window.location.href='AntiHexagonalIrisToroid.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>12 &nbsp;(12[6])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>24 &nbsp;({8 * 2} acute triangles + 8 obtuse triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>36 &nbsp;(5 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>4-fold Dihedral &nbsp;(D4)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Toroid: &nbsp;</NOBR></TD><TD colspan=2><A href="RegularHexagonalToroid12A1.html">Regular Hexagonal Toroid with 12 faces (type A)</A></TD></TR>
+<TR><TD><NOBR>Edge 1 (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.4494897427831780982</TD></TR>
+<TR><TD><NOBR>Edge 2 (4): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.8284271247461900976</TD></TR>
+<TR><TD><NOBR>Edge 3 (8): &nbsp;</NOBR></TD><TD><NOBR>sqrt(10) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.1622776601683793320</TD></TR>
+<TR><TD><NOBR>Edge 4 (8): &nbsp;</NOBR></TD><TD><NOBR>sqrt(14) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.7416573867739413856</TD></TR>
+<TR><TD><NOBR>Edge 5 (4): &nbsp;</NOBR></TD><TD><NOBR>4*sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;5.6568542494923801952</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>64/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;21.333333333333333333</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RegularTriangularToroid24A1.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Lajos Szilassi, personal communication</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

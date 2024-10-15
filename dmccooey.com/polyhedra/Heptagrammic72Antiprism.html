@@ -1,0 +1,169 @@
+<!-- File:   Heptagrammic72Antiprism.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Heptagrammic 7/2 Antiprism</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='PentagrammicCrossedAntiprism.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="StarPrismAntiprism.html"><B>Star Prisms &amp; Antiprisms</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='Heptagrammic73Antiprism.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Heptagrammic 7/2 Antiprism
+
+	(28) EDGE = 1
+	RADIUS = 0.762886832630777840946615868199
+		= square-root of a root of the polynomial:
+			448*(x^3) - 560*(x^2) + 224*x - 29
+		= sqrt(cot(pi/7) * cot(pi/7) + 5) / 4
+		= sqrt(tan(5*pi/14) * tan(5*pi/14) + 5) / 4
+	MIDRADIUS = 0.576191217740621626310287555887
+		= square-root of a root of the polynomial:  448*(x^3)-224*(x^2)+28*x-1
+		= 1 / (4 * sin(pi/7))
+	HEPTAGRAM CENTER RADIUS = 0.415939139667721060461567082374
+		= square-root of a root of the polynomial:  64*(x^3)+48*(x^2)-16*x+1
+		= sqrt(cos(2*pi/7) - cos(pi/7) / 2)
+		= sqrt(3 - tan(pi/7) * tan(pi/7)) / 4
+		= sqrt(sin(pi/14) * (1 - sin(pi/14)))
+		= sqrt(4 - 1/(cos(pi/7) * cos(pi/7))) / 4
+	TRIANGLE CENTER RADIUS = 0.498661193665686310156219043687
+		= square-root of a root of the polynomial:  12096*(x^3)-3024*(x^2)+1
+		= sqrt(3 * (3 * cot(pi/7) * cot(pi/7) - 1)) / 12
+		= sqrt(3 * (3 * tan(5*pi/14) * tan(5*pi/14) - 1)) / 12
+	HEPTAGRAM-TRIANGLE ANGLE = acos(-0.278037235803418077289958777909)
+		= acos(-sqrt(root[27*(x^3) - 189*(x^2) + 105*x - 7]))
+		= acos(-tan(pi/7) * sqrt(3) / 3)
+		= 106.143095674951255255767949444 degrees
+	TRIANGLE-TRIANGLE ANGLE = acos(-0.497986402478311374033339845339)
+		= acos(-root[27*(x^3) + 45*(x^2) - 3*x - 13])
+		= acos(-(4 * cos(2*pi/7) - 1) / 3)
+		= acos(-(8 * cos(pi/7) * cos(pi/7) - 5) / 3)
+		= acos(-(3 - 8 * sin(pi/7) * sin(pi/7)) / 3)
+		= 119.866870636977064371781434810 degrees
+
+	ROTATION SYMMETRIES:          14
+	MIRROR ROTATION SYMMETRIES:   14
+	ROTATION AXES:                 8 (1[7] + 7[2])
+	MIRROR PLANES:                 8
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  7-fold Prismatic (D7h)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="7 14 16">
+<INPUT type=hidden class=Constants value="0.142307478623063505834519223038,
+0.277479066043685595711097435503,
+0.398736694441201980707844127107,
+0.415939139667721060461567082374,
+0.576191217740621626310287555887,
+0.623489801858733530525004884004,
+0.639524003844966302873925303636">
+<!--
+	C0 = square-root of a root of the polynomial:  448*(x^3)-336*(x^2)+56*x-1
+		= (1 - cos(2*pi/7)) * sqrt(7) / 7
+	C1 = root of the polynomial:  8*(x^3) - 8*(x^2) - 2*x + 1
+		= 1 / (4 * cos(pi/7))
+	C2 = square-root of a root of the polynomial:  448*(x^3)-560*(x^2)+84*x-1
+		= cot(2*pi/7) / 2
+	C3 = square-root of a root of the polynomial:  64*(x^3)+48*(x^2)-16*x+1
+		= sqrt(cos(2*pi/7) - cos(pi/7) / 2)
+		= sqrt(3 - tan(pi/7) * tan(pi/7)) / 4
+		= sqrt(sin(pi/14) * (1 - sin(pi/14)))
+		= sqrt(4 - 1/(cos(pi/7) * cos(pi/7))) / 4
+	C4 = square-root of a root of the polynomial:  448*(x^3)-224*(x^2)+28*x-1
+		= 1 / (4 * sin(pi/7))
+	C5 = root of the polynomial:  8*(x^3) + 4*(x^2) - 4*x - 1
+		= cos(2*pi/7)
+	C6 = square-root of a root of the polynomial:  7*(x^3) - 14*(x^2) + 7*x - 1
+		= 1 / (2 * sin(2*pi/7))
+-->
+<INPUT type=hidden class=Vertices value="C1 -C4 -C3,-C1 -C4 -C3,-C1 -C4 C3,
+C1 -C4 C3,C5 -C0 C3,-C5 -C0 C3,-C5 -C0 -C3,C5 -C0 -C3,0.5 C2 -C3,-0.5 C2 -C3,
+-0.5 C2 C3,0.5 C2 C3,0.0 C6 C3,0.0 C6 -C3">
+<INPUT type=hidden class=Faces value="0 6 13 7 1 9 8 #,2 4 12 5 3 11 10 #,
+0 4 2 #,0 2 6 #,6 2 10 #,6 10 13 #,13 10 11 #,13 11 7 #,7 11 3 #,7 3 1 #,
+1 3 5 #,1 5 9 #,9 5 12 #,9 12 8 #,8 12 4 #,8 4 0 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="12 -3 -4 0">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #79)</NOBR></TD>
+<TD width=40% align=center>Heptagrammic 7/2 Antiprism</TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>14 &nbsp;(14[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>16 &nbsp;(14 equilateral triangles + 2 regular 7/2 heptagrams)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>28</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>7-fold Prismatic &nbsp;(D7h)</NOBR></TD></TR>
+<TR><TD><NOBR>Heptagram-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(root[27*(x^3)&#8722;189*(x^2)+105*x&#8722;7])) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = acos(&#8722;tan(&#960;/7)/sqrt(3)) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;106.143095674951 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Triangle-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;root[27*(x^3)+45*(x^2)&#8722;3*x&#8722;13]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = acos(&#8722;(4*cos(2*&#960;/7)&#8722;1)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;119.866870637 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="Heptagrammic72Trapezohedron.html">Heptagrammic 7/2 Trapezohedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[448*(x^3)&#8722;560*(x^2)+224*x&#8722;29]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = sqrt(cot(&#960;/7)*cot(&#960;/7)+5)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.762886832630777840947</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[448*(x^3)&#8722;224*(x^2)+28*x&#8722;1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = 1/(4*sin(&#960;/7)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.57619121774062162631</TD></TR>
+<TR><TD><NOBR>Heptagram Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[64*(x^3)+48*(x^2)&#8722;16*x+1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = sqrt(cos(2*&#960;/7)&#8722;cos(&#960;/7)/2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.41593913966772106046</TD></TR>
+<TR><TD><NOBR>Triangle Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[12096*(x^3)&#8722;3024*(x^2)+1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = sqrt((3*cot(&#960;/7)*cot(&#960;/7)&#8722;1)/48) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.49866119366568631016</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='Heptagrammic72Antiprism.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Jean Paul Albert Badoureau, M&eacute;moire sur les Figures Isoc&egrave;les,<BR><I>Journal de l'&Eacute;cole polytechnique</I> <B>49</B> (1881), 47-172.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

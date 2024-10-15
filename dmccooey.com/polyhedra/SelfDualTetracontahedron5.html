@@ -1,0 +1,139 @@
+<!-- File:   SelfDualTetracontahedron5.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Self-Dual Tetracontahedron #5 (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='SelfDualTetracontahedron4.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="GreaterSelfDual.html"><B>Greater Self-Dual Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SelfDualTetracontahedron6.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Self-Dual Tetracontahedron #5 (canonical)
+
+	(12) EDGE 1 = 2 * (2 * sqrt(34) - 7 * sqrt(2)) / 19
+	(12) EDGE 2 = 2 * (119 * sqrt(2) - 4 * sqrt(34)) / 731
+	(12) EDGE 3 = (27 * sqrt(34) - 85 * sqrt(2)) / 76
+	(12) EDGE 4 = 2 * sqrt(34) / 17
+	(24) EDGE 5 = 3 * (7 * sqrt(34) - 17 * sqrt(2)) / 68
+	(6) EDGE 6 = (sqrt(34) - 3 * sqrt(2)) / 2
+	RADIUS = sqrt(17 - 3 * sqrt(17)) / 2
+	INRADIUS = sqrt(34 * (17 + 3 * sqrt(17))) / 34
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 8 * (17468873 - 2437208 * sqrt(17)) / 15041787
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          12
+	MIRROR ROTATION SYMMETRIES:   12
+	ROTATION AXES:                 7 (4[3] + 3[2])
+	MIRROR PLANES:                 6
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Full Tetrahedral (Td)
+	TOPOLOGICALLY SELF-DUAL:     YES
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="6 40 40">
+<INPUT type=hidden class=Constants value="0.242535625036332973518906462116,
+0.280776406404415137455352463994,
+0.532795032927245292095863676630,
+0.578179985565665670901159743996,
+0.663975164636226460479318383151,
+0.727606875108998920556719386348">
+<!--
+	C0 = sqrt(17) / 17
+	C1 = (sqrt(17) - 3) / 4
+	C2 = (6 + sqrt(17)) / 19
+	C3 = (7 * sqrt(17) - 4) / 43
+	C4 = (5 * sqrt(17) - 8) / 19
+	C5 = 3 * sqrt(17) / 17
+-->
+<INPUT type=hidden class=Vertices value="C1 C1 1.0,C1 -C1 -1.0,-C1 -C1 1.0,
+-C1 C1 -1.0,1.0 C1 C1,1.0 -C1 -C1,-1.0 -C1 C1,-1.0 C1 -C1,C1 1.0 C1,
+C1 -1.0 -C1,-C1 -1.0 C1,-C1 1.0 -C1,C5 -C0 C5,C5 C0 -C5,-C5 C0 C5,-C5 -C0 -C5,
+C5 -C5 C0,C5 C5 -C0,-C5 C5 C0,-C5 -C5 -C0,C0 -C5 C5,C0 C5 -C5,-C0 C5 C5,
+-C0 -C5 -C5,C2 C2 C4,C2 -C2 -C4,-C2 -C2 C4,-C2 C2 -C4,C4 C2 C2,C4 -C2 -C2,
+-C4 -C2 C2,-C4 C2 -C2,C2 C4 C2,C2 -C4 -C2,-C2 -C4 C2,-C2 C4 -C2,C3 -C3 C3,
+C3 C3 -C3,-C3 C3 C3,-C3 -C3 -C3">
+<INPUT type=hidden class=Faces value="12 4 28 24 0 #,13 5 29 25 1 #,
+14 6 30 26 2 #,15 7 31 27 3 #,16 9 33 29 5 #,17 8 32 28 4 #,18 11 35 31 7 #,
+19 10 34 30 6 #,20 2 26 34 10 #,21 3 27 35 11 #,22 0 24 32 8 #,23 1 25 33 9 #,
+0 2 20 12 #,1 3 21 13 #,2 0 22 14 #,3 1 23 15 #,4 5 13 17 #,5 4 12 16 #,
+6 7 15 19 #,7 6 14 18 #,8 11 18 22 #,9 10 19 23 #,10 9 16 20 #,11 8 17 21 #,
+36 12 20 #,36 20 16 #,36 16 12 #,37 13 21 #,37 21 17 #,37 17 13 #,38 14 22 #,
+38 22 18 #,38 18 14 #,39 15 23 #,39 23 19 #,39 19 15 #,24 28 32 #,25 29 33 #,
+26 30 34 #,27 31 35 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Self-Dual Tetracontahedron #5 (canonical)
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>40 &nbsp;(4[3] + 12[3] + 12[4] + 12[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>40 &nbsp;(4 equilateral triangles + 12 isosceles triangles</NOBR><BR><NOBR> &nbsp; &nbsp; + 12 isosceles trapezoids + 12 mirror-symmetric pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>78 &nbsp;(6 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Tetrahedral &nbsp;(Td)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (12): &nbsp;</NOBR></TD><TD><NOBR>2*(2*sqrt(34)&#8722;7*sqrt(2))/19 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.18551672137673006317</TD></TR>
+<TR><TD><NOBR>Edge 2 (12): &nbsp;</NOBR></TD><TD><NOBR>2*(119*sqrt(2)&#8722;4*sqrt(34))/731 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.39662819792891137872</TD></TR>
+<TR><TD><NOBR>Edge 3 (12): &nbsp;</NOBR></TD><TD><NOBR>(27*sqrt(34)&#8722;85*sqrt(2))/76 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.48983616261986886270</TD></TR>
+<TR><TD><NOBR>Edge 4 (12): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(34)/17 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.68599434057003534951</TD></TR>
+<TR><TD><NOBR>Edge 5 (24): &nbsp;</NOBR></TD><TD><NOBR>3*(7*sqrt(34)&#8722;17*sqrt(2))/68 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.74007497221652150587</TD></TR>
+<TR><TD><NOBR>Edge 6 (6): &nbsp;</NOBR></TD><TD><NOBR>(sqrt(34)&#8722;3*sqrt(2))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.79415560386300766223</TD></TR>
+<TR><TD><NOBR>Max Vertex Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(17&#8722;3*sqrt(17))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0759511052026270341</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>8*(17468873&#8722;2437208*sqrt(17))/15041787 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.9463433350835949301</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SelfDualTetracontahedron5.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

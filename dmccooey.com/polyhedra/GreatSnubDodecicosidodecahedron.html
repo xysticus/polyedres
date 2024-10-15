@@ -1,0 +1,168 @@
+<!-- File:   GreatSnubDodecicosidodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Great Snub Dodecicosidodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='SnubIcosidodecadodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="SelfIntersectingSnubQuasiRegular.html"><B>Self-Intersecting Snub Quasi-Regular Polyhedra</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SmallSnubIcosicosidodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Great Snub Dodecicosidodecahedron
+
+	(180) EDGE = 1
+	RADIUS = sqrt(2) / 2
+	MIDRADIUS = 1 / 2
+	TRIANGLE CENTER RADIUS = sqrt(6) / 6
+	PENTAGRAM CENTER RADIUS = sqrt(10 * sqrt(5)) / 10
+	PENTAGRAM-TRIANGLE ANGLE 1 = acos(0.959787264277259271470192168417)
+		= acos(sqrt(15 * (5 + 2 * sqrt(5) + 4 * sqrt(5 * (sqrt(5) - 2)))) / 15)
+		= 16.3036798008321489323294036249 degrees
+	TRIANGLE-TRIANGLE ANGLE = acos(-0.333333333333333333333333333333)
+		= acos(-1/3)
+		= 109.471220634490691369245999340 degrees
+	PENTAGRAM-TRIANGLE ANGLE 2 = acos(-0.584602316107099471749913474602)
+		= acos(-sqrt(15 * (5 + 2 * sqrt(5) - 4 * sqrt(5*(sqrt(5) - 2)))) / 15)
+		= 125.7749004353228403015754029649 degrees
+
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Icosahedral (I)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="8 60 104">
+<INPUT type=hidden class=Constants value="0.142901106756847359195252445424,
+0.1817730157320175301311393090951,
+0.231218847762556282665656293378,
+0.412991863494573812796795602473,
+0.437016024448821070799301205056,
+0.525333765454529994269705053010,
+0.555892970251421171992048047898,
+0.668234872211377353464957498434">
+<!--
+	C0 = sqrt(2 * (3 - sqrt(5) - sqrt(2 * (5 * sqrt(5) - 11)))) / 4
+	C1 = sqrt(2 * (sqrt(5) - 1 - 2 * sqrt(sqrt(5) - 2))) / 4
+	C2 = sqrt(2 * (2 - sqrt(2 * (sqrt(5) - 1)))) / 4
+	C3 = sqrt(2 * (3 - sqrt(5) + sqrt(2 * (5 * sqrt(5) - 11)))) / 4
+	C4 = sqrt((3 - sqrt(5)) / 4)
+	C5 = sqrt(2 * (sqrt(5) - 1 + 2 * sqrt(sqrt(5) - 2))) / 4
+	C6 = sqrt((sqrt(5) - 1) / 4)
+	C7 = sqrt(2 * (2 + sqrt(2 * (sqrt(5) - 1)))) / 4
+-->
+<INPUT type=hidden class=Vertices value="C1 C0 C7,C1 C0 -C7,C1 -C0 C7,
+C1 -C0 -C7,-C1 C0 C7,-C1 C0 -C7,-C1 -C0 C7,-C1 -C0 -C7,C7 C1 C0,C7 C1 -C0,
+C7 -C1 C0,C7 -C1 -C0,-C7 C1 C0,-C7 C1 -C0,-C7 -C1 C0,-C7 -C1 -C0,C0 C7 C1,
+C0 C7 -C1,C0 -C7 C1,C0 -C7 -C1,-C0 C7 C1,-C0 C7 -C1,-C0 -C7 C1,-C0 -C7 -C1,
+0.0 C4 C6,0.0 C4 -C6,0.0 -C4 C6,0.0 -C4 -C6,C6 0.0 C4,C6 0.0 -C4,-C6 0.0 C4,
+-C6 0.0 -C4,C4 C6 0.0,C4 -C6 0.0,-C4 C6 0.0,-C4 -C6 0.0,C3 C2 C5,C3 C2 -C5,
+C3 -C2 C5,C3 -C2 -C5,-C3 C2 C5,-C3 C2 -C5,-C3 -C2 C5,-C3 -C2 -C5,C5 C3 C2,
+C5 C3 -C2,C5 -C3 C2,C5 -C3 -C2,-C5 C3 C2,-C5 C3 -C2,-C5 -C3 C2,-C5 -C3 -C2,
+C2 C5 C3,C2 C5 -C3,C2 -C5 C3,C2 -C5 -C3,-C2 C5 C3,-C2 C5 -C3,-C2 -C5 C3,
+-C2 -C5 -C3">
+<INPUT type=hidden class=Faces value="16 10 53 36 29 #,16 41 45 34 1 #,
+17 11 52 37 28 #,17 40 44 34 0 #,18 8 55 38 29 #,18 43 47 35 3 #,
+19 9 54 39 28 #,19 42 46 35 2 #,20 14 57 40 31 #,20 37 49 32 5 #,
+21 15 56 41 30 #,21 36 48 32 4 #,22 12 59 42 31 #,22 39 51 33 7 #,
+23 13 58 43 30 #,23 38 50 33 6 #,24 10 6 44 54 #,24 14 2 48 58 #,
+25 11 7 45 55 #,25 15 3 49 59 #,26 8 4 46 52 #,26 12 0 50 56 #,27 9 5 47 53 #,
+27 13 1 51 57 #,0 34 50 #,1 13 16 #,2 14 19 #,3 35 49 #,4 8 21 #,5 32 47 #,
+6 33 44 #,7 11 22 #,8 26 55 #,9 19 5 #,10 16 6 #,11 25 52 #,12 22 0 #,
+13 27 58 #,14 24 57 #,15 21 3 #,16 29 41 #,17 0 11 #,18 3 8 #,19 28 42 #,
+20 5 14 #,21 30 36 #,22 31 39 #,23 6 13 #,24 58 10 #,25 55 15 #,26 52 12 #,
+27 57 9 #,28 39 17 #,29 36 18 #,30 41 23 #,31 42 20 #,32 49 4 #,33 50 7 #,
+34 44 1 #,35 47 2 #,36 53 48 #,37 20 28 #,38 23 29 #,39 54 51 #,40 17 31 #,
+41 56 45 #,42 59 46 #,43 18 30 #,44 40 54 #,45 7 34 #,46 4 35 #,47 43 53 #,
+48 2 32 #,49 37 59 #,50 38 56 #,51 1 33 #,52 46 37 #,53 10 27 #,54 9 24 #,
+55 45 38 #,56 15 26 #,57 51 40 #,58 48 43 #,59 12 25 #,0 22 11 #,1 44 33 #,
+2 47 32 #,3 21 8 #,4 49 35 #,5 19 14 #,6 16 13 #,7 50 34 #,28 20 42 #,
+29 23 41 #,30 18 36 #,31 17 39 #,52 25 12 #,53 43 48 #,54 40 51 #,55 26 15 #,
+56 38 45 #,57 24 9 #,58 27 10 #,59 37 46 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #64)</NOBR></TD>
+<TD width=40% align=center><NOBR>Great Snub Dodecicosidodecahedron</NOBR></TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>60 &nbsp;(60[6])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>104 &nbsp;(80 equilateral triangles + 24 regular pentagrams)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>180</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Icosahedral &nbsp;(I)</NOBR></TD></TR>
+<TR><TD><NOBR>Pentagram-Triangle Angle 1: &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(15*(5+2*sqrt(5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +4*sqrt(5*(sqrt(5)&#8722;2))))/15) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;16.303679801 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Triangle-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;1/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;109.471220634 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Pentagram-Triangle Angle 2: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(15*(5+2*sqrt(5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;4*sqrt(5*(sqrt(5)&#8722;2))))/15) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;125.7749004353 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="GreatHexagonalHexecontahedron.html">Great Hexagonal Hexecontahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.70710678118654752440</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>1/2 &nbsp; &nbsp;</NOBR></TD><TD>0.5</TD></TR>
+<TR><TD><NOBR>Triangle Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6)/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.40824829046386301637</TD></TR>
+<TR><TD><NOBR>Pentagram Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(10*sqrt(5))/10 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.472870804501587906651</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='GreatSnubDodecicosidodecahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>H. S. M. Coxeter, M. S. Longuet-Higgins, and J. C. P. Miller,<BR>Uniform Polyhedra, <I>Philosophical Transactions of the Royal Society of London.<BR>Series A. Mathematical and Physical Sciences</I> <B>246</B> (1954), 401-450.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,140 @@
+<!-- File:   BiscribedLsnubCube.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Biscribed Snub Cube (laevo)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='BiscribedLpropelloRpentagonalIcositetrahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="BiscribedChiral.html"><B>Biscribed Chiral Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='BiscribedLsnubDodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Biscribed Snub Cube (laevo) with inradius = 1
+
+	(24) SHORT EDGE = sqrt(2 * (6 + 5 * sqrt(3) - sqrt(103 + 60 * sqrt(3))))
+	(24) MEDIUM EDGE = sqrt(3 * (6 + 5 * sqrt(3) - sqrt(103 + 60 * sqrt(3))))
+	(12) LONG EDGE = sqrt(27 + 16 * sqrt(3) - sqrt(1441 + 832 * sqrt(3)))
+	RADIUS = sqrt(7 + 5 * sqrt(3) - sqrt(103 + 60 * sqrt(3)))
+	INRADIUS = 1
+	VOLUME = 120 + 74 * sqrt(3) - 2 * sqrt(7411 + 4280 * sqrt(3))
+	SHORT EDGE ANGLE = acos(-(sqrt(6*(15*sqrt(3)-22))-9+5*sqrt(3))/6)
+		= 139.279979282438953725607307176 degrees
+	MEDIUM EDGE ANGLE = acos(-(sqrt(6*(15*sqrt(3)-22))+9-5*sqrt(3))/6)
+		= 150.593146268828160262151889469 degrees
+	LONG EDGE ANGLE = acos(-(sqrt(1+8*sqrt(3))-5+4*sqrt(3))/6)
+		= 164.529379604646541299505376154 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="2 24 38">
+<INPUT type=hidden class=Constants value="0.3048503470205319006578820583149,
+0.427200460548345392869564283191">
+<!--
+	C0 = (1 + 2 * sqrt(3) - sqrt(1 + 8 * sqrt(3))) / 2
+	C1 = (sqrt(1 + 8 * sqrt(3)) - 3) / 2
+-->
+<INPUT type=hidden class=Vertices value="C1 C0 1.0,C1 -C0 -1.0,-C1 -C0 1.0,
+-C1 C0 -1.0,1.0 C1 C0,1.0 -C1 -C0,-1.0 -C1 C0,-1.0 C1 -C0,C0 1.0 C1,
+C0 -1.0 -C1,-C0 -1.0 C1,-C0 1.0 -C1,C0 -C1 1.0,C0 C1 -1.0,-C0 C1 1.0,
+-C0 -C1 -1.0,1.0 -C0 C1,1.0 C0 -C1,-1.0 C0 C1,-1.0 -C0 -C1,C1 -1.0 C0,
+C1 1.0 -C0,-C1 1.0 C0,-C1 -1.0 -C0">
+<INPUT type=hidden class=Faces value="2 12 0 14 #,3 13 1 15 #,4 16 5 17 #,
+7 19 6 18 #,8 21 11 22 #,9 20 10 23 #,0 8 14 #,1 9 15 #,2 10 12 #,3 11 13 #,
+4 0 16 #,5 1 17 #,6 2 18 #,7 3 19 #,8 4 21 #,9 5 20 #,10 6 23 #,11 7 22 #,
+12 16 0 #,13 17 1 #,14 18 2 #,15 19 3 #,16 20 5 #,17 21 4 #,18 22 7 #,
+19 23 6 #,20 12 10 #,21 13 11 #,22 14 8 #,23 15 9 #,8 0 4 #,9 1 5 #,10 2 6 #,
+11 3 7 #,12 20 16 #,13 21 17 #,14 22 18 #,15 23 19 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Biscribed Snub Cube (laevo)
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="canonical form" onClick="window.location.href='LsnubCube.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>biscribed form</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>24 &nbsp;(24[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>38 &nbsp;(8 equilateral triangles + 24 acute triangles + 6 squares)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>60 &nbsp;(24 short + 24 medium + 12 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(sqrt(6*(15*sqrt(3)&#8722;22))&#8722;9+5*sqrt(3))/6) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;139.279979282 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Medium Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(sqrt(6*(15*sqrt(3)&#8722;22))+9&#8722;5*sqrt(3))/6) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;150.593146269 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Long Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(sqrt(1+8*sqrt(3))&#8722;5+4*sqrt(3))/6) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;164.5293796046 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="BiscribedRpentagonalIcositetrahedron.html">Biscribed Pentagonal Icositetrahedron (dextro)</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on inscribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(6+5*sqrt(3)&#8722;sqrt(103+60*sqrt(3)))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.74220477978959032237</TD></TR>
+<TR><TD><NOBR>Medium Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(6+5*sqrt(3)&#8722;sqrt(103+60*sqrt(3)))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.90901149756962447047</TD></TR>
+<TR><TD><NOBR>Long Edge (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(27+16*sqrt(3)&#8722;sqrt(1441+832*sqrt(3))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0138705840028154884</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(7+5*sqrt(3)&#8722;sqrt(103+60*sqrt(3))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1293511267853134486</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>120+74*sqrt(3)&#8722;2*sqrt(7411+4280*sqrt(3)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.6626021795673548140</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='BiscribedLsnubCube.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

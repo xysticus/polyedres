@@ -1,0 +1,164 @@
+<!-- File:   BiscribedPropelloOctahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Biscribed Propello Octahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='BiscribedRhexpropelloDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="BiscribedChiral.html"><B>Biscribed Chiral Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='BiscribedPropelloIcosahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Biscribed Propello Octahedron with radius = 1
+
+	(12) SHORT EDGE = 0.361539615572493145301888828924
+		= square-root of a root of the polynomial:
+			9*(x^5) - 264*(x^4) + 4372*(x^3) - 26152*(x^2) + 51328*x - 6272
+	(24) MEDIUM EDGE = 0.682675645996630395650763696669
+		= square-root of a root of the polynomial:
+			3*(x^5) - 92*(x^3) - 72*(x^2) + 1152*x - 512
+	(24) LONG EDGE = 0.791276808761596618017934918009
+		= square-root of a root of the polynomial:
+			(x^5) - 22*(x^4) + 316*(x^3) - 1544*(x^2) + 2688*x - 1152
+	RADIUS = 1
+	INRADIUS = 0.889546890635163697859708134636
+		= square-root of a root of the polynomial:
+			27*(x^5) + 63*(x^4) + 426*(x^3) - 382*(x^2) - 5*x - 1
+	VOLUME = 3.30109596749150303831920403751
+		= root of the polynomial:  243*(x^5) - 31752*(x^4) + 1076976*(x^3)
+			- 2511936*(x^2) - 2061312*x - 888832
+	SHORT EDGE ANGLE = acos(-0.636049721558695392199512257587)
+		= acos(-root[108*(x^5)+828*(x^4)+2499*(x^3)+2789*(x^2)-203*x-1789])
+		= 129.4978839042925305375053978353 degrees
+	MEDIUM EDGE ANGLE = acos(-0.7912936706386878845474389780251)
+		= acos(-root[27*(x^5) + 63*(x^4) + 426*(x^3) - 382*(x^2) - 5*x - 1])
+		= 142.306571893805116974974210022 degrees
+	LONG EDGE ANGLE = acos(-0.876281155960040496339403134196)
+		= acos(-root[27*(x^5) - 63*(x^4) - 39*(x^3) + 119*(x^2) + 48*x - 84])
+		= 151.196964523788934534934413968 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="3 30 32">
+<INPUT type=hidden class=Constants value="0.149825404557484083971488566549,
+0.623938024555993280267936683079,
+0.766976981181541688825873625866">
+<!--
+	C0 = root of the polynomial:
+		3*(x^5) + 3*(x^4) + 85*(x^3) - 8*(x^2) + 46*x - 7
+	C1 = root of the polynomial:
+		3*(x^5) + 21*(x^4) + 13*(x^3) - 106*(x^2) + 102*x - 29
+	C2 = root of the polynomial:  3*(x^5) - 15*(x^4) + 7*(x^3) + 48*(x^2) - 27
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 1.0,0.0 0.0 -1.0,1.0 0.0 0.0,
+-1.0 0.0 0.0,0.0 1.0 0.0,0.0 -1.0 0.0,C1 -C0 C2,C1 C0 -C2,-C1 C0 C2,
+-C1 -C0 -C2,C2 -C1 C0,C2 C1 -C0,-C2 C1 C0,-C2 -C1 -C0,C0 -C2 C1,C0 C2 -C1,
+-C0 C2 C1,-C0 -C2 -C1,C0 C1 C2,C0 -C1 -C2,-C0 -C1 C2,-C0 C1 -C2,C2 C0 C1,
+C2 -C0 -C1,-C2 -C0 C1,-C2 C0 -C1,C1 C2 C0,C1 -C2 -C0,-C1 -C2 C0,-C1 C2 -C0">
+<INPUT type=hidden class=Faces value="0 6 22 18 #,0 18 16 8 #,0 8 24 20 #,
+0 20 14 6 #,1 7 23 19 #,1 19 17 9 #,1 9 25 21 #,1 21 15 7 #,2 10 27 23 #,
+2 23 7 11 #,2 11 26 22 #,2 22 6 10 #,3 12 29 25 #,3 25 9 13 #,3 13 28 24 #,
+3 24 8 12 #,4 15 21 29 #,4 29 12 16 #,4 16 18 26 #,4 26 11 15 #,5 14 20 28 #,
+5 28 13 17 #,5 17 19 27 #,5 27 10 14 #,14 10 6 #,15 11 7 #,16 12 8 #,17 13 9 #,
+18 22 26 #,19 23 27 #,20 24 28 #,21 25 29 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Biscribed Propello Octahedron
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="canonical form" onClick="window.location.href='PropelloOctahedron.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>biscribed form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="rhombic form" onClick="window.location.href='RhombicPropelloOctahedron.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>30 &nbsp;(6[4] + 24[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>32 &nbsp;(8 equilateral triangles + 24 irregular tetragons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>60 &nbsp;(12 short + 24 medium + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(-root[108*(x^5)+828*(x^4) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +2499*(x^3)+2789*(x^2)&#8722;203*x&#8722;1789]) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;129.497883904 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Medium Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(-root[27*(x^5)+63*(x^4) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +426*(x^3)&#8722;382*(x^2)&#8722;5*x&#8722;1]) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;142.306571894 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Long Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(-root[27*(x^5)&#8722;63*(x^4) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;39*(x^3)+119*(x^2)+48*x&#8722;84]) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;151.196964524 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="BiscribedPropelloCube.html">Biscribed Propello Cube</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on circumscribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[9*(x^5)&#8722;264*(x^4)+4372*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;26152*(x^2)+51328*x&#8722;6272]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.36153961557249314530</TD></TR>
+<TR><TD><NOBR>Medium Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[3*(x^5)&#8722;92*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;72*(x^2)+1152*x&#8722;512]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.682675645996630395651</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[(x^5)&#8722;22*(x^4)+316*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;1544*(x^2)+2688*x&#8722;1152]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.79127680876159661802</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[27*(x^5)+63*(x^4) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +426*(x^3)&#8722;382*(x^2)&#8722;5*x&#8722;1]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.88954689063516369786</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>root[243*(x^5)&#8722;31752*(x^4)+1076976*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;2511936*(x^2)&#8722;2061312*x&#8722;888832] &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.3010959674915030383</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='BiscribedPropelloOctahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://www.georgehart.com/propello/propello.html>Sculpture Based on Propellorized Polyhedra (George Hart)</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

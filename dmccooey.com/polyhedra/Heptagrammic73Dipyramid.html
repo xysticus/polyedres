@@ -1,0 +1,168 @@
+<!-- File:   Heptagrammic73Dipyramid.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Heptagrammic 7/3 Dipyramid</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='Heptagrammic72Dipyramid.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="StarDipyramidTrapezohedron.html"><B>Star Dipyramids &amp; Trapezohedra</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='OctagrammicDipyramid.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Heptagrammic 7/3 Dipyramid
+
+	(14) SHORT EDGE = 2.36403619402441410183178287200
+		= root of the polynomial:  7*(x^3) - 28*(x^2) + 64
+		= 8 * sin(2*pi/7) * sqrt(7) / 7
+		= 3 - cot(2*pi/7) * cot(2*pi/7)
+		= 8 * cos(3*pi/14) * sqrt(7) / 7
+		= 4 - 1 / (sin(2*pi/7) * sin(2*pi/7))
+		= 4 * sqrt(14 * (sin(pi/14) + 1)) / 7
+		= 2 * sqrt(14 * (6 - 1 / cos(pi/7))) / 7
+	(7) LONG EDGE = 4.49395920743493412210001953602
+		= root of the polynomial:  (x^3) - 4*(x^2) - 4*x + 8
+		= 1 / sin(pi/14)
+		= 4 * cos(2*pi/7) + 2
+	(2) INNER VERTEX RADIUS = 0.526047541800843515323827385990
+		= root of the polynomial:  7*(x^3) - 28*(x^2) + 28*x - 8
+		= 1 / (2 * cos(pi/14) * cos(pi/14))
+	(7) OUTER VERTEX RADIUS = 2.304764870962486505241150223547
+		= square-root of a root of the polynomial:  7*(x^3)-56*(x^2)+112*x-64
+		= 1 / sin(pi/7)
+		= (tan(pi/14) + cot(pi/14)) / 2
+	EDGE-SCRIBED RADIUS = 0.512858431636276949746649808138
+		= square-root of a root of the polynomial:  7*(x^3)-14*(x^2)+7*x-1
+		= 1 / (2 * cos(pi/14))
+	INRADIUS = 0.367219940207290525068457229064
+		= square-root of a root of the polynomial:
+			1673*(x^3) - 2520*(x^2) + 784*x - 64
+		= sqrt(1673 * (1140 - 872 * cos(pi/7) - 116/cos(pi/7))) / 1673
+		= sqrt(1673 * (908 + 1336 * sin(pi/14) - 218/sin(pi/14))) / 1673
+		= sqrt(1673 * (1140 - 1336 * cos(pi/7) + 464 * cos(2*pi/7))) / 1673
+		= sqrt(1673 * (472 + 464 * cos(2*pi/7) - 334/cos(2*pi/7))) / 1673
+	DIHEDRAL ANGLE = acos(-0.0253862913166058341002368969006)
+		= acos(-root[239*(x^3) - 227*(x^2) + 45*x - 1])
+		= acos(-(97 - 96 * cos(pi/7) - 4 / cos(pi/7)) / 239)
+		= acos(-(89 + 112 * sin(pi/14) - 24 / sin(pi/14)) / 239)
+		= acos(-(97 - 112 * cos(pi/7) + 16 * cos(2*pi/7)) / 239)
+		= acos(-(41 + 16 * cos(2*pi/7) - 28 / cos(2*pi/7)) / 239)
+		= 91.4546836269577252268062425691 degrees
+
+	ROTATION SYMMETRIES:          14
+	MIRROR ROTATION SYMMETRIES:   14
+	ROTATION AXES:                 8 (1[7] + 7[2])
+	MIRROR PLANES:                 8
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  7-fold Prismatic (D7h)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="7 9 14">
+<INPUT type=hidden class=Constants value="0.512858431636276949746649808138,
+0.526047541800843515323827385990,
+1.4369973927273702642896135578501,
+1.80193773580483825247220463901,
+2.07652139657233656716353886149,
+2.24697960371746706105000976801,
+2.304764870962486505241150223547">
+<!--
+	C0 = square-root of a root of the polynomial:  7*(x^3) - 14*(x^2) + 7*x - 1
+		= 1 / (2 * cos(pi/14))
+	C1 = root of the polynomial:  7*(x^3) - 28*(x^2) + 28*x - 8
+		= 1 / (2 * cos(pi/14) * cos(pi/14))
+	C2 = square-root of a root of the polynomial:  7*(x^3)-21*(x^2)+14*x-1
+		= 2 * (cos(pi/7) + 1) * sqrt(7) / 7
+		= 1 / sin(pi/7) - 2 * sin(pi/7)
+		= (3 / tan(pi/7) - tan(pi/7)) / 4
+		= (4 * cos(pi/14) - 1 / cos(pi/14)) / 2
+	C3 = root of the polynomial:  (x^3) - (x^2) - 2*x + 1
+		= 2 * cos(pi/7)
+	C4 = square-root of a root of the polynomial:  7*(x^3)-35*(x^2)+21*x-1
+		= 1 / tan(pi/7)
+		= tan(5*pi/14)
+	C5 = root of the polynomial:  (x^3) - 2*(x^2) - x + 1
+		= 2 * cos(2*pi/7) + 1
+		= 1 / (2 * sin(pi/14))
+	C6 = square-root of a root of the polynomial:  7*(x^3)-56*(x^2)+112*x-64
+		= 1 / sin(pi/7)
+		= (tan(pi/14) + cot(pi/14)) / 2
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C1,0.0 0.0 -C1,-C3 -C2 0.0,
+C3 -C2 0.0,1.0 C4 0.0,-1.0 C4 0.0,C5 C0 0.0,-C5 C0 0.0,0.0 -C6 0.0">
+<INPUT type=hidden class=Faces value="0 2 6 #,0 6 7 #,0 7 3 #,0 3 5 #,0 5 8 #,
+0 8 4 #,0 4 2 #,1 2 4 #,1 4 8 #,1 8 5 #,1 5 3 #,1 3 7 #,1 7 6 #,1 6 2 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="12 -3 -4 0">
+</DIV>
+<BR>
+<CENTER>
+Heptagrammic 7/3 Dipyramid
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>9 &nbsp;(7[4] + 2[7])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>14 &nbsp;(isosceles triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>21 &nbsp;(14 short + 7 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>7-fold Prismatic &nbsp;(D7h)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;root[239*(x^3)&#8722;227*(x^2)+45*x&#8722;1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = acos(&#8722;(97&#8722;96*cos(&#960;/7)&#8722;4/cos(&#960;/7))/239) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;91.454683627 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="Heptagrammic73Prism.html">Heptagrammic 7/3 Prism</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length Heptagrammic 7/3 Prism)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (14): &nbsp;</NOBR></TD><TD><NOBR>root[7*(x^3)&#8722;28*(x^2)+64] &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = 8*sin(2*&#960;/7)/sqrt(7) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.3640361940244141018</TD></TR>
+<TR><TD><NOBR>Long Edge (7): &nbsp;</NOBR></TD><TD><NOBR>root[(x^3)&#8722;4*(x^2)&#8722;4*x+8] &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = 1/sin(&#960;/14) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.4939592074349341221</TD></TR>
+<TR><TD><NOBR>[7]-Vertex Radius (2): &nbsp;</NOBR></TD><TD><NOBR>root[7*(x^3)&#8722;28*(x^2)+28*x&#8722;8] &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = 1/(2*cos(&#960;/14)*cos(&#960;/14)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.52604754180084351532</TD></TR>
+<TR><TD><NOBR>[4]-Vertex Radius (7): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[7*(x^3)&#8722;56*(x^2)+112*x&#8722;64]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = 1/sin(&#960;/7) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.3047648709624865052</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[7*(x^3)&#8722;14*(x^2)+7*x&#8722;1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = 1/(2*cos(&#960;/14)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.512858431636276949747</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[1673*(x^3)&#8722;2520*(x^2)+784*x&#8722;64]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = sqrt((1140&#8722;872*cos(&#960;/7)&#8722;116/cos(&#960;/7))/1673) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.36721994020729052507</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='Heptagrammic73Dipyramid.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

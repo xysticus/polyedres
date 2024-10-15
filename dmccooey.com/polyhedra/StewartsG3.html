@@ -1,0 +1,141 @@
+<!-- File:   StewartsG3.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Stewart's G3</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='Schonhardt.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Other.html"><B>Other Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='Durer.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Stewart's G3
+
+	(24) EDGE = 1
+	VOLUME = (12 + 7 * sqrt(5)) / 12
+	PENTAGON-SQUARE ANGLE = acos(sqrt(10 * (5 - sqrt(5))) / 10)
+		= 58.2825255885389946757860968602 degrees
+	PENTAGON-TRIANGLE ANGLE = acos(sqrt(15 * (5 - 2 * sqrt(5))) / 15)
+		= 79.18768303642829370871505522552 degrees
+	SQUARE-TRIANGLE ANGLE 1 = acos(-(sqrt(15) - sqrt(3)) / 6)
+		= 110.9051574478892990329289583653 degrees
+	PENTAGON-PENTAGON ANGLE = acos(-sqrt(5) / 5)
+		= 116.565051177077989351572193720 degrees
+	SQUARE-TRIANGLE ANGLE 2 = acos(-(sqrt(3) + sqrt(15)) / 6)
+		= 159.0948425521107009670710416347 degrees
+	TRIANGLE-TRIANGLE ANGLE = acos(-sqrt(5) / 3)
+		= 221.8103148957785980658579167306 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:           3
+	MIRROR ROTATION SYMMETRIES:    3
+	ROTATION AXES:                 1 (1[3])
+	MIRROR PLANES:                 3
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  3-fold Pyramidal (C3v)
+	TOPOLOGICALLY SELF-DUAL:     YES
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="7 13 13">
+<INPUT type=hidden class=Constants value="0.140695411754339751746677742908,
+0.359304588245660248253322257092,
+0.449712406129287175848971160090,
+0.6683215826206076723556156742752,
+0.859304588245660248253322257092,
+0.949712406129287175848971160090,
+1.16832158262060767235561567428">
+<!--
+	C0 = (183 - 31 * sqrt(5)) / 808
+	C1 = (221 + 31 * sqrt(5)) / 808
+	C2 = 19 * (9 * sqrt(5) - 1) / 808
+	C3 = (19 + 233 * sqrt(5)) / 808
+	C4 = (625 + 31 * sqrt(5)) / 808
+	C5 = (385 + 171 * sqrt(5)) / 808
+	C6 = (423 + 233 * sqrt(5)) / 808
+-->
+<INPUT type=hidden class=Vertices value="-C2 C6 C2,-C2 -C2 -C6,C6 -C2 C2,
+C1 -C5 -C4,C4 C1 C5,-C5 C4 -C1,-C0 C1 C5,-C5 -C0 -C1,C1 -C5 C0,C3 -C0 -C1,
+C1 C3 C0,-C0 C1 -C3,-C2 -C2 C2">
+<INPUT type=hidden class=Faces value="12 6 0 5 7 #,12 7 1 3 8 #,12 8 2 4 6 #,
+0 10 11 5 #,1 11 9 3 #,2 9 10 4 #,0 6 10 #,1 7 11 #,2 8 9 #,3 9 8 #,4 10 6 #,
+5 11 7 #,9 11 10 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="458783940 666352604 -587068430 29020022">
+</DIV>
+<BR>
+<CENTER>
+Stewart's G3
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>13 &nbsp;(1[3] + 6[3] + 3[4] + 3[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>13 &nbsp;(7 equilateral triangles + 3 squares + 3 regular pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>24 &nbsp;(all same length)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>3-fold Pyramidal &nbsp;(C3v)</NOBR></TD></TR>
+<TR><TD><NOBR>Pentagon-Square Angle (3): &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(10*(5&#8722;sqrt(5)))/10) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;58.282525589 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Pentagon-Triangle Angle (6): &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(15*(5&#8722;2*sqrt(5)))/15) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;79.187683036 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Square-Triangle Angle 1 (6): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(sqrt(15)&#8722;sqrt(3))/6) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;110.905157448 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Pentagon-Pentagon Angle (3): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(5)/5) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;116.565051177 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Square-Triangle Angle 2 (3): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(sqrt(3)+sqrt(15))/6) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;159.094842552 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Triangle-Triangle Angle (3): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(5)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;221.810314896 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>(12+7*sqrt(5))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.3043729868748773229</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='StewartsG3.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Bonnie Madison Stewart, <I>Adventures Among the Toroids: A Study of Orientable<BR>Polyhedra with Regular Faces</I>, self-published, Okemos, Michigan (January 1970).</TD></TR>
+<TR><TD></TD><TD valign=top>[2]</TD><TD>Bonnie Madison Stewart, <I>Adventures Among the Toroids: A Study of Quasi-Convex,<BR>Aplanar, Tunneled Orientable Polyhedra of Positive Genus Having Regular Faces<BR>With Disjoint Interiors</I>, 2nd edition, Okemos, Michigan (September 1980).</TD></TR>
+<TR><TD></TD><TD valign=top>[3]</TD><TD><A href=http://www.orchidpalms.com/polyhedra/misc/g3.html>The Stewart G3 and its relations</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

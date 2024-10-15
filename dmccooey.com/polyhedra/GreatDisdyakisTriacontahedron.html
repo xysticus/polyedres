@@ -1,0 +1,160 @@
+<!-- File:   GreatDisdyakisTriacontahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Great Disdyakis Triacontahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='MedialDisdyakisTriacontahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="SelfIntersectingTruncatedQuasiRegularDual.html"><B>Self-Intersecting Truncated Quasi-Regular Duals</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='TetradyakisHexahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Great Disdyakis Triacontahedron
+
+	(60) SHORT EDGE = 3 * sqrt(15 * (65 - 19 * sqrt(5))) / 55
+	(60) MEDIUM EDGE = 2 * sqrt(15 * (5 + sqrt(5))) / 5
+	(60) LONG EDGE = sqrt(15 * (85 + 31 * sqrt(5))) / 11
+	(12) INNER VERTEX RADIUS = 3 * sqrt(5 * (5 - 2 * sqrt(5))) / 5
+	(30) MIDDLE VERTEX RADIUS = 3 * (4 * sqrt(5) - 5) / 11
+	(20) OUTER VERTEX RADIUS = sqrt(15)
+	EDGE-SCRIBED RADIUS = sqrt(6 * (5 - 2 * sqrt(5))) / 2
+	INRADIUS = 3 * sqrt(1205 * (39 - 16 * sqrt(5))) / 241
+	DIHEDRAL ANGLE = acos(-0.520059620497946254299501377388)
+		= acos(-(179 - 24 * sqrt(5)) / 241)
+		= 121.3362508073861960885023642653 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="9 62 120">
+<INPUT type=hidden class=Constants value="0.332412831988765413567097976006,
+0.512461179749810726768256301858,
+0.537855260454430743495912910217,
+0.829179606750063091077247899381,
+0.870268092443196157063010886223,
+1.07571052090886148699182582043,
+1.38196601125010515179541316563,
+2.23606797749978969640917366873,
+3.61803398874989484820458683437">
+<!--
+	C0 = 3 * (25 - 9 * sqrt(5)) / 44
+	C1 = 3 * (3 * sqrt(5) - 5) / 10
+	C2 = 3 * (4 * sqrt(5) - 5) / 22
+	C3 = 3 * (5 - sqrt(5)) / 10
+	C4 = 3 * (15 - sqrt(5)) / 44
+	C5 = 3 * (4 * sqrt(5) - 5) / 11
+	C6 = (5 - sqrt(5)) / 2
+	C7 = sqrt(5)
+	C8 = (5 + sqrt(5)) / 2
+-->
+<INPUT type=hidden class=Vertices value="0.0 -0.0 -C5,0.0 -0.0 C5,0.0 -C5 0.0,
+0.0 C5 0.0,-C5 -0.0 0.0,C5 -0.0 0.0,C8 -0.0 C6,C8 -0.0 -C6,-C8 -0.0 C6,
+-C8 -0.0 -C6,0.0 C6 C8,0.0 C6 -C8,0.0 -C6 C8,0.0 -C6 -C8,C6 C8 0.0,-C6 C8 0.0,
+C6 -C8 0.0,-C6 -C8 0.0,0.0 C3 -C1,0.0 C3 C1,0.0 -C3 -C1,0.0 -C3 C1,C3 -C1 0.0,
+-C3 -C1 0.0,C3 C1 0.0,-C3 C1 0.0,-C1 -0.0 C3,-C1 -0.0 -C3,C1 -0.0 C3,
+C1 -0.0 -C3,-C2 C4 C0,-C2 C4 -C0,C2 C4 C0,C2 C4 -C0,-C2 -C4 C0,-C2 -C4 -C0,
+C2 -C4 C0,C2 -C4 -C0,C4 C0 -C2,C4 C0 C2,-C4 C0 -C2,-C4 C0 C2,C4 -C0 -C2,
+C4 -C0 C2,-C4 -C0 -C2,-C4 -C0 C2,C0 -C2 C4,C0 -C2 -C4,-C0 -C2 C4,-C0 -C2 -C4,
+C0 C2 C4,C0 C2 -C4,-C0 C2 C4,-C0 C2 -C4,-C7 -C7 -C7,-C7 -C7 C7,C7 -C7 -C7,
+C7 -C7 C7,-C7 C7 -C7,-C7 C7 C7,C7 C7 -C7,C7 C7 C7">
+<INPUT type=hidden class=Faces value="18 0 8 #,18 8 32 #,18 32 56 #,18 56 40 #,
+18 40 10 #,18 10 38 #,18 38 54 #,18 54 30 #,18 30 6 #,18 6 0 #,19 1 7 #,
+19 7 31 #,19 31 55 #,19 55 39 #,19 39 11 #,19 11 41 #,19 41 57 #,19 57 33 #,
+19 33 9 #,19 9 1 #,20 0 6 #,20 6 34 #,20 34 58 #,20 58 42 #,20 42 12 #,
+20 12 44 #,20 44 60 #,20 60 36 #,20 36 8 #,20 8 0 #,21 1 9 #,21 9 37 #,
+21 37 61 #,21 61 45 #,21 45 13 #,21 13 43 #,21 43 59 #,21 59 35 #,21 35 7 #,
+21 7 1 #,22 2 11 #,22 11 39 #,22 39 55 #,22 55 47 #,22 47 14 #,22 14 46 #,
+22 46 54 #,22 54 38 #,22 38 10 #,22 10 2 #,23 2 10 #,23 10 40 #,23 40 56 #,
+23 56 48 #,23 48 15 #,23 15 49 #,23 49 57 #,23 57 41 #,23 41 11 #,23 11 2 #,
+24 3 12 #,24 12 42 #,24 42 58 #,24 58 50 #,24 50 16 #,24 16 51 #,24 51 59 #,
+24 59 43 #,24 43 13 #,24 13 3 #,25 3 13 #,25 13 45 #,25 45 61 #,25 61 53 #,
+25 53 17 #,25 17 52 #,25 52 60 #,25 60 44 #,25 44 12 #,25 12 3 #,26 4 16 #,
+26 16 50 #,26 50 58 #,26 58 34 #,26 34 6 #,26 6 30 #,26 30 54 #,26 54 46 #,
+26 46 14 #,26 14 4 #,27 4 14 #,27 14 47 #,27 47 55 #,27 55 31 #,27 31 7 #,
+27 7 35 #,27 35 59 #,27 59 51 #,27 51 16 #,27 16 4 #,28 5 15 #,28 15 48 #,
+28 48 56 #,28 56 32 #,28 32 8 #,28 8 36 #,28 36 60 #,28 60 52 #,28 52 17 #,
+28 17 5 #,29 5 17 #,29 17 53 #,29 53 61 #,29 61 37 #,29 37 9 #,29 9 33 #,
+29 33 57 #,29 57 49 #,29 49 15 #,29 15 5 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Great Disdyakis Triacontahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>62 &nbsp;(30[4] + 20[6] + 12[10])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>120 &nbsp;(obtuse triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>180 &nbsp;(60 short + 60 medium + 60 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(179&#8722;24*sqrt(5))/241) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;121.336250807 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="GreatTruncatedIcosidodecahedron.html">Great Truncated Icosidodecahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length Great Truncated Icosidodecahedron)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(15*(65&#8722;19*sqrt(5)))/55 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0023914607409093576</TD></TR>
+<TR><TD><NOBR>Medium Edge (60): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(15*(5+sqrt(5)))/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.1673208594970816419</TD></TR>
+<TR><TD><NOBR>Long Edge (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(15*(85+31*sqrt(5)))/11 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.3738248570872609211</TD></TR>
+<TR><TD><NOBR>[10]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(5*(5&#8722;2*sqrt(5)))/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.97475908869871897847</TD></TR>
+<TR><TD><NOBR>[4]-Vertex Radius (30): &nbsp;</NOBR></TD><TD><NOBR>3*(4*sqrt(5)&#8722;5)/11 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0757105209088614870</TD></TR>
+<TR><TD><NOBR>[6]-Vertex Radius (20): &nbsp;</NOBR></TD><TD><NOBR>sqrt(15) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.8729833462074168852</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(5&#8722;2*sqrt(5)))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.88982923502244570318</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(1205*(39&#8722;16*sqrt(5)))/241 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.77575035606720002909</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='GreatDisdyakisTriacontahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

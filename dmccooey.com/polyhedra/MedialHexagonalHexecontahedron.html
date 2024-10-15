@@ -1,0 +1,233 @@
+<!-- File:   MedialHexagonalHexecontahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Medial Hexagonal Hexecontahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='GreatPentagrammicHexecontahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="SelfIntersectingSnubQuasiRegularDual.html"><B>Self-Intersecting Snub Quasi-Regular Duals</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='GreatHexagonalHexecontahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Medial Hexagonal Hexecontahedron
+
+	(60) SHORT EDGE = 0.136640669218902000099703468871
+		= square-root of a root of the polynomial:  9025*(x^6) - 20595*(x^5)
+		+ 12234*(x^4) - 3248*(x^3) + 455*(x^2) - 61*x + 1
+	(60) MEDIUM EDGE = 0.602488609809573164491952663363
+		= sqrt(30 * (16 - cbrt(4 * (101 + 15 * sqrt(69)))
+			+ cbrt(4 * (15 * sqrt(69) - 101)))) / 30
+	(60) LONG EDGE = 1.24156298390054750916894925328
+		= square-root of a root of the polynomial:  9025*(x^6) - 20595*(x^5)
+		+ 12234*(x^4) - 3248*(x^3) + 455*(x^2) - 61*x + 1
+	(12) INNER VERTEX RADIUS = 1.02322688723169853615409497929
+		= square-root of a root of the polynomial:
+		1478656*(x^6) - 4720640*(x^5) + 4015360*(x^4) - 752000*(x^3)
+		+ 24800*(x^2) + 2000*x + 125
+	(80) MIDDLE VERTEX RADIUS = 1.05387240077270631681720858177
+		= sqrt(10 * (22 + cbrt(4 * (367 + 15 * sqrt(69)))
+			+ cbrt(4 * (367 - 15 * sqrt(69))))) / 20
+	(12) OUTER VERTEX RADIUS = 1.379890620281619487431316743251
+		= square-root of a root of the polynomial:
+		1478656*(x^6) - 4720640*(x^5) + 4015360*(x^4) - 752000*(x^3)
+		+ 24800*(x^2) + 2000*x + 125
+	EDGE-SCRIBED RADIUS = 1.00990044354523366874358559133
+		= sqrt(6 * (10 + cbrt(4 * (97 + 3 * sqrt(69)))
+			+ cbrt(4 * (97 - 3 * sqrt(69))))) / 12
+	INRADIUS = 0.905049955535701293610157811036
+		= sqrt(66 * (78 + cbrt(12 * (27765 + 539 * sqrt(69)))
+			+ cbrt(12 * (27765 - 539 * sqrt(69))))) / 132
+	DIHEDRAL ANGLE = acos(-0.606267870861478462919986663126)
+		= acos(-(cbrt(4*(371+33*sqrt(69))) + cbrt(4*(371-33*sqrt(69))) - 1)/33)
+		= 127.3201321976221117158362609851 degrees
+
+	EULER CHARACTERISTIC:        -16
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Icosahedral (I)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="22 104 60">
+<INPUT type=hidden class=Constants value="0.03581639493949013983380209116851,
+0.0474466215401124369879652440389,
+0.105398765906697216676314189282,
+0.112586641242744945279481298926,
+0.134722390669839585134028153001,
+0.37604495239790042473910409039502,
+0.438898343962682737883306417824,
+0.486344965502795174871271661863,
+0.537942209374520181919397458719,
+0.544297109869379954559620607106,
+0.608453514277639159564031071848,
+0.621067356172634760005299814864,
+0.656883751112124899839101906033,
+0.725451430403416911803282769524,
+0.822739079380407825858706772981,
+0.844874828807502465713253627056,
+0.870408778751185966979274045269,
+0.89232145034761490270121887109501,
+0.928137845287105042535020962264,
+0.957461470050247410992734925983,
+0.984498466675539584303135162243,
+1.173805071579957404913880606454">
+<!--
+	C0 = square-root of a root of the polynomial:  102400*(x^6) - 66560*(x^5)
+		+ 19456*(x^4) + 8896*(x^3) - 2768*(x^2) - 776*x + 1
+	C1 = square-root of a root of the polynomial:  102400*(x^6) - 10240*(x^5)
+		- 18944*(x^4) - 13184*(x^3) - 64*(x^2) - 444*x + 1
+	C2 = square-root of a root of the polynomial:  4096*(x^6) - 5120*(x^5)
+		+ 1536*(x^4) - 512*(x^3) + 544*(x^2) - 96*x + 1
+	C3 = sqrt(30 * (cbrt(4 * (7157 + 885 * sqrt(69)))
+		- cbrt(4 * (885 * sqrt(69) - 7157)) - 28)) / 60
+	C4 = square-root of a root of the polynomial:  102400*(x^6) - 143360*(x^5)
+		+ 97536*(x^4) - 40128*(x^3) + 1408*(x^2) - 68*x + 1
+	C5 = square-root of a root of the polynomial:  102400*(x^6) - 168960*(x^5)
+		+ 84736*(x^4) - 18432*(x^3) + 1808*(x^2) - 72*x + 1
+	C6 = square-root of a root of the polynomial:  4096*(x^6) - 5120*(x^5)
+		+ 1536*(x^4) - 512*(x^3) + 544*(x^2) - 96*x + 1
+	C7 = square-root of a root of the polynomial:  102400*(x^6) - 240640*(x^5)
+		+ 226816*(x^4) - 114176*(x^3) + 33152*(x^2) - 5304*x + 361
+	C8 = square-root of a root of the polynomial:  1478656*(x^6)
+		- 2528256*(x^5) + 694016*(x^4) - 24064*(x^3) - 240*(x^2) - 8*x + 1
+	C9 = sqrt(6 * (2 + cbrt(4 * (101 + 15 * sqrt(69)))
+		- cbrt(4 * (15 * sqrt(69) - 101)))) / 12
+	C10 = sqrt(30 * (22 + cbrt(4 * (367 + 15 * sqrt(69)))
+		+ cbrt(4 * (367 - 15 * sqrt(69))))) / 60
+	C11 = square-root of a root of the polynomial:  102400*(x^6) - 66560*(x^5)
+		+ 19456*(x^4) + 8896*(x^3) - 2768*(x^2) - 776*x + 1
+	C12 = sqrt(15 * (31 - cbrt(4 * (101 + 15 * sqrt(69)))
+		+ cbrt(4 * (15 * sqrt(69) - 101)))) / 30
+	C13 = square-root of a root of the polynomial:  1478656*(x^6)
+		- 2192384*(x^5) + 980736*(x^4) - 134656*(x^3) + 5200*(x^2) + 88*x + 1
+	C14 = square-root of a root of the polynomial:  102400*(x^6) - 10240*(x^5)
+		- 18944*(x^4) - 13184*(x^3) - 64*(x^2) - 444*x + 1
+	C15 = square-root of a root of the polynomial:  102400*(x^6)
+		- 143360*(x^5) + 27136*(x^4) + 17472*(x^3) - 352*(x^2) - 448*x + 121
+	C16 = square-root of a root of the polynomial:  1478656*(x^6)
+		- 2192384*(x^5) + 980736*(x^4) - 134656*(x^3) + 5200*(x^2) + 88*x + 1
+	C17 = square-root of a root of the polynomial:  102400*(x^6)
+		- 143360*(x^5) + 97536*(x^4) - 40128*(x^3) + 1408*(x^2) - 68*x + 1
+	C18 = square-root of a root of the polynomial:  102400*(x^6) - 240640*(x^5)
+		+ 226816*(x^4) - 114176*(x^3) + 33152*(x^2) - 5304*x + 361
+	C19 = square-root of a root of the polynomial:  102400*(x^6)
+		- 143360*(x^5) + 27136*(x^4) + 17472*(x^3) - 352*(x^2) - 448*x + 121
+	C20 = square-root of a root of the polynomial:  102400*(x^6)
+		- 168960*(x^5) + 84736*(x^4) - 18432*(x^3) + 1808*(x^2) - 72*x + 1
+	C21 = square-root of a root of the polynomial:  1478656*(x^6)
+		- 2528256*(x^5) + 694016*(x^4) - 24064*(x^3) - 240*(x^2) - 8*x + 1
+-->
+<INPUT type=hidden class=Vertices value="C13 0.0 C21,C13 0.0 -C21,-C13 0.0 C21,
+-C13 0.0 -C21,C21 C13 0.0,C21 -C13 0.0,-C21 C13 0.0,-C21 -C13 0.0,0.0 C21 C13,
+0.0 C21 -C13,0.0 -C21 C13,0.0 -C21 -C13,0.0 C5 C20,0.0 C5 -C20,0.0 -C5 C20,
+0.0 -C5 -C20,C20 0.0 C5,C20 0.0 -C5,-C20 0.0 C5,-C20 0.0 -C5,C5 C20 0.0,
+C5 -C20 0.0,-C5 C20 0.0,-C5 -C20 0.0,C6 C0 C19,C6 -C0 -C19,-C6 -C0 C19,
+-C6 C0 -C19,C19 C6 C0,C19 -C6 -C0,-C19 -C6 C0,-C19 C6 -C0,C0 C19 C6,
+C0 -C19 -C6,-C0 -C19 C6,-C0 C19 -C6,C7 -C3 C18,C7 C3 -C18,-C7 C3 C18,
+-C7 -C3 -C18,C18 -C7 C3,C18 C7 -C3,-C18 C7 C3,-C18 -C7 -C3,C3 -C18 C7,
+C3 C18 -C7,-C3 C18 C7,-C3 -C18 -C7,C9 C4 C17,C9 -C4 -C17,-C9 -C4 C17,
+-C9 C4 -C17,C17 C9 C4,C17 -C9 -C4,-C17 -C9 C4,-C17 C9 -C4,C4 C17 C9,
+C4 -C17 -C9,-C4 -C17 C9,-C4 C17 -C9,C8 0.0 C16,C8 0.0 -C16,-C8 0.0 C16,
+-C8 0.0 -C16,C16 C8 0.0,C16 -C8 0.0,-C16 C8 0.0,-C16 -C8 0.0,0.0 C16 C8,
+0.0 C16 -C8,0.0 -C16 C8,0.0 -C16 -C8,C11 -C2 C15,C11 C2 -C15,-C11 C2 C15,
+-C11 -C2 -C15,C15 -C11 C2,C15 C11 -C2,-C15 C11 C2,-C15 -C11 -C2,C2 -C15 C11,
+C2 C15 -C11,-C2 C15 C11,-C2 -C15 -C11,C12 C1 C14,C12 -C1 -C14,-C12 -C1 C14,
+-C12 C1 -C14,C14 C12 C1,C14 -C12 -C1,-C14 -C12 C1,-C14 C12 -C1,C1 C14 C12,
+C1 -C14 -C12,-C1 -C14 C12,-C1 C14 -C12,C10 C10 C10,C10 C10 -C10,C10 -C10 C10,
+C10 -C10 -C10,-C10 C10 C10,-C10 C10 -C10,-C10 -C10 C10,-C10 -C10 -C10">
+<INPUT type=hidden class=Faces value="0 28 64 77 20 56 #,0 56 68 46 100 38 #,
+0 38 62 86 102 94 #,0 94 70 34 21 76 #,0 76 65 53 17 28 #,1 29 65 76 21 57 #,
+1 57 71 47 103 39 #,1 39 63 87 101 95 #,1 95 69 35 20 77 #,1 77 64 52 16 29 #,
+2 30 67 79 23 58 #,2 58 70 44 98 36 #,2 36 60 84 96 92 #,2 92 68 32 22 78 #,
+2 78 66 55 19 30 #,3 31 66 78 22 59 #,3 59 69 45 97 37 #,3 37 61 85 99 93 #,
+3 93 71 33 23 79 #,3 79 67 54 18 31 #,4 32 68 82 12 48 #,4 48 60 36 98 40 #,
+4 40 65 89 99 85 #,4 85 61 25 13 81 #,4 81 69 59 22 32 #,5 33 71 83 15 49 #,
+5 49 61 37 97 41 #,5 41 64 88 96 84 #,5 84 60 24 14 80 #,5 80 70 58 23 33 #,
+6 35 69 81 13 51 #,6 51 63 39 103 43 #,6 43 67 90 102 86 #,6 86 62 26 12 82 #,
+6 82 68 56 20 35 #,7 34 70 80 14 50 #,7 50 62 38 100 42 #,7 42 66 91 101 87 #,
+7 87 63 27 15 83 #,7 83 71 57 21 34 #,8 24 60 72 16 52 #,8 52 64 41 97 45 #,
+8 45 69 95 101 91 #,8 91 66 31 18 74 #,8 74 62 50 14 24 #,9 27 63 75 19 55 #,
+9 55 66 42 100 46 #,9 46 68 92 96 88 #,9 88 64 28 17 73 #,9 73 61 49 15 27 #,
+10 26 62 74 18 54 #,10 54 67 43 103 47 #,10 47 71 93 99 89 #,
+10 89 65 29 16 72 #,10 72 60 48 12 26 #,11 25 61 73 17 53 #,
+11 53 65 40 98 44 #,11 44 70 94 102 90 #,11 90 67 30 19 75 #,
+11 75 63 51 13 25 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Medial Hexagonal Hexecontahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>104 &nbsp;(80[3] + 12[5] + 12[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>60 &nbsp;(irregular hexagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>180 &nbsp;(60 short + 60 medium + 60 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Icosahedral &nbsp;(I)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(cbrt(4*(371+33*sqrt(69))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(4*(371&#8722;33*sqrt(69)))&#8722;1)/33) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;127.320132198 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="SnubIcosidodecadodecahedron.html">Snub Icosidodecadodecahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length Snub Icosidodecadodecahedron)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[9025*(x^6)&#8722;20595*(x^5)+12234*(x^4) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;3248*(x^3)+455*(x^2)&#8722;61*x+1]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.13664066921890200010</TD></TR>
+<TR><TD><NOBR>Medium Edge (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(30*(16&#8722;cbrt(4*(101+15*sqrt(69))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(4*(15*sqrt(69)&#8722;101))))/30 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.60248860980957316449</TD></TR>
+<TR><TD><NOBR>Long Edge (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[9025*(x^6)&#8722;20595*(x^5)+12234*(x^4) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;3248*(x^3)+455*(x^2)&#8722;61*x+1]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2415629839005475092</TD></TR>
+<TR><TD><NOBR>[5]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[1478656*(x^6)&#8722;4720640*(x^5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +4015360*(x^4)&#8722;752000*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +24800*(x^2)+2000*x+125]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0232268872316985362</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (80): &nbsp;</NOBR></TD><TD><NOBR>sqrt(10*(22+cbrt(4*(367+15*sqrt(69))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(4*(367&#8722;15*sqrt(69)))))/20 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0538724007727063168</TD></TR>
+<TR><TD><NOBR>[5]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[1478656*(x^6)&#8722;4720640*(x^5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +4015360*(x^4)&#8722;752000*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +24800*(x^2)+2000*x+125]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3798906202816194874</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(10+cbrt(4*(97+3*sqrt(69))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(4*(97&#8722;3*sqrt(69)))))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0099004435452336687</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(66*(78+cbrt(12*(27765+539*sqrt(69))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(12*(27765&#8722;539*sqrt(69)))))/132 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.90504995553570129361</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='MedialHexagonalHexecontahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

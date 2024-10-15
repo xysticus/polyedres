@@ -1,0 +1,129 @@
+<!-- File:   SimplestCi.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Simplest Canonical Polyhedron with Ci = S2 Symmetry</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='SimplestC1_1.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Simplest.html"><B>Simplest Canonical Polyhedra of Each Symmetry Type</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SimplestCs_1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Simplest Canonical Polyhedron with Ci = S2 Symmetry
+
+	(2) EDGE 1 = sqrt(sqrt(2)) / 2
+	(2) EDGE 2 = sqrt(2 * sqrt(2)) / 2
+	(2) EDGE 3 = sqrt(9 * sqrt(2) - 8) / 2
+	(2) EDGE 4 = sqrt(2 * (11 * sqrt(2) - 12)) / 2
+	(2) EDGE 5 = sqrt(4 + 3 * sqrt(2)) / 2
+	(2) EDGE 6 = sqrt(2 * (9 * sqrt(2) - 8)) / 2
+	(2) EDGE 7 = sqrt(2 * sqrt(2))
+	(4) EDGE 8 = sqrt(2 * (4 + 3 * sqrt(2))) / 2
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 2 * (5 * sqrt(2) - 2) / 3
+
+	ROTATION SYMMETRIES:           1
+	MIRROR ROTATION SYMMETRIES:    1
+	ROTATION AXES:                 0
+	MIRROR PLANES:                 0
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Inversion (Ci = S2)
+	TOPOLOGICALLY SELF-DUAL:     YES
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="6 10 10">
+<INPUT type=hidden class=Constants value="0.348310699749006523686374494327,
+0.414213562373095048801688724210,
+0.492585715504708019344750981906,
+0.594603557501360533358749985280,
+0.840896415253714543031125476233,
+1.18920711500272106671749997056">
+<!--
+	C0 = sqrt(2 * (3 * sqrt(2) - 4)) / 2
+	C1 = sqrt(2) - 1
+	C2 = sqrt(3 * sqrt(2) - 4)
+	C3 = sqrt(sqrt(2)) / 2
+	C4 = sqrt(2 * sqrt(2)) / 2
+	C5 = sqrt(sqrt(2))
+-->
+<INPUT type=hidden class=Vertices value="C5 0.0 1.0,-C5 0.0 -1.0,-C2 0.0 1.0,
+C2 0.0 -1.0,-C4 C2 C1,C4 -C2 -C1,-C0 -C5 C1,C0 C5 -C1,C3 -C4 0.0,-C3 C4 0.0">
+<INPUT type=hidden class=Faces value="0 7 9 4 2 #,1 3 5 8 6 #,0 5 3 7 #,
+1 6 2 4 #,0 2 6 #,0 6 8 #,0 8 5 #,1 4 9 #,1 9 7 #,1 7 3 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Simplest Canonical Polyhedron with <NOBR>Ci = S2</NOBR> Symmetry
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>10 &nbsp;(6[3] + 2[4] + 2[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>10 &nbsp;({2 opposite * 3} scalene triangles</NOBR><BR><NOBR> &nbsp; &nbsp; + 2 opposite irregular tetragons</NOBR><BR><NOBR> &nbsp; &nbsp; + 2 opposite irregular pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>18 &nbsp;(8 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Inversion &nbsp;(Ci = S2)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2>Simplest Ci (itself)</TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (2): &nbsp;</NOBR></TD><TD><NOBR>sqrt(sqrt(2))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.59460355750136053336</TD></TR>
+<TR><TD><NOBR>Edge 2 (2): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*sqrt(2))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.84089641525371454303</TD></TR>
+<TR><TD><NOBR>Edge 3 (2): &nbsp;</NOBR></TD><TD><NOBR>sqrt(9*sqrt(2)&#8722;8)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0871892730060685527</TD></TR>
+<TR><TD><NOBR>Edge 4 (2): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(11*sqrt(2)&#8722;12))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3334821307584225624</TD></TR>
+<TR><TD><NOBR>Edge 5 (2): &nbsp;</NOBR></TD><TD><NOBR>sqrt(4+3*sqrt(2))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4354999727550750764</TD></TR>
+<TR><TD><NOBR>Edge 6 (2): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(9*sqrt(2)&#8722;8))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.5375178147517275904</TD></TR>
+<TR><TD><NOBR>Edge 7 (2): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*sqrt(2)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.6817928305074290861</TD></TR>
+<TR><TD><NOBR>Edge 8 (4): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(4+3*sqrt(2)))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.0301035302564356097</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>2*(5*sqrt(2)&#8722;2)/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.3807118745769834960</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SimplestCi.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

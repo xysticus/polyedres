@@ -1,0 +1,137 @@
+<!-- File:   JoinedTruncatedTetrahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Joined Truncated Tetrahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='JoinedTruncatedIcosidodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Hull.html"><B>Archimedean-Catalan Hulls</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='JoinedCuboctahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Joined Truncated Tetrahedron
+
+	(12) SHORT EDGE = sqrt(34) / 10
+	(24) LONG EDGE = sqrt(10) / 2
+	RHOMBUS LENGTH = 3
+	RHOMBUS WIDTH = 1
+	KITE LENGTH = 9 / 5
+	KITE WIDTH = 1
+	(4) INNER VERTEX RADIUS = 9 * sqrt(6) / 20
+	(12) MIDDLE VERTEX RADIUS = sqrt(22) / 4
+	(4) OUTER VERTEX RADIUS = 3 * sqrt(6) / 4
+	INRADIUS = 3 * sqrt(2) / 4
+	VOLUME = 99 * sqrt(2) / 20
+	LONG EDGE ANGLE = acos(-2/3) = 131.8103148957785980658579167306 degrees
+	SHORT EDGE ANGLE = acos(-8/9) = 152.733955549267180195320119093 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          12
+	MIRROR ROTATION SYMMETRIES:   12
+	ROTATION AXES:                 7 (4[3] + 3[2])
+	MIRROR PLANES:                 6
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Full Tetrahedral (Td)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="3 20 18">
+<INPUT type=hidden class=Constants value="0.353553390593273762200422181052,
+0.636396103067892771960759925894,
+1.06066017177982128660126654316">
+<!--
+	C0 = sqrt(2) / 4
+	C1 = 9 * sqrt(2) / 20
+	C2 = 3 * sqrt(2) / 4
+-->
+<INPUT type=hidden class=Vertices value="C2 C2 C2,C2 -C2 -C2,-C2 -C2 C2,
+-C2 C2 -C2,C0 -C0 C2,C0 C0 -C2,-C0 C0 C2,-C0 -C0 -C2,C2 -C0 C0,C2 C0 -C0,
+-C2 C0 C0,-C2 -C0 -C0,C0 -C2 C0,C0 C2 -C0,-C0 C2 C0,-C0 -C2 -C0,C1 -C1 C1,
+C1 C1 -C1,-C1 C1 C1,-C1 -C1 -C1">
+<INPUT type=hidden class=Faces value="16 4 2 12 #,16 12 1 8 #,16 8 0 4 #,
+17 5 3 13 #,17 13 0 9 #,17 9 1 5 #,18 6 0 14 #,18 14 3 10 #,18 10 2 6 #,
+19 7 1 15 #,19 15 2 11 #,19 11 3 7 #,6 2 4 0 #,7 3 5 1 #,8 1 9 0 #,11 2 10 3 #,
+12 2 15 1 #,13 3 14 0 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Joined Truncated Tetrahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>20 &nbsp;(4[3] + 12[3] + 4[6])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>18 &nbsp;(12 kites + 6 rhombi)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>36 &nbsp;(12 short + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Tetrahedral &nbsp;(Td)</NOBR></TD></TR>
+<TR><TD><NOBR>Long Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;2/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;131.810314896 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;8/9) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;152.733955549 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length <A href="TruncatedTetrahedron.html">Truncated Tetrahedron</A>)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(34)/10 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.58309518948453004709</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(10)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.5811388300841896660</TD></TR>
+<TR><TD><NOBR>Rhombus Length: &nbsp;</NOBR></TD><TD>3</TD></TR>
+<TR><TD><NOBR>Rhombus Width: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Kite Length: &nbsp;</NOBR></TD><TD><NOBR>9/5 &nbsp; &nbsp;</NOBR></TD><TD>1.8</TD></TR>
+<TR><TD><NOBR>Kite Width: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (4): &nbsp;</NOBR></TD><TD><NOBR>9*sqrt(6)/20 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1022703842524301442</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(22)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1726039399558573886</TD></TR>
+<TR><TD><NOBR>[6]-Vertex Radius (4): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(6)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.8371173070873835736</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(2)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0606601717798212866</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>99*sqrt(2)/20 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;7.0003571337468204916</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='JoinedTruncatedTetrahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://www.georgehart.com/virtual-polyhedra/conway_notation.html>Conway Notation for Polyhedra (George Hart)</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

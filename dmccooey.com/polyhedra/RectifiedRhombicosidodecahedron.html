@@ -1,0 +1,181 @@
+<!-- File:   RectifiedRhombicosidodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2016 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Rectified Rhombicosidodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RectifiedTruncatedDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="RectifiedArchimedean.html"><B>Rectified Archimedean Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RectifiedLsnubDodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Rectified Rhombicosidodecahedron
+
+	(60) SHORT EDGE = 1
+	(120) MEDIUM EDGE = sqrt(2)
+	(60) LONG EDGE = (1 + sqrt(5)) / 2
+	RADIUS = sqrt(2 * (5 + 2 * sqrt(5)))
+	INRADIUS = 3 * sqrt(5 * (5 + 2 * sqrt(5))) / 5
+	VOLUME = (945 + 449 * sqrt(5)) / 6
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="10 120 122">
+<INPUT type=hidden class=Constants value="0.809016994374947424102293417183,
+1.30901699437494742410229341718,
+1.80901699437494742410229341718,
+2.11803398874989484820458683437,
+2.427050983124842272306880251548,
+2.927050983124842272306880251548,
+3.11803398874989484820458683437,
+3.73606797749978969640917366873,
+3.927050983124842272306880251548,
+4.23606797749978969640917366873">
+<!--
+	C0 = (1 + sqrt(5)) / 4
+	C1 = (3 + sqrt(5)) / 4
+	C2 = (5 + sqrt(5)) / 4
+	C3 = (2 + sqrt(5)) / 2
+	C4 = 3 * (1 + sqrt(5)) / 4
+	C5 = (5 + 3 * sqrt(5)) / 4
+	C6 = (4 + sqrt(5)) / 2
+	C7 = (3 + 2 * sqrt(5)) / 2
+	C8 = 3 * (3 + sqrt(5)) / 4
+	C9 = 2 + sqrt(5)
+-->
+<INPUT type=hidden class=Vertices value="1.0 0.0 C9,1.0 0.0 -C9,-1.0 0.0 C9,
+-1.0 0.0 -C9,C9 1.0 0.0,C9 -1.0 0.0,-C9 1.0 0.0,-C9 -1.0 0.0,0.0 C9 1.0,
+0.0 C9 -1.0,0.0 -C9 1.0,0.0 -C9 -1.0,0.0 1.0 C9,0.0 1.0 -C9,0.0 -1.0 C9,
+0.0 -1.0 -C9,C9 0.0 1.0,C9 0.0 -1.0,-C9 0.0 1.0,-C9 0.0 -1.0,1.0 C9 0.0,
+1.0 -C9 0.0,-1.0 C9 0.0,-1.0 -C9 0.0,0.5 C2 C8,0.5 C2 -C8,0.5 -C2 C8,
+0.5 -C2 -C8,-0.5 C2 C8,-0.5 C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,C8 0.5 C2,
+C8 0.5 -C2,C8 -0.5 C2,C8 -0.5 -C2,-C8 0.5 C2,-C8 0.5 -C2,-C8 -0.5 C2,
+-C8 -0.5 -C2,C2 C8 0.5,C2 C8 -0.5,C2 -C8 0.5,C2 -C8 -0.5,-C2 C8 0.5,
+-C2 C8 -0.5,-C2 -C8 0.5,-C2 -C8 -0.5,C2 C1 C7,C2 C1 -C7,C2 -C1 C7,C2 -C1 -C7,
+-C2 C1 C7,-C2 C1 -C7,-C2 -C1 C7,-C2 -C1 -C7,C7 C2 C1,C7 C2 -C1,C7 -C2 C1,
+C7 -C2 -C1,-C7 C2 C1,-C7 C2 -C1,-C7 -C2 C1,-C7 -C2 -C1,C1 C7 C2,C1 C7 -C2,
+C1 -C7 C2,C1 -C7 -C2,-C1 C7 C2,-C1 C7 -C2,-C1 -C7 C2,-C1 -C7 -C2,C0 C5 C6,
+C0 C5 -C6,C0 -C5 C6,C0 -C5 -C6,-C0 C5 C6,-C0 C5 -C6,-C0 -C5 C6,-C0 -C5 -C6,
+C6 C0 C5,C6 C0 -C5,C6 -C0 C5,C6 -C0 -C5,-C6 C0 C5,-C6 C0 -C5,-C6 -C0 C5,
+-C6 -C0 -C5,C5 C6 C0,C5 C6 -C0,C5 -C6 C0,C5 -C6 -C0,-C5 C6 C0,-C5 C6 -C0,
+-C5 -C6 C0,-C5 -C6 -C0,C3 C4 C5,C3 C4 -C5,C3 -C4 C5,C3 -C4 -C5,-C3 C4 C5,
+-C3 C4 -C5,-C3 -C4 C5,-C3 -C4 -C5,C5 C3 C4,C5 C3 -C4,C5 -C3 C4,C5 -C3 -C4,
+-C5 C3 C4,-C5 C3 -C4,-C5 -C3 C4,-C5 -C3 -C4,C4 C5 C3,C4 C5 -C3,C4 -C5 C3,
+C4 -C5 -C3,-C4 C5 C3,-C4 C5 -C3,-C4 -C5 C3,-C4 -C5 -C3">
+<INPUT type=hidden class=Faces value="0 50 82 80 48 #,1 49 81 83 51 #,
+2 52 84 86 54 #,3 55 87 85 53 #,4 57 89 88 56 #,5 58 90 91 59 #,
+6 60 92 93 61 #,7 63 95 94 62 #,8 68 76 72 64 #,9 65 73 77 69 #,
+10 66 74 78 70 #,11 71 79 75 67 #,0 12 2 14 #,1 15 3 13 #,4 16 5 17 #,
+6 19 7 18 #,8 20 9 22 #,10 23 11 21 #,24 48 96 72 #,25 73 97 49 #,
+26 74 98 50 #,27 51 99 75 #,28 76 100 52 #,29 53 101 77 #,30 54 102 78 #,
+31 79 103 55 #,32 56 104 80 #,33 81 105 57 #,34 82 106 58 #,35 59 107 83 #,
+36 84 108 60 #,37 61 109 85 #,38 62 110 86 #,39 87 111 63 #,40 64 112 88 #,
+41 89 113 65 #,42 90 114 66 #,43 67 115 91 #,44 92 116 68 #,45 69 117 93 #,
+46 70 118 94 #,47 95 119 71 #,0 14 26 50 #,0 48 24 12 #,1 13 25 49 #,
+1 51 27 15 #,2 12 28 52 #,2 54 30 14 #,3 15 31 55 #,3 53 29 13 #,4 17 33 57 #,
+4 56 32 16 #,5 16 34 58 #,5 59 35 17 #,6 18 36 60 #,6 61 37 19 #,7 19 39 63 #,
+7 62 38 18 #,8 22 44 68 #,8 64 40 20 #,9 20 41 65 #,9 69 45 22 #,10 21 42 66 #,
+10 70 46 23 #,11 23 47 71 #,11 67 43 21 #,24 72 76 28 #,25 29 77 73 #,
+26 30 78 74 #,27 75 79 31 #,32 80 82 34 #,33 35 83 81 #,36 38 86 84 #,
+37 85 87 39 #,40 88 89 41 #,42 43 91 90 #,44 45 93 92 #,46 94 95 47 #,
+48 80 104 96 #,49 97 105 81 #,50 98 106 82 #,51 83 107 99 #,52 100 108 84 #,
+53 85 109 101 #,54 86 110 102 #,55 103 111 87 #,56 88 112 104 #,
+57 105 113 89 #,58 106 114 90 #,59 91 115 107 #,60 108 116 92 #,
+61 93 117 109 #,62 94 118 110 #,63 111 119 95 #,64 72 96 112 #,65 113 97 73 #,
+66 114 98 74 #,67 75 99 115 #,68 116 100 76 #,69 77 101 117 #,70 78 102 118 #,
+71 119 103 79 #,12 24 28 #,13 29 25 #,14 30 26 #,15 27 31 #,16 32 34 #,
+17 35 33 #,18 38 36 #,19 37 39 #,20 40 41 #,21 43 42 #,22 45 44 #,23 46 47 #,
+96 104 112 #,97 113 105 #,98 114 106 #,99 107 115 #,100 116 108 #,
+101 109 117 #,102 110 118 #,103 119 111 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Rectified Rhombicosidodecahedron
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>derived form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="canonical form" onClick="window.location.href='CanonicalRectifiedRhombicosidodecahedron.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="equal-edge form" onClick="window.location.href='EqualEdgeRectifiedRhombicosidodecahedron.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>120 &nbsp;(60[4] + 60[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>122 &nbsp;(12 regular pentagons + 30 squares</NOBR><BR><NOBR> &nbsp; &nbsp; + 60 isosceles trapezoids + 20 equilateral triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>240 &nbsp;(60 short + 120 medium + 60 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on short edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Medium Edge (120): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4142135623730950488</TD></TR>
+<TR><TD><NOBR>Long Edge (60): &nbsp;</NOBR></TD><TD><NOBR>(1+sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.6180339887498948482</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(5+2*sqrt(5))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.3525017989656430222</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>(945+449*sqrt(5))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;324.83242031623426228</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RectifiedRhombicosidodecahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

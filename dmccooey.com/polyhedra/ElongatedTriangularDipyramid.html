@@ -1,0 +1,110 @@
+<!-- File:   ElongatedTriangularDipyramid.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Elongated Triangular Dipyramid</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Elongated Triangular Dipyramid
+
+	(6) SHORT EDGE = 7 * sqrt(3) / 12
+	(9) LONG EDGE = sqrt(3)
+	RADIUS = sqrt(7) / 2
+	INRADIUS = 1 / 2
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 19 / 8
+
+	ROTATION SYMMETRIES:           6
+	MIRROR ROTATION SYMMETRIES:    6
+	ROTATION AXES:                 4 (1[3] + 3[2])
+	MIRROR PLANES:                 4
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  3-fold Prismatic (D3h)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="2 8 9">
+<INPUT type=hidden class=Constants value="0.866025403784438646763723170753,
+1.01036297108184508789101036588">
+<!--
+	C0 = sqrt(3) / 2
+	C1 = 7 * sqrt(3) / 12
+-->
+<INPUT type=hidden class=Vertices value="C0 -0.5 C0,C0 -0.5 -C0,-C0 -0.5 C0,
+-C0 -0.5 -C0,0.0 1.0 C0,0.0 1.0 -C0,0.0 0.0 C1,0.0 0.0 -C1">
+<INPUT type=hidden class=Faces value="0 1 5 4 #,4 5 3 2 #,2 3 1 0 #,6 0 4 #,
+6 4 2 #,6 2 0 #,7 1 3 #,7 3 5 #,7 5 1 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Elongated Triangular Dipyramid
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>canonical form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="regular faces" onClick="window.location.href='ElongatedTriangularDipyramidJ14.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>8 &nbsp;(2[3] + 6[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>9 &nbsp;(6 isosceles triangles + 3 squares)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>15 &nbsp;(6 short + 9 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>3-fold Prismatic &nbsp;(D3h)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="TriangularBifrustum.html">Triangular Bifrustum</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (6): &nbsp;</NOBR></TD><TD><NOBR>7*sqrt(3)/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0103629710818450879</TD></TR>
+<TR><TD><NOBR>Long Edge (9): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.73205080756887729353</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>19/8 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.375</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='ElongatedTriangularDipyramid.txt'">
+<BR>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

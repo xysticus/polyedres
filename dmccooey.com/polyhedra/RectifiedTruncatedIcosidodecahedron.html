@@ -1,0 +1,226 @@
+<!-- File:   RectifiedTruncatedIcosidodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2016 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Rectified Truncated Icosidodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RectifiedLsnubDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="RectifiedArchimedean.html"><B>Rectified Archimedean Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RectifiedTruncatedTetrahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Rectified Truncated Icosidodecahedron
+
+	(120) SHORT EDGE = 1
+	(120) MEDIUM EDGE = sqrt(6) / 2
+	(120) LONG EDGE = sqrt(5 + sqrt(5)) / 2
+	RADIUS = sqrt(3 * (5 + 2 * sqrt(5)))
+	INRADIUS = sqrt(10 * (5 + 2 * sqrt(5))) / 2
+	VOLUME = 5 * (153 * sqrt(2) + 79 * sqrt(10)) / 4
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="19 180 182">
+<INPUT type=hidden class=Constants value="0.7071067811865475244008443621048,
+1.06066017177982128660126654316,
+1.27916818400423182200091714569,
+1.98627496519077934640176150779,
+2.06973759904632665500064053179,
+2.20478297741518988180141211032,
+2.423290989639600417201062712846,
+2.86030701408842148800036391790,
+2.99535239245728471480113549643,
+3.130397770826147941601907074951,
+3.213860404681695250200786098954,
+3.78592180749937954780085888253,
+3.92096718586824277460163046106,
+4.05601256423710600140240203958,
+4.40956595483037976360282422064,
+4.49302858868592707220170324464,
+4.62807396705479029900247482316,
+5.06508999150361136980177602822,
+5.283598003728021905201426630747">
+<!--
+	C0 = sqrt(2) / 2
+	C1 = 3 * sqrt(2) / 4
+	C2 = (5 * sqrt(2) + sqrt(10)) / 8
+	C3 = (9 * sqrt(2) + sqrt(10)) / 8
+	C4 = (5 * sqrt(2) + 3 * sqrt(10)) / 8
+	C5 = (4 * sqrt(2) + sqrt(10)) / 4
+	C6 = (7 * sqrt(2) + 3 * sqrt(10)) / 8
+	C7 = 5 * (sqrt(2) + sqrt(10)) / 8
+	C8 = (2 * sqrt(2) + sqrt(10)) / 2
+	C9 = (11 * sqrt(2) + 3 * sqrt(10)) / 8
+	C10 = (7 * sqrt(2) + 5 * sqrt(10)) / 8
+	C11 = (4 * sqrt(2) + 3 * sqrt(10)) / 4
+	C12 = (11 * sqrt(2) + 5 * sqrt(10)) / 8
+	C13 = (7 * sqrt(2) + 2 * sqrt(10)) / 4
+	C14 = (4 * sqrt(2) + sqrt(10)) / 2
+	C15 = 3 * (2 * sqrt(2) + sqrt(10)) / 4
+	C16 = 5 * (3 * sqrt(2) + sqrt(10)) / 8
+	C17 = (13 * sqrt(2) + 7 * sqrt(10)) / 8
+	C18 = (3 * sqrt(2) + 2 * sqrt(10)) / 2
+-->
+<INPUT type=hidden class=Vertices value="C0 0.0 C18,C0 0.0 -C18,-C0 0.0 C18,
+-C0 0.0 -C18,C18 C0 0.0,C18 -C0 0.0,-C18 C0 0.0,-C18 -C0 0.0,0.0 C18 C0,
+0.0 C18 -C0,0.0 -C18 C0,0.0 -C18 -C0,0.0 C0 C18,0.0 C0 -C18,0.0 -C0 C18,
+0.0 -C0 -C18,C18 0.0 C0,C18 0.0 -C0,-C18 0.0 C0,-C18 0.0 -C0,C0 C18 0.0,
+C0 -C18 0.0,-C0 C18 0.0,-C0 -C18 0.0,C1 C2 C17,C1 C2 -C17,C1 -C2 C17,
+C1 -C2 -C17,-C1 C2 C17,-C1 C2 -C17,-C1 -C2 C17,-C1 -C2 -C17,C17 C1 C2,
+C17 C1 -C2,C17 -C1 C2,C17 -C1 -C2,-C17 C1 C2,-C17 C1 -C2,-C17 -C1 C2,
+-C17 -C1 -C2,C2 C17 C1,C2 C17 -C1,C2 -C17 C1,C2 -C17 -C1,-C2 C17 C1,
+-C2 C17 -C1,-C2 -C17 C1,-C2 -C17 -C1,C1 C6 C16,C1 C6 -C16,C1 -C6 C16,
+C1 -C6 -C16,-C1 C6 C16,-C1 C6 -C16,-C1 -C6 C16,-C1 -C6 -C16,C16 C1 C6,
+C16 C1 -C6,C16 -C1 C6,C16 -C1 -C6,-C16 C1 C6,-C16 C1 -C6,-C16 -C1 C6,
+-C16 -C1 -C6,C6 C16 C1,C6 C16 -C1,C6 -C16 C1,C6 -C16 -C1,-C6 C16 C1,
+-C6 C16 -C1,-C6 -C16 C1,-C6 -C16 -C1,C3 C4 C15,C3 C4 -C15,C3 -C4 C15,
+C3 -C4 -C15,-C3 C4 C15,-C3 C4 -C15,-C3 -C4 C15,-C3 -C4 -C15,C15 C3 C4,
+C15 C3 -C4,C15 -C3 C4,C15 -C3 -C4,-C15 C3 C4,-C15 C3 -C4,-C15 -C3 C4,
+-C15 -C3 -C4,C4 C15 C3,C4 C15 -C3,C4 -C15 C3,C4 -C15 -C3,-C4 C15 C3,
+-C4 C15 -C3,-C4 -C15 C3,-C4 -C15 -C3,0.0 C8 C14,0.0 C8 -C14,0.0 -C8 C14,
+0.0 -C8 -C14,C14 0.0 C8,C14 0.0 -C8,-C14 0.0 C8,-C14 0.0 -C8,C8 C14 0.0,
+C8 -C14 0.0,-C8 C14 0.0,-C8 -C14 0.0,C2 C10 C13,C2 C10 -C13,C2 -C10 C13,
+C2 -C10 -C13,-C2 C10 C13,-C2 C10 -C13,-C2 -C10 C13,-C2 -C10 -C13,C13 C2 C10,
+C13 C2 -C10,C13 -C2 C10,C13 -C2 -C10,-C13 C2 C10,-C13 C2 -C10,-C13 -C2 C10,
+-C13 -C2 -C10,C10 C13 C2,C10 C13 -C2,C10 -C13 C2,C10 -C13 -C2,-C10 C13 C2,
+-C10 C13 -C2,-C10 -C13 C2,-C10 -C13 -C2,C5 C7 C12,C5 C7 -C12,C5 -C7 C12,
+C5 -C7 -C12,-C5 C7 C12,-C5 C7 -C12,-C5 -C7 C12,-C5 -C7 -C12,C12 C5 C7,
+C12 C5 -C7,C12 -C5 C7,C12 -C5 -C7,-C12 C5 C7,-C12 C5 -C7,-C12 -C5 C7,
+-C12 -C5 -C7,C7 C12 C5,C7 C12 -C5,C7 -C12 C5,C7 -C12 -C5,-C7 C12 C5,
+-C7 C12 -C5,-C7 -C12 C5,-C7 -C12 -C5,C9 C4 C11,C9 C4 -C11,C9 -C4 C11,
+C9 -C4 -C11,-C9 C4 C11,-C9 C4 -C11,-C9 -C4 C11,-C9 -C4 -C11,C11 C9 C4,
+C11 C9 -C4,C11 -C9 C4,C11 -C9 -C4,-C11 C9 C4,-C11 C9 -C4,-C11 -C9 C4,
+-C11 -C9 -C4,C4 C11 C9,C4 C11 -C9,C4 -C11 C9,C4 -C11 -C9,-C4 C11 C9,
+-C4 C11 -C9,-C4 -C11 C9,-C4 -C11 -C9">
+<INPUT type=hidden class=Faces value="0 26 74 158 118 100 116 156 72 24 #,
+1 25 73 157 117 101 119 159 75 27 #,2 28 76 160 120 102 122 162 78 30 #,
+3 31 79 163 123 103 121 161 77 29 #,4 33 81 165 125 104 124 164 80 32 #,
+5 34 82 166 126 105 127 167 83 35 #,6 36 84 168 128 106 129 169 85 37 #,
+7 39 87 171 131 107 130 170 86 38 #,8 44 92 176 112 96 108 172 88 40 #,
+9 41 89 173 109 97 113 177 93 45 #,10 42 90 174 110 98 114 178 94 46 #,
+11 47 95 179 115 99 111 175 91 43 #,12 24 48 96 52 28 #,13 29 53 97 49 25 #,
+14 30 54 98 50 26 #,15 27 51 99 55 31 #,16 32 56 100 58 34 #,
+17 35 59 101 57 33 #,18 38 62 102 60 36 #,19 37 61 103 63 39 #,
+20 40 64 104 65 41 #,21 43 67 105 66 42 #,22 45 69 106 68 44 #,
+23 46 70 107 71 47 #,132 156 140 164 148 172 #,133 173 149 165 141 157 #,
+134 174 150 166 142 158 #,135 159 143 167 151 175 #,136 176 152 168 144 160 #,
+137 161 145 169 153 177 #,138 162 146 170 154 178 #,139 179 155 171 147 163 #,
+0 12 2 14 #,1 15 3 13 #,4 16 5 17 #,6 19 7 18 #,8 20 9 22 #,10 23 11 21 #,
+48 72 132 108 #,49 109 133 73 #,50 110 134 74 #,51 75 135 111 #,
+52 112 136 76 #,53 77 137 113 #,54 78 138 114 #,55 115 139 79 #,
+56 80 140 116 #,57 117 141 81 #,58 118 142 82 #,59 83 143 119 #,
+60 120 144 84 #,61 85 145 121 #,62 86 146 122 #,63 123 147 87 #,
+64 88 148 124 #,65 125 149 89 #,66 126 150 90 #,67 91 151 127 #,
+68 128 152 92 #,69 93 153 129 #,70 94 154 130 #,71 131 155 95 #,0 14 26 #,
+0 24 12 #,1 13 25 #,1 27 15 #,2 12 28 #,2 30 14 #,3 15 31 #,3 29 13 #,
+4 17 33 #,4 32 16 #,5 16 34 #,5 35 17 #,6 18 36 #,6 37 19 #,7 19 39 #,
+7 38 18 #,8 22 44 #,8 40 20 #,9 20 41 #,9 45 22 #,10 21 42 #,10 46 23 #,
+11 23 47 #,11 43 21 #,24 72 48 #,25 49 73 #,26 50 74 #,27 75 51 #,28 52 76 #,
+29 77 53 #,30 78 54 #,31 55 79 #,32 80 56 #,33 57 81 #,34 58 82 #,35 83 59 #,
+36 60 84 #,37 85 61 #,38 86 62 #,39 63 87 #,40 88 64 #,41 65 89 #,42 66 90 #,
+43 91 67 #,44 68 92 #,45 93 69 #,46 94 70 #,47 71 95 #,48 108 96 #,49 97 109 #,
+50 98 110 #,51 111 99 #,52 96 112 #,53 113 97 #,54 114 98 #,55 99 115 #,
+56 116 100 #,57 101 117 #,58 100 118 #,59 119 101 #,60 102 120 #,61 121 103 #,
+62 122 102 #,63 103 123 #,64 124 104 #,65 104 125 #,66 105 126 #,67 127 105 #,
+68 106 128 #,69 129 106 #,70 130 107 #,71 107 131 #,72 156 132 #,73 133 157 #,
+74 134 158 #,75 159 135 #,76 136 160 #,77 161 137 #,78 162 138 #,79 139 163 #,
+80 164 140 #,81 141 165 #,82 142 166 #,83 167 143 #,84 144 168 #,85 169 145 #,
+86 170 146 #,87 147 171 #,88 172 148 #,89 149 173 #,90 150 174 #,91 175 151 #,
+92 152 176 #,93 177 153 #,94 178 154 #,95 155 179 #,108 132 172 #,
+109 173 133 #,110 174 134 #,111 135 175 #,112 176 136 #,113 137 177 #,
+114 138 178 #,115 179 139 #,116 140 156 #,117 157 141 #,118 158 142 #,
+119 143 159 #,120 160 144 #,121 145 161 #,122 146 162 #,123 163 147 #,
+124 148 164 #,125 165 149 #,126 166 150 #,127 151 167 #,128 168 152 #,
+129 153 169 #,130 154 170 #,131 171 155 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Rectified Truncated Icosidodecahedron
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>derived form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="canonical form" onClick="window.location.href='CanonicalRectifiedTruncatedIcosidodecahedron.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="equal-edge form" onClick="window.location.href='EqualEdgeRectifiedTruncatedIcosidodecahedron.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>180 &nbsp;(60[4] + 60[4] + 60[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>182 &nbsp;(12 regular decagons + 20 regular hexagons</NOBR><BR><NOBR> &nbsp; &nbsp; + 30 squares + {60 * 2} acute triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>360 &nbsp;(120 short + 120 medium + 120 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on short edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (120): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Medium Edge (120): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2247448713915890491</TD></TR>
+<TR><TD><NOBR>Long Edge (120): &nbsp;</NOBR></TD><TD><NOBR>sqrt(5+sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3449970239279146539</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(5+2*sqrt(5))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;5.3307042560058364373</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>5*(153*sqrt(2)+79*sqrt(10))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;582.74326274548188712</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RectifiedTruncatedIcosidodecahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

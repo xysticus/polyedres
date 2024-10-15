@@ -1,0 +1,156 @@
+<!-- File:   AntiHeptagonalIrisToroid.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Anti-Heptagonal Iris Toroid</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='AntiHexagonalIrisToroid.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalRegularTriangular.html"><B>Regular Triangular Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='AntiOctagonalIrisToroid1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Anti-Heptagonal Iris Toroid
+
+	(28) SHORT EDGE = 1
+	(7) MEDIUM EDGE = 1.67389896224498515950814805232
+		= square-root of a root of the polynomial:  (x^3) - 4*(x^2) + 3*x + 1
+		= sqrt(1 + 2 * cos(pi/7))
+	(7) LONG EDGE = 2.24697960371746706105000976801
+		= root of the polynomial:  (x^3) - 2*(x^2) - x + 1
+		= 1 / (2 * sin(pi/14))
+	RADIUS = 1.22972734168212114628232224673
+		= square-root of a root of the polynomial:  64*(x^3)-144*(x^2)+80*x-13
+		= sqrt(5 + cot(pi/14)^2) / 4
+	VOLUME = 1.410998215141377497761123829496
+		= square-root of a root of the polynomial:
+			2985984*(x^3) - 4064256*(x^2) - 3803184*x + 117649
+		= 7 * sqrt(cos(pi/7) + 1 / (8 * sin(pi/14))) / 6
+	DIHEDRAL ANGLE 1 = acos(0.6266494534666127911685656682153)
+		= acos(root[29*(x^3) - 5*(x^2) - 29*x + 13])
+		= acos((44 * cos(pi/7) - 20 * cos(2*pi/7) - 9) / 29)
+		= 51.1966443808553503581647825477 degrees
+	DIHEDRAL ANGLE 2 = acos(0.437978987600488017643662462698)
+		= acos(sqrt(root[783*(x^3) + 27*(x^2) - 915*x + 169]))
+		= acos(sqrt((136 * cos(pi/7) - 104 * cos(2*pi/7) - 41) / 87))
+		= 64.0249964682570654130402099320 degrees
+	DIHEDRAL ANGLE 3 = acos(-0.867958490536558834981469759343)
+		= acos(-root[27*(x^3) + 9*(x^2) - 27*x - 1])
+		= acos(-(4 * cos(pi/7) - 1) / 3)
+		= 150.222262672419369753787817659 degrees
+	DIHEDRAL ANGLE 4 = acos(0.885016048112547995330653631316)
+		= acos(root[29*(x^3) + 7*(x^2) - 21*x - 7])
+		= acos((1 + 8 * cos(pi/7) + 28 * cos(2*pi/7)) / 29)
+		= 332.253496249888442366878728161 degrees
+
+	ROTATION SYMMETRIES:          14
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                 8 (1[7] + 7[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  7-fold Dihedral (D7)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="6 14 28">
+<INPUT type=hidden class=Constants value="0.222520933956314404288902564497,
+0.671181371874405914756434334940,
+0.836949481122492579754074026159,
+0.900968867902419126236102319507,
+1.12348980185873353052500488400,
+1.20942704154975214093810613957">
+<!--
+	C0 = root of the polynomial:  8*(x^3) - 4*(x^2) - 4*x + 1
+		= sin(pi/14)
+	C1 = square-root of a root of the polynomial:  64*(x^3)-16*(x^2)-8*x+1
+		= sqrt(2 * cos(pi/7)) / 2
+	C2 = square-root of a root of the polynomial:  64*(x^3)-64*(x^2)+12*x+1
+		= sqrt(1 + 2 * cos(pi/7)) / 2
+	C3 = root of the polynomial:  8*(x^3) - 4*(x^2) - 4*x + 1
+		= cos(pi/7)
+	C4 = root of the polynomial:  8*(x^3) - 8*(x^2) - 2*x + 1
+		= 1 / (4 * sin(pi/14))
+	C5 = square-root of a root of the polynomial:  64*(x^3)-64*(x^2)-44*x+1
+		= sqrt(cos(pi/7) + 1 / (8 * sin(pi/14)))
+-->
+<INPUT type=hidden class=Vertices value="0.5 0.0 C4,0.5 0.0 -C4,-0.5 0.0 C4,
+-0.5 0.0 -C4,0.0 C2 C3,0.0 C2 -C3,0.0 -C2 C3,0.0 -C2 -C3,C3 C1 0.5,C3 C1 -0.5,
+-C3 -C1 0.5,-C3 -C1 -0.5,C0 C5 0.0,-C0 -C5 0.0">
+<INPUT type=hidden class=Faces value="0 4 2 #,0 2 6 #,0 6 12 #,0 12 5 #,
+1 3 5 #,1 5 9 #,1 9 11 #,1 11 10 #,6 2 10 #,6 10 13 #,6 13 4 #,6 4 12 #,
+7 11 3 #,7 3 1 #,7 1 10 #,7 10 2 #,8 12 4 #,8 4 0 #,8 0 5 #,8 5 3 #,9 5 12 #,
+9 12 8 #,9 8 3 #,9 3 11 #,13 10 11 #,13 11 7 #,13 7 2 #,13 2 4 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="8823 -415 4629 742">
+</DIV>
+<BR>
+<CENTER>
+Anti-Heptagonal Iris Toroid
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>14 &nbsp;(14[6])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>28 &nbsp;(14 equilateral triangles + 14 obtuse triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>42 &nbsp;(28 short + 7 medium + 7 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>7-fold Dihedral &nbsp;(D7)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 1 (7): &nbsp;</NOBR></TD><TD><NOBR>acos(root[29*(x^3)&#8722;5*(x^2)&#8722;29*x+13]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = acos((44*cos(&#960;/7)&#8722;20*cos(2*&#960;/7)&#8722;9)/29) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;51.196644381 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 2 (14): &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(root[783*(x^3)+27*(x^2)&#8722;915*x+169])) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = acos(sqrt((136*cos(&#960;/7)&#8722;104*cos(2*&#960;/7)&#8722;41)/87)) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;64.024996468 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 3 (14): &nbsp;</NOBR></TD><TD><NOBR>acos(-root[27*(x^3)+9*(x^2)&#8722;27*x&#8722;1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = acos(&#8722;(4*cos(&#960;/7)&#8722;1)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;150.222262672 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 4 (7): &nbsp;</NOBR></TD><TD><NOBR>acos(root[29*(x^3)+7*(x^2)&#8722;21*x&#8722;7]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = acos((1+8*cos(&#960;/7)+28*cos(2*&#960;/7))/29) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;332.2534962499 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on short edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (28): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Medium Edge (7): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[(x^3)&#8722;4*(x^2)+3*x+1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = sqrt(1+2*cos(&#960;/7)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.67389896224498515951</TD></TR>
+<TR><TD><NOBR>Long Edge (7): &nbsp;</NOBR></TD><TD><NOBR>root[(x^3)&#8722;2*(x^2)&#8722;x+1] &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = 1/(2*sin(&#960;/14)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.2469796037174670611</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(root[2985984*(x^3)&#8722;4064256*(x^2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;3803184*x+117649]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = 7*sqrt(cos(&#960;/7)+1/(8*sin(&#960;/14)))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4109982151413774978</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='AntiHeptagonalIrisToroid.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,133 @@
+<!-- File:   SmallDodecahemidodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Small Dodecahemidodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='Octahemioctahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="VersiRegular.html"><B>Versi-Regular Polyhedra</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='GreatDodecahemidodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Small Dodecahemidodecahedron
+
+	(60) EDGE = 1
+	RADIUS = (1 + sqrt(5)) / 2
+	MIDRADIUS = sqrt((5 + 2 * sqrt(5)) / 4)
+	DECAGON CENTER RADIUS = 0
+	PENTAGON CENTER RADIUS = sqrt(5 * (5 + 2 * sqrt(5))) / 5
+	DIHEDRAL ANGLE = acos(sqrt(5) / 5)
+		= 63.434948822922010648427806279547 degrees
+
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="3 30 18">
+<INPUT type=hidden class=Constants value="0.809016994374947424102293417183,
+1.30901699437494742410229341718,
+1.61803398874989484820458683437">
+<!--
+	C0 = (1 + sqrt(5)) / 4
+	C1 = (3 + sqrt(5)) / 4
+	C2 = (1 + sqrt(5)) / 2
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C2,0.0 0.0 -C2,C2 0.0 0.0,
+-C2 0.0 0.0,0.0 C2 0.0,0.0 -C2 0.0,0.5 C0 C1,0.5 C0 -C1,0.5 -C0 C1,0.5 -C0 -C1,
+-0.5 C0 C1,-0.5 C0 -C1,-0.5 -C0 C1,-0.5 -C0 -C1,C1 0.5 C0,C1 0.5 -C0,
+C1 -0.5 C0,C1 -0.5 -C0,-C1 0.5 C0,-C1 0.5 -C0,-C1 -0.5 C0,-C1 -0.5 -C0,
+C0 C1 0.5,C0 C1 -0.5,C0 -C1 0.5,C0 -C1 -0.5,-C0 C1 0.5,-C0 C1 -0.5,-C0 -C1 0.5,
+-C0 -C1 -0.5">
+<INPUT type=hidden class=Faces value="0 6 22 23 7 1 13 29 28 12 #,
+0 8 24 25 9 1 11 27 26 10 #,2 14 6 10 18 3 21 13 9 17 #,
+2 15 7 11 19 3 20 12 8 16 #,4 22 14 16 24 5 29 21 19 27 #,
+4 23 15 17 25 5 28 20 18 26 #,0 8 16 14 6 #,0 10 18 20 12 #,1 7 15 17 9 #,
+1 13 21 19 11 #,2 15 23 22 14 #,2 16 24 25 17 #,3 18 26 27 19 #,
+3 21 29 28 20 #,4 23 7 11 27 #,4 26 10 6 22 #,5 24 8 12 28 #,5 29 13 9 25 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #51)</NOBR></TD>
+<TD width=40% align=center><NOBR>Small Dodecahemidodecahedron</NOBR></TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>30 &nbsp;(30[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>18 &nbsp;(12 regular pentagons + 6 regular decagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>60</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(5)/5) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;63.434948823 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2>Small Dodecahemidodecacron</TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>(1+sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.6180339887498948482</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt((5+2*sqrt(5))/4) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.5388417685876267013</TD></TR>
+<TR><TD><NOBR>Decagon Center Radius: &nbsp;</NOBR></TD><TD>0</TD></TR>
+<TR><TD><NOBR>Pentagon Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(5*(5+2*sqrt(5)))/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3763819204711735382</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SmallDodecahemidodecahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Jean Paul Albert Badoureau, M&eacute;moire sur les Figures Isoc&egrave;les,<BR><I>Journal de l'&Eacute;cole polytechnique</I> <B>49</B> (1881), 47-172.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

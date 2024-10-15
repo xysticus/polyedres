@@ -1,0 +1,129 @@
+<!-- File:   OctagonalTrapezohedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Octagonal Trapezohedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='HeptagonalTrapezohedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="DipyramidTrapezohedron.html"><B>Dipyramids &amp; Trapezohedra</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='TriangularDipyramid.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Octagonal Trapezohedron
+
+	(16) SHORT EDGE = sqrt(1 - sqrt(2) + sqrt(2 - sqrt(2)))
+	(16) LONG EDGE = sqrt(2 * (8 + 5*sqrt(2) + sqrt(2*(58 + 41*sqrt(2))))) / 2
+	(16) INNER VERTEX RADIUS = sqrt(6 * (2 + sqrt(2 * (2 + sqrt(2))))) / 4
+	(2) OUTER VERTEX RADIUS
+		= sqrt(2 * (30 + 20 * sqrt(2) + sqrt(2 * (850 + 601 * sqrt(2))))) / 4
+	EDGE-SCRIBED RADIUS = sqrt(2*(4 + 2*sqrt(2) + sqrt(2*(10 + 7*sqrt(2)))))/4
+	INRADIUS = sqrt(94*(146 + 88*sqrt(2) + 5*sqrt(2*(706 + 497*sqrt(2)))))/188
+	VOLUME = 2 * sqrt(2 * (50 + 35*sqrt(2) + sqrt(4954 + 3503 * sqrt(2)))) / 3
+	DIHEDRAL ANGLE = acos(-(2 * sqrt(130 + 79*sqrt(2)) - 5 - 6 * sqrt(2)) / 47)
+		= 137.370466428637215833609438430 degrees
+
+	ROTATION SYMMETRIES:          16
+	MIRROR ROTATION SYMMETRIES:   16
+	ROTATION AXES:                 9 (1[8] + 8[2])
+	MIRROR PLANES:                 8
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  8-fold Antiprismatic (D8v)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="5 18 16">
+<INPUT type=hidden class=Constants value="0.151047815180276180953489848716,
+0.923879532511286756128183189397,
+1.20710678118654752440084436210,
+1.30656296487637652785664317343,
+3.817603985406019048222189005746">
+<!--
+	C0 = sqrt(2 * (3 * sqrt(2 * (2 + sqrt(2))) - 2 - 4 * sqrt(2))) / 4
+	C1 = sqrt(2 + sqrt(2)) / 2
+	C2 = (1 + sqrt(2)) / 2
+	C3 = sqrt(2 * (2 + sqrt(2))) / 2
+	C4 = sqrt(2 * (30 + 20 * sqrt(2) + sqrt(2 * (850 + 601 * sqrt(2))))) / 4
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C4,0.0 0.0 -C4,C3 0.0 C0,
+-C3 0.0 C0,0.0 C3 C0,0.0 -C3 C0,C1 C1 C0,C1 -C1 C0,-C1 C1 C0,-C1 -C1 C0,
+C2 0.5 -C0,C2 -0.5 -C0,-C2 0.5 -C0,-C2 -0.5 -C0,0.5 C2 -C0,0.5 -C2 -C0,
+-0.5 C2 -C0,-0.5 -C2 -C0">
+<INPUT type=hidden class=Faces value="0 2 10 6 #,0 6 14 4 #,0 4 16 8 #,
+0 8 12 3 #,0 3 13 9 #,0 9 17 5 #,0 5 15 7 #,0 7 11 2 #,1 10 2 11 #,1 11 7 15 #,
+1 15 5 17 #,1 17 9 13 #,1 13 3 12 #,1 12 8 16 #,1 16 4 14 #,1 14 6 10 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="12 -9 -8 0">
+</DIV>
+<BR>
+<CENTER>
+Octagonal Trapezohedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>18 &nbsp;(16[3] + 2[8])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>16 &nbsp;(tri-equiangular kites)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>32 &nbsp;(16 short + 16 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>8-fold Antiprismatic &nbsp;(D8v)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(2*sqrt(130+79*sqrt(2))&#8722;5&#8722;6*sqrt(2))/47) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;137.370466429 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="OctagonalAntiprism.html">Octagonal Antiprism</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length Octagonal Antiprism)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (16): &nbsp;</NOBR></TD><TD><NOBR>sqrt(1&#8722;sqrt(2)+sqrt(2&#8722;sqrt(2))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.59258189506353001187</TD></TR>
+<TR><TD><NOBR>Long Edge (16): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(8+5*sqrt(2)+sqrt(2*(58+41*sqrt(2)))))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.89239526906081497849</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (16): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(2+sqrt(2*(2+sqrt(2)))))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.31526507733509080496</TD></TR>
+<TR><TD><NOBR>[8]-Vertex Radius (2): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(30+20*sqrt(2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +sqrt(2*(850+601*sqrt(2)))))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.8176039854060190482</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(4+2*sqrt(2)+sqrt(2*(10+7*sqrt(2)))))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2814577238707530894</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(94*(146+88*sqrt(2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +5*sqrt(2*(706+497*sqrt(2)))))/188 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1938029096323123057</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>2*sqrt(2*(50+35*sqrt(2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +sqrt(4954+3503*sqrt(2))))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;13.301173285055892044</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='OctagonalTrapezohedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

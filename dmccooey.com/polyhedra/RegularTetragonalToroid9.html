@@ -1,0 +1,129 @@
+<!-- File:   RegularTetragonalToroid9.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Regular Tetragonal Toroid with 9 faces</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='BorromeanRings.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalRegularTetragonal.html"><B>Regular Tetragonal Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RegularTetragonalToroid18A1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Regular Tetragonal Toroid with 9 faces
+
+	(15) SHORT EDGE = 2
+	(3) LONG EDGE = 5
+	(6) INNER VERTEX RADIUS = sqrt(21) / 3
+	(3) OUTER VERTEX RADIUS = 5 * sqrt(3) / 3
+	VOLUME = 9 * sqrt(3) / 2
+	DIHEDRAL ANGLE 1 = acos(0.755928946018454454429033072468)
+		= acos(2 * sqrt(7) / 7) = 40.8933946491309056054825252599 degrees
+	DIHEDRAL ANGLE 2 = acos(-1/7) = 98.2132107017381887890349494803 degrees
+	DIHEDRAL ANGLE 3 = acos(1/2) = 300 degrees
+
+	ROTATION SYMMETRIES:           6
+	MIRROR ROTATION SYMMETRIES:    6
+	ROTATION AXES:                 4 (1[3] + 3[2])
+	MIRROR PLANES:                 4
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  3-fold Prismatic (D3h)
+	TOPOLOGICALLY SELF-DUAL:     YES
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="4 9 9">
+<INPUT type=hidden class=Constants value="0.577350269189625764509148780502,
+1.15470053837925152901829756100,
+1.4433756729740644112728719512549,
+2.88675134594812882254574390251">
+<!--
+	C0 = sqrt(3) / 3
+	C1 = 2 * sqrt(3) / 3
+	C2 = 5 * sqrt(3) / 6
+	C3 = 5 * sqrt(3) / 3
+-->
+<INPUT type=hidden class=Vertices value="0.0 C1 1.0,0.0 C1 -1.0,-1.0 -C0 1.0,
+-1.0 -C0 -1.0,1.0 -C0 1.0,1.0 -C0 -1.0,-2.5 -C2 0.0,2.5 -C2 0.0,0.0 C3 0.0">
+<INPUT type=hidden class=Faces value="0 1 5 4 #,0 4 7 8 #,0 8 6 2 #,0 2 3 1 #,
+1 3 6 8 #,1 8 7 5 #,5 7 6 3 #,5 3 2 4 #,4 2 6 7 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="96 -20 3 17">
+</DIV>
+<BR>
+<CENTER>
+Regular Tetragonal Toroid with 9 faces
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>9 &nbsp;(3[4] + 6[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>9 &nbsp;(3 squares + 6 tri-equilateral trapezoids)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>18</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>3-fold Prismatic &nbsp;(D3h)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(This toroid derived from a Triangular Dipyramid and a Triangular Prism)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 1 (6): &nbsp;</NOBR></TD><TD><NOBR>acos(2*sqrt(7)/7) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;40.893394649 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 2 (9): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;1/7) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;98.213210702 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 3 (3): &nbsp;</NOBR></TD><TD><NOBR>acos(1/2) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>300 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Toroid: &nbsp;</NOBR></TD><TD colspan=2>Regular Tetragonal Toroid with 9 faces (itself)</TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on short edge length = 2)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (15): &nbsp;</NOBR></TD><TD>2</TD></TR>
+<TR><TD><NOBR>Long Edge (3): &nbsp;</NOBR></TD><TD>5</TD></TR>
+<TR><TD><NOBR>Inner Vertex Radius (6): &nbsp;</NOBR></TD><TD><NOBR>sqrt(21)/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.5275252316519466689</TD></TR>
+<TR><TD><NOBR>Outer Vertex Radius (3): &nbsp;</NOBR></TD><TD><NOBR>5*sqrt(3)/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.886751345948128822546</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>9*sqrt(3)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;7.7942286340599478209</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RegularTetragonalToroid9.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://symmetry-us.com/Journals/visbook/szilassi/index.html>On Some Regular Toroids (Lajos Szilassi)</A></TD></TR>
+<TR><TD></TD><TD valign=top>[2]</TD><TD>Lajos Szilassi, On Three Classes of Regular Toroids,<BR><I>3rd International Conference APLIMAT</I> 2004.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,139 @@
+<!-- File:   IsohedralToroid24.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Isohedral Toroid with 24 faces</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='OctagonalIrisToroid.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalNonRegular.html"><B>Non-Regular Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RegularFaceToroid.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Isohedral Toroid with 24 faces
+
+	(12) SHORT EDGE = sqrt(3)
+	(24) LONG EDGE = sqrt(3 * (5 + 2 * sqrt(2))) / 2
+	(6) INNER VERTEX RADIUS = sqrt(3 * (9 + 2 * sqrt(2))) / 4
+	(6) OUTER VERTEX RADIUS = sqrt(3 * (17 + 10 * sqrt(2))) / 4
+	VOLUME = 3 * (sqrt(3) + sqrt(6))
+	DIHEDRAL ANGLE 1 = acos(sqrt(2) / 2) = 45 degrees
+	DIHEDRAL ANGLE 2 = acos((2 - sqrt(2)) / 4)
+		= 81.5789418818505782192341728027 degrees
+	DIHEDRAL ANGLE 3 = acos(-sqrt(2) / 2) = 135 degrees
+	DIHEDRAL ANGLE 4 = acos(-(1 + 2 * sqrt(2)) / 4)
+		= 163.1578837637011564384683456053 degrees
+	DIHEDRAL ANGLE 5 = acos(-(2 + sqrt(2)) / 8)
+		= 244.736825645551734657702518408 degrees
+
+	ROTATION SYMMETRIES:           6
+	MIRROR ROTATION SYMMETRIES:    6
+	ROTATION AXES:                 4 (1[3] + 3[2])
+	MIRROR PLANES:                 3
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  3-fold Antiprismatic (D3v)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="6 12 24">
+<INPUT type=hidden class=Constants value="0.103553390593273762200422181052,
+0.866025403784438646763723170753,
+1.103553390593273762200422181052,
+1.20710678118654752440084436210,
+2.09077027517602769586236520811,
+2.41421356237309504880168872421">
+<!--
+	C0 = (sqrt(2) - 1) / 4
+	C1 = sqrt(3) / 2
+	C2 = (3 + sqrt(2)) / 4
+	C3 = (1 + sqrt(2)) / 2
+	C4 = (sqrt(3) + sqrt(6)) / 2
+	C5 = 1 + sqrt(2)
+-->
+<INPUT type=hidden class=Vertices value="1.0 0.0 C2,-1.0 0.0 -C2,-0.5 C1 C2,
+0.5 C1 -C2,-0.5 -C1 C2,0.5 -C1 -C2,C5 0.0 C0,-C5 0.0 -C0,-C3 C4 C0,C3 C4 -C0,
+-C3 -C4 C0,C3 -C4 -C0">
+<INPUT type=hidden class=Faces value="0 2 3 #,0 3 5 #,0 5 4 #,0 4 11 #,
+0 11 6 #,0 6 9 #,0 9 2 #,1 2 4 #,1 4 5 #,1 5 10 #,1 10 7 #,1 7 8 #,1 8 3 #,
+1 3 2 #,2 9 8 #,2 8 7 #,2 7 4 #,3 8 9 #,3 9 6 #,3 6 5 #,4 7 10 #,4 10 11 #,
+5 6 11 #,5 11 10 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Isohedral Toroid with 24 faces
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>12 &nbsp;(6[5] + 6[7])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>24 &nbsp;(isosceles triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>36 &nbsp;(12 short + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>3-fold Antiprismatic &nbsp;(D3v)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 1 (6): &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(2)/2) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>45 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 2 (6): &nbsp;</NOBR></TD><TD><NOBR>acos((2&#8722;sqrt(2))/4) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;81.578941882 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 3 (6): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(2)/2) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>135 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 4 (12): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(1+2*sqrt(2))/4) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;163.157883764 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 5 (6): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(2+sqrt(2))/8) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;244.736825646 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center>(values below based on the description from "On Three Classes of Regular Toroids", 2004, by Lajos Szilassi)</TD></TR>
+<TR><TD><NOBR>Short Edge (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.73205080756887729353</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(5+2*sqrt(2)))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.42308075465091393499</TD></TR>
+<TR><TD><NOBR>[5]-Vertex Radius (6): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(17+10*sqrt(2)))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.4164334109280878788</TD></TR>
+<TR><TD><NOBR>[7]-Vertex Radius (6): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(9+2*sqrt(2)))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4892380890542353582</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>3*(sqrt(3)+sqrt(6)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;12.5446216510561661752</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='IsohedralToroid24.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://symmetry-us.com/Journals/visbook/szilassi/index.html>On Some Regular Toroids (Lajos Szilassi)</A></TD></TR>
+<TR><TD></TD><TD valign=top>[2]</TD><TD>Lajos Szilassi, On Three Classes of Regular Toroids,<BR><I>3rd International Conference APLIMAT</I> 2004.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

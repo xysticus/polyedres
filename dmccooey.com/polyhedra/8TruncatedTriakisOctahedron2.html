@@ -1,0 +1,140 @@
+<!-- File:   8TruncatedTriakisOctahedron2.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>8-Truncated Triakis Octahedron (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='6TruncatedTetrakisHexahedron2.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="TruncatedCatalan.html"><B>Truncated Catalan Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='TruncatedTetrakisHexahedron1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	8-Truncated Triakis Octahedron (canonical)
+
+	(24) SHORT EDGE = 2 - sqrt(2) + sqrt(10 - 7 * sqrt(2))
+	(60) LONG EDGE = 1
+	RADIUS = sqrt(2 * (5 + 2 * sqrt(2) + 2 * sqrt(2 + sqrt(2)))) / 2
+	EDGE-SCRIBED RADIUS = (1 + 2 * sqrt(2 + sqrt(2))) / 2
+	VOLUME = 26 - sqrt(2) + 8 * sqrt(10 - sqrt(2))
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:   24
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 9
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Octahedral (Oh)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="4 56 30">
+<INPUT type=hidden class=Constants value="0.923879532511286756128183189397,
+1.30656296487637652785664317343,
+1.37528541910584644439860204863,
+2.01366974606292405225748753553">
+<!--
+	C0 = sqrt(2 + sqrt(2)) / 2
+	C1 = sqrt(2 * (2 + sqrt(2))) / 2
+	C2 = (2 - sqrt(2) + 2 * sqrt(2 * (2 - sqrt(2)))) / 2
+	C3 = (sqrt(2) + sqrt(2 * (2 + sqrt(2)))) / 2
+-->
+<INPUT type=hidden class=Vertices value="C1 0.0 C3,C1 0.0 -C3,-C1 0.0 C3,
+-C1 0.0 -C3,C3 C1 0.0,C3 -C1 0.0,-C3 C1 0.0,-C3 -C1 0.0,0.0 C3 C1,0.0 C3 -C1,
+0.0 -C3 C1,0.0 -C3 -C1,0.0 C1 C3,0.0 C1 -C3,0.0 -C1 C3,0.0 -C1 -C3,C3 0.0 C1,
+C3 0.0 -C1,-C3 0.0 C1,-C3 0.0 -C1,C1 C3 0.0,C1 -C3 0.0,-C1 C3 0.0,-C1 -C3 0.0,
+C0 C0 C3,C0 C0 -C3,C0 -C0 C3,C0 -C0 -C3,-C0 C0 C3,-C0 C0 -C3,-C0 -C0 C3,
+-C0 -C0 -C3,C3 C0 C0,C3 C0 -C0,C3 -C0 C0,C3 -C0 -C0,-C3 C0 C0,-C3 C0 -C0,
+-C3 -C0 C0,-C3 -C0 -C0,C0 C3 C0,C0 C3 -C0,C0 -C3 C0,C0 -C3 -C0,-C0 C3 C0,
+-C0 C3 -C0,-C0 -C3 C0,-C0 -C3 -C0,C2 C2 C2,C2 C2 -C2,C2 -C2 C2,C2 -C2 -C2,
+-C2 C2 C2,-C2 C2 -C2,-C2 -C2 C2,-C2 -C2 -C2">
+<INPUT type=hidden class=Faces value="0 24 12 28 2 30 14 26 #,
+1 27 15 31 3 29 13 25 #,4 32 16 34 5 35 17 33 #,6 37 19 39 7 38 18 36 #,
+8 40 20 41 9 45 22 44 #,10 46 23 47 11 43 21 42 #,48 24 0 16 32 #,
+48 32 4 20 40 #,48 40 8 12 24 #,49 25 13 9 41 #,49 41 20 4 33 #,
+49 33 17 1 25 #,50 26 14 10 42 #,50 42 21 5 34 #,50 34 16 0 26 #,
+51 27 1 17 35 #,51 35 5 21 43 #,51 43 11 15 27 #,52 28 12 8 44 #,
+52 44 22 6 36 #,52 36 18 2 28 #,53 29 3 19 37 #,53 37 6 22 45 #,
+53 45 9 13 29 #,54 30 2 18 38 #,54 38 7 23 46 #,54 46 10 14 30 #,
+55 31 15 11 47 #,55 47 23 7 39 #,55 39 19 3 31 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+8-Truncated Triakis Octahedron
+<BR>(canonical)
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="version 1" onClick="window.location.href='8TruncatedTriakisOctahedron1.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>version 2</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>56 &nbsp;(8[3] + 24[3] + 24[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>30 &nbsp;(24 mirror-symmetric pentagons + 6 regular octagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>84 &nbsp;(24 short + 60 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Octahedral &nbsp;(Oh)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on long edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD><NOBR>2&#8722;sqrt(2)+sqrt(10&#8722;7*sqrt(2)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.90281177318911937654</TD></TR>
+<TR><TD><NOBR>Long Edge (60): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Max Vertex Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(5+2*sqrt(2)+2*sqrt(2+sqrt(2))))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.4004109288610707709</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>(1+2*sqrt(2+sqrt(2)))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.3477590650225735123</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>26&#8722;sqrt(2)+8*sqrt(10&#8722;sqrt(2)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;48.026996560146644800</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='8TruncatedTriakisOctahedron2.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

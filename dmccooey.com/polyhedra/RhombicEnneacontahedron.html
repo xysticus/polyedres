@@ -1,0 +1,173 @@
+<!-- File:   RhombicEnneacontahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Rhombic Enneacontahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='Hugel.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Other.html"><B>Other Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='CanonicalJoinedTruncatedIcosahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Rhombic Enneacontahedron
+
+	(180) EDGE = 1
+	WIDE RHOMBUS LENGTH = 2 * sqrt(6) / 3
+	WIDE RHOMBUS WIDTH = 2 * sqrt(3) / 3
+	THIN RHOMBUS LENGTH = (sqrt(3) + sqrt(15)) / 3
+	THIN RHOMBUS WIDTH = (sqrt(15) - sqrt(3)) / 3
+	(12) INNER VERTEX RADIUS = sqrt(30 * (5 + sqrt(5))) / 6
+	(60) MIDDLE VERTEX RADIUS = (sqrt(21) + sqrt(105)) / 6
+	(20) OUTER VERTEX RADIUS = (3 + sqrt(5)) / 2
+	WIDE RHOMBUS CENTER RADIUS = (5 * sqrt(6) + 3 * sqrt(30)) / 12
+	THIN RHOMBUS CENTER RADIUS = (2 * sqrt(3) + sqrt(15)) / 3
+	VOLUME = 20 * (7 * sqrt(3) + 4 * sqrt(15)) / 9
+	THIN-WIDE DIHEDRAL ANGLE = acos(-(3 * sqrt(2) + sqrt(10)) / 8)
+		= 157.761243907035038060614482600 degrees
+	WIDE-WIDE DIHEDRAL ANGLE = acos(-(1 + 3 * sqrt(5)) / 8)
+		= 164.477512185929923878771034799 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="8 92 90">
+<INPUT type=hidden class=Constants value="0.356822089773089931941969843046,
+0.577350269189625764509148780502,
+0.934172358962715696451118623548,
+1.29099444873580562839308846659,
+1.511522628152341460960267404050003,
+1.86834471792543139290223724710,
+2.088872897341967225469416184552,
+2.44569498711505715741138602760">
+<!--
+	C0 = (sqrt(15) - sqrt(3)) / 6
+	C1 = sqrt(3) / 3
+	C2 = (sqrt(3) + sqrt(15)) / 6
+	C3 = sqrt(15) / 3
+	C4 = (3 * sqrt(3) + sqrt(15)) / 6
+	C5 = (sqrt(3) + sqrt(15)) / 3
+	C6 = (5 * sqrt(3) + sqrt(15)) / 6
+	C7 = (2 * sqrt(3) + sqrt(15)) / 3
+-->
+<INPUT type=hidden class=Vertices value="0.0 C2 C7,0.0 C2 -C7,0.0 -C2 C7,
+0.0 -C2 -C7,C7 0.0 C2,C7 0.0 -C2,-C7 0.0 C2,-C7 0.0 -C2,C2 C7 0.0,C2 -C7 0.0,
+-C2 C7 0.0,-C2 -C7 0.0,C0 0.0 C7,C0 0.0 -C7,-C0 0.0 C7,-C0 0.0 -C7,C7 C0 0.0,
+C7 -C0 0.0,-C7 C0 0.0,-C7 -C0 0.0,0.0 C7 C0,0.0 C7 -C0,0.0 -C7 C0,0.0 -C7 -C0,
+C3 0.0 C6,C3 0.0 -C6,-C3 0.0 C6,-C3 0.0 -C6,C6 C3 0.0,C6 -C3 0.0,-C6 C3 0.0,
+-C6 -C3 0.0,0.0 C6 C3,0.0 C6 -C3,0.0 -C6 C3,0.0 -C6 -C3,C2 C2 C6,C2 C2 -C6,
+C2 -C2 C6,C2 -C2 -C6,-C2 C2 C6,-C2 C2 -C6,-C2 -C2 C6,-C2 -C2 -C6,C6 C2 C2,
+C6 C2 -C2,C6 -C2 C2,C6 -C2 -C2,-C6 C2 C2,-C6 C2 -C2,-C6 -C2 C2,-C6 -C2 -C2,
+C2 C6 C2,C2 C6 -C2,C2 -C6 C2,C2 -C6 -C2,-C2 C6 C2,-C2 C6 -C2,-C2 -C6 C2,
+-C2 -C6 -C2,C1 C4 C5,C1 C4 -C5,C1 -C4 C5,C1 -C4 -C5,-C1 C4 C5,-C1 C4 -C5,
+-C1 -C4 C5,-C1 -C4 -C5,C5 C1 C4,C5 C1 -C4,C5 -C1 C4,C5 -C1 -C4,-C5 C1 C4,
+-C5 C1 -C4,-C5 -C1 C4,-C5 -C1 -C4,C4 C5 C1,C4 C5 -C1,C4 -C5 C1,C4 -C5 -C1,
+-C4 C5 C1,-C4 C5 -C1,-C4 -C5 C1,-C4 -C5 -C1,C4 C4 C4,C4 C4 -C4,C4 -C4 C4,
+C4 -C4 -C4,-C4 C4 C4,-C4 C4 -C4,-C4 -C4 C4,-C4 -C4 -C4">
+<INPUT type=hidden class=Faces value="24 12 2 38 #,24 38 86 70 #,24 70 4 68 #,
+24 68 84 36 #,24 36 0 12 #,25 13 1 37 #,25 37 85 69 #,25 69 5 71 #,
+25 71 87 39 #,25 39 3 13 #,26 14 0 40 #,26 40 88 72 #,26 72 6 74 #,
+26 74 90 42 #,26 42 2 14 #,27 15 3 43 #,27 43 91 75 #,27 75 7 73 #,
+27 73 89 41 #,27 41 1 15 #,28 16 5 45 #,28 45 85 77 #,28 77 8 76 #,
+28 76 84 44 #,28 44 4 16 #,29 17 4 46 #,29 46 86 78 #,29 78 9 79 #,
+29 79 87 47 #,29 47 5 17 #,30 18 6 48 #,30 48 88 80 #,30 80 10 81 #,
+30 81 89 49 #,30 49 7 18 #,31 19 7 51 #,31 51 91 83 #,31 83 11 82 #,
+31 82 90 50 #,31 50 6 19 #,32 20 10 56 #,32 56 88 64 #,32 64 0 60 #,
+32 60 84 52 #,32 52 8 20 #,33 21 8 53 #,33 53 85 61 #,33 61 1 65 #,
+33 65 89 57 #,33 57 10 21 #,34 22 9 54 #,34 54 86 62 #,34 62 2 66 #,
+34 66 90 58 #,34 58 11 22 #,35 23 11 59 #,35 59 91 67 #,35 67 3 63 #,
+35 63 87 55 #,35 55 9 23 #,2 12 0 14 #,3 15 1 13 #,4 17 5 16 #,7 19 6 18 #,
+8 21 10 20 #,9 22 11 23 #,36 84 60 0 #,37 1 61 85 #,38 2 62 86 #,39 87 63 3 #,
+40 0 64 88 #,41 89 65 1 #,42 90 66 2 #,43 3 67 91 #,44 84 68 4 #,45 5 69 85 #,
+46 4 70 86 #,47 87 71 5 #,48 6 72 88 #,49 89 73 7 #,50 90 74 6 #,51 7 75 91 #,
+52 84 76 8 #,53 8 77 85 #,54 9 78 86 #,55 87 79 9 #,56 10 80 88 #,
+57 89 81 10 #,58 90 82 11 #,59 11 83 91 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Rhombic Enneacontahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>92 &nbsp;(60[3] + 12[5] + 20[6])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>90 &nbsp;(60 wide rhombi + 30 thin rhombi)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>180 &nbsp;(equal length)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Thin-Wide Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(3*sqrt(2)+sqrt(10))/8) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;157.761243907 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Wide-Wide Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(1+3*sqrt(5))/8) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;164.477512186 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center>The dual has the same polyhedral graph as the <A href="RectifiedTruncatedIcosahedron.html">Rectified Truncated Icosahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Wide Rhombus Length: &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(6)/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.63299316185545206546</TD></TR>
+<TR><TD><NOBR>Wide Rhombus Width: &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(3)/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1547005383792515290</TD></TR>
+<TR><TD><NOBR>Thin Rhombus Length: &nbsp;</NOBR></TD><TD><NOBR>(sqrt(3)+sqrt(15))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.8683447179254313929</TD></TR>
+<TR><TD><NOBR>Thin Rhombus Width: &nbsp;</NOBR></TD><TD><NOBR>(sqrt(15)&#8722;sqrt(3))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.7136441795461798639</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (60): &nbsp;</NOBR></TD><TD><NOBR>(sqrt(21)+sqrt(105))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.4715877434859063983</TD></TR>
+<TR><TD><NOBR>[5]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(30*(5+sqrt(5)))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.4556173659421150570</TD></TR>
+<TR><TD><NOBR>[6]-Vertex Radius (20): &nbsp;</NOBR></TD><TD><NOBR>(3+sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.6180339887498948482</TD></TR>
+<TR><TD><NOBR>Wide Rhombus Center Radius: &nbsp;</NOBR></TD><TD><NOBR>(5*sqrt(6)+3*sqrt(30))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.3899271199225728246</TD></TR>
+<TR><TD><NOBR>Thin Rhombus Center Radius: &nbsp;</NOBR></TD><TD><NOBR>(2*sqrt(3)+sqrt(15))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.4456949871150571574</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>20*(7*sqrt(3)+4*sqrt(15))/9 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;61.369531195137352434</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RhombicEnneacontahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://mathworld.wolfram.com/RhombicEnneacontahedron.html>Rhombic Enneacontahedron (Wolfram MathWorld)</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

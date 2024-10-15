@@ -1,0 +1,148 @@
+<!-- File:   RhombicHexecontahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Rhombic Hexecontahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='ConcaveDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Other.html"><B>Other Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RhombicIcosahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Rhombic Hexecontahedron
+
+	(120) EDGE = 1
+	RHOMBUS LENGTH = sqrt(10 * (5 + sqrt(5))) / 5
+	RHOMBUS WIDTH = sqrt(10 * (5 - sqrt(5))) / 5
+	(12) [5]-VERTEX RADIUS = 1
+	(30) [4]-VERTEX RADIUS = sqrt(10 * (5 + sqrt(5))) / 5
+	(20) [3]-VERTEX RADIUS = sqrt(15 * (5 + 2 * sqrt(5))) / 5
+	VOLUME = 4 * sqrt(2 * (5 + sqrt(5)))
+	DIHEDRAL ANGLE 1 = acos((sqrt(5) - 1) / 4) = 72 degrees
+	DIHEDRAL ANGLE 2 = acos(-(1 + sqrt(5)) / 4) = 216 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="5 62 60">
+<INPUT type=hidden class=Constants value="0.525731112119133606025669084848,
+0.850650808352039932181540497063,
+1.37638192047117353820720958191,
+1.70130161670407986436308099413,
+2.22703272882321347038875007897">
+<!--
+	C0 = sqrt(10 * (5 - sqrt(5))) / 10
+	C1 = sqrt(10 * (5 + sqrt(5))) / 10
+	C2 = sqrt(5 * (5 + 2 * sqrt(5))) / 5
+	C3 = sqrt(10 * (5 + sqrt(5))) / 5
+	C4 = sqrt(10 * (25 + 11 * sqrt(5))) / 10
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C3,0.0 0.0 -C3,C3 0.0 0.0,
+-C3 0.0 0.0,0.0 C3 0.0,0.0 -C3 0.0,0.0 C1 C4,0.0 C1 -C4,0.0 -C1 C4,0.0 -C1 -C4,
+C4 0.0 C1,C4 0.0 -C1,-C4 0.0 C1,-C4 0.0 -C1,C1 C4 0.0,C1 -C4 0.0,-C1 C4 0.0,
+-C1 -C4 0.0,C0 0.0 C1,C0 0.0 -C1,-C0 0.0 C1,-C0 0.0 -C1,C1 C0 0.0,C1 -C0 0.0,
+-C1 C0 0.0,-C1 -C0 0.0,0.0 C1 C0,0.0 C1 -C0,0.0 -C1 C0,0.0 -C1 -C0,C0 C1 C2,
+C0 C1 -C2,C0 -C1 C2,C0 -C1 -C2,-C0 C1 C2,-C0 C1 -C2,-C0 -C1 C2,-C0 -C1 -C2,
+C2 C0 C1,C2 C0 -C1,C2 -C0 C1,C2 -C0 -C1,-C2 C0 C1,-C2 C0 -C1,-C2 -C0 C1,
+-C2 -C0 -C1,C1 C2 C0,C1 C2 -C0,C1 -C2 C0,C1 -C2 -C0,-C1 C2 C0,-C1 C2 -C0,
+-C1 -C2 C0,-C1 -C2 -C0,C2 C2 C2,C2 C2 -C2,C2 -C2 C2,C2 -C2 -C2,-C2 C2 C2,
+-C2 C2 -C2,-C2 -C2 C2,-C2 -C2 -C2">
+<INPUT type=hidden class=Faces value="18 0 8 32 #,18 32 56 40 #,18 40 10 38 #,
+18 38 54 30 #,18 30 6 0 #,19 1 7 31 #,19 31 55 39 #,19 39 11 41 #,
+19 41 57 33 #,19 33 9 1 #,20 0 6 34 #,20 34 58 42 #,20 42 12 44 #,
+20 44 60 36 #,20 36 8 0 #,21 1 9 37 #,21 37 61 45 #,21 45 13 43 #,
+21 43 59 35 #,21 35 7 1 #,22 2 11 39 #,22 39 55 47 #,22 47 14 46 #,
+22 46 54 38 #,22 38 10 2 #,23 2 10 40 #,23 40 56 48 #,23 48 15 49 #,
+23 49 57 41 #,23 41 11 2 #,24 3 12 42 #,24 42 58 50 #,24 50 16 51 #,
+24 51 59 43 #,24 43 13 3 #,25 3 13 45 #,25 45 61 53 #,25 53 17 52 #,
+25 52 60 44 #,25 44 12 3 #,26 4 16 50 #,26 50 58 34 #,26 34 6 30 #,
+26 30 54 46 #,26 46 14 4 #,27 4 14 47 #,27 47 55 31 #,27 31 7 35 #,
+27 35 59 51 #,27 51 16 4 #,28 5 15 48 #,28 48 56 32 #,28 32 8 36 #,
+28 36 60 52 #,28 52 17 5 #,29 5 17 53 #,29 53 61 37 #,29 37 9 33 #,
+29 33 57 49 #,29 49 15 5 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Rhombic Hexecontahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>62 &nbsp;(20[3] + 30[4] + 12[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>60 &nbsp;(rhombi)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>120 &nbsp;(equal length)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 1 (60): &nbsp;</NOBR></TD><TD><NOBR>acos((sqrt(5)&#8722;1)/4) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>72 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 2 (60): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(1+sqrt(5))/4) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>216 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center>The dual has the same polyhedral graph as the <A href="Rhombicosidodecahedron.html">Rhombicosidodecahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Rhombus Length: &nbsp;</NOBR></TD><TD><NOBR>sqrt(10*(5+sqrt(5)))/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.7013016167040798644</TD></TR>
+<TR><TD><NOBR>Rhombus Width: &nbsp;</NOBR></TD><TD><NOBR>sqrt(10*(5&#8722;sqrt(5)))/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0514622242382672121</TD></TR>
+<TR><TD><NOBR>[5]-Vertex Radius (12): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>[4]-Vertex Radius (30): &nbsp;</NOBR></TD><TD><NOBR>sqrt(10*(5+sqrt(5)))/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.7013016167040798644</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (20): &nbsp;</NOBR></TD><TD><NOBR>sqrt(15*(5+2*sqrt(5)))/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.3839634168752983689</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>4*sqrt(2*(5+sqrt(5))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;15.216904260722457154</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RhombicHexecontahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>H. Unkelbach, Die kantensymmetrischen, gleichkantigen Polyeder,<BR><I>Deutsche Mathematik</I> <B>5</B> (1940), 306-316.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

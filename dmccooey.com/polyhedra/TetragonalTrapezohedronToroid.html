@@ -1,0 +1,128 @@
+<!-- File:   TetragonalTrapezohedronToroid.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Tetragonal Trapezohedron Toroid</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='HexagonalAntiprismTrapezohedronToroid.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalNonRegular.html"><B>Non-Regular Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='PentagonalTrapezohedronToroid.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Tetragonal Trapezohedron Toroid
+
+	(16) EDGE 1 = sqrt(5 * sqrt(2) - 7)
+	(8) EDGE 2 = sqrt(sqrt(2) - 1)
+	(8) EDGE 3 = 3 * sqrt(5 * sqrt(2) - 7)
+	(8) EDGE 4 = 1
+	VOLUME = 2 * sqrt(2 * (1723 * sqrt(2) - 2436)) / 3
+
+	ROTATION SYMMETRIES:           8
+	MIRROR ROTATION SYMMETRIES:    8
+	ROTATION AXES:                 5 (1[4] + 4[2])
+	MIRROR PLANES:                 4
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  4-fold Antiprismatic (D4v)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="8 24 16">
+<INPUT type=hidden class=Constants value="0.0721375078778507478291882437893,
+0.112085382291991279528598381347,
+0.216412523633552243487564731368,
+0.270598050073098492199861602683,
+0.336256146875973838585795144042,
+0.420448207626857271515562738117,
+0.653281482438188263928321586714,
+0.8117941502192954765995848080496">
+<!--
+	C0 = sqrt(2 * (17 * sqrt(2) - 24)) / 4
+	C1 = sqrt(2 * (10 - 7 * sqrt(2))) / 4
+	C2 = 3 * sqrt(2 * (17 * sqrt(2) - 24)) / 4
+	C3 = sqrt(2 * (2 - sqrt(2))) / 4
+	C4 = 3 * sqrt(2 * (10 - 7 * sqrt(2))) / 4
+	C5 = sqrt(2 * sqrt(2)) / 4
+	C6 = sqrt(2 * (2 + sqrt(2))) / 4
+	C7 = 3 * sqrt(2 * (2 - sqrt(2))) / 4
+-->
+<INPUT type=hidden class=Vertices value="C6 C3 C5,C6 -C3 -C5,-C6 -C3 C5,
+-C6 C3 -C5,C3 -C6 C5,C3 C6 -C5,-C3 C6 C5,-C3 -C6 -C5,C7 C4 C2,C7 -C4 -C2,
+-C7 -C4 C2,-C7 C4 -C2,C4 -C7 C2,C4 C7 -C2,-C4 C7 C2,-C4 -C7 -C2,C3 -C1 C0,
+C3 C1 -C0,-C3 C1 C0,-C3 -C1 -C0,C1 C3 C0,C1 -C3 -C0,-C1 -C3 C0,-C1 C3 -C0">
+<INPUT type=hidden class=Faces value="0 4 12 9 8 #,0 8 13 14 6 #,
+0 6 23 20 17 #,0 17 16 21 4 #,1 5 13 8 9 #,1 9 12 15 7 #,1 7 22 21 16 #,
+1 16 17 20 5 #,2 4 21 22 19 #,2 19 18 23 6 #,2 6 14 11 10 #,2 10 15 12 4 #,
+3 5 20 23 18 #,3 18 19 22 7 #,3 7 15 10 11 #,3 11 14 13 5 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="90534026 -28636286 -25675924 18008337">
+</DIV>
+<BR>
+<CENTER>
+Tetragonal Trapezohedron Toroid
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>24 &nbsp;(8[3] + 8[3] + 8[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>16 &nbsp;({8 * 2} mirror-symmetric pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>40 &nbsp;(4 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>4-fold Antiprismatic &nbsp;(D4v)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on long edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (16): &nbsp;</NOBR></TD><TD><NOBR>sqrt(5*sqrt(2)&#8722;7) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.26658546821887205787</TD></TR>
+<TR><TD><NOBR>Edge 2 (8): &nbsp;</NOBR></TD><TD><NOBR>sqrt(sqrt(2)&#8722;1) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.64359425290558262474</TD></TR>
+<TR><TD><NOBR>Edge 3 (8): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(5*sqrt(2)&#8722;7) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.79975640465661617362</TD></TR>
+<TR><TD><NOBR>Edge 4 (8): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>2*sqrt(2*(1723*sqrt(2)&#8722;2436))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.78313783026589420422</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='TetragonalTrapezohedronToroid.txt'">
+<BR>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

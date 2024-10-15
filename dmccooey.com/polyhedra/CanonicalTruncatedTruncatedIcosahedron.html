@@ -1,0 +1,223 @@
+<!-- File:   CanonicalTruncatedTruncatedIcosahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2016 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Canonical Truncated Truncated Icosahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='CanonicalTruncatedTruncatedCuboctahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="TruncatedArchimedean.html"><B>Truncated Archimedean Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='CanonicalTruncatedTruncatedDodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Canonical Truncated Truncated Icosahedron
+
+	(120) SHORT EDGE = (5 - sqrt(5)) / 15
+	(120) MEDIUM EDGE = 8 * (4 * sqrt(5) - 5) / 165
+	(30) LONG EDGE = (5 * sqrt(5) - 9) / 11
+	RADIUS = (15 * sqrt(3) - sqrt(15)) /22
+	INRADIUS = (sqrt(3) + sqrt(15)) / 6
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 2 * (467 * sqrt(5) - 471) / 297
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="20 180 92">
+<INPUT type=hidden class=Constants value="0.0921310674166736767863608777090,
+0.0991063585226794764566303792571,
+0.241202265916659656546972455624,
+0.259463815113607685873978227554,
+0.262951460666610585709112978328,
+0.298142396999971959521223155831,
+0.355082528083284262495473856037,
+0.358570173636287162330608606811,
+0.419821271704535895291326075851,
+0.504153726583270242256085433953,
+0.580178728295464104708673924149,
+0.653224925083256222016697011868,
+0.666666666666666666666666666667,
+0.723606797749978969640917366873,
+0.745355992499929898803057889577,
+0.778391445340823057621934682663,
+0.815737865166652646427278244582,
+0.839642543409071790582652151703,
+0.907868932583326323213639122291,
+0.964809063666638626187889822498">
+<!--
+	C0 = (5 - sqrt(5)) / 30
+	C1 = (5 * sqrt(5) - 9) / 22
+	C2 = (5 + sqrt(5)) / 30
+	C3 = (3 * sqrt(5) - 1) / 22
+	C4 = (4 * sqrt(5) - 5) / 15
+	C5 = 2 * sqrt(5) / 15
+	C6 = (7 * sqrt(5) - 5) / 30
+	C7 = (4 * sqrt(5) - 5) / 11
+	C8 = (7 + sqrt(5)) / 22
+	C9 = (9 * sqrt(5) - 5) / 30
+	C10 = (15 - sqrt(5)) / 22
+	C11 = (11 * sqrt(5) - 5) / 30
+	C12 = 2 / 3
+	C13 = (5 + sqrt(5)) / 10
+	C14 = sqrt(5) / 3
+	C15 = 3 * (3 * sqrt(5) - 1) / 22
+	C16 = (10 + sqrt(5)) / 15
+	C17 = (7 + sqrt(5)) / 11
+	C18 = (25 + sqrt(5)) / 30
+	C19 = 2 * (5 + sqrt(5)) / 15
+-->
+<INPUT type=hidden class=Vertices value="C1 0.0 1.0,C1 0.0 -1.0,-C1 0.0 1.0,
+-C1 0.0 -1.0,1.0 C1 0.0,1.0 -C1 0.0,-1.0 C1 0.0,-1.0 -C1 0.0,0.0 1.0 C1,
+0.0 1.0 -C1,0.0 -1.0 C1,0.0 -1.0 -C1,C4 C0 C19,C4 C0 -C19,C4 -C0 C19,
+C4 -C0 -C19,-C4 C0 C19,-C4 C0 -C19,-C4 -C0 C19,-C4 -C0 -C19,C19 C4 C0,
+C19 C4 -C0,C19 -C4 C0,C19 -C4 -C0,-C19 C4 C0,-C19 C4 -C0,-C19 -C4 C0,
+-C19 -C4 -C0,C0 C19 C4,C0 C19 -C4,C0 -C19 C4,C0 -C19 -C4,-C0 C19 C4,
+-C0 C19 -C4,-C0 -C19 C4,-C0 -C19 -C4,C6 C2 C18,C6 C2 -C18,C6 -C2 C18,
+C6 -C2 -C18,-C6 C2 C18,-C6 C2 -C18,-C6 -C2 C18,-C6 -C2 -C18,C18 C6 C2,
+C18 C6 -C2,C18 -C6 C2,C18 -C6 -C2,-C18 C6 C2,-C18 C6 -C2,-C18 -C6 C2,
+-C18 -C6 -C2,C2 C18 C6,C2 C18 -C6,C2 -C18 C6,C2 -C18 -C6,-C2 C18 C6,
+-C2 C18 -C6,-C2 -C18 C6,-C2 -C18 -C6,C7 C8 C17,C7 C8 -C17,C7 -C8 C17,
+C7 -C8 -C17,-C7 C8 C17,-C7 C8 -C17,-C7 -C8 C17,-C7 -C8 -C17,C17 C7 C8,
+C17 C7 -C8,C17 -C7 C8,C17 -C7 -C8,-C17 C7 C8,-C17 C7 -C8,-C17 -C7 C8,
+-C17 -C7 -C8,C8 C17 C7,C8 C17 -C7,C8 -C17 C7,C8 -C17 -C7,-C8 C17 C7,
+-C8 C17 -C7,-C8 -C17 C7,-C8 -C17 -C7,C9 C5 C16,C9 C5 -C16,C9 -C5 C16,
+C9 -C5 -C16,-C9 C5 C16,-C9 C5 -C16,-C9 -C5 C16,-C9 -C5 -C16,C16 C9 C5,
+C16 C9 -C5,C16 -C9 C5,C16 -C9 -C5,-C16 C9 C5,-C16 C9 -C5,-C16 -C9 C5,
+-C16 -C9 -C5,C5 C16 C9,C5 C16 -C9,C5 -C16 C9,C5 -C16 -C9,-C5 C16 C9,
+-C5 C16 -C9,-C5 -C16 C9,-C5 -C16 -C9,C3 C10 C15,C3 C10 -C15,C3 -C10 C15,
+C3 -C10 -C15,-C3 C10 C15,-C3 C10 -C15,-C3 -C10 C15,-C3 -C10 -C15,C15 C3 C10,
+C15 C3 -C10,C15 -C3 C10,C15 -C3 -C10,-C15 C3 C10,-C15 C3 -C10,-C15 -C3 C10,
+-C15 -C3 -C10,C10 C15 C3,C10 C15 -C3,C10 -C15 C3,C10 -C15 -C3,-C10 C15 C3,
+-C10 C15 -C3,-C10 -C15 C3,-C10 -C15 -C3,C0 C12 C14,C0 C12 -C14,C0 -C12 C14,
+C0 -C12 -C14,-C0 C12 C14,-C0 C12 -C14,-C0 -C12 C14,-C0 -C12 -C14,C14 C0 C12,
+C14 C0 -C12,C14 -C0 C12,C14 -C0 -C12,-C14 C0 C12,-C14 C0 -C12,-C14 -C0 C12,
+-C14 -C0 -C12,C12 C14 C0,C12 C14 -C0,C12 -C14 C0,C12 -C14 -C0,-C12 C14 C0,
+-C12 C14 -C0,-C12 -C14 C0,-C12 -C14 -C0,C11 C2 C13,C11 C2 -C13,C11 -C2 C13,
+C11 -C2 -C13,-C11 C2 C13,-C11 C2 -C13,-C11 -C2 C13,-C11 -C2 -C13,C13 C11 C2,
+C13 C11 -C2,C13 -C11 C2,C13 -C11 -C2,-C13 C11 C2,-C13 C11 -C2,-C13 -C11 C2,
+-C13 -C11 -C2,C2 C13 C11,C2 C13 -C11,C2 -C13 C11,C2 -C13 -C11,-C2 C13 C11,
+-C2 C13 -C11,-C2 -C13 C11,-C2 -C13 -C11">
+<INPUT type=hidden class=Faces value="12 36 60 108 132 136 112 64 40 16 2 0 #,
+13 1 3 17 41 65 113 137 133 109 61 37 #,
+14 0 2 18 42 66 114 138 134 110 62 38 #,
+15 39 63 111 135 139 115 67 43 19 3 1 #,
+20 44 68 116 140 142 118 70 46 22 5 4 #,
+21 4 5 23 47 71 119 143 141 117 69 45 #,
+24 6 7 26 50 74 122 146 144 120 72 48 #,
+25 49 73 121 145 147 123 75 51 27 7 6 #,
+28 52 76 124 148 149 125 77 53 29 9 8 #,
+30 10 11 31 55 79 127 151 150 126 78 54 #,
+32 8 9 33 57 81 129 153 152 128 80 56 #,
+34 58 82 130 154 155 131 83 59 35 11 10 #,
+84 156 116 68 92 164 124 76 100 172 108 60 #,
+85 61 109 173 101 77 125 165 93 69 117 157 #,
+86 62 110 174 102 78 126 166 94 70 118 158 #,
+87 159 119 71 95 167 127 79 103 175 111 63 #,
+88 64 112 176 104 80 128 168 96 72 120 160 #,
+89 161 121 73 97 169 129 81 105 177 113 65 #,
+90 162 122 74 98 170 130 82 106 178 114 66 #,
+91 67 115 179 107 83 131 171 99 75 123 163 #,
+12 14 38 86 158 142 140 156 84 36 #,13 37 85 157 141 143 159 87 39 15 #,
+16 40 88 160 144 146 162 90 42 18 #,17 19 43 91 163 147 145 161 89 41 #,
+20 21 45 93 165 149 148 164 92 44 #,22 46 94 166 150 151 167 95 47 23 #,
+24 48 96 168 152 153 169 97 49 25 #,26 27 51 99 171 155 154 170 98 50 #,
+28 32 56 104 176 136 132 172 100 52 #,29 53 101 173 133 137 177 105 57 33 #,
+30 54 102 174 134 138 178 106 58 34 #,31 35 59 107 179 139 135 175 103 55 #,
+12 0 14 #,13 15 1 #,16 18 2 #,17 3 19 #,20 4 21 #,22 23 5 #,24 25 6 #,
+26 7 27 #,28 8 32 #,29 33 9 #,30 34 10 #,31 11 35 #,36 84 60 #,37 61 85 #,
+38 62 86 #,39 87 63 #,40 64 88 #,41 89 65 #,42 90 66 #,43 67 91 #,44 92 68 #,
+45 69 93 #,46 70 94 #,47 95 71 #,48 72 96 #,49 97 73 #,50 98 74 #,51 75 99 #,
+52 100 76 #,53 77 101 #,54 78 102 #,55 103 79 #,56 80 104 #,57 105 81 #,
+58 106 82 #,59 83 107 #,132 108 172 #,133 173 109 #,134 174 110 #,
+135 111 175 #,136 176 112 #,137 113 177 #,138 114 178 #,139 179 115 #,
+140 116 156 #,141 157 117 #,142 158 118 #,143 119 159 #,144 160 120 #,
+145 121 161 #,146 122 162 #,147 163 123 #,148 124 164 #,149 165 125 #,
+150 166 126 #,151 127 167 #,152 168 128 #,153 129 169 #,154 130 170 #,
+155 171 131 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Canonical Truncated Truncated Icosahedron
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>canonical form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="equal-edge form" onClick="window.location.href='EqualEdgeTruncatedTruncatedIcosahedron.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>180 &nbsp;(120[3] + 60[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>92 &nbsp;(20 tri-symmetric dodecagons</NOBR><BR><NOBR> &nbsp; &nbsp; + 12 regular decagons + 60 isosceles triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>270 &nbsp;(120 short + 120 medium + 30 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (120): &nbsp;</NOBR></TD><TD><NOBR>(5&#8722;sqrt(5))/15 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.18426213483334735357</TD></TR>
+<TR><TD><NOBR>Medium Edge (120): &nbsp;</NOBR></TD><TD><NOBR>8*(4*sqrt(5)&#8722;5)/165 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.19123742593935315324</TD></TR>
+<TR><TD><NOBR>Long Edge (30): &nbsp;</NOBR></TD><TD><NOBR>(5*sqrt(5)&#8722;9)/11 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.19821271704535895291</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>2*(467*sqrt(5)&#8722;471)/297 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.86022724237307601497</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='CanonicalTruncatedTruncatedIcosahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

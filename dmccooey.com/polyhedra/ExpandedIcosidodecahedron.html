@@ -1,0 +1,277 @@
+<!-- File:   ExpandedIcosidodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2019 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Expanded Icosidodecahedron (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='ExpandedCuboctahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Derived.html"><B>Derived Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SnubCuboctahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Expanded Icosidodecahedron (canonical)
+
+	(60) SHORT EDGE = 0.272417013066940351141377223356
+		= square-root of a root of the polynomial:
+		2000*(x^8) - 56800*(x^7) + 572024*(x^6) - 2498968*(x^5)
+		+ 4912193*(x^4) - 4177552*(x^3) + 1345504*(x^2) - 109824*x + 2304
+	(120) MEDIUM EDGE = 0.320049187076553613587468188503
+		= square-root of a root of the polynomial:
+		373248000*(x^8) - 6417100800*(x^7) + 45004250816*(x^6)
+		- 165779038688*(x^5) + 343366312809*(x^4) - 396492423680*(x^3)
+		+ 237460717568*(x^2) - 62444797952*x + 4294967296
+	(60) LONG EDGE = 0.3676813610861668760335591536501
+		= square-root of a root of the polynomial:
+		11664*(x^8) - 190944*(x^7) + 1101388*(x^6) - 2841904*(x^5)
+		+ 3573533*(x^4) - 2171472*(x^3) + 590944*(x^2) - 57600*x + 1280
+	RHOMBUS LENGTH = 0.48513115900512612293526591454998
+		= square-root of a root of the polynomial:
+		58320*(x^8) - 1654560*(x^7) + 18155576*(x^6) - 98326248*(x^5)
+		+ 282409457*(x^4) - 439972736*(x^3) + 358756352*(x^2) - 134742016*x
+		+ 16777216
+	RHOMBUS WIDTH = 0.417580755250758994345491543766
+		= square-root of a root of the polynomial:
+		18000*(x^8) - 727200*(x^7) + 11280956*(x^6) - 85494944*(x^5)
+		+ 336667281*(x^4) - 672605312*(x^3) + 611069952*(x^2) - 184025088*x
+		+ 16777216
+	RHOMBUS SMALL ANGLE = acos(0.148827667536677625412508742472)
+		= acos(root[4096*(x^8) + 1024*(x^7) - 4416*(x^6) - 720*(x^5)
+		+ 1257*(x^4) + 144*(x^3) - 90*(x^2) + 1])
+		= 81.4410057044955203478393094022 degrees
+	RHOMBUS LARGE ANGLE = acos(-0.148827667536677625412508742472)
+		= acos(root[4096*(x^8) - 1024*(x^7) - 4416*(x^6) + 720*(x^5)
+		+ 1257*(x^4) - 144*(x^3) - 90*(x^2) + 1])
+		= 98.5589942955044796521606905978 degrees
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 4.11408569266666433444251219196
+		= square-root of a root of the polynomial:
+		674664061647745843200000*(x^8) - 5702113375157241263112192000*(x^7)
+		+ 17315087335716249324024550742016*(x^6)
+		- 23882214080333546233218569304812160*(x^5)
+		+ 15513399446183440206054884761019574825*(x^4)
+		- 4113652073173314942109344173737681680000*(x^3)
+		+ 196271892907127159337363479707565821440000*(x^2)
+		- 3322379727108931986139337290619913830400000*x
+		+ 18711878433613689986036585421645021184000000
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="15 120 122">
+<INPUT type=hidden class=Constants value="0.136208506533470175570688611678,
+0.18384068054308343801677957682503,
+0.208790377625379497172745771883,
+0.24256557950256306146763295727499,
+0.297460469633620480260724164670,
+0.426406260045646499484412534100,
+0.429180370753396358161537333530,
+0.474038434055259761930503499247,
+0.558219920649806447348606449216,
+0.689939821769582325249419618076,
+0.694428427183276622919295060894,
+0.723866729679266979745136698770,
+0.873780502312665763266199194901,
+0.903218804808656120092040832777,
+0.987400291403202805510143782746">
+<!--
+	C0 = 0.136208506533470175570688611678
+		= square-root of a root of the polynomial:
+		512000*(x^8) - 3635200*(x^7) + 9152384*(x^6) - 9995872*(x^5)
+		+ 4912193*(x^4) - 1044388*(x^3) + 84094*(x^2) - 1716*x + 9
+	C1 = 0.18384068054308343801677957682503
+		= square-root of a root of the polynomial:
+		2985984*(x^8) - 12220416*(x^7) + 17622208*(x^6) - 11367616*(x^5)
+		+ 3573533*(x^4) - 542868*(x^3) + 36934*(x^2) - 900*x + 5
+	C2 = 0.208790377625379497172745771883
+		= square-root of a root of the polynomial:
+		4608000*(x^8) - 46540800*(x^7) + 180495296*(x^6) - 341979776*(x^5)
+		+ 336667281*(x^4) - 168151328*(x^3) + 38191872*(x^2) - 2875392*x
+		+ 65536
+	C3 = 0.24256557950256306146763295727499
+		= square-root of a root of the polynomial:
+		14929920*(x^8) - 105891840*(x^7) + 290489216*(x^6) - 393304992*(x^5)
+		+ 282409457*(x^4) - 109993184*(x^3) + 22422272*(x^2) - 2105344*x
+		+ 65536
+	C4 = 0.297460469633620480260724164670
+		= square-root of a root of the polynomial:
+		2985984*(x^8) - 10450944*(x^7) + 13794688*(x^6) - 8519904*(x^5)
+		+ 2498013*(x^4) - 324282*(x^3) + 19599*(x^2) - 530*x + 5
+	C5 = 0.426406260045646499484412534100
+		= square-root of a root of the polynomial:
+		14929920*(x^8) - 42854400*(x^7) + 44616896*(x^6) - 21180928*(x^5)
+		+ 5060201*(x^4) - 609268*(x^3) + 33182*(x^2) - 580*x + 1
+	C6 = 0.429180370753396358161537333530
+		= square-root of a root of the polynomial:
+		4608000*(x^8) - 20736000*(x^7) + 38662016*(x^6) - 38764576*(x^5)
+		+ 22746169*(x^4) - 7976098*(x^3) + 1630179*(x^2) - 177610*x + 7921
+	C7 = 0.474038434055259761930503499247
+		= square-root of a root of the polynomial:
+		288000*(x^8) - 1536000*(x^7) + 3118496*(x^6) - 3092640*(x^5)
+		+ 1589737*(x^4) - 414388*(x^3) + 50366*(x^2) - 2148*x + 1
+	C8 = 0.558219920649806447348606449216
+		= square-root of a root of the polynomial:
+		4608000*(x^8) - 19046400*(x^7) + 26734016*(x^6) - 15581600*(x^5)
+		+ 4245849*(x^4) - 530402*(x^3) + 25139*(x^2) - 314*x + 1
+	C9 = 0.689939821769582325249419618076
+		= square-root of a root of the polynomial:
+		14929920*(x^8) - 39813120*(x^7) + 42163136*(x^6) - 22400032*(x^5)
+		+ 6137961*(x^4) - 776002*(x^3) + 29907*(x^2) - 330*x + 1
+	C10 = 0.694428427183276622919295060894
+		= square-root of a root of the polynomial:
+		4608000*(x^8) - 25958400*(x^7) + 53287616*(x^6) - 54541184*(x^5)
+		+ 31334329*(x^4) - 10494642*(x^3) + 2009299*(x^2) - 200410*x + 7921
+	C11 = 0.723866729679266979745136698770
+		= square-root of a root of the polynomial:
+		14929920*(x^8) - 79626240*(x^7) + 181509056*(x^6) - 230578784*(x^5)
+		+ 178220041*(x^4) - 85654562*(x^3) + 24938627*(x^2) - 4009498*x
+		+ 271441
+	C12 = 0.873780502312665763266199194901
+		= square-root of a root of the polynomial:
+		933120*(x^8) - 5339520*(x^7) + 11446256*(x^6) - 11620936*(x^5)
+		+ 5881857*(x^4) - 1426186*(x^3) + 152347*(x^2) - 7138*x + 121
+	C13 = 0.903218804808656120092040832777
+		= square-root of a root of the polynomial:
+		4608000*(x^8) - 16128000*(x^7) + 22534016*(x^6) - 15799520*(x^5)
+		+ 5653529*(x^4) - 891138*(x^3) + 31379*(x^2) - 346*x + 1
+	C14 = 0.987400291403202805510143782746
+		= square-root of a root of the polynomial:
+		184320*(x^8) - 921600*(x^7) + 1939136*(x^6) - 2220128*(x^5)
+		+ 1489657*(x^4) - 584712*(x^3) + 124976*(x^2) - 11904*x + 256
+-->
+<INPUT type=hidden class=Vertices value="C3 0.0 C14,C3 0.0 -C14,-C3 0.0 C14,
+-C3 0.0 -C14,C14 C3 0.0,C14 -C3 0.0,-C14 C3 0.0,-C14 -C3 0.0,0.0 C14 C3,
+0.0 C14 -C3,0.0 -C14 C3,0.0 -C14 -C3,0.0 C2 C14,0.0 C2 -C14,0.0 -C2 C14,
+0.0 -C2 -C14,C14 0.0 C2,C14 0.0 -C2,-C14 0.0 C2,-C14 0.0 -C2,C2 C14 0.0,
+C2 -C14 0.0,-C2 C14 0.0,-C2 -C14 0.0,C0 C6 C13,C0 C6 -C13,C0 -C6 C13,
+C0 -C6 -C13,-C0 C6 C13,-C0 C6 -C13,-C0 -C6 C13,-C0 -C6 -C13,C13 C0 C6,
+C13 C0 -C6,C13 -C0 C6,C13 -C0 -C6,-C13 C0 C6,-C13 C0 -C6,-C13 -C0 C6,
+-C13 -C0 -C6,C6 C13 C0,C6 C13 -C0,C6 -C13 C0,C6 -C13 -C0,-C6 C13 C0,
+-C6 C13 -C0,-C6 -C13 C0,-C6 -C13 -C0,C5 C4 C12,C5 C4 -C12,C5 -C4 C12,
+C5 -C4 -C12,-C5 C4 C12,-C5 C4 -C12,-C5 -C4 C12,-C5 -C4 -C12,C12 C5 C4,
+C12 C5 -C4,C12 -C5 C4,C12 -C5 -C4,-C12 C5 C4,-C12 C5 -C4,-C12 -C5 C4,
+-C12 -C5 -C4,C4 C12 C5,C4 C12 -C5,C4 -C12 C5,C4 -C12 -C5,-C4 C12 C5,
+-C4 C12 -C5,-C4 -C12 C5,-C4 -C12 -C5,C1 C9 C11,C1 C9 -C11,C1 -C9 C11,
+C1 -C9 -C11,-C1 C9 C11,-C1 C9 -C11,-C1 -C9 C11,-C1 -C9 -C11,C11 C1 C9,
+C11 C1 -C9,C11 -C1 C9,C11 -C1 -C9,-C11 C1 C9,-C11 C1 -C9,-C11 -C1 C9,
+-C11 -C1 -C9,C9 C11 C1,C9 C11 -C1,C9 -C11 C1,C9 -C11 -C1,-C9 C11 C1,
+-C9 C11 -C1,-C9 -C11 C1,-C9 -C11 -C1,C7 C8 C10,C7 C8 -C10,C7 -C8 C10,
+C7 -C8 -C10,-C7 C8 C10,-C7 C8 -C10,-C7 -C8 C10,-C7 -C8 -C10,C10 C7 C8,
+C10 C7 -C8,C10 -C7 C8,C10 -C7 -C8,-C10 C7 C8,-C10 C7 -C8,-C10 -C7 C8,
+-C10 -C7 -C8,C8 C10 C7,C8 C10 -C7,C8 -C10 C7,C8 -C10 -C7,-C8 C10 C7,
+-C8 C10 -C7,-C8 -C10 C7,-C8 -C10 -C7">
+<INPUT type=hidden class=Faces value="0 50 82 80 48 #,1 49 81 83 51 #,
+2 52 84 86 54 #,3 55 87 85 53 #,4 57 89 88 56 #,5 58 90 91 59 #,
+6 60 92 93 61 #,7 63 95 94 62 #,8 68 76 72 64 #,9 65 73 77 69 #,
+10 66 74 78 70 #,11 71 79 75 67 #,0 12 2 14 #,1 15 3 13 #,4 16 5 17 #,
+6 19 7 18 #,8 20 9 22 #,10 23 11 21 #,24 48 96 72 #,25 73 97 49 #,
+26 74 98 50 #,27 51 99 75 #,28 76 100 52 #,29 53 101 77 #,30 54 102 78 #,
+31 79 103 55 #,32 56 104 80 #,33 81 105 57 #,34 82 106 58 #,35 59 107 83 #,
+36 84 108 60 #,37 61 109 85 #,38 62 110 86 #,39 87 111 63 #,40 64 112 88 #,
+41 89 113 65 #,42 90 114 66 #,43 67 115 91 #,44 92 116 68 #,45 69 117 93 #,
+46 70 118 94 #,47 95 119 71 #,0 14 26 50 #,0 48 24 12 #,1 13 25 49 #,
+1 51 27 15 #,2 12 28 52 #,2 54 30 14 #,3 15 31 55 #,3 53 29 13 #,4 17 33 57 #,
+4 56 32 16 #,5 16 34 58 #,5 59 35 17 #,6 18 36 60 #,6 61 37 19 #,7 19 39 63 #,
+7 62 38 18 #,8 22 44 68 #,8 64 40 20 #,9 20 41 65 #,9 69 45 22 #,10 21 42 66 #,
+10 70 46 23 #,11 23 47 71 #,11 67 43 21 #,24 72 76 28 #,25 29 77 73 #,
+26 30 78 74 #,27 75 79 31 #,32 80 82 34 #,33 35 83 81 #,36 38 86 84 #,
+37 85 87 39 #,40 88 89 41 #,42 43 91 90 #,44 45 93 92 #,46 94 95 47 #,
+48 80 104 96 #,49 97 105 81 #,50 98 106 82 #,51 83 107 99 #,52 100 108 84 #,
+53 85 109 101 #,54 86 110 102 #,55 103 111 87 #,56 88 112 104 #,
+57 105 113 89 #,58 106 114 90 #,59 91 115 107 #,60 108 116 92 #,
+61 93 117 109 #,62 94 118 110 #,63 111 119 95 #,64 72 96 112 #,65 113 97 73 #,
+66 114 98 74 #,67 75 99 115 #,68 116 100 76 #,69 77 101 117 #,70 78 102 118 #,
+71 119 103 79 #,12 24 28 #,13 29 25 #,14 30 26 #,15 27 31 #,16 32 34 #,
+17 35 33 #,18 38 36 #,19 37 39 #,20 40 41 #,21 43 42 #,22 45 44 #,23 46 47 #,
+96 104 112 #,97 113 105 #,98 114 106 #,99 107 115 #,100 116 108 #,
+101 109 117 #,102 110 118 #,103 119 111 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Expanded Icosidodecahedron (canonical)
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>canonical form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="equal-edge form" onClick="window.location.href='EqualEdgeExpandedIcosidodecahedron.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>120 &nbsp;(60[4] + 60[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>122 &nbsp;(20 equilateral triangles + 30 rhombi</NOBR><BR><NOBR> &nbsp; &nbsp; + 60 isosceles trapezoids + 12 regular pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>240 &nbsp;(60 short + 120 medium + 60 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[8th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.27241701306694035114</TD></TR>
+<TR><TD><NOBR>Medium Edge (120): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[8th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.32004918707655361359</TD></TR>
+<TR><TD><NOBR>Long Edge (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[8th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.36768136108616687603</TD></TR>
+<TR><TD><NOBR>Rhombus Length: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[8th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.48513115900512612294</TD></TR>
+<TR><TD><NOBR>Rhombus Width: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[8th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.41758075525075899434549</TD></TR>
+<TR><TD><NOBR>Rhombus Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(root[8th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;81.441005704 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>root[8th-order polynomial] &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.1140856926666643344</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='ExpandedIcosidodecahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

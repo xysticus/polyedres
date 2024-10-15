@@ -1,0 +1,146 @@
+<!-- File:   HexagonalTrapezohedronAntiprismToroid.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Hexagonal Trapezohedron-Antiprism Toroid</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='PentagonalTrapezohedronAntiprismToroid.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalNonRegular.html"><B>Non-Regular Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SquareAntiprismTrapezohedronToroid.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Hexagonal Trapezohedron-Antiprism Toroid
+
+	(12) SHORT EDGE = sqrt(6 * (11 * sqrt(3) - 19))
+	(12) MEDIUM EDGE = 2 * sqrt(211 * sqrt(3) - 365)
+	(24) LONG EDGE = 2
+	(12) INNER VERTEX RADIUS = sqrt(3 + sqrt(3))
+	(12) OUTER VERTEX RADIUS = sqrt(3 * (57 * sqrt(3) - 97))
+	VOLUME = 4 * sqrt(6 * (775643 * sqrt(3) - 1343453))
+	DIHEDRAL ANGLE 1 = acos(0.969180184076097921613027307521)
+		= acos(sqrt(3 * (38 * sqrt(3) - 63)) / 3)
+		= 14.2618023462347960560049389110 degrees
+	DIHEDRAL ANGLE 2 = acos(-0.577350269189625764509148780502)
+		= acos(-sqrt(3) / 3)
+		= 125.264389682754654315377000330 degrees
+	DIHEDRAL ANGLE 3 = acos(-0.821367205045918195684964227671)
+		= acos(-(2 * sqrt(3) - 1) / 3)
+		= 214.778108668096689373000907502 degrees
+
+	EULER CHARACTERISTIC:          0
+	ROTATION SYMMETRIES:          12
+	MIRROR ROTATION SYMMETRIES:   12
+	ROTATION AXES:                 7 (1[6] + 6[2])
+	MIRROR PLANES:                 6
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  6-fold Antiprismatic (D6v)
+	TOPOLOGICALLY SELF-DUAL:     YES
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="6 24 24">
+<INPUT type=hidden class=Constants value="0.352115828537187470328230156760,
+0.855599677167352192969235766211,
+1.12435565298214105469212439054,
+1.73205080756887729352744634151,
+1.94744111674234977119809024344,
+2.24871130596428210938424878108">
+<!--
+	C0 = sqrt(787 * sqrt(3) - 1363)
+	C1 = sqrt(sqrt(3) - 1)
+	C2 = 7 * sqrt(3) - 11
+	C3 = sqrt(3)
+	C4 = 21 - 11 * sqrt(3)
+	C5 = 2 * (7 * sqrt(3) - 11)
+-->
+<INPUT type=hidden class=Vertices value="C3 -1.0 C1,1.0 -C3 -C1,-C3 1.0 C1,
+-1.0 C3 -C1,C3 1.0 C1,-1.0 -C3 -C1,-C3 -1.0 C1,1.0 C3 -C1,0.0 -2.0 C1,
+2.0 0.0 -C1,0.0 2.0 C1,-2.0 0.0 -C1,C2 -C4 -C0,C4 -C2 C0,-C2 C4 -C0,-C4 C2 C0,
+-C2 -C4 -C0,C4 C2 C0,C2 C4 -C0,-C4 -C2 C0,C5 0.0 -C0,0.0 -C5 C0,-C5 0.0 -C0,
+0.0 C5 C0">
+<INPUT type=hidden class=Faces value="0 8 21 12 13 #,1 9 20 13 12 #,
+2 10 23 14 15 #,3 11 22 15 14 #,4 0 13 20 17 #,5 1 12 21 16 #,6 2 15 22 19 #,
+7 3 14 23 18 #,8 6 19 16 21 #,9 7 18 17 20 #,10 4 17 18 23 #,11 5 16 19 22 #,
+0 4 9 #,0 9 1 #,2 6 11 #,2 11 3 #,4 10 7 #,4 7 9 #,6 8 5 #,6 5 11 #,8 0 1 #,
+8 1 5 #,10 2 3 #,10 3 7 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="12 -3 -4 0">
+</DIV>
+<BR>
+<CENTER>
+Hexagonal Trapezohedron-Antiprism Toroid
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>24 &nbsp;(12[3] + 12[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>24 &nbsp;(12 equilateral triangles + 12 mirror-symmetric pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>48 &nbsp;(12 short + 12 medium + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>6-fold Antiprismatic &nbsp;(D6v)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 1 (12): &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(3*(38*sqrt(3)&#8722;63))/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;14.261802346 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 2 (24): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(3)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;125.264389683 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 3 (12): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(2*sqrt(3)&#8722;1)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;214.778108668 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Toroid: &nbsp;</NOBR></TD><TD colspan=2>Hexagonal Trapezohedron-Antiprism Toroid (itself)</TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on a Hexagonal Antiprism with edge length = 2)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(11*sqrt(3)&#8722;19)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.56156326406372182922</TD></TR>
+<TR><TD><NOBR>Medium Edge (12): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(211*sqrt(3)&#8722;365) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3604710905169707931</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD>2</TD></TR>
+<TR><TD><NOBR>[5]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3+sqrt(3)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.1753277471610748738</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(57*sqrt(3)&#8722;97)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.2761124959628021851</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>4*sqrt(6*(775643*sqrt(3)&#8722;1343453)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.8487495646855335448</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='HexagonalTrapezohedronAntiprismToroid.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Paul Gailiunas, Some Self-reciprocal Polyhedra.</TD></TR>
+<TR><TD></TD><TD valign=top>[2]</TD><TD>T. Bakos, Octahedra Inscribed in a Cube,<BR><I>The Mathematical Gazette</I> <B>43</B> (1959), 17-20.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

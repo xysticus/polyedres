@@ -1,0 +1,115 @@
+<!-- File:   ElongatedTriangularCupola.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2019 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Elongated Triangular Cupola</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='GyroelongatedSquareDipyramid.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="JohnsonPage1.html"><B>Johnson Solids (Page 1)</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='ElongatedSquareCupola.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Elongated Triangular Cupola
+
+	(27) EDGE = 1
+	VOLUME = 3.77658751333089514762591011577 = (5 * sqrt(2) + 9 * sqrt(3)) / 6
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:           3
+	MIRROR ROTATION SYMMETRIES:    3
+	ROTATION AXES:                 1 (1[3])
+	MIRROR PLANES:                 3
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  3-fold Pyramidal (C3v)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="3 15 14">
+<INPUT type=hidden class=Constants value="0.288675134594812882254574390251,
+0.418431646591734642146269971854,
+0.995781915781360406655418752356">
+<!--
+	C0 = sqrt(3) / 6
+	C1 = (3 * sqrt(2) - sqrt(3)) / 6
+	C2 = (3 * sqrt(2) + sqrt(3)) / 6
+-->
+<INPUT type=hidden class=Vertices value="C2 -C1 C0,-C2 C1 -C0,-C0 -C2 C1,
+C0 C2 -C1,-C1 C0 C2,C1 -C0 -C2,-C2 -C0 C1,C2 C0 -C1,-C1 C2 C0,C1 -C2 -C0,
+C0 -C1 C2,-C0 C1 -C2,C0 C2 C2,C2 C0 C2,C2 C2 C0">
+<INPUT type=hidden class=Faces value="1 11 5 9 2 6 #,8 12 14 3 #,10 13 12 4 #,
+7 14 13 0 #,8 3 11 1 #,10 4 6 2 #,7 0 9 5 #,8 1 6 4 #,10 2 9 0 #,7 5 11 3 #,
+8 4 12 #,10 0 13 #,7 3 14 #,12 13 14 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="892399101 -239117618 -369643811 99045761">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=10% align=left style="font-size:60%"><NOBR>(J18)</NOBR></TD>
+<TD width=80% align=center>Elongated Triangular Cupola</TD>
+<TD width=10% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>15 &nbsp;(6[3] + {6 + 3}[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>14 &nbsp;({3 + 1} equilateral triangles + {3 * 3} squares</NOBR><BR><NOBR> &nbsp; &nbsp; + 1 regular hexagon)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>27</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>3-fold Pyramidal &nbsp;(C3v)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>(5*sqrt(2)+9*sqrt(3))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.7765875133308951476</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='ElongatedTriangularCupola.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

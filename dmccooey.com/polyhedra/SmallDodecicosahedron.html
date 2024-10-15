@@ -1,0 +1,151 @@
+<!-- File:   SmallDodecicosahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Small Dodecicosahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='GreatRhombihexahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="VersiQuasiRegular.html"><B>Versi-Quasi-Regular Polyhedra</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='GreatDodecicosahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Small Dodecicosahedron
+
+	(120) EDGE = 1
+	RADIUS = sqrt(2 * (17 + 3 * sqrt(5))) / 4
+	MIDRADIUS = sqrt(6 * (5 + sqrt(5))) / 4
+	DECAGON CENTER RADIUS = sqrt(2 * (5 - sqrt(5))) / 4
+	HEXAGON CENTER RADIUS = (sqrt(3) + sqrt(15)) / 4
+	DIHEDRAL ANGLE 1 = acos(0.794654472291766122955530928328)
+		= acos(sqrt(15 * (5 + 2 * sqrt(5))) / 15)
+		= 37.3773681406496956428571384949 degrees
+	DIHEDRAL ANGLE 2 = acos(0.187592474085079899860139346908)
+		= acos(sqrt(15 * (5 - 2 * sqrt(5))) / 15)
+		= 79.18768303642829370871505522552 degrees
+
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="4 60 32">
+<INPUT type=hidden class=Constants value="0.309016994374947424102293417183,
+1.11803398874989484820458683437,
+1.30901699437494742410229341718,
+1.61803398874989484820458683437">
+<!--
+	C0 = (sqrt(5) - 1) / 4
+	C1 = sqrt(5) / 2
+	C2 = (3 + sqrt(5)) / 4
+	C3 = (1 + sqrt(5)) / 2
+-->
+<INPUT type=hidden class=Vertices value="0.5 C0 C3,0.5 C0 -C3,0.5 -C0 C3,
+0.5 -C0 -C3,-0.5 C0 C3,-0.5 C0 -C3,-0.5 -C0 C3,-0.5 -C0 -C3,C3 0.5 C0,
+C3 0.5 -C0,C3 -0.5 C0,C3 -0.5 -C0,-C3 0.5 C0,-C3 0.5 -C0,-C3 -0.5 C0,
+-C3 -0.5 -C0,C0 C3 0.5,C0 C3 -0.5,C0 -C3 0.5,C0 -C3 -0.5,-C0 C3 0.5,
+-C0 C3 -0.5,-C0 -C3 0.5,-C0 -C3 -0.5,0.0 C1 C2,0.0 C1 -C2,0.0 -C1 C2,
+0.0 -C1 -C2,C2 0.0 C1,C2 0.0 -C1,-C2 0.0 C1,-C2 0.0 -C1,C1 C2 0.0,C1 -C2 0.0,
+-C1 C2 0.0,-C1 -C2 0.0,1.0 0.5 C2,1.0 0.5 -C2,1.0 -0.5 C2,1.0 -0.5 -C2,
+-1.0 0.5 C2,-1.0 0.5 -C2,-1.0 -0.5 C2,-1.0 -0.5 -C2,C2 1.0 0.5,C2 1.0 -0.5,
+C2 -1.0 0.5,C2 -1.0 -0.5,-C2 1.0 0.5,-C2 1.0 -0.5,-C2 -1.0 0.5,-C2 -1.0 -0.5,
+0.5 C2 1.0,0.5 C2 -1.0,0.5 -C2 1.0,0.5 -C2 -1.0,-0.5 C2 1.0,-0.5 C2 -1.0,
+-0.5 -C2 1.0,-0.5 -C2 -1.0">
+<INPUT type=hidden class=Faces value="0 4 30 14 51 59 55 47 10 28 #,
+0 38 46 47 39 1 25 21 20 24 #,2 26 22 23 27 3 37 45 44 36 #,
+2 28 8 45 53 57 49 12 30 6 #,5 1 29 11 46 54 58 50 15 31 #,
+5 43 51 50 42 4 24 16 17 25 #,7 27 19 18 26 6 40 48 49 41 #,
+7 31 13 48 56 52 44 9 29 3 #,33 11 9 32 16 56 40 42 58 18 #,
+33 19 59 43 41 57 17 32 8 10 #,34 13 15 35 22 54 38 36 52 20 #,
+34 21 53 37 39 55 23 35 14 12 #,0 4 42 58 54 38 #,0 28 8 32 16 24 #,
+3 7 41 57 53 37 #,3 29 11 33 19 27 #,17 32 9 29 1 25 #,17 57 49 48 56 16 #,
+18 33 10 28 2 26 #,18 58 50 51 59 19 #,34 12 30 4 24 20 #,34 21 25 5 31 13 #,
+35 15 31 7 27 23 #,35 22 26 6 30 14 #,40 6 2 36 52 56 #,40 48 13 15 50 42 #,
+43 5 1 39 55 59 #,43 51 14 12 49 41 #,44 36 38 46 11 9 #,44 45 53 21 20 52 #,
+47 39 37 45 8 10 #,47 46 54 22 23 55 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #50)</NOBR></TD>
+<TD width=40% align=center><NOBR>Small Dodecicosahedron</NOBR></TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>60 &nbsp;(60[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>32 &nbsp;(20 regular hexagons + 12 regular decagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>120</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 1 (60): &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(15*(5+2*sqrt(5)))/15) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;37.377368141 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 2 (60): &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(15*(5&#8722;2*sqrt(5)))/15) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;79.187683036 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="SmallDodecicosacron.html">Small Dodecicosacron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(17+3*sqrt(5)))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.7214893236852853443</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(5+sqrt(5)))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.6472782070926638518</TD></TR>
+<TR><TD><NOBR>Decagon Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(5&#8722;sqrt(5)))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.58778525229247312917</TD></TR>
+<TR><TD><NOBR>Hexagon Center Radius: &nbsp;</NOBR></TD><TD><NOBR>(sqrt(3)+sqrt(15))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4012585384440735447</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SmallDodecicosahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>H. S. M. Coxeter, M. S. Longuet-Higgins, and J. C. P. Miller,<BR>Uniform Polyhedra, <I>Philosophical Transactions of the Royal Society of London.<BR>Series A. Mathematical and Physical Sciences</I> <B>246</B> (1954), 401-450.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

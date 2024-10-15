@@ -1,0 +1,137 @@
+<!-- File:   SelfDualIcosioctahedron4.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Self-Dual Icosioctahedron #4 (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='SelfDualIcosioctahedron3.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="GreaterSelfDual.html"><B>Greater Self-Dual Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SelfDualTetracontahedron1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Self-Dual Icosioctahedron #4 (canonical)
+
+	(12) EDGE 1 = (7 * sqrt(34) - 17 * sqrt(2)) / 28
+	(12) EDGE 2 = 2 * sqrt(34) / 17
+	(24) EDGE 3 = 3 * (7 * sqrt(34) - 17 * sqrt(2)) / 68
+	(6) EDGE 4 = (sqrt(34) - 3 * sqrt(2)) / 2
+	RADIUS = sqrt(17 - 3 * sqrt(17)) / 2
+	INRADIUS = sqrt(34 * (17 + 3 * sqrt(17))) / 34
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 8 * (6783 - 920 * sqrt(17)) / 6069
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          12
+	MIRROR ROTATION SYMMETRIES:   12
+	ROTATION AXES:                 7 (4[3] + 3[2])
+	MIRROR PLANES:                 6
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Full Tetrahedral (Td)
+	TOPOLOGICALLY SELF-DUAL:     YES
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="4 28 28">
+<INPUT type=hidden class=Constants value="0.242535625036332973518906462116,
+0.280776406404415137455352463994,
+0.589015089373951507117344265139,
+0.727606875108998920556719386348">
+<!--
+	C0 = sqrt(17) / 17
+	C1 = (sqrt(17) - 3) / 4
+	C2 = sqrt(17) / 7
+	C3 = 3 * sqrt(17) / 17
+-->
+<INPUT type=hidden class=Vertices value="C1 C1 1.0,C1 -C1 -1.0,-C1 -C1 1.0,
+-C1 C1 -1.0,1.0 C1 C1,1.0 -C1 -C1,-1.0 -C1 C1,-1.0 C1 -C1,C1 1.0 C1,
+C1 -1.0 -C1,-C1 -1.0 C1,-C1 1.0 -C1,C3 -C0 C3,C3 C0 -C3,-C3 C0 C3,-C3 -C0 -C3,
+C3 -C3 C0,C3 C3 -C0,-C3 C3 C0,-C3 -C3 -C0,C0 -C3 C3,C0 C3 -C3,-C0 C3 C3,
+-C0 -C3 -C3,C2 C2 C2,C2 -C2 -C2,-C2 -C2 C2,-C2 C2 -C2">
+<INPUT type=hidden class=Faces value="0 2 20 12 #,1 3 21 13 #,2 0 22 14 #,
+3 1 23 15 #,4 5 13 17 #,5 4 12 16 #,6 7 15 19 #,7 6 14 18 #,8 11 18 22 #,
+9 10 19 23 #,10 9 16 20 #,11 8 17 21 #,24 0 12 4 #,24 4 17 8 #,24 8 22 0 #,
+25 1 13 5 #,25 5 16 9 #,25 9 23 1 #,26 2 14 6 #,26 6 19 10 #,26 10 20 2 #,
+27 3 15 7 #,27 7 18 11 #,27 11 21 3 #,12 20 16 #,13 21 17 #,14 22 18 #,
+15 23 19 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Self-Dual Icosioctahedron #4 (canonical)
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>canonical form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="equal-edge form" onClick="window.location.href='EqualEdgeSelfDualIcosioctahedron4.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>28 &nbsp;(4[3] + 12[4] + 12[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>28 &nbsp;(4 equilateral triangles + 12 kites + 12 isosceles trapezoids)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>54 &nbsp;(4 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Tetrahedral &nbsp;(Td)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (24): &nbsp;</NOBR></TD><TD><NOBR>(7*sqrt(34)&#8722;17*sqrt(2))/28 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.599108310841945980946</TD></TR>
+<TR><TD><NOBR>Edge 2 (12): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(34)/17 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.68599434057003534951</TD></TR>
+<TR><TD><NOBR>Edge 3 (6): &nbsp;</NOBR></TD><TD><NOBR>3*(7*sqrt(34)&#8722;17*sqrt(2))/68 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.74007497221652150587</TD></TR>
+<TR><TD><NOBR>Edge 4 (12): &nbsp;</NOBR></TD><TD><NOBR>(sqrt(34)&#8722;3*sqrt(2))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.79415560386300766223</TD></TR>
+<TR><TD><NOBR>Max Vertex Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(17&#8722;3*sqrt(17))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0759511052026270341</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>8*(6783&#8722;920*sqrt(17))/6069 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.9410022401473090053</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SelfDualIcosioctahedron4.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>
