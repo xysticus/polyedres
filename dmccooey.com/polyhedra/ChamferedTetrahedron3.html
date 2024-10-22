@@ -1,0 +1,126 @@
+<!-- File:   ChamferedTetrahedron3.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Chamfered Tetrahedron (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='ChamferedTruncatedIcosahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Chamfer.html"><B>Chamfered Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='ChamferedOctahedron1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Chamfered Tetrahedron (canonical)
+
+	(12) SHORT EDGE = 2 - sqrt(2)
+	(12) LONG EDGE = 1
+	RADIUS = sqrt(6) / 2
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 2 * (7 - 2 * sqrt(2)) / 3
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          12
+	MIRROR ROTATION SYMMETRIES:   12
+	ROTATION AXES:                 7 (4[3] + 3[2])
+	MIRROR PLANES:                 6
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Full Tetrahedral (Td)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="2 16 10">
+<INPUT type=hidden class=Constants value="0.2928932188134524755991556378952,
+0.7071067811865475244008443621048">
+<!--
+	C0 = (2 - sqrt(2)) / 2
+	C1 = sqrt(2) / 2
+-->
+<INPUT type=hidden class=Vertices value="C1 -C1 C1,C1 C1 -C1,-C1 C1 C1,
+-C1 -C1 -C1,C1 C0 C1,C1 -C0 -C1,-C1 -C0 C1,-C1 C0 -C1,C1 C1 C0,C1 -C1 -C0,
+-C1 -C1 C0,-C1 C1 -C0,C0 C1 C1,C0 -C1 -C1,-C0 -C1 C1,-C0 C1 -C1">
+<INPUT type=hidden class=Faces value="0 9 5 1 8 4 #,0 14 10 3 13 9 #,
+1 5 13 3 7 15 #,1 15 11 2 12 8 #,2 6 14 0 4 12 #,2 11 7 3 10 6 #,4 8 12 #,
+5 9 13 #,6 10 14 #,7 11 15 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Chamfered Tetrahedron (canonical)
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="version 1" onClick="window.location.href='ChamferedTetrahedron1.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="version 2" onClick="window.location.href='ChamferedTetrahedron2.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>version 3</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>16 &nbsp;(4[3] + 12[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>10 &nbsp;(4 equilateral triangles + 6 bi-mirror-symmetric hexagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>24 &nbsp;(12 short + 12 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Tetrahedral &nbsp;(Td)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on long edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (12): &nbsp;</NOBR></TD><TD><NOBR>2&#8722;sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.58578643762690495120</TD></TR>
+<TR><TD><NOBR>Long Edge (12): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Max Vertex Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2247448713915890491</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>2*(7&#8722;2*sqrt(2))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.7810485835025399349</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='ChamferedTetrahedron3.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

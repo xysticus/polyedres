@@ -1,0 +1,147 @@
+<!-- File:   BiscribedPentakisDodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Biscribed Pentakis Dodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='BiscribedDisdyakisDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="BiscribedNonChiral.html"><B>Biscribed Non-Chiral Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='BiscribedDisdyakisTriacontahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Biscribed Pentakis Dodecahedron with radius = 1
+
+	(60) SHORT EDGE = sqrt(30 * (15 - sqrt(15 * (5 + 2 * sqrt(5))))) / 15
+	(30) LONG EDGE = (sqrt(15) - sqrt(3)) / 3
+	RADIUS = 1
+	INRADIUS = sqrt(2245*(620+185*sqrt(5)+sqrt(30*(12905+5701*sqrt(5)))))/2245
+		= 1 / sqrt(10 - sqrt(5) - sqrt(6 * (5 + sqrt(5))))
+	VOLUME = 2 * sqrt(10 * (5 - sqrt(5))) / 3
+	SHORT EDGE ANGLE = acos(-(255*sqrt(5)-7+sqrt(6*(5105+2099*sqrt(5))))/898)
+		= 153.789590508969227918569857192 degrees
+	LONG EDGE ANGLE
+		= acos(-(560-195*sqrt(5)+12*sqrt(15*(1205+298*sqrt(5))))/2245)
+		= 161.946011928326904782039103206 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="5 32 60">
+<INPUT type=hidden class=Constants value="0.356822089773089931941969843046,
+0.525731112119133606025669084848,
+0.577350269189625764509148780502,
+0.850650808352039932181540497063,
+0.934172358962715696451118623548">
+<!--
+	C0 = (sqrt(15) - sqrt(3)) / 6
+	C1 = sqrt(10 * (5 - sqrt(5))) / 10
+	C2 = sqrt(3) / 3
+	C3 = sqrt(10 * (5 + sqrt(5))) / 10
+	C4 = (sqrt(3) + sqrt(15)) / 6
+-->
+<INPUT type=hidden class=Vertices value="0.0 C0 C4,0.0 C0 -C4,0.0 -C0 C4,
+0.0 -C0 -C4,C4 0.0 C0,C4 0.0 -C0,-C4 0.0 C0,-C4 0.0 -C0,C0 C4 0.0,C0 -C4 0.0,
+-C0 C4 0.0,-C0 -C4 0.0,C1 0.0 C3,C1 0.0 -C3,-C1 0.0 C3,-C1 0.0 -C3,C3 C1 0.0,
+C3 -C1 0.0,-C3 C1 0.0,-C3 -C1 0.0,0.0 C3 C1,0.0 C3 -C1,0.0 -C3 C1,0.0 -C3 -C1,
+C2 C2 C2,C2 C2 -C2,C2 -C2 C2,C2 -C2 -C2,-C2 C2 C2,-C2 C2 -C2,-C2 -C2 C2,
+-C2 -C2 -C2">
+<INPUT type=hidden class=Faces value="12 0 2 #,12 2 26 #,12 26 4 #,12 4 24 #,
+12 24 0 #,13 3 1 #,13 1 25 #,13 25 5 #,13 5 27 #,13 27 3 #,14 2 0 #,14 0 28 #,
+14 28 6 #,14 6 30 #,14 30 2 #,15 1 3 #,15 3 31 #,15 31 7 #,15 7 29 #,15 29 1 #,
+16 4 5 #,16 5 25 #,16 25 8 #,16 8 24 #,16 24 4 #,17 5 4 #,17 4 26 #,17 26 9 #,
+17 9 27 #,17 27 5 #,18 7 6 #,18 6 28 #,18 28 10 #,18 10 29 #,18 29 7 #,
+19 6 7 #,19 7 31 #,19 31 11 #,19 11 30 #,19 30 6 #,20 8 10 #,20 10 28 #,
+20 28 0 #,20 0 24 #,20 24 8 #,21 10 8 #,21 8 25 #,21 25 1 #,21 1 29 #,
+21 29 10 #,22 11 9 #,22 9 26 #,22 26 2 #,22 2 30 #,22 30 11 #,23 9 11 #,
+23 11 31 #,23 31 3 #,23 3 27 #,23 27 9 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Biscribed Pentakis Dodecahedron
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="canonical form" onClick="window.location.href='PentakisDodecahedron.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>biscribed form</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>32 &nbsp;(12[5] + 20[6])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>60 &nbsp;(isosceles triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>90 &nbsp;(60 short + 30 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(255*sqrt(5)&#8722;7 &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +sqrt(6*(5105+2099*sqrt(5))))/898) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;153.789590509 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Long Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(560&#8722;195*sqrt(5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +12*sqrt(15*(1205+298*sqrt(5))))/2245) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;161.946011928 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="BiscribedTruncatedIcosahedron.html">Biscribed Truncated Icosahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on circumscribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(30*(15&#8722;sqrt(15*(5+2*sqrt(5)))))/15 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.64085182017098754129</TD></TR>
+<TR><TD><NOBR>Long Edge (30): &nbsp;</NOBR></TD><TD><NOBR>(sqrt(15)&#8722;sqrt(3))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.71364417954617986388</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>1/sqrt(10&#8722;sqrt(5)&#8722;sqrt(6*(5+sqrt(5)))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.92260219454398946762</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>2*sqrt(10*(5&#8722;sqrt(5)))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.5048740807942240402</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='BiscribedPentakisDodecahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

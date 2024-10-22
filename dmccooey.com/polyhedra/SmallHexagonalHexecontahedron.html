@@ -1,0 +1,172 @@
+<!-- File:   SmallHexagonalHexecontahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Small Hexagonal Hexecontahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='GreatHexagonalHexecontahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="SelfIntersectingSnubQuasiRegularDual.html"><B>Self-Intersecting Snub Quasi-Regular Duals</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SmallHexagrammicHexecontahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Small Hexagonal Hexecontahedron
+
+	(60) SHORT EDGE = sqrt(13 + 7 * sqrt(5) - sqrt(22 * (9 + 5 * sqrt(5)))) / 6
+	(120) LONG EDGE = sqrt(9 + 3 * sqrt(5) - sqrt(2 * (51 + 23 * sqrt(5)))) / 2
+	(12) INNER VERTEX RADIUS
+		= sqrt(2 * (35 + 17 * sqrt(5) + 2 * sqrt(10 * (51 + 23*sqrt(5))))) / 12
+	(100) OUTER VERTEX RADIUS = (sqrt(3) + sqrt(15)) / 4
+	EDGE-SCRIBED RADIUS = sqrt(9 + 3*sqrt(5) + sqrt(2 * (51 + 23*sqrt(5)))) / 4
+	INRADIUS = sqrt(58*(103 + 41*sqrt(5) + 2*sqrt(2*(2239+1005*sqrt(5)))))/116
+	DIHEDRAL ANGLE = acos(-0.764851844695498631394510261549)
+		= acos(-(5 * sqrt(5) - 3 + sqrt(2 * (299 + 159 * sqrt(5)))) / 58)
+		= 139.893813264505924621687627013 degrees
+
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="12 112 60">
+<INPUT type=hidden class=Constants value="0.267843693395936526330702957199,
+0.309016994374947424102293417183,
+0.433380199586931046495436031247,
+0.576860687770883950432996374382,
+0.725259131182936505697721826559,
+0.809016994374947424102293417183,
+0.933380199586931046495436031247,
+1.01024088735781499692843240563,
+1.17349392490520999795228827042,
+1.201223892982867572826138988446,
+1.30901699437494742410229341718,
+1.36676039917386209299087206249">
+<!--
+	C0 = (1 - sqrt(5) + sqrt(2 * (3 * sqrt(5) - 1))) / 8
+	C1 = (sqrt(5) - 1) / 4
+	C2 = (sqrt(3 + 2 * sqrt(5)) - 1) / 4
+	C3 = (sqrt(5) - 1 + sqrt(2 * (3 * sqrt(5) - 1))) / 8
+	C4 = (1 + sqrt(5) + 2 * sqrt(3 + 2 * sqrt(5))) / 12
+	C5 = (1 + sqrt(5)) / 4
+	C6 = (1 + sqrt(3 + 2 * sqrt(5))) / 4
+	C7 = (sqrt(5) - 3 + sqrt(2 * (19 + 9 * sqrt(5)))) / 8
+	C8 = (3 + sqrt(5) + sqrt(2 * (19 + 9 * sqrt(5)))) / 12
+	C9 = (3 - sqrt(5) + sqrt(2 * (19 + 9 * sqrt(5)))) / 8
+	C10 = (3 + sqrt(5)) / 4
+	C11 = sqrt(3 + 2 * sqrt(5)) / 2
+-->
+<INPUT type=hidden class=Vertices value="C1 0.0 C11,C1 0.0 -C11,-C1 0.0 C11,
+-C1 0.0 -C11,C11 C1 0.0,C11 -C1 0.0,-C11 C1 0.0,-C11 -C1 0.0,0.0 C11 C1,
+0.0 C11 -C1,0.0 -C11 C1,0.0 -C11 -C1,0.0 0.5 C10,0.0 0.5 C10,0.0 0.5 -C10,
+0.0 0.5 -C10,0.0 -0.5 C10,0.0 -0.5 C10,0.0 -0.5 -C10,0.0 -0.5 -C10,C10 0.0 0.5,
+C10 0.0 0.5,C10 0.0 -0.5,C10 0.0 -0.5,-C10 0.0 0.5,-C10 0.0 0.5,-C10 0.0 -0.5,
+-C10 0.0 -0.5,0.5 C10 0.0,0.5 C10 0.0,0.5 -C10 0.0,0.5 -C10 0.0,-0.5 C10 0.0,
+-0.5 C10 0.0,-0.5 -C10 0.0,-0.5 -C10 0.0,C3 C2 C9,C3 C2 -C9,C3 -C2 C9,
+C3 -C2 -C9,-C3 C2 C9,-C3 C2 -C9,-C3 -C2 C9,-C3 -C2 -C9,C9 C3 C2,C9 C3 -C2,
+C9 -C3 C2,C9 -C3 -C2,-C9 C3 C2,-C9 C3 -C2,-C9 -C3 C2,-C9 -C3 -C2,C2 C9 C3,
+C2 C9 -C3,C2 -C9 C3,C2 -C9 -C3,-C2 C9 C3,-C2 C9 -C3,-C2 -C9 C3,-C2 -C9 -C3,
+C4 0.0 C8,C4 0.0 -C8,-C4 0.0 C8,-C4 0.0 -C8,C8 C4 0.0,C8 -C4 0.0,-C8 C4 0.0,
+-C8 -C4 0.0,0.0 C8 C4,0.0 C8 -C4,0.0 -C8 C4,0.0 -C8 -C4,C0 C6 C7,C0 C6 -C7,
+C0 -C6 C7,C0 -C6 -C7,-C0 C6 C7,-C0 C6 -C7,-C0 -C6 C7,-C0 -C6 -C7,C7 C0 C6,
+C7 C0 -C6,C7 -C0 C6,C7 -C0 -C6,-C7 C0 C6,-C7 C0 -C6,-C7 -C0 C6,-C7 -C0 -C6,
+C6 C7 C0,C6 C7 -C0,C6 -C7 C0,C6 -C7 -C0,-C6 C7 C0,-C6 C7 -C0,-C6 -C7 C0,
+-C6 -C7 -C0,C5 C5 C5,C5 C5 C5,C5 C5 -C5,C5 C5 -C5,C5 -C5 C5,C5 -C5 C5,
+C5 -C5 -C5,C5 -C5 -C5,-C5 C5 C5,-C5 C5 C5,-C5 C5 -C5,-C5 C5 -C5,-C5 -C5 C5,
+-C5 -C5 C5,-C5 -C5 -C5,-C5 -C5 -C5">
+<INPUT type=hidden class=Faces value="60 0 17 74 100 82 #,60 82 20 44 97 36 #,
+60 36 12 2 16 38 #,60 38 101 46 21 80 #,60 80 96 72 13 0 #,61 1 15 73 98 81 #,
+61 81 22 47 103 39 #,61 39 18 3 14 37 #,61 37 99 45 23 83 #,
+61 83 102 75 19 1 #,62 2 12 76 104 84 #,62 84 25 50 109 42 #,
+62 42 17 0 13 40 #,62 40 105 48 24 86 #,62 86 108 78 16 2 #,
+63 3 18 79 110 87 #,63 87 27 49 107 41 #,63 41 15 1 19 43 #,
+63 43 111 51 26 85 #,63 85 106 77 14 3 #,64 4 22 81 98 89 #,
+64 89 29 52 97 44 #,64 44 20 5 23 45 #,64 45 99 53 28 88 #,64 88 96 80 21 4 #,
+65 5 20 82 100 90 #,65 90 31 55 103 47 #,65 47 22 4 21 46 #,
+65 46 101 54 30 91 #,65 91 102 83 23 5 #,66 6 25 84 104 92 #,
+66 92 32 57 107 49 #,66 49 27 7 24 48 #,66 48 105 56 33 93 #,
+66 93 106 85 26 6 #,67 7 27 87 110 95 #,67 95 34 58 109 50 #,
+67 50 25 6 26 51 #,67 51 111 59 35 94 #,67 94 108 86 24 7 #,
+68 8 32 92 104 76 #,68 76 12 36 97 52 #,68 52 29 9 33 56 #,
+68 56 105 40 13 72 #,68 72 96 88 28 8 #,69 9 29 89 98 73 #,
+69 73 15 41 107 57 #,69 57 32 8 28 53 #,69 53 99 37 14 77 #,
+69 77 106 93 33 9 #,70 10 31 90 100 74 #,70 74 17 42 109 58 #,
+70 58 34 11 30 54 #,70 54 101 38 16 78 #,70 78 108 94 35 10 #,
+71 11 34 95 110 79 #,71 79 18 39 103 55 #,71 55 31 10 35 59 #,
+71 59 111 43 19 75 #,71 75 102 91 30 11 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Small Hexagonal Hexecontahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>112 &nbsp;(100[3] + 12[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>60 &nbsp;(mirror-symmetric hexagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>180 &nbsp;(60 short + 120 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(5*sqrt(5)&#8722;3 &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +sqrt(2*(299+159*sqrt(5))))/58) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;139.89381326451 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="SmallSnubIcosicosidodecahedron.html">Small Snub Icosicosidodecahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length Small Snub Icosicosidodecahedron)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(13+7*sqrt(5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;sqrt(22*(9+5*sqrt(5))))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.45892204842512879791</TD></TR>
+<TR><TD><NOBR>Long Edge (120): &nbsp;</NOBR></TD><TD><NOBR>sqrt(9+3*sqrt(5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;sqrt(2*(51+23*sqrt(5))))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.59061476751796310766</TD></TR>
+<TR><TD><NOBR>[5]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(35+17*sqrt(5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +2*sqrt(10*(51+23*sqrt(5)))))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3795248454281867501</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (100): &nbsp;</NOBR></TD><TD><NOBR>(sqrt(3)+sqrt(15))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4012585384440735447</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(9+3*sqrt(5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +sqrt(2*(51+23*sqrt(5))))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.36978795463379905346</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(58*(103+41*sqrt(5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +2*sqrt(2*(2239+1005*sqrt(5)))))/116 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2867449475606692293</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SmallHexagonalHexecontahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

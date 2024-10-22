@@ -1,0 +1,172 @@
+<!-- File:   EqualEdgeTetracontahedron1.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Tetracontahedron #1 with equal edges</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='GyrateDeltoidalIcositetrahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Other.html"><B>Other Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='StellaOctangula1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Tetracontahedron #1 with equal edges
+
+	(66) EDGE = 1
+	RHOMBUS LENGTH = 1.647054741528425864777465318251
+		= square-root of a root of the polynomial:  81*(x^6) + 1017*(x^5)
+		- 4929*(x^4) - 40918*(x^3) + 270695*(x^2) - 516775*x + 311929
+	RHOMBUS WIDTH = 1.13455307430226915190214413031
+		= square-root of a root of the polynomial:  81*(x^6) - 2961*(x^5)
+		+ 34851*(x^4) - 146618*(x^3) + 268415*(x^2) - 222321*x + 68557
+	RHOMBUS SMALL ANGLE = acos(0.356394660795634866488366109672)
+		= acos(root[5184*(x^6) + 63648*(x^5) + 161616*(x^4)
+		- 213680*(x^3) + 30764*(x^2) + 28346*x - 7321])
+		= 69.1210558492830778565399263752 degrees
+	RHOMBUS LARGE ANGLE = acos(-0.356394660795634866488366109672)
+		= acos(root[5184*(x^6) - 63648*(x^5) + 161616*(x^4)
+		+ 213680*(x^3) + 30764*(x^2) - 28346*x - 7321])
+		= 110.8789441507169221434600736248 degrees
+	RADIUS = 1.53086825357929910898144489184
+		= square-root of a root of the polynomial:
+		5308416*(x^6) + 19611648*(x^5) - 27949056*(x^4) - 182395904*(x^3)
+		+ 195149584*(x^2) - 65813172*x + 7325429
+	INRADIUS = 1.167711439911290587862506056249
+		= square-root of a root of the polynomial:
+		47775744*(x^6) + 250822656*(x^5) + 212502528*(x^4) - 1389007872*(x^3)
+		+ 722329488*(x^2) - 37068660*x + 5013121
+	VOLUME = 9.70809807402742251881552659183
+		= square-root of a root of the polynomial:  25389989167104*(x^6)
+		- 80648261801164800*(x^5) + 102590343534926776320*(x^4)
+		- 7935642546343404401664*(x^3) - 93893632612355953260144*(x^2)
+		- 372739867788116081284236*x + 92488946329117889914801
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          12
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                 7 (4[3] + 3[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Tetrahedral (T)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="7 28 40">
+<INPUT type=hidden class=Constants value="0.1559963901310175823344034612752,
+0.240252093865609506719701454787,
+0.475042236297038497597099027780,
+0.731618801237068486347066637576,
+0.871290720293665586651203943842,
+1.05066464740308940160976220408,
+1.44691313139971649066386712014">
+<!--
+	C0 = square-root of a root of the polynomial:  65536*(x^6) + 65536*(x^5)
+		+ 124928*(x^4) + 61952*(x^3) + 45712*(x^2) - 1192*x + 1
+	C1 = square-root of a root of the polynomial:
+		5308416*(x^6) + 13418496*(x^5) + 18057216*(x^4) + 11963392*(x^3)
+		+ 3374096*(x^2) - 249068*x + 625
+	C2 = square-root of a root of the polynomial:  4096*(x^6) - 10240*(x^5)
+		+ 16768*(x^4) - 15520*(x^3) + 9569*(x^2) - 2672*x + 256
+	C3 = square-root of a root of the polynomial:  331776*(x^6) - 1124352*(x^5)
+		+ 2199936*(x^4) - 2675360*(x^3) + 2015121*(x^2) - 870688*x + 160000
+	C4 = square-root of a root of the polynomial:
+		5308416*(x^6) - 36126720*(x^5) + 91195392*(x^4) - 28537856*(x^3)
+		- 19973104*(x^2) + 1219668*x + 874225
+	C5 = square-root of a root of the polynomial:
+		5308416*(x^6) + 21823488*(x^5) + 8251392*(x^4) - 102460928*(x^3)
+		+ 92047760*(x^2) - 31764840*x + 3094081
+	C6 = square-root of a root of the polynomial:
+		5308416*(x^6) + 27574272*(x^5) + 1542144*(x^4) - 196428800*(x^3)
+		+ 51247120*(x^2) - 3770284*x + 130321
+-->
+<INPUT type=hidden class=Vertices value="C2 C0 C6,C2 -C0 -C6,-C2 -C0 C6,
+-C2 C0 -C6,C6 C2 C0,C6 -C2 -C0,-C6 -C2 C0,-C6 C2 -C0,C0 C6 C2,C0 -C6 -C2,
+-C0 -C6 C2,-C0 C6 -C2,C1 -C3 C5,C1 C3 -C5,-C1 C3 C5,-C1 -C3 -C5,C5 -C1 C3,
+C5 C1 -C3,-C5 C1 C3,-C5 -C1 -C3,C3 -C5 C1,C3 C5 -C1,-C3 C5 C1,-C3 -C5 -C1,
+C4 C4 C4,C4 -C4 -C4,-C4 -C4 C4,-C4 C4 -C4">
+<INPUT type=hidden class=Faces value="24 0 16 4 #,24 4 21 8 #,24 8 14 0 #,
+25 1 17 5 #,25 5 20 9 #,25 9 15 1 #,26 2 18 6 #,26 6 23 10 #,26 10 12 2 #,
+27 3 19 7 #,27 7 22 11 #,27 11 13 3 #,12 20 16 #,13 21 17 #,14 22 18 #,
+15 23 19 #,0 12 16 #,1 13 17 #,2 14 18 #,3 15 19 #,4 17 21 #,5 16 20 #,
+6 19 23 #,7 18 22 #,8 22 14 #,9 23 15 #,10 20 12 #,11 21 13 #,0 2 12 #,
+1 3 13 #,2 0 14 #,3 1 15 #,4 5 17 #,5 4 16 #,6 7 19 #,7 6 18 #,8 11 22 #,
+9 10 23 #,10 9 20 #,11 8 21 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Tetracontahedron #1 with equal edges
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="canonical form" onClick="window.location.href='Tetracontahedron1.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>equal-edge form</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>28 &nbsp;(4[3] + 12[5] + 12[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>40 &nbsp;(28 equilateral triangles + 12 rhombi)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>66 &nbsp;(all same length)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Tetrahedral &nbsp;(T)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Rhombus Length: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[81*(x^6)+1017*(x^5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;4929*(x^4)&#8722;40918*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +270695*(x^2)&#8722;516775*x+311929]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.6470547415284258648</TD></TR>
+<TR><TD><NOBR>Rhombus Width: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[81*(x^6)&#8722;2961*(x^5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +34851*(x^4)&#8722;146618*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +268415*(x^2)&#8722;222321*x+68557]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1345530743022691519</TD></TR>
+<TR><TD><NOBR>Rhombus Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(root[5184*(x^6)+63648*(x^5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +161616*(x^4)&#8722;213680*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +30764*(x^2)+28346*x&#8722;7321]) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;69.121055849 degrees</NOBR></TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(root[6th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;9.7080980740274225188</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='EqualEdgeTetracontahedron1.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

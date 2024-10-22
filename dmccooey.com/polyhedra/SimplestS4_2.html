@@ -1,0 +1,144 @@
+<!-- File:   SimplestS4_2.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Simplest Canonical Polyhedron with S4 Symmetry (2 of 2)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='SimplestC11v.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Simplest.html"><B>Simplest Canonical Polyhedra of Each Symmetry Type</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SimplestS6_1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Simplest Canonical Polyhedron with S4 Symmetry (2 of 2)
+
+	(4) SHORT EDGE = 0.687719447682798161763403976430
+		= square-root of a root of the polynomial:
+			49*(x^4) - 168*(x^3) + 256*(x^2) - 224*x + 64
+	(8) MEDIUM EDGE = 1.20022167161489924357773060774996
+		= square-root of a root of the polynomial:
+			(x^4) + 8*(x^3) - 96*(x^2) - 992*x + 1600
+	(8) LONG EDGE = 1.26202479914726890156121481591
+		= square-root of a root of the polynomial:
+			49*(x^4) - 168*(x^3) + 704*(x^2) - 1536*x + 1024
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 3.12793716980951682011989152411
+		= square-root of a root of the polynomial:  321489*(x^4)
+		- 268458624*(x^3) + 55702536192*(x^2) + 966693224448*x - 14541836517376
+
+	ROTATION SYMMETRIES:           2
+	MIRROR ROTATION SYMMETRIES:    2
+	ROTATION AXES:                 1 (1[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  2-fold Rotoreflection (S4)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="6 12 10">
+<INPUT type=hidden class=Constants value="0.351175098979321764477579526674,
+0.358978150955167379935323364556,
+0.612877774136896622856949491433,
+0.849896254802117925400734039612,
+0.942473744824208271875634394359,
+1.03194616864595517797384395627">
+<!--
+	C0 = square-root of a root of the polynomial:
+		245*(x^4) - 672*(x^3) + 584*(x^2) - 192*x + 16
+	C1 = square-root of a root of the polynomial:
+		49*(x^4) + 14*(x^3) - 20*(x^2) + 10*x - 1
+	C2 = square-root of a root of the polynomial:
+		(x^4) - 56*(x^2) - 192*x + 80
+	C3 = square-root of a root of the polynomial:
+		(x^4) - 10*(x^3) + 28*(x^2) - 14*x - 1
+	C4 = square-root of a root of the polynomial:
+		245*(x^4) - 728*(x^3) + 48*(x^2) + 288*x + 64
+	C5 = square-root of a root of the polynomial:
+		(x^4) + 8*(x^3) + 40*(x^2) - 128*x + 80
+-->
+<INPUT type=hidden class=Vertices value="C5 0.0 C3,-C5 0.0 C3,0.0 C5 -C3,
+0.0 -C5 -C3,0.0 C2 C3,0.0 -C2 C3,C2 0.0 -C3,-C2 0.0 -C3,C0 -C4 C1,-C0 C4 C1,
+C4 C0 -C1,-C4 -C0 -C1">
+<INPUT type=hidden class=Faces value="0 8 3 6 10 #,0 10 2 9 4 #,1 9 2 7 11 #,
+1 11 3 8 5 #,0 4 1 5 #,2 6 3 7 #,0 5 8 #,1 4 9 #,2 10 6 #,3 11 7 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Simplest Canonical Polyhedron with S4 Symmetry
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="(1 of 2)" onClick="window.location.href='SimplestS4_1.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>(2 of 2)</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>12 &nbsp;(4[3] + 4[3] + 4[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>10 &nbsp;({2 opposite * 2} acute triangles + 2 rhombi</NOBR><BR><NOBR> &nbsp; &nbsp; + {2 opposite * 2} irregular pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>20 &nbsp;(4 short + 8 medium + 8 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>2-fold Rotoreflection &nbsp;(S4)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="SimplestS4_1.html">Simplest S4 (1 of 2)</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (4): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[49*(x^4)&#8722;168*(x^3)+256*(x^2)&#8722;224*x+64]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.68771944768279816176</TD></TR>
+<TR><TD><NOBR>Medium Edge (8): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[(x^4)+8*(x^3)&#8722;96*(x^2)&#8722;992*x+1600]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2002216716148992436</TD></TR>
+<TR><TD><NOBR>Long Edge (8): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[49*(x^4)&#8722;168*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +704*(x^2)&#8722;1536*x+1024]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2620247991472689016</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(root[321489*(x^4)&#8722;268458624*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +55702536192*(x^2)+966693224448*x &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;14541836517376]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.1279371698095168201</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SimplestS4_2.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

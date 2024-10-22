@@ -1,0 +1,126 @@
+<!-- File:   Hugel.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Hugel's Polyhedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='Escher.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Other.html"><B>Other Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RhombicEnneacontahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Hugel's Polyhedron
+
+	(30) EDGE = 1
+	(30) EDGE = (3 + sqrt(5)) / 2
+	RADIUS = (sqrt(3) + sqrt(15)) / 4
+	INRADIUS = (sqrt(3) + sqrt(15)) / 12
+	CONVEX DIHEDRAL ANGLE = acos(sqrt(5) / 3)
+		= 41.8103148957785980658579167306 degrees
+	CONCAVE DIHEDRAL ANGLE = acos(-sqrt(5) / 3)
+		= 221.8103148957785980658579167306 degrees
+
+	EULER CHARACTERISTIC:        -20
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:     YES
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="2 20 20">
+<INPUT type=hidden class=Constants value="0.809016994374947424102293417183,
+1.30901699437494742410229341718">
+<!--
+	C0 = (1 + sqrt(5)) / 4
+	C1 = (3 + sqrt(5)) / 4
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.5 C1,0.0 0.5 -C1,0.0 -0.5 C1,
+0.0 -0.5 -C1,C1 0.0 0.5,C1 0.0 -0.5,-C1 0.0 0.5,-C1 0.0 -0.5,0.5 C1 0.0,
+0.5 -C1 0.0,-0.5 C1 0.0,-0.5 -C1 0.0,C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0,
+-C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0">
+<INPUT type=hidden class=Faces value="0 2 13 8 9 15 #,1 0 12 7 6 13 #,
+2 3 15 6 7 14 #,3 1 14 9 8 12 #,4 14 1 13 11 19 #,5 13 2 14 10 16 #,
+6 18 8 10 14 4 #,7 17 9 11 13 5 #,8 19 7 5 15 10 #,9 16 6 4 12 11 #,
+10 15 3 12 4 17 #,11 12 0 15 5 18 #,12 8 18 2 17 7 #,13 6 16 3 19 8 #,
+14 7 19 0 16 9 #,15 9 17 1 18 6 #,16 10 11 18 1 3 #,17 4 5 16 0 1 #,
+18 5 4 19 3 2 #,19 11 10 17 2 0 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Hugel's Polyhedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>20 &nbsp;(20[6])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>20 &nbsp;(ditrigons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>60 &nbsp;(30 short + 30 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Convex Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(5)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;41.810314896 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Concave Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(5)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;221.810314896 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2>Hugel's Polyhedron (itself)</TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on short edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (30): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Long Edge (30): &nbsp;</NOBR></TD><TD><NOBR>(3+sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.6180339887498948482</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>(sqrt(3)+sqrt(15))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4012585384440735447</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>(sqrt(3)+sqrt(15))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.46708617948135784823</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='Hugel.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Theodor Hugel, <I>Die regul&auml;ren und halbregul&auml;ren Polyeder</I>,<BR>Gottschick-Witter, Neustadt an der Haardt, (1876).</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

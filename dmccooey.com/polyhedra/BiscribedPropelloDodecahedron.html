@@ -1,0 +1,274 @@
+<!-- File:   BiscribedPropelloDodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Biscribed Propello Dodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='BiscribedPropelloCube.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="BiscribedChiral.html"><B>Biscribed Chiral Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='BiscribedRhexpropelloCube.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Biscribed Propello Dodecahedron with inradius = 1
+
+	(60) SHORT EDGE = 0.348052342016695682306451133891
+		= square-root of a root of the polynomial:  5*(x^10) + 400*(x^9)
+		+ 1503440*(x^8) + 84299840*(x^7) + 4269720576*(x^6) - 6078151680*(x^5)
+		+ 9880145920*(x^4) - 26385612800*(x^3) + 5219942400*(x^2)
+		- 1343488000*x + 131072000
+	(60) MEDIUM EDGE = 0.393404020281893505949327414894
+		= square-root of a root of the polynomial:  (x^10) + 20*(x^9)
+		+ 243200*(x^8) + 4996800*(x^7) + 107936000*(x^6) + 705664000*(x^5)
+		+ 302080000*(x^4) - 12072960000*(x^3) - 29081600000*(x^2)
+		- 16384000000*x + 3276800000
+	(30) LONG EDGE = 0.661654493070148348207126095001
+		= square-root of a root of the polynomial:  25*(x^10) - 1500*(x^9)
+		+ 8103360*(x^8) - 106267520*(x^7) + 53253783296*(x^6)
+		- 365229542400*(x^5) + 4060278988800*(x^4) - 5798248448000*(x^3)
+		+ 6783151308800*(x^2) - 6569885696000*x + 1919025152000
+	RADIUS = 1.05450948452546604286041631719
+		= square-root of a root of the polynomial:  (x^10) + 2*(x^9)
+		+ 18689*(x^8) + 76408*(x^7) + 2802466*(x^6) - 7134420*(x^5)
+		+ 617130*(x^4) - 102600*(x^3) + 4254525*(x^2) + 425250*x + 91125
+	INRADIUS = 1
+	VOLUME = 4.45363327439845696581168972816
+		= square-root of a root of the polynomial:  (x^10) + 1014480*(x^9)
+		+ 254005926400*(x^8) - 1716977056768000*(x^7)
+		+ 74147137782210560000*(x^6) - 498455896284119040000000*(x^5)
+		+ 1213513010104827904000000000*(x^4)
+		- 1030562026588995584000000000000*(x^3)
+		+ 62155964865655603200000000000000*(x^2)
+		- 1694454587955609600000000000000000*x
+		+ 17011412534558720000000000000000000
+	SHORT EDGE ANGLE = acos(-0.848932687148139538014840529493)
+		= acos(-root[125*(x^10)+1500*(x^9)+18475*(x^8)+61800*(x^7)+105370*(x^6)
+			+35840*(x^5)-66706*(x^4)-62504*(x^3)-14151*(x^2)+2276*x+919])
+		= 148.095771634351016525325669599 degrees
+	MEDIUM EDGE ANGLE = acos(-0.863414386151438870081807244552)
+		= acos(-root[1125*(x^10) - 11250*(x^9) + 27525*(x^8) + 42600*(x^7)
+			- 126790*(x^6) - 69900*(x^5) + 210114*(x^4) + 58920*(x^3)
+			- 152895*(x^2) - 20370*x + 41945])
+		= 149.702139093360902344095301146 degrees
+	LONG EDGE ANGLE = acos(-0.994925735020505223184981848313)
+		= acos(-root[10125*(x^10) + 189000*(x^9) + 2855475*(x^8)
+			+ 15529200*(x^7) + 39049490*(x^6) + 43322720*(x^5) - 118986*(x^4)
+			- 47983024*(x^3) - 42061871*(x^2) - 10210024*x + 1139239])
+		= 174.225584688175651825672018490 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Icosahedral (I)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="18 80 72">
+<INPUT type=hidden class=Constants value="0.0284830861956989031468314761398,
+0.172944934335058414496341165969,
+0.219031535904192178801356440538,
+0.282022546506163368946081895539,
+0.3083138681319421130482442517654,
+0.310505632701862272092913371679,
+0.3259173835053769742064280501949,
+0.376272277953920632735971530156,
+0.5903364146381054819943261473047,
+0.608821334753791324381116784089,
+0.636423016207239246299341421874,
+0.675353601744962415939211097580,
+0.782239449346147211344282707237,
+0.809367950542297660795682587842,
+0.810722535541846114491114183377,
+0.983667469876904528987455349346,
+0.9850936127077119571170883142451,
+1.00127098525033939014563914778">
+<!--
+	C0 = square-root of a root of the polynomial:  (x^10) - 114*(x^9)
+		+ 4581*(x^8) - 51744*(x^7) - 306354*(x^6) + 2762225*(x^5)
+		+ 42790210*(x^4) + 160164350*(x^3) + 257257125*(x^2) - 259211125*x
+		+ 210125
+	C1 = square-root of a root of the polynomial:  (x^10) + 6*(x^9)
+		+ 24401*(x^8) + 349091*(x^7) + 69929056*(x^6) + 797576535*(x^5)
+		+ 4597037765*(x^4) + 15630939150*(x^3) + 34707508650*(x^2)
+		- 6008421375*x + 148240125
+	C2 = square-root of a root of the polynomial:  (x^10) + 6*(x^9)
+		+ 9611*(x^8) - 586604*(x^7) + 27425091*(x^6) - 238040955*(x^5)
+		+ 1373026105*(x^4) - 4671964725*(x^3) + 8732777850*(x^2) - 4737500000*x
+		+ 207690125
+	C3 = square-root of a root of the polynomial:  25*(x^10) - 525*(x^9)
+		+ 37935*(x^8) - 527585*(x^7) + 4203506*(x^6) - 22866420*(x^5)
+		+ 86105325*(x^4) - 189442325*(x^3) + 238868525*(x^2) - 40852625*x
+		+ 1830125
+	C4 = square-root of a root of the polynomial:  (x^10) + 146*(x^9)
+		+ 8131*(x^8) + 189276*(x^7) + 1356401*(x^6) - 5599250*(x^5)
+		+ 77721525*(x^4) - 285007975*(x^3) + 847640775*(x^2) - 739088250*x
+		+ 62835125
+	C5 = square-root of a root of the polynomial:  25*(x^10) + 1075*(x^9)
+		+ 27585*(x^8) - 186430*(x^7) + 3092526*(x^6) - 4377685*(x^5)
+		+ 72824330*(x^4) - 18652250*(x^3) + 84181825*(x^2) - 269382625*x
+		+ 25200125
+	C6 = square-root of a root of the polynomial:  (x^10) - 14*(x^9)
+		+ 5591*(x^8) + 350511*(x^7) + 17394191*(x^6) - 16715505*(x^5)
+		- 676626220*(x^4) + 91194200*(x^3) + 7669501200*(x^2) - 1423235875*x
+		+ 64620125
+	C7 = square-root of a root of the polynomial:  81*(x^10) - 189*(x^9)
+		+ 1144251*(x^8) - 515454*(x^7) + 1132261*(x^6) - 5359115*(x^5)
+		- 2549455*(x^4) - 2108350*(x^3) + 330775*(x^2) + 3875*x + 125
+	C8 = square-root of a root of the polynomial:  25*(x^10) - 825*(x^9)
+		+ 41785*(x^8) + 251905*(x^7) + 25361711*(x^6) + 125009115*(x^5)
+		+ 77775850*(x^4) - 946403350*(x^3) + 313938900*(x^2) + 138000*x + 45125
+	C9 = square-root of a root of the polynomial:  81*(x^10) + 54*(x^9)
+		+ 168201*(x^8) + 229224*(x^7) + 2802466*(x^6) - 2378140*(x^5)
+		+ 68570*(x^4) - 3800*(x^3) + 52525*(x^2) + 1750*x + 125
+	C10 = square-root of a root of the polynomial:  25*(x^10) - 2025*(x^9)
+		+ 100185*(x^8) - 2695080*(x^7) + 22430766*(x^6) + 145274705*(x^5)
+		+ 365665255*(x^4) + 123362750*(x^3) - 215312550*(x^2) - 308884375*x
+		+ 140715125
+	C11 = square-root of a root of the polynomial:  25*(x^10) + 725*(x^9)
+		+ 293710*(x^8) + 4791165*(x^7) + 16600126*(x^6) - 361243235*(x^5)
+		+ 1374766115*(x^4) - 1964048225*(x^3) + 3624181075*(x^2) - 4234807750*x
+		+ 1311390125
+	C12 = square-root of a root of the polynomial:  25*(x^10) - 1575*(x^9)
+		+ 214260*(x^8) - 7403565*(x^7) + 80388821*(x^6) - 233384315*(x^5)
+		+ 1855410510*(x^4) - 4554982925*(x^3) + 16765405000*(x^2)
+		- 12271508500*x + 2031120125
+	C13 = square-root of a root of the polynomial:  25*(x^10) + 2175*(x^9)
+		+ 81385*(x^8) + 1890190*(x^7) + 16279346*(x^6) - 184352715*(x^5)
+		+ 809502190*(x^4) - 1694067400*(x^3) + 2276820825*(x^2) - 1268507250*x
+		+ 201930125
+	C14 = square-root of a root of the polynomial:  25*(x^10) + 1225*(x^9)
+		+ 34810*(x^8) - 400650*(x^7) + 6146771*(x^6) - 37134315*(x^5)
+		+ 66880610*(x^4) - 88881275*(x^3) + 442803250*(x^2) - 309063375*x
+		+ 28680125
+	C15 = square-root of a root of the polynomial:  25*(x^10) - 1175*(x^9)
+		+ 29860*(x^8) + 28035*(x^7) + 15959011*(x^6) + 97680710*(x^5)
+		+ 299215205*(x^4) + 163669475*(x^3) - 257996150*(x^2) - 274179500*x
+		+ 300125
+	C16 = square-root of a root of the polynomial:  81*(x^10) + 351*(x^9)
+		+ 34011*(x^8) + 98826*(x^7) + 2938021*(x^6) - 3222055*(x^5)
+		+ 191345*(x^4) + 25450*(x^3) + 18775*(x^2) + 1375*x + 125
+	C17 = square-root of a root of the polynomial:  25*(x^10) + 425*(x^9)
+		+ 4610*(x^8) + 23490*(x^7) + 57551*(x^6) - 109535*(x^5) - 215710*(x^4)
+		- 215700*(x^3) + 402525*(x^2) + 43875*x + 10125
+-->
+<INPUT type=hidden class=Vertices value="C3 -C1 C17,C3 C1 -C17,-C3 C1 C17,
+-C3 -C1 -C17,C17 -C3 C1,C17 C3 -C1,-C17 C3 C1,-C17 -C3 -C1,C1 -C17 C3,
+C1 C17 -C3,-C1 C17 C3,-C1 -C17 -C3,0.0 C7 C16,0.0 C7 -C16,0.0 -C7 C16,
+0.0 -C7 -C16,C16 0.0 C7,C16 0.0 -C7,-C16 0.0 C7,-C16 0.0 -C7,C7 C16 0.0,
+C7 -C16 0.0,-C7 C16 0.0,-C7 -C16 0.0,C5 C2 C15,C5 -C2 -C15,-C5 -C2 C15,
+-C5 C2 -C15,C15 C5 C2,C15 -C5 -C2,-C15 -C5 C2,-C15 C5 -C2,C2 C15 C5,
+C2 -C15 -C5,-C2 -C15 C5,-C2 C15 -C5,C8 -C6 C14,C8 C6 -C14,-C8 C6 C14,
+-C8 -C6 -C14,C14 -C8 C6,C14 C8 -C6,-C14 C8 C6,-C14 -C8 -C6,C6 -C14 C8,
+C6 C14 -C8,-C6 C14 C8,-C6 -C14 -C8,C0 -C11 C13,C0 C11 -C13,-C0 C11 C13,
+-C0 -C11 -C13,C13 -C0 C11,C13 C0 -C11,-C13 C0 C11,-C13 -C0 -C11,C11 -C13 C0,
+C11 C13 -C0,-C11 C13 C0,-C11 -C13 -C0,C4 C12 C10,C4 -C12 -C10,-C4 -C12 C10,
+-C4 C12 -C10,C10 C4 C12,C10 -C4 -C12,-C10 -C4 C12,-C10 C4 -C12,C12 C10 C4,
+C12 -C10 -C4,-C12 -C10 C4,-C12 C10 -C4,C9 C9 C9,C9 C9 -C9,C9 -C9 C9,C9 -C9 -C9,
+-C9 C9 C9,-C9 C9 -C9,-C9 -C9 C9,-C9 -C9 -C9">
+<INPUT type=hidden class=Faces value="0 36 52 64 24 #,1 37 53 65 25 #,
+2 38 54 66 26 #,3 39 55 67 27 #,4 40 56 69 29 #,5 41 57 68 28 #,
+6 42 58 71 31 #,7 43 59 70 30 #,8 44 48 62 34 #,9 45 49 63 35 #,
+10 46 50 60 32 #,11 47 51 61 33 #,12 2 0 24 #,12 24 60 50 #,12 50 38 2 #,
+13 1 3 27 #,13 27 63 49 #,13 49 37 1 #,14 0 2 26 #,14 26 62 48 #,14 48 36 0 #,
+15 3 1 25 #,15 25 61 51 #,15 51 39 3 #,16 4 5 28 #,16 28 64 52 #,16 52 40 4 #,
+17 5 4 29 #,17 29 65 53 #,17 53 41 5 #,18 6 7 30 #,18 30 66 54 #,18 54 42 6 #,
+19 7 6 31 #,19 31 67 55 #,19 55 43 7 #,20 9 10 32 #,20 32 68 57 #,20 57 45 9 #,
+21 8 11 33 #,21 33 69 56 #,21 56 44 8 #,22 10 9 35 #,22 35 71 58 #,
+22 58 46 10 #,23 11 8 34 #,23 34 70 59 #,23 59 47 11 #,72 60 24 64 #,
+72 64 28 68 #,72 68 32 60 #,73 37 49 45 #,73 45 57 41 #,73 41 53 37 #,
+74 36 48 44 #,74 44 56 40 #,74 40 52 36 #,75 61 25 65 #,75 65 29 69 #,
+75 69 33 61 #,76 38 50 46 #,76 46 58 42 #,76 42 54 38 #,77 63 27 67 #,
+77 67 31 71 #,77 71 35 63 #,78 62 26 66 #,78 66 30 70 #,78 70 34 62 #,
+79 39 51 47 #,79 47 59 43 #,79 43 55 39 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Biscribed Propello Dodecahedron
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="canonical form" onClick="window.location.href='PropelloDodecahedron.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>biscribed form</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>80 &nbsp;(20[3] + 60[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>72 &nbsp;(60 irregular tetragons + 12 regular pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>150 &nbsp;(60 short + 60 medium + 30 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Icosahedral &nbsp;(I)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(root[10th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;148.095771634 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Medium Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(root[10th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;149.702139093 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Long Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(root[10th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;174.225584688 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="BiscribedPropelloIcosahedron.html">Biscribed Propello Icosahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on inscribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[10th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.34805234201669568231</TD></TR>
+<TR><TD><NOBR>Medium Edge (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[10th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.393404020281893505949</TD></TR>
+<TR><TD><NOBR>Long Edge (30): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[10th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.66165449307014834821</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[10th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0545094845254660429</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(root[10th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.4536332743984569658</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='BiscribedPropelloDodecahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://www.georgehart.com/propello/propello.html>Sculpture Based on Propellorized Polyhedra (George Hart)</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

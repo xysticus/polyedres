@@ -1,0 +1,196 @@
+<!-- File:   LsnubDodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Snub Dodecahedron (laevo)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='Rhombicosidodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Archimedean.html"><B>Archimedean Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RsnubDodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Snub Dodecahedron (laevo)
+
+	(150) EDGE = 1
+	RADIUS = phi * sqrt(x * (x + phi) + (3 - phi)) / 2
+	MIDRADIUS = phi * sqrt(x * (x + phi) + 1) / 2
+	PENTAGON CENTER RADIUS = sqrt(20*(5*(x+(1/x))*(1+2*phi)+(12+11*phi))) / 20
+	TRIANGLE CENTER RADIUS = x * phi * sqrt(3 * (x * (x + phi) + 1)) / 6
+	VOLUME = sqrt(5*(3*(x^2)*(157+201*phi)+21*x*(31+58*phi)+209*(2+3*phi)))/6
+	PENTAGON-TRIANGLE ANGLE
+		= acos(-sqrt(15 * (4*((1/x)-x)*(1+3*phi) + (19+12*phi))) / 15)
+		= 152.929920275835030879196150416 degrees
+	TRIANGLE-TRIANGLE ANGLE = acos(-(2 * (x^2) - 3) / 3)
+		= 164.175366056033881534179651738 degrees
+
+	WHERE:	phi = (1 + sqrt(5)) / 2
+			x = cbrt((phi + sqrt(phi-5/27))/2) + cbrt((phi - sqrt(phi-5/27))/2)
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Icosahedral (I)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="15 60 92">
+<INPUT type=hidden class=Constants value="0.192893711352359022108262546061,
+0.330921024729844230963655269187,
+0.374821658114562295266609516608,
+0.567715369466921317374872062669,
+0.643029605914072573107464141441,
+0.728335176957191477360671629838,
+0.847550046789060797396217956030,
+1.103156835071753772627281146446,
+1.24950378846302719500774109632,
+1.41526541625598211477109001870,
+1.45402422933801541929649491091,
+1.64691794069037444140475745697,
+1.74618644098582634573474528789,
+1.97783896542021867236841272616,
+2.097053835252087992403959052348">
+<!--
+	C0 = phi * sqrt(3 - (x^2)) / 2
+	C1 = x * phi * sqrt(3 - (x^2)) / 2
+	C2 = phi * sqrt((x - 1 - (1/x)) * phi) / 2
+	C3 = (x^2) * phi * sqrt(3 - (x^2)) / 2
+	C4 = x * phi * sqrt((x - 1 - (1/x)) * phi) / 2
+	C5 = phi * sqrt(1 - x + (1 + phi) / x) / 2
+	C6 = phi * sqrt(x + 1 - phi) / 2
+	C7 = (x^2) * phi * sqrt((x - 1 - (1/x)) * phi) / 2
+	C8 = x * phi * sqrt(1 - x + (1 + phi) / x) / 2
+	C9 = sqrt((x + 2) * phi + 2) / 2
+	C10 = x * sqrt(x * (1 + phi) - phi) / 2
+	C11 = sqrt((x^2) * (1 + 2 * phi) - phi) / 2
+	C12 = phi * sqrt((x^2) + x) / 2
+	C13 = (phi^2) * sqrt(x * (x + phi) + 1) / (2 * x)
+	C14 = phi * sqrt(x * (x + phi) + 1) / 2
+	WHERE:	phi = (1 + sqrt(5)) / 2
+			x = cbrt((phi + sqrt(phi-5/27))/2) + cbrt((phi - sqrt(phi-5/27))/2)
+-->
+<INPUT type=hidden class=Vertices value="C2 -C1 C14,C2 C1 -C14,-C2 C1 C14,
+-C2 -C1 -C14,C14 -C2 C1,C14 C2 -C1,-C14 C2 C1,-C14 -C2 -C1,C1 -C14 C2,
+C1 C14 -C2,-C1 C14 C2,-C1 -C14 -C2,C3 C4 C13,C3 -C4 -C13,-C3 -C4 C13,
+-C3 C4 -C13,C13 C3 C4,C13 -C3 -C4,-C13 -C3 C4,-C13 C3 -C4,C4 C13 C3,
+C4 -C13 -C3,-C4 -C13 C3,-C4 C13 -C3,C0 -C8 C12,C0 C8 -C12,-C0 C8 C12,
+-C0 -C8 -C12,C12 -C0 C8,C12 C0 -C8,-C12 C0 C8,-C12 -C0 -C8,C8 -C12 C0,
+C8 C12 -C0,-C8 C12 C0,-C8 -C12 -C0,C7 -C6 C11,C7 C6 -C11,-C7 C6 C11,
+-C7 -C6 -C11,C11 -C7 C6,C11 C7 -C6,-C11 C7 C6,-C11 -C7 -C6,C6 -C11 C7,
+C6 C11 -C7,-C6 C11 C7,-C6 -C11 -C7,C9 C5 C10,C9 -C5 -C10,-C9 -C5 C10,
+-C9 C5 -C10,C10 C9 C5,C10 -C9 -C5,-C10 -C9 C5,-C10 C9 -C5,C5 C10 C9,
+C5 -C10 -C9,-C5 -C10 C9,-C5 C10 -C9">
+<INPUT type=hidden class=Faces value="0 36 28 48 12 #,1 37 29 49 13 #,
+2 38 30 50 14 #,3 39 31 51 15 #,4 40 32 53 17 #,5 41 33 52 16 #,
+6 42 34 55 19 #,7 43 35 54 18 #,8 44 24 58 22 #,9 45 25 59 23 #,
+10 46 26 56 20 #,11 47 27 57 21 #,0 2 14 #,1 3 15 #,2 0 12 #,3 1 13 #,4 5 16 #,
+5 4 17 #,6 7 18 #,7 6 19 #,8 11 21 #,9 10 20 #,10 9 23 #,11 8 22 #,12 48 56 #,
+13 49 57 #,14 50 58 #,15 51 59 #,16 52 48 #,17 53 49 #,18 54 50 #,19 55 51 #,
+20 56 52 #,21 57 53 #,22 58 54 #,23 59 55 #,24 44 36 #,25 45 37 #,26 46 38 #,
+27 47 39 #,28 36 40 #,29 37 41 #,30 38 42 #,31 39 43 #,32 40 44 #,33 41 45 #,
+34 42 46 #,35 43 47 #,36 0 24 #,37 1 25 #,38 2 26 #,39 3 27 #,40 4 28 #,
+41 5 29 #,42 6 30 #,43 7 31 #,44 8 32 #,45 9 33 #,46 10 34 #,47 11 35 #,
+48 28 16 #,49 29 17 #,50 30 18 #,51 31 19 #,52 33 20 #,53 32 21 #,54 35 22 #,
+55 34 23 #,56 26 12 #,57 27 13 #,58 24 14 #,59 25 15 #,24 0 14 #,25 1 15 #,
+26 2 12 #,27 3 13 #,28 4 16 #,29 5 17 #,30 6 18 #,31 7 19 #,32 8 21 #,
+33 9 20 #,34 10 23 #,35 11 22 #,36 44 40 #,37 45 41 #,38 46 42 #,39 47 43 #,
+48 52 56 #,49 53 57 #,50 54 58 #,51 55 59 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #29)</NOBR></TD>
+<TD width=40% align=center><NOBR>Snub Dodecahedron (laevo)</NOBR>
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>canonical form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="biscribed form" onClick="window.location.href='BiscribedLsnubDodecahedron.html'">
+</TD>
+</TR>
+</TABLE>
+</TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>60 &nbsp;(60[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>92 &nbsp;(80 equilateral triangles + 12 regular pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>150</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Icosahedral &nbsp;(I)</NOBR></TD></TR>
+<TR><TD><NOBR>Pentagon-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(15*(4*((1/x)&#8722;x)*(1+3*phi) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +(19+12*phi)))/15) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;152.929920276 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Triangle-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(2*(x^2)&#8722;3)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;164.175366056 degrees</NOBR></TD></TR>
+<TR><TD></TD><TD colspan=2>
+<TABLE style="font-size:100%">
+<TR><TD>where: &nbsp;</TD><TD>phi = (1+sqrt(5))/2</TD></TR>
+<TR><TD></TD><TD>x = cbrt((phi+sqrt(phi&#8722;5/27))/2)+cbrt((phi&#8722;sqrt(phi&#8722;5/27))/2)</TD></TR>
+</TABLE>
+</TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="RpentagonalHexecontahedron.html">Pentagonal Hexecontahedron (dextro)</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>phi*sqrt(x*(x+phi)+(3&#8722;phi))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.1558373751156397018</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>phi*sqrt(x*(x+phi)+1)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.0970538352520879924</TD></TR>
+<TR><TD><NOBR>Pentagon Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(20*(5*(x+(1/x))*(1+2*phi) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +(12+11*phi)))/20 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.9809159472818407390</TD></TR>
+<TR><TD><NOBR>Triangle Center Radius: &nbsp;</NOBR></TD><TD><NOBR>x*phi*sqrt(3*(x*(x+phi)+1))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.0770896597432085994</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(5*(3*(x^2)*(157+201*phi) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +21*x*(31+58*phi)+209*(2+3*phi)))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;37.616649962733362976</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='LsnubDodecahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

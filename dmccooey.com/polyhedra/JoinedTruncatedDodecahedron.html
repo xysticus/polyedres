@@ -1,0 +1,174 @@
+<!-- File:   JoinedTruncatedDodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Joined Truncated Dodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='JoinedTruncatedIcosahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Hull.html"><B>Archimedean-Catalan Hulls</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='JoinedRhombicosidodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Joined Truncated Dodecahedron
+
+	(60) SHORT EDGE = sqrt(6 * (119 - 5 * sqrt(5))) / 44
+	(120) LONG EDGE = sqrt(2 * (17 + 5 * sqrt(5))) / 4
+	RHOMBUS LENGTH = (5 + sqrt(5)) / 2
+	RHOMBUS WIDTH = 1
+	KITE LENGTH = 5 * (7 + sqrt(5)) / 22
+	KITE WIDTH = 1
+	(20) INNER VERTEX RADIUS = 5 * (3 * sqrt(3) + 2 * sqrt(15)) / 22
+	(60) MIDDLE VERTEX RADIUS = sqrt(2 * (37 + 15 * sqrt(5))) / 4
+	(12) OUTER VERTEX RADIUS = sqrt(5 * (5 + 2 * sqrt(5))) / 2
+	INRADIUS = (5 + 3 * sqrt(5)) / 4
+	VOLUME = 25 * (47 + 24 * sqrt(5)) / 22
+	LONG EDGE ANGLE = acos(-(5 + 2 * sqrt(5)) / 10)
+		= 161.3005929148508384286745177848 degrees
+	SHORT EDGE ANGLE = acos(-(13 + 3 * sqrt(5)) / 20)
+		= 170.200773628703324124486878178 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="9 92 90">
+<INPUT type=hidden class=Constants value="1.04955317926133973822831518963,
+1.30901699437494742410229341718,
+1.61803398874989484820458683437,
+1.69821271704535895291326075851,
+1.80901699437494742410229341718,
+2.11803398874989484820458683437,
+2.61803398874989484820458683437,
+2.74776589630669869114157594814,
+2.927050983124842272306880251548">
+<!--
+	C0 = 5 * (7 + sqrt(5)) / 44
+	C1 = (3 + sqrt(5)) / 4
+	C2 = (1 + sqrt(5)) / 2
+	C3 = 5 * (3 + 2 * sqrt(5)) / 22
+	C4 = (5 + sqrt(5)) / 4
+	C5 = (2 + sqrt(5)) / 2
+	C6 = (3 + sqrt(5)) / 2
+	C7 = 5 * (13 + 5 * sqrt(5)) / 44
+	C8 = (5 + 3 * sqrt(5)) / 4
+-->
+<INPUT type=hidden class=Vertices value="C4 0.0 C8,C4 0.0 -C8,-C4 0.0 C8,
+-C4 0.0 -C8,C8 C4 0.0,C8 -C4 0.0,-C8 C4 0.0,-C8 -C4 0.0,0.0 C8 C4,0.0 C8 -C4,
+0.0 -C8 C4,0.0 -C8 -C4,0.0 0.5 C8,0.0 0.5 -C8,0.0 -0.5 C8,0.0 -0.5 -C8,
+C8 0.0 0.5,C8 0.0 -0.5,-C8 0.0 0.5,-C8 0.0 -0.5,0.5 C8 0.0,0.5 -C8 0.0,
+-0.5 C8 0.0,-0.5 -C8 0.0,0.0 C0 C7,0.0 C0 -C7,0.0 -C0 C7,0.0 -C0 -C7,C7 0.0 C0,
+C7 0.0 -C0,-C7 0.0 C0,-C7 0.0 -C0,C0 C7 0.0,C0 -C7 0.0,-C0 C7 0.0,-C0 -C7 0.0,
+0.5 C1 C6,0.5 C1 -C6,0.5 -C1 C6,0.5 -C1 -C6,-0.5 C1 C6,-0.5 C1 -C6,-0.5 -C1 C6,
+-0.5 -C1 -C6,C6 0.5 C1,C6 0.5 -C1,C6 -0.5 C1,C6 -0.5 -C1,-C6 0.5 C1,
+-C6 0.5 -C1,-C6 -0.5 C1,-C6 -0.5 -C1,C1 C6 0.5,C1 C6 -0.5,C1 -C6 0.5,
+C1 -C6 -0.5,-C1 C6 0.5,-C1 C6 -0.5,-C1 -C6 0.5,-C1 -C6 -0.5,C1 C2 C5,C1 C2 -C5,
+C1 -C2 C5,C1 -C2 -C5,-C1 C2 C5,-C1 C2 -C5,-C1 -C2 C5,-C1 -C2 -C5,C5 C1 C2,
+C5 C1 -C2,C5 -C1 C2,C5 -C1 -C2,-C5 C1 C2,-C5 C1 -C2,-C5 -C1 C2,-C5 -C1 -C2,
+C2 C5 C1,C2 C5 -C1,C2 -C5 C1,C2 -C5 -C1,-C2 C5 C1,-C2 C5 -C1,-C2 -C5 C1,
+-C2 -C5 -C1,C3 C3 C3,C3 C3 -C3,C3 -C3 C3,C3 -C3 -C3,-C3 C3 C3,-C3 C3 -C3,
+-C3 -C3 C3,-C3 -C3 -C3">
+<INPUT type=hidden class=Faces value="24 12 0 36 #,24 36 8 40 #,24 40 2 12 #,
+25 13 3 41 #,25 41 9 37 #,25 37 1 13 #,26 14 2 42 #,26 42 10 38 #,26 38 0 14 #,
+27 15 1 39 #,27 39 11 43 #,27 43 3 15 #,28 16 4 44 #,28 44 0 46 #,28 46 5 16 #,
+29 17 5 47 #,29 47 1 45 #,29 45 4 17 #,30 18 7 50 #,30 50 2 48 #,30 48 6 18 #,
+31 19 6 49 #,31 49 3 51 #,31 51 7 19 #,32 20 8 52 #,32 52 4 53 #,32 53 9 20 #,
+33 21 11 55 #,33 55 5 54 #,33 54 10 21 #,34 22 9 57 #,34 57 6 56 #,
+34 56 8 22 #,35 23 10 58 #,35 58 7 59 #,35 59 11 23 #,60 0 68 84 #,
+60 84 76 8 #,60 8 36 0 #,61 1 37 9 #,61 9 77 85 #,61 85 69 1 #,62 0 38 10 #,
+62 10 78 86 #,62 86 70 0 #,63 1 71 87 #,63 87 79 11 #,63 11 39 1 #,64 2 40 8 #,
+64 8 80 88 #,64 88 72 2 #,65 3 73 89 #,65 89 81 9 #,65 9 41 3 #,66 2 74 90 #,
+66 90 82 10 #,66 10 42 2 #,67 3 43 11 #,67 11 83 91 #,67 91 75 3 #,14 0 12 2 #,
+15 3 13 1 #,16 5 17 4 #,19 7 18 6 #,20 9 22 8 #,21 10 23 11 #,68 0 44 4 #,
+69 4 45 1 #,70 5 46 0 #,71 1 47 5 #,72 6 48 2 #,73 3 49 6 #,74 2 50 7 #,
+75 7 51 3 #,76 4 52 8 #,77 9 53 4 #,78 10 54 5 #,79 5 55 11 #,80 8 56 6 #,
+81 6 57 9 #,82 7 58 10 #,83 11 59 7 #,84 68 4 76 #,85 77 4 69 #,86 78 5 70 #,
+87 71 5 79 #,88 80 6 72 #,89 73 6 81 #,90 74 7 82 #,91 83 7 75 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Joined Truncated Dodecahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>92 &nbsp;(20[3] + 60[3] + 12[10])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>90 &nbsp;(60 kites + 30 rhombi)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>180 &nbsp;(60 short + 120 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Long Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(5+2*sqrt(5))/10) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;161.3005929149 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(13+3*sqrt(5))/20) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;170.200773629 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length <A href="TruncatedDodecahedron.html">Truncated Dodecahedron</A>)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(119&#8722;5*sqrt(5)))/44 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.57805868144301361253</TD></TR>
+<TR><TD><NOBR>Long Edge (120): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(17+5*sqrt(5)))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.8768437563999216822</TD></TR>
+<TR><TD><NOBR>Rhombus Length: &nbsp;</NOBR></TD><TD><NOBR>(5+sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.6180339887498948482</TD></TR>
+<TR><TD><NOBR>Rhombus Width: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Kite Length: &nbsp;</NOBR></TD><TD><NOBR>5*(7+sqrt(5))/22 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.09910635852267947646</TD></TR>
+<TR><TD><NOBR>Kite Width: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (20): &nbsp;</NOBR></TD><TD><NOBR>5*(3*sqrt(3)+2*sqrt(15))/22 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.9413907079821512843</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (60): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(37+15*sqrt(5)))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.9694490158633984670</TD></TR>
+<TR><TD><NOBR>[10]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(5*(5+2*sqrt(5)))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.44095480117793384552</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>(5+3*sqrt(5))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.9270509831248422723</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>25*(47+24*sqrt(5))/22 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;114.39276302272153717</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='JoinedTruncatedDodecahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://www.georgehart.com/virtual-polyhedra/conway_notation.html>Conway Notation for Polyhedra (George Hart)</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

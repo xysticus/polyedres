@@ -1,0 +1,132 @@
+<!-- File:   Icosidodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Icosidodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RsnubCube.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Archimedean.html"><B>Archimedean Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='TruncatedCuboctahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Icosidodecahedron
+
+	(60) EDGE = 1
+	RADIUS = (1 + sqrt(5)) / 2
+	MIDRADIUS = sqrt(5 + 2 * sqrt(5)) / 2
+	PENTAGON CENTER RADIUS = sqrt(5 * (5 + 2 * sqrt(5))) / 5
+	TRIANGLE CENTER RADIUS = (3 * sqrt(3) + sqrt(15)) / 6
+	VOLUME = (45 + 17 * sqrt(5)) / 6
+	DIHEDRAL ANGLE = acos(-sqrt(15 * (5 + 2 * sqrt(5))) / 15)
+		= 142.6226318593503043571428615051 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="3 30 32">
+<INPUT type=hidden class=Constants value="0.809016994374947424102293417183,
+1.30901699437494742410229341718,
+1.61803398874989484820458683437">
+<!--
+	C0 = (1 + sqrt(5)) / 4
+	C1 = (3 + sqrt(5)) / 4
+	C2 = (1 + sqrt(5)) / 2
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C2,0.0 0.0 -C2,C2 0.0 0.0,
+-C2 0.0 0.0,0.0 C2 0.0,0.0 -C2 0.0,0.5 C0 C1,0.5 C0 -C1,0.5 -C0 C1,0.5 -C0 -C1,
+-0.5 C0 C1,-0.5 C0 -C1,-0.5 -C0 C1,-0.5 -C0 -C1,C1 0.5 C0,C1 0.5 -C0,
+C1 -0.5 C0,C1 -0.5 -C0,-C1 0.5 C0,-C1 0.5 -C0,-C1 -0.5 C0,-C1 -0.5 -C0,
+C0 C1 0.5,C0 C1 -0.5,C0 -C1 0.5,C0 -C1 -0.5,-C0 C1 0.5,-C0 C1 -0.5,-C0 -C1 0.5,
+-C0 -C1 -0.5">
+<INPUT type=hidden class=Faces value="0 8 16 14 6 #,0 10 18 20 12 #,
+1 7 15 17 9 #,1 13 21 19 11 #,2 15 23 22 14 #,2 16 24 25 17 #,3 18 26 27 19 #,
+3 21 29 28 20 #,4 23 7 11 27 #,4 26 10 6 22 #,5 24 8 12 28 #,5 29 13 9 25 #,
+0 6 10 #,0 12 8 #,1 9 13 #,1 11 7 #,2 14 16 #,2 17 15 #,3 19 21 #,3 20 18 #,
+4 22 23 #,4 27 26 #,5 25 24 #,5 28 29 #,6 14 22 #,7 23 15 #,8 24 16 #,
+9 17 25 #,10 26 18 #,11 19 27 #,12 20 28 #,13 29 21 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #24)</NOBR></TD>
+<TD width=40% align=center>Icosidodecahedron</TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>30 &nbsp;(30[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>32 &nbsp;(20 equilateral triangles + 12 regular pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>60</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(15*(5+2*sqrt(5)))/15) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;142.622631859 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="RhombicTriacontahedron.html">Rhombic Triacontahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>(1+sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.6180339887498948482</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(5+2*sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.5388417685876267013</TD></TR>
+<TR><TD><NOBR>Pentagon Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(5*(5+2*sqrt(5)))/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3763819204711735382</TD></TR>
+<TR><TD><NOBR>Triangle Center Radius: &nbsp;</NOBR></TD><TD><NOBR>(3*sqrt(3)+sqrt(15))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.5115226281523414610</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>(45+17*sqrt(5))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;13.835525936249404140</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='Icosidodecahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

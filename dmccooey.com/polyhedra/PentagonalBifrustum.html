@@ -1,0 +1,120 @@
+<!-- File:   PentagonalBifrustum.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Pentagonal Bifrustum</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Pentagonal Bifrustum
+
+	(10) SHORT EDGE = 2 * sqrt(125 + 38 * sqrt(5)) / 41
+	(10) MEDIUM EDGE = 4 * sqrt(2 * (305 - 109 * sqrt(5))) / 41
+	(5) LONG EDGE = 2 * sqrt(5 - 2 * sqrt(5))
+	RADIUS = sqrt(5) - 1
+	INRADIUS = sqrt(82 * (13 + sqrt(5))) / 41
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 20 * (33361 * sqrt(5) - 36905) / 206763
+
+	ROTATION SYMMETRIES:          10
+	MIRROR ROTATION SYMMETRIES:   10
+	ROTATION AXES:                 6 (1[5] + 5[2])
+	MIRROR PLANES:                 6
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  5-fold Prismatic (D5h)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="10 15 12">
+<INPUT type=hidden class=Constants value="0.185805707042680362151331386204,
+0.353423456895538933365062501868,
+0.381966011250105151795413165634,
+0.486445656341442897210651089632,
+0.571851165678465389322558846317,
+0.601279898597525070118639406857,
+0.726542528005360885895466757481,
+0.873710835131705823829985377798,
+1.17557050458494625833741190928,
+1.23606797749978969640917366873">
+<!--
+	C0 = (13 + sqrt(5)) / 82
+	C1 = sqrt(125 + 38 * sqrt(5)) / 41
+	C2 = (3 - sqrt(5)) / 2
+	C3 = (11 + 4 * sqrt(5)) / 41
+	C4 = sqrt(2 * (565 + 239 * sqrt(5))) / 82
+	C5 = (9 + 7 * sqrt(5)) / 41
+	C6 = sqrt(5 - 2 * sqrt(5))
+	C7 = 2 * sqrt(2 * (185 - 11 * sqrt(5))) / 41
+	C8 = sqrt(2 * (5 - sqrt(5))) / 2
+	C9 = sqrt(5) - 1
+-->
+<INPUT type=hidden class=Vertices value="C4 -C0 C7,C4 -C0 -C7,-C4 -C0 C7,
+-C4 -C0 -C7,C1 C3 C7,C1 C3 -C7,-C1 C3 C7,-C1 C3 -C7,0.0 -C5 C7,0.0 -C5 -C7,
+C8 -C2 0.0,-C8 -C2 0.0,C6 1.0 0.0,-C6 1.0 0.0,0.0 -C9 0.0">
+<INPUT type=hidden class=Faces value="0 4 6 2 8 #,1 9 3 7 5 #,10 0 8 14 #,
+10 14 9 1 #,10 1 5 12 #,10 12 4 0 #,11 2 6 13 #,11 13 7 3 #,11 3 9 14 #,
+11 14 8 2 #,12 5 7 13 #,12 13 6 4 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Pentagonal Bifrustum
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>15 &nbsp;(10[3] + 5[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>12 &nbsp;(2 regular pentagons + 10 isosceles trapezoids)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>25 &nbsp;(10 short + 10 medium + 5 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>5-fold Prismatic &nbsp;(D5h)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="ElongatedPentagonalDipyramid.html">Elongated Pentagonal Dipyramid</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (10): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(125+38*sqrt(5))/41 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.70684691379107786673</TD></TR>
+<TR><TD><NOBR>Medium Edge (10): &nbsp;</NOBR></TD><TD><NOBR>4*sqrt(2*(305&#8722;109*sqrt(5)))/41 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0799659849008998193</TD></TR>
+<TR><TD><NOBR>Long Edge (5): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(5&#8722;2*sqrt(5)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4530850560107217718</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>20*(33361*sqrt(5)&#8722;36905)/206763 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.6459582998283526610</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='PentagonalBifrustum.txt'">
+<BR>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

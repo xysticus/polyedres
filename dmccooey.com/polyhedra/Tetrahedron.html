@@ -1,0 +1,116 @@
+<!-- File:   Tetrahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Tetrahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='Dodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Platonic.html"><B>Platonic Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='Octahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Tetrahedron
+
+	(6) EDGE = 1
+	RADIUS = sqrt(6) / 4
+	MIDRADIUS = sqrt(2) / 4
+	INRADIUS = sqrt(6) / 12
+	VOLUME = sqrt(2) / 12
+	DIHEDRAL ANGLE = acos(1/3) = 70.5287793655093086307540006600 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          12
+	MIRROR ROTATION SYMMETRIES:   12
+	ROTATION AXES:                 7 (4[3] + 3[2])
+	MIRROR PLANES:                 6
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Full Tetrahedral (Td)
+	TOPOLOGICALLY SELF-DUAL:     YES
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="1 4 4">
+<INPUT type=hidden class=Constants value="0.353553390593273762200422181052">
+<!--
+	C0 = sqrt(2) / 4
+-->
+<INPUT type=hidden class=Vertices value="C0 -C0 C0,C0 C0 -C0,-C0 C0 C0,
+-C0 -C0 -C0">
+<INPUT type=hidden class=Faces value="0 1 2 #,1 0 3 #,2 3 0 #,3 2 1 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #1)</NOBR></TD>
+<TD width=40% align=center>Tetrahedron</TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>4 &nbsp;(4[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>4 &nbsp;(equilateral triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>6</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Tetrahedral &nbsp;(Td)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(1/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;70.528779366 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2>Tetrahedron (itself)</TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.612372435695794524549</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.35355339059327376220</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6)/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.20412414523193150818</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(2)/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.11785113019775792073</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='Tetrahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

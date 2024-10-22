@@ -1,0 +1,179 @@
+<!-- File:   PropelloTetrakisHexahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Propello Tetrakis Hexahedron (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='PropelloTruncatedOctahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Propellor.html"><B>Propellor Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='LpropelloLsnubCube.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Propello Tetrakis Hexahedron (canonical)
+
+	(24) EDGE 1 = 0.3149383788016486855841090191947
+	(48) EDGE 2 = 0.318193785037015687543255198780
+	(24) EDGE 3 = 0.3325399941050920261299082948054
+	(24) EDGE 4 = 0.345439718275911072076168861932
+	(12) EDGE 5 = 0.359785927343987410662821957957
+	(24) EDGE 6 = 0.563182831132876523800139632238
+	(24) EDGE 7 = 0.577529040200952862386792728263
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 4.13981744458036195229238713647
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="11 86 96">
+<INPUT type=hidden class=Constants value="0.0801348247258763152839912991879,
+0.103205098058560550267047892101,
+0.19194055000405778748508567049547,
+0.2932396936978340320003630226046,
+0.400420939776718247127344473594,
+0.593221118689360616827220205642,
+0.621319684048221202936694492238,
+0.820992443683734431974468518568,
+0.911168274366683163561797146300,
+0.962631967926874233077419638451,
+1.01308364992989704016287907474">
+<!--
+	C0 = 0.0801348247258763152839912991879
+	C1 = 0.103205098058560550267047892101
+	C2 = 0.19194055000405778748508567049547
+	C3 = 0.2932396936978340320003630226046
+	C4 = 0.400420939776718247127344473594
+	C5 = 0.593221118689360616827220205642
+	C6 = 0.621319684048221202936694492238
+	C7 = 0.820992443683734431974468518568
+	C8 = 0.911168274366683163561797146300
+	C9 = 0.962631967926874233077419638451
+	C10 = 1.01308364992989704016287907474
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C10,0.0 0.0 -C10,C10 0.0 0.0,
+-C10 0.0 0.0,0.0 C10 0.0,0.0 -C10 0.0,C3 C1 C9,C3 -C1 -C9,-C3 -C1 C9,
+-C3 C1 -C9,C9 C3 C1,C9 -C3 -C1,-C9 -C3 C1,-C9 C3 -C1,C1 C9 C3,C1 -C9 -C3,
+-C1 -C9 C3,-C1 C9 -C3,C1 -C3 C9,C1 C3 -C9,-C1 C3 C9,-C1 -C3 -C9,C9 -C1 C3,
+C9 C1 -C3,-C9 C1 C3,-C9 -C1 -C3,C3 -C9 C1,C3 C9 -C1,-C3 C9 C1,-C3 -C9 -C1,
+C4 -C2 C8,C4 C2 -C8,-C4 C2 C8,-C4 -C2 -C8,C8 -C4 C2,C8 C4 -C2,-C8 C4 C2,
+-C8 -C4 -C2,C2 -C8 C4,C2 C8 -C4,-C2 C8 C4,-C2 -C8 -C4,C2 C4 C8,C2 -C4 -C8,
+-C2 -C4 C8,-C2 C4 -C8,C8 C2 C4,C8 -C2 -C4,-C8 -C2 C4,-C8 C2 -C4,C4 C8 C2,
+C4 -C8 -C2,-C4 -C8 C2,-C4 C8 -C2,C5 C0 C7,C5 -C0 -C7,-C5 -C0 C7,-C5 C0 -C7,
+C7 C5 C0,C7 -C5 -C0,-C7 -C5 C0,-C7 C5 -C0,C0 C7 C5,C0 -C7 -C5,-C0 -C7 C5,
+-C0 C7 -C5,C0 -C5 C7,C0 C5 -C7,-C0 C5 C7,-C0 -C5 -C7,C7 -C0 C5,C7 C0 -C5,
+-C7 C0 C5,-C7 -C0 -C5,C5 -C7 C0,C5 C7 -C0,-C5 C7 C0,-C5 -C7 -C0,C6 C6 C6,
+C6 C6 -C6,C6 -C6 C6,C6 -C6 -C6,-C6 C6 C6,-C6 C6 -C6,-C6 -C6 C6,-C6 -C6 -C6">
+<INPUT type=hidden class=Faces value="0 6 42 20 #,0 20 32 8 #,0 8 44 18 #,
+0 18 30 6 #,1 7 43 21 #,1 21 33 9 #,1 9 45 19 #,1 19 31 7 #,2 10 46 22 #,
+2 22 34 11 #,2 11 47 23 #,2 23 35 10 #,3 12 48 24 #,3 24 36 13 #,3 13 49 25 #,
+3 25 37 12 #,4 14 50 27 #,4 27 39 17 #,4 17 53 28 #,4 28 40 14 #,5 15 51 26 #,
+5 26 38 16 #,5 16 52 29 #,5 29 41 15 #,6 54 78 42 #,7 55 81 43 #,8 56 84 44 #,
+9 57 83 45 #,10 58 78 46 #,11 59 81 47 #,12 60 84 48 #,13 61 83 49 #,
+14 62 78 50 #,15 63 81 51 #,16 64 84 52 #,17 65 83 53 #,18 66 80 30 #,
+19 67 79 31 #,20 68 82 32 #,21 69 85 33 #,22 70 80 34 #,23 71 79 35 #,
+24 72 82 36 #,25 73 85 37 #,26 74 80 38 #,27 75 79 39 #,28 76 82 40 #,
+29 77 85 41 #,30 80 70 54 #,31 79 71 55 #,32 82 72 56 #,33 85 73 57 #,
+34 80 74 59 #,35 79 75 58 #,36 82 76 61 #,37 85 77 60 #,38 80 66 64 #,
+39 79 67 65 #,40 82 68 62 #,41 85 69 63 #,42 78 62 68 #,43 81 63 69 #,
+44 84 64 66 #,45 83 65 67 #,46 78 54 70 #,47 81 55 71 #,48 84 56 72 #,
+49 83 57 73 #,50 78 58 75 #,51 81 59 74 #,52 84 60 77 #,53 83 61 76 #,
+6 30 54 #,7 31 55 #,8 32 56 #,9 33 57 #,10 35 58 #,11 34 59 #,12 37 60 #,
+13 36 61 #,14 40 62 #,15 41 63 #,16 38 64 #,17 39 65 #,18 44 66 #,19 45 67 #,
+20 42 68 #,21 43 69 #,22 46 70 #,23 47 71 #,24 48 72 #,25 49 73 #,26 51 74 #,
+27 50 75 #,28 53 76 #,29 52 77 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Propello Tetrakis Hexahedron (canonical)
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>canonical form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="biscribed form" onClick="window.location.href='BiscribedPropelloTetrakisHexahedron.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>86 &nbsp;(6[4] + 24[4] + 24[4] + 24[4] + 8[6])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>96 &nbsp;(24 acute triangles + 24 kites + {24 * 2} irregular tetragons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>180 &nbsp;(7 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="PropelloTruncatedOctahedron.html">Propello Truncated Octahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (24): &nbsp;</NOBR></TD><TD>&#8776;0.31493837880164868558</TD></TR>
+<TR><TD><NOBR>Edge 2 (48): &nbsp;</NOBR></TD><TD>&#8776;0.31819378503701568754</TD></TR>
+<TR><TD><NOBR>Edge 3 (24): &nbsp;</NOBR></TD><TD>&#8776;0.33253999410509202613</TD></TR>
+<TR><TD><NOBR>Edge 4 (24): &nbsp;</NOBR></TD><TD>&#8776;0.34543971827591107208</TD></TR>
+<TR><TD><NOBR>Edge 5 (12): &nbsp;</NOBR></TD><TD>&#8776;0.35978592734398741066</TD></TR>
+<TR><TD><NOBR>Edge 6 (24): &nbsp;</NOBR></TD><TD>&#8776;0.56318283113287652380</TD></TR>
+<TR><TD><NOBR>Edge 7 (24): &nbsp;</NOBR></TD><TD>&#8776;0.57752904020095286239</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD>&#8776;4.1398174445803619523</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='PropelloTetrakisHexahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://www.georgehart.com/propello/propello.html>Sculpture Based on Propellorized Polyhedra (George Hart)</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

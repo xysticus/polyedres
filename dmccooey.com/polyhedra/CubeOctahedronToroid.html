@@ -1,0 +1,123 @@
+<!-- File:   CubeOctahedronToroid.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Cube-Octahedron Toroid</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='Cairo16C6.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalNonRegular.html"><B>Non-Regular Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='TetragonalTrapezohedronAntiprismToroid.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Cube-Octahedron Toroid
+
+	(6) SHORT EDGE = 1
+	(6) MEDIUM EDGE = 4
+	(12) LONG EDGE = 3 * sqrt(2)
+	(6) INNER VERTEX RADIUS = 3
+	(6) OUTER VERTEX RADIUS = 2 * sqrt(3)
+	VOLUME = 19
+	DIHEDRAL ANGLE 1 = acos(5 * sqrt(3) / 9)
+		= 15.7931690482639629461310009901 degrees
+	DIHEDRAL ANGLE 2 = acos(0) = 90 degrees
+	DIHEDRAL ANGLE 3 = acos(-1/3) = 250.528779365509308630754000660 degrees
+
+	EULER CHARACTERISTIC:          0
+	ROTATION SYMMETRIES:           6
+	MIRROR ROTATION SYMMETRIES:    6
+	ROTATION AXES:                 4 (1[3] + 3[2])
+	MIRROR PLANES:                 3
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  3-fold Antiprismatic (D3v)
+	TOPOLOGICALLY SELF-DUAL:     YES
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="0 12 12">
+<INPUT type=hidden class=Vertices value="2.0 2.0 2.0,2.0 2.0 -2.0,
+-2.0 -2.0 2.0,-2.0 -2.0 -2.0,2.0 -2.0 2.0,-2.0 2.0 -2.0,2.0 -2.0 1.0,
+-2.0 2.0 -1.0,1.0 2.0 2.0,-1.0 -2.0 -2.0,-2.0 -1.0 2.0,2.0 1.0 -2.0">
+<INPUT type=hidden class=Faces value="0 4 6 11 1 #,1 5 7 8 0 #,2 3 9 6 4 #,
+3 2 10 7 5 #,4 0 8 10 2 #,5 1 11 9 3 #,6 9 10 #,7 10 9 #,8 7 11 #,9 11 7 #,
+10 8 6 #,11 6 8 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="90949870 30726794 -16849289 -22362620">
+</DIV>
+<BR>
+<CENTER>
+Cube-Octahedron Toroid
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>12 &nbsp;(6[3] + 6[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>12 &nbsp;(6 equilateral triangles + 6 mirror-symmetric pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>24 &nbsp;(6 short + 6 medium + 12 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>3-fold Antiprismatic &nbsp;(D3v)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 1 (6): &nbsp;</NOBR></TD><TD><NOBR>acos(5*sqrt(3)/9) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;15.793169048 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 2 (12): &nbsp;</NOBR></TD><TD><NOBR>acos(0) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>90 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 3 (6): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;1/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;250.528779366 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Toroid: &nbsp;</NOBR></TD><TD colspan=2>Cube-Octahedron Toroid (itself)</TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on a Cube with edge length = 4)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (6): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Medium Edge (6): &nbsp;</NOBR></TD><TD>4</TD></TR>
+<TR><TD><NOBR>Long Edge (12): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.2426406871192851464</TD></TR>
+<TR><TD><NOBR>[5]-Vertex Radius (6): &nbsp;</NOBR></TD><TD>3</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (6): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(3) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.4641016151377545871</TD></TR>
+<TR><TD>Volume:</TD><TD colspan=2><NOBR>19 &nbsp;[EXACT]</NOBR></TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='CubeOctahedronToroid.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Paul Gailiunas, Some Self-reciprocal Polyhedra.</TD></TR>
+<TR><TD></TD><TD valign=top>[2]</TD><TD>T. Bakos, Octahedra Inscribed in a Cube,<BR><I>The Mathematical Gazette</I> <B>43</B> (1959), 17-20.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

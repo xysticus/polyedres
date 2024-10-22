@@ -1,0 +1,160 @@
+<!-- File:   RectifiedLsnubCube.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2016 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Rectified Snub Cube (laevo)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RectifiedRhombicuboctahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="RectifiedArchimedean.html"><B>Rectified Archimedean Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RectifiedTruncatedCuboctahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Rectified Snub Cube (laevo)
+
+	(96) SHORT EDGE = 1
+	(24) LONG EDGE = sqrt(2)
+	RADIUS = 2.49444633598728650353983792180
+		= sqrt(3 * (7 + cbrt(199 + 3*sqrt(33)) + cbrt(199 - 3*sqrt(33)))) / 3
+		= square-root of a root of the polynomial:  (x^3) - 7*(x^2) + 5*x - 1
+	INRADIUS = 2.28522701785192418695896817344
+		= sqrt(3 * (4 + cbrt(199 + 3*sqrt(33)) + cbrt(199 - 3*sqrt(33)))) / 3
+		= square-root of a root of the polynomial:  (x^3) - 4*(x^2) - 6*x - 2
+	VOLUME = 57.1943492688442638691400488360
+		= sqrt(9808 + cbrt(946005042176 + 2755642368 * sqrt(33))
+			+ cbrt(946005042176 - 2755642368 * sqrt(33))) / 3
+		= square-root of a root of the polynomial:
+		729*(x^3) - 2383344*(x^2) - 4354560*x - 266897408
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="5 60 62">
+<INPUT type=hidden class=Constants value="0.2834724367428329595549687093248,
+0.9589803843703376638300331996549,
+1.48036748273971444561701633189,
+1.76383991948254740517198504121,
+2.28522701785192418695896817344">
+<!--
+	C0 = sqrt(6 * (5 - cbrt(19 + 3 * sqrt(33)) - cbrt(19 - 3 * sqrt(33)))) / 6
+		= square-root of a root of the polynomial:
+		8*(x^3) - 20*(x^2) + 14*x - 1
+	C1 = sqrt(6 * (1 + cbrt(19 + 3 * sqrt(33)) + cbrt(19 - 3 * sqrt(33)))) / 6
+		= square-root of a root of the polynomial:  8*(x^3) - 4*(x^2) - 2*x - 1
+	C2 = sqrt(6 * (6 + cbrt(6 * (9+sqrt(33))) + cbrt(6 * (9-sqrt(33))))) / 6
+		= square-root of a root of the polynomial:  2*(x^3) - 6*(x^2) + 4*x - 1
+	C3 = sqrt(6 * (7 + cbrt(199 + 3*sqrt(33)) + cbrt(199 - 3*sqrt(33)))) / 6
+		= square-root of a root of the polynomial:
+		8*(x^3) - 28*(x^2) + 10*x - 1
+	C4 = sqrt(3 * (4 + cbrt(199 + 3*sqrt(33)) + cbrt(199 - 3*sqrt(33)))) / 3
+		= square-root of a root of the polynomial:  (x^3) - 4*(x^2) - 6*x - 2
+-->
+<INPUT type=hidden class=Vertices value="C1 -C0 C4,C1 C0 -C4,-C1 C0 C4,
+-C1 -C0 -C4,C4 -C1 C0,C4 C1 -C0,-C4 C1 C0,-C4 -C1 -C0,C0 -C4 C1,C0 C4 -C1,
+-C0 C4 C1,-C0 -C4 -C1,C0 C1 C4,C0 -C1 -C4,-C0 -C1 C4,-C0 C1 -C4,C4 C0 C1,
+C4 -C0 -C1,-C4 -C0 C1,-C4 C0 -C1,C1 C4 C0,C1 -C4 -C0,-C1 -C4 C0,-C1 C4 -C0,
+C3 0.0 C3,C3 0.0 -C3,-C3 0.0 C3,-C3 0.0 -C3,C3 C3 0.0,C3 -C3 0.0,-C3 C3 0.0,
+-C3 -C3 0.0,0.0 C3 C3,0.0 C3 -C3,0.0 -C3 C3,0.0 -C3 -C3,C2 -C1 C3,C2 C1 -C3,
+-C2 C1 C3,-C2 -C1 -C3,C3 -C2 C1,C3 C2 -C1,-C3 C2 C1,-C3 -C2 -C1,C1 -C3 C2,
+C1 C3 -C2,-C1 C3 C2,-C1 -C3 -C2,C1 C2 C3,C1 -C2 -C3,-C1 -C2 C3,-C1 C2 -C3,
+C3 C1 C2,C3 -C1 -C2,-C3 -C1 C2,-C3 C1 -C2,C2 C3 C1,C2 -C3 -C1,-C2 -C3 C1,
+-C2 C3 -C1">
+<INPUT type=hidden class=Faces value="0 14 34 44 36 #,0 24 52 48 12 #,
+1 15 33 45 37 #,1 25 53 49 13 #,2 12 32 46 38 #,2 26 54 50 14 #,
+3 13 35 47 39 #,3 27 55 51 15 #,4 16 24 36 40 #,4 29 57 53 17 #,
+5 17 25 37 41 #,5 28 56 52 16 #,6 18 26 38 42 #,6 30 59 55 19 #,
+7 19 27 39 43 #,7 31 58 54 18 #,8 21 29 40 44 #,8 34 50 58 22 #,
+9 20 28 41 45 #,9 33 51 59 23 #,10 23 30 42 46 #,10 32 48 56 20 #,
+11 22 31 43 47 #,11 35 49 57 21 #,0 12 2 14 #,1 13 3 15 #,4 17 5 16 #,
+6 19 7 18 #,8 22 11 21 #,9 23 10 20 #,36 44 40 #,37 45 41 #,38 46 42 #,
+39 47 43 #,48 52 56 #,49 53 57 #,50 54 58 #,51 55 59 #,0 36 24 #,1 37 25 #,
+2 38 26 #,3 39 27 #,4 40 29 #,5 41 28 #,6 42 30 #,7 43 31 #,8 44 34 #,
+9 45 33 #,10 46 32 #,11 47 35 #,12 48 32 #,13 49 35 #,14 50 34 #,15 51 33 #,
+16 52 24 #,17 53 25 #,18 54 26 #,19 55 27 #,20 56 28 #,21 57 29 #,22 58 31 #,
+23 59 30 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Rectified Snub Cube (laevo)
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>derived form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="canonical form" onClick="window.location.href='CanonicalRectifiedLsnubCube.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>60 &nbsp;(24[4] + 24[4] + 12[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>62 &nbsp;(24 mirror-symmetric pentagons + 6 squares</NOBR><BR><NOBR> &nbsp; &nbsp; + 32 equilateral triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>120 &nbsp;(96 short + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on short edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (96): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4142135623730950488</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(7+cbrt(199+3*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(199&#8722;3*sqrt(33))))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.49444633598728650354</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(9808+cbrt(946005042176 &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +2755642368*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(946005042176 &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;2755642368*sqrt(33)))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;57.194349268844263869</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RectifiedLsnubCube.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

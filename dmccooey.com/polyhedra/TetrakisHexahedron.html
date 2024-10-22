@@ -1,0 +1,135 @@
+<!-- File:   TetrakisHexahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Tetrakis Hexahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RhombicDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Catalan.html"><B>Catalan Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='TriakisOctahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Tetrakis Hexahedron
+
+	(24) SHORT EDGE = 9 * sqrt(2) / 8
+	(12) LONG EDGE = 3 * sqrt(2) / 2
+	(6) INNER VERTEX RADIUS = 9 * sqrt(2) / 8
+	(8) OUTER VERTEX RADIUS = 3 * sqrt(6) / 4
+	EDGE-SCRIBED RADIUS = 3 / 2
+	INRADIUS = 9 * sqrt(10) / 20
+	VOLUME = 81 * sqrt(2) / 8
+	DIHEDRAL ANGLE = acos(-4/5) = 143.130102354155978703144387441 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:   24
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 9
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Octahedral (Oh)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="2 14 24">
+<INPUT type=hidden class=Constants value="1.06066017177982128660126654316,
+1.59099025766973192990189981474">
+<!--
+	C0 = 3 * sqrt(2) / 4
+	C1 = 9 * sqrt(2) / 8
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C1,0.0 0.0 -C1,C1 0.0 0.0,
+-C1 0.0 0.0,0.0 C1 0.0,0.0 -C1 0.0,C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0,
+-C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0">
+<INPUT type=hidden class=Faces value="0 6 10 #,0 10 12 #,0 12 8 #,0 8 6 #,
+1 7 9 #,1 9 13 #,1 13 11 #,1 11 7 #,2 6 8 #,2 8 9 #,2 9 7 #,2 7 6 #,3 10 11 #,
+3 11 13 #,3 13 12 #,3 12 10 #,4 6 7 #,4 7 11 #,4 11 10 #,4 10 6 #,5 8 12 #,
+5 12 13 #,5 13 9 #,5 9 8 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Tetrakis Hexahedron
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>canonical form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="biscribed form" onClick="window.location.href='BiscribedTetrakisHexahedron.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>14 &nbsp;(6[4] + 8[6])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>24 &nbsp;(isosceles triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>36 &nbsp;(24 short + 12 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Octahedral &nbsp;(Oh)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;4/5) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;143.130102354 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="TruncatedOctahedron.html">Truncated Octahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length Truncated Octahedron)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD><NOBR>9*sqrt(2)/8 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.5909902576697319299</TD></TR>
+<TR><TD><NOBR>Long Edge (12): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(2)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.1213203435596425732</TD></TR>
+<TR><TD><NOBR>[4]-Vertex Radius (6): &nbsp;</NOBR></TD><TD><NOBR>9*sqrt(2)/8 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.5909902576697319299</TD></TR>
+<TR><TD><NOBR>[6]-Vertex Radius (8): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(6)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.8371173070873835736</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>3/2 &nbsp; &nbsp;</NOBR></TD><TD>1.5</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>9*sqrt(10)/20 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4230249470757706994</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>81*sqrt(2)/8 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;14.318912319027587369</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='TetrakisHexahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Eug&egrave;ne Catalan, M&eacute;moire sur la Th&eacute;orie des Poly&egrave;dres,<BR><I>Journal de l'&Eacute;cole polytechnique</I> <B>41</B> (1865), 1-71, +7 plates.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

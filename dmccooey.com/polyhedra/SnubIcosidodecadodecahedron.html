@@ -1,0 +1,207 @@
+<!-- File:   SnubIcosidodecadodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Snub Icosidodecadodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='GreatRetrosnubIcosidodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="SelfIntersectingSnubQuasiRegular.html"><B>Self-Intersecting Snub Quasi-Regular Polyhedra</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='GreatSnubDodecicosidodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Snub Icosidodecadodecahedron
+
+	(180) EDGE = 1
+	RADIUS
+		= sqrt(6*(16 + cbrt(4*(97+3*sqrt(69))) + cbrt(4*(97-3*sqrt(69))))) / 12
+	MIDRADIUS
+		= sqrt(6*(10 + cbrt(4*(97+3*sqrt(69))) + cbrt(4*(97-3*sqrt(69))))) / 12
+	PENTAGON CENTER RADIUS = 0.739115760975830312365036210502
+		= square-root of a root of the polynomial:  512000*(x^6) - 512000*(x^5)
+		- 140800*(x^4) + 131200*(x^3) + 17040*(x^2) - 5480*x + 361
+	TRIANGLE CENTER RADIUS
+		= sqrt(6*(8 + cbrt(4*(97+3*sqrt(69))) + cbrt(4*(97-3*sqrt(69))))) / 12
+	PENTAGRAM CENTER RADIUS = -0.996747562637019276570715226821
+		= square-root of a root of the polynomial:  512000*(x^6) - 512000*(x^5)
+		- 140800*(x^4) + 131200*(x^3) + 17040*(x^2) - 5480*x + 361
+	PENTAGRAM-TRIANGLE ANGLE = acos(0.991778404270354948632087529580)
+		= acos(sqrt(root[91125*(x^6) - 425250*(x^5) + 888975*(x^4)
+			- 607500*(x^3) + 53955*(x^2) - 690*x + 3481]))
+		= 7.35213864353600027690592752252 degrees
+	PENTAGON-TRIANGLE ANGLE = acos(-0.506545696022458929130390190446)
+		= acos(-sqrt(root[91125*(x^6) - 425250*(x^5) + 888975*(x^4)
+			- 607500*(x^3) + 53955*(x^2) - 690*x + 3481]))
+		= 120.434012965680336872550328967 degrees
+	TRIANGLE-TRIANGLE ANGLE = acos(-0.836585110831128506699672597572)
+		= acos(-(1 + cbrt(4*(25+3*sqrt(69))) + cbrt(4*(25-3*sqrt(69)))) / 9)
+		= 146.781253327934183960794638228 degrees
+
+	EULER CHARACTERISTIC:        -16
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Icosahedral (I)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="15 60 104">
+<INPUT type=hidden class=Constants value="0.105398765906697216676314189282,
+0.139623637868037118589881535187,
+0.184961940339626297836961737414,
+0.245022403774734335266195724469,
+0.410877732043017261285800591418,
+0.438898343962682737883306417824,
+0.525190497798036582742263736641,
+0.544297109869379954559620607106,
+0.581416517652346986253630835588,
+0.695729283407366307710093980810,
+0.770212901572770918008459461110,
+0.835352921275403426299975515997,
+0.955174841912397215845421198524,
+1.02031486161502972413693725341,
+1.10660701545038356899589457223">
+<!--
+	C0 = square-root of a root of the polynomial:
+		4096*(x^6) - 5120*(x^5) + 1536*(x^4) - 512*(x^3) + 544*(x^2) - 96*x + 1
+	C1 = square-root of a root of the polynomial:  4096*(x^6) - 5120*(x^5)
+		+ 3840*(x^4) - 1792*(x^3) + 480*(x^2) - 60*x + 1
+	C2 = square-root of a root of the polynomial:
+		4096*(x^6) - 1024*(x^5) - 1024*(x^4) + 64*(x^3) + 80*(x^2) - 32*x + 1
+	C3 = square-root of a root of the polynomial:
+		4096*(x^6) - 2048*(x^5) - 1536*(x^4) - 704*(x^3) - 96*(x^2) - 8*x + 1
+	C4 = sqrt(6 * (12 - cbrt(12*(9+sqrt(69))) - cbrt(12*(9-sqrt(69))))) / 12
+	C5 = square-root of a root of the polynomial:
+		4096*(x^6) - 5120*(x^5) + 1536*(x^4) - 512*(x^3) + 544*(x^2) - 96*x + 1
+	C6 = square-root of a root of the polynomial:
+		4096*(x^6) - 7168*(x^5) + 5120*(x^4) - 1664*(x^3) + 96*(x^2) + 24*x + 1
+	C7 = sqrt(6*(2+cbrt(4*(101+15*sqrt(69)))-cbrt(4*(15*sqrt(69)-101)))) / 12
+	C8 = square-root of a root of the polynomial:  4096*(x^6) - 5120*(x^5)
+		+ 3840*(x^4) - 1792*(x^3) + 480*(x^2) - 60*x + 1
+	C9 = square-root of a root of the polynomial:  4096*(x^6) - 10240*(x^5)
+		+ 8960*(x^4) - 3648*(x^3) + 640*(x^2) - 20*x + 1
+	C10 = square-root of a root of the polynomial:
+		4096*(x^6) - 1024*(x^5) - 1024*(x^4) + 64*(x^3) + 80*(x^2) - 32*x + 1
+	C11 = square-root of a root of the polynomial:
+		4096*(x^6) - 7168*(x^5) + 5120*(x^4) - 1664*(x^3) + 96*(x^2) + 24*x + 1
+	C12 = sqrt(3 * (3 + cbrt(12*(9 + sqrt(69))) + cbrt(12*(9 - sqrt(69))))) / 6
+	C13 = square-root of a root of the polynomial:
+		4096*(x^6) - 2048*(x^5) - 1536*(x^4) - 704*(x^3) - 96*(x^2) - 8*x + 1
+	C14 = square-root of a root of the polynomial:  4096*(x^6) - 10240*(x^5)
+		+ 8960*(x^4) - 3648*(x^3) + 640*(x^2) - 20*x + 1
+-->
+<INPUT type=hidden class=Vertices value="C0 -C2 C14,C0 C2 -C14,-C0 C2 C14,
+-C0 -C2 -C14,C14 -C0 C2,C14 C0 -C2,-C14 C0 C2,-C14 -C0 -C2,C2 -C14 C0,
+C2 C14 -C0,-C2 C14 C0,-C2 -C14 -C0,C3 C4 C13,C3 -C4 -C13,-C3 -C4 C13,
+-C3 C4 -C13,C13 C3 C4,C13 -C3 -C4,-C13 -C3 C4,-C13 C3 -C4,C4 C13 C3,
+C4 -C13 -C3,-C4 -C13 C3,-C4 C13 -C3,C1 -C8 C12,C1 C8 -C12,-C1 C8 C12,
+-C1 -C8 -C12,C12 -C1 C8,C12 C1 -C8,-C12 C1 C8,-C12 -C1 -C8,C8 -C12 C1,
+C8 C12 -C1,-C8 C12 C1,-C8 -C12 -C1,C7 -C6 C11,C7 C6 -C11,-C7 C6 C11,
+-C7 -C6 -C11,C11 -C7 C6,C11 C7 -C6,-C11 C7 C6,-C11 -C7 -C6,C6 -C11 C7,
+C6 C11 -C7,-C6 C11 C7,-C6 -C11 -C7,C5 C9 C10,C5 -C9 -C10,-C5 -C9 C10,
+-C5 C9 -C10,C10 C5 C9,C10 -C5 -C9,-C10 -C5 C9,-C10 C5 -C9,C9 C10 C5,
+C9 -C10 -C5,-C9 -C10 C5,-C9 C10 -C5">
+<INPUT type=hidden class=Faces value="0 52 36 12 28 #,1 53 37 13 29 #,
+2 54 38 14 30 #,3 55 39 15 31 #,4 57 40 17 32 #,5 56 41 16 33 #,
+6 59 42 19 34 #,7 58 43 18 35 #,8 50 44 22 24 #,9 51 45 23 25 #,
+10 48 46 20 26 #,11 49 47 21 27 #,0 54 35 21 40 #,1 55 34 20 41 #,
+2 52 33 23 42 #,3 53 32 22 43 #,4 56 26 14 44 #,5 57 27 15 45 #,
+6 58 24 12 46 #,7 59 25 13 47 #,8 49 29 16 36 #,9 48 28 17 37 #,
+10 51 31 18 38 #,11 50 30 19 39 #,0 28 48 #,1 29 49 #,2 30 50 #,3 31 51 #,
+4 32 53 #,5 33 52 #,6 34 55 #,7 35 54 #,8 24 58 #,9 25 59 #,10 26 56 #,
+11 27 57 #,12 20 46 #,13 21 47 #,14 22 44 #,15 23 45 #,16 12 36 #,17 13 37 #,
+18 14 38 #,19 15 39 #,20 16 41 #,21 17 40 #,22 18 43 #,23 19 42 #,24 28 12 #,
+25 29 13 #,26 30 14 #,27 31 15 #,28 32 17 #,29 33 16 #,30 34 19 #,31 35 18 #,
+32 24 22 #,33 25 23 #,34 26 20 #,35 27 21 #,36 50 8 #,37 51 9 #,38 48 10 #,
+39 49 11 #,40 52 0 #,41 53 1 #,42 54 2 #,43 55 3 #,44 57 4 #,45 56 5 #,
+46 59 6 #,47 58 7 #,48 9 46 #,49 8 47 #,50 11 44 #,51 10 45 #,52 2 36 #,
+53 3 37 #,54 0 38 #,55 1 39 #,56 4 41 #,57 5 40 #,58 6 43 #,59 7 42 #,
+0 48 38 #,1 49 39 #,2 50 36 #,3 51 37 #,4 53 41 #,5 52 40 #,6 55 43 #,
+7 54 42 #,8 58 47 #,9 59 46 #,10 56 45 #,11 57 44 #,12 16 20 #,13 17 21 #,
+14 18 22 #,15 19 23 #,24 32 28 #,25 33 29 #,26 34 30 #,27 35 31 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #46)</NOBR></TD>
+<TD width=40% align=center><NOBR>Snub Icosidodecadodecahedron</NOBR></TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>60 &nbsp;(60[6])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>104 &nbsp;(80 equilateral triangles + 12 regular pentagons</NOBR><BR><NOBR> &nbsp; &nbsp; + 12 regular pentagrams)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>180</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Icosahedral &nbsp;(I)</NOBR></TD></TR>
+<TR><TD><NOBR>Pentagram-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(root[91125*(x^6)&#8722;425250*(x^5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +888975*(x^4)&#8722;607500*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +53955*(x^2)&#8722;690*x+3481])) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;7.352138644 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Pentagon-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(root[91125*(x^6)&#8722;425250*(x^5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +888975*(x^4)&#8722;607500*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +53955*(x^2)&#8722;690*x+3481])) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;120.434012966 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Triangle-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(1+cbrt(4*(25+3*sqrt(69))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(4*(25&#8722;3*sqrt(69))))/9) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;146.781253328 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="MedialHexagonalHexecontahedron.html">Medial Hexagonal Hexecontahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(16+cbrt(4*(97+3*sqrt(69))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(4*(97&#8722;3*sqrt(69)))))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.12689791279993934351</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(10+cbrt(4*(97+3*sqrt(69))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(4*(97&#8722;3*sqrt(69)))))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0099004435452336687</TD></TR>
+<TR><TD><NOBR>Pentagon Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[512000*(x^6)&#8722;512000*(x^5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;140800*(x^4)+131200*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +17040*(x^2)&#8722;5480*x+361]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.73911576097583031237</TD></TR>
+<TR><TD><NOBR>Triangle Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(8+cbrt(4*(97+3*sqrt(69))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(4*(97&#8722;3*sqrt(69)))))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.96776317998750415529</TD></TR>
+<TR><TD><NOBR>Pentagram Center Radius: &nbsp;</NOBR></TD><TD><NOBR>&#8722;sqrt(root[512000*(x^6)&#8722;512000*(x^5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;140800*(x^4)+131200*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +17040*(x^2)&#8722;5480*x+361]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;&#8722;0.99674756263701927657</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SnubIcosidodecadodecahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>H. S. M. Coxeter, M. S. Longuet-Higgins, and J. C. P. Miller,<BR>Uniform Polyhedra, <I>Philosophical Transactions of the Royal Society of London.<BR>Series A. Mathematical and Physical Sciences</I> <B>246</B> (1954), 401-450.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

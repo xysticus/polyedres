@@ -1,0 +1,303 @@
+<!-- File:   RegularHexagonalToroid15A_Knot2.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Regular Hexagonal Toroid with 15 faces (type A) (knot form 2)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RegularHexagonalToroid15A1.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalRegularHexagonal.html"><B>Regular Hexagonal Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RegularHexagonalToroid15D6.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Regular Hexagonal Toroid with 15 faces (type A) (knot form 2)
+
+	(10) EDGE 1 = sqrt(5 * (5979 - 520 * sqrt(5))) / 165
+	(5) EDGE 2 = (5 * sqrt(31) + sqrt(155)) / 15
+	(5) EDGE 3 = (3 + 5 * sqrt(5)) / 3
+	(10) EDGE 4 = 4 * sqrt(2 * (597 + 265 * sqrt(5))) / 33
+	(5) EDGE 5 = sqrt(2 * (1565 + 649 * sqrt(5))) / 11
+	(10) EDGE 6 = 8 * (20 + 11 * sqrt(5)) / 33
+	RADIUS = sqrt(2 * (8413 + 3657 * sqrt(5))) / 22
+	INRADIUS = sqrt(10 * (11 + 2 * sqrt(5))) / 10
+	VOLUME = (1742839 + 802497 * sqrt(5)) / 35937
+
+	EULER CHARACTERISTIC:          0
+	ROTATION SYMMETRIES:          10
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                 6 (1[5] + 5[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  5-fold Dihedral (D5)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="81 30 15">
+<INPUT type=hidden class=Constants value="0.0217491947499509291621405227040,
+0.0286143003030048116859604446947,
+0.0898653983712535446466779137347,
+0.0953302434469792562238254393001,
+0.118479698674258356332638358429,
+0.162512940083396424410581232714,
+0.296920420492389191825771369031,
+0.298142396999971959521223155831,
+0.3198915917499228886833636785348,
+0.392250663939368448049596808331,
+0.4606553370833683839318043885448,
+0.510730362613626804382235166761,
+0.666021629204478539766555258233,
+0.701857603000028040478776844169,
+0.7101650561665685249909477120746,
+0.804918360568153140419432773009,
+0.874366726249990440745871530397,
+0.953701089545441799782374161741,
+0.964809063666638626187889822498,
+1.19256958799988783808489262332,
+1.22776052433324921189700280083,
+1.2533539325756938473967192935549,
+1.29814239699997195952122315583,
+1.29965284303025204761434513181,
+1.3985809175831861208197549014452,
+1.43412842185603830113430629820,
+1.44505811200748972428860134933,
+1.447213595499957939281834733746,
+1.4689627902499088684439752564502,
+1.49240071499988528895045836476,
+1.588375995909052672074395212497,
+1.59628479399994391904244631166,
+1.63147573033330529285455648916,
+1.66666666666666666666666666667,
+1.84004119848472102812677192044,
+1.85923625466655450475155928999,
+1.88098544941650543391369981269,
+1.90402471909083261687606315227,
+1.93537144193170028435059735974,
+1.95136732208322818153792016770,
+1.964809063666638626187889822498,
+2.02354811030292833765293268787,
+2.04349838949990185832428104541,
+2.05658356314382149647180948096,
+2.07426817329537488500347487452,
+2.14644896151507504111848739469,
+2.17675199181810534414879042499,
+2.17779568435594270859302160217,
+2.192747871969633241336113232949,
+2.21967344227261256167773109204,
+2.24828774257561737336369153673,
+2.41579877424229678570252949620,
+2.47471610484833190041879297120,
+2.56109385766658254523033613416,
+2.66153237824979670652886787977,
+2.67497411983320715117883753457,
+2.71714034727257432466121721362,
+2.74535599249992989880305788958,
+2.77839144534082305762193468266,
+2.84579451308314406010158963519,
+2.85923625466655450475155928999,
+3.22787070988620112904345238038,
+3.36949986378773858548490365794,
+3.42841719439377370020116713294,
+3.446101804545327088732832526504,
+3.50164167515131122076041083028,
+3.519326285302864609292076223849,
+3.61192410621198100972732790037,
+4.08077671090893796102485357726,
+4.30551634318162699673561242612,
+5.131895428977033745919515532649,
+5.30045015318155052270258466929,
+5.49553179261339738228315189629,
+5.79791705818151228568607079088,
+5.88882614909060319477697988179,
+6.30045015318155052270258466929,
+6.67228378443150272643194232128,
+6.8111805157951773270848198360549,
+7.47720214499965586685137509429,
+7.79285086818143581165304303406,
+8.01759050045412484736380188292">
+<!--
+	C0 = (7 * sqrt(5) - 15) / 30
+	C1 = 4 * (sqrt(5) - 2) / 33
+	C2 = (35 - 13 * sqrt(5)) / 66
+	C3 = (13 - 3 * sqrt(5)) / 66
+	C4 = (19 - 5 * sqrt(5)) / 66
+	C5 = (25 - 9 * sqrt(5)) / 30
+	C6 = (11 * sqrt(5) - 5) / 66
+	C7 = 2 * sqrt(5) / 15
+	C8 = (11 * sqrt(5) - 15) / 30
+	C9 = 4 * (1 + sqrt(5)) / 33
+	C10 = (5 - sqrt(5)) / 6
+	C11 = (9 + sqrt(5)) / 22
+	C12 = (7 * sqrt(5) - 1) / 22
+	C13 = (15 - 2 * sqrt(5)) / 15
+	C14 = (7 * sqrt(5) - 5) / 15
+	C15 = (11 + 3 * sqrt(5)) / 22
+	C16 = (17 + sqrt(5)) / 22
+	C17 = (27 + 2 * sqrt(5)) / 33
+	C18 = 2 * (5 + sqrt(5)) / 15
+	C19 = 8 * sqrt(5) / 15
+	C20 = (5 + 6 * sqrt(5)) / 15
+	C21 = (19 + 10 * sqrt(5)) / 33
+	C22 = (15 + 2 * sqrt(5)) / 15
+	C23 = (25 + 8 * sqrt(5)) / 33
+	C24 = (21 * sqrt(5) - 5) / 30
+	C25 = (79 + 7 * sqrt(5)) / 66
+	C26 = (35 + 27 * sqrt(5)) / 66
+	C27 = (5 + sqrt(5)) / 5
+	C28 = (15 + 13 * sqrt(5)) / 30
+	C29 = 3 * (1 + 2 * sqrt(5)) / 11
+	C30 = (13 + 2 * sqrt(5)) / 11
+	C31 = (15 + 4 * sqrt(5)) / 15
+	C32 = 2 * (10 + sqrt(5)) / 15
+	C33 = 5 / 3
+	C34 = 4 * (4 + 5 * sqrt(5)) / 33
+	C35 = 2 * (5 + 4 * sqrt(5)) / 15
+	C36 = (5 + 23 * sqrt(5)) / 30
+	C37 = 4 * (3 + sqrt(5)) / 11
+	C38 = (45 + 37 * sqrt(5)) / 66
+	C39 = (5 + 3 * sqrt(5)) / 6
+	C40 = (25 + 2 * sqrt(5)) / 15
+	C41 = (31 + 16 * sqrt(5)) / 33
+	C42 = (15 + 7 * sqrt(5)) / 15
+	C43 = (53 + 37 * sqrt(5)) / 66
+	C44 = (81 + 25 * sqrt(5)) / 66
+	C45 = 4 * (11 + 3 * sqrt(5)) / 33
+	C46 = (15 + 4 * sqrt(5)) / 11
+	C47 = (61 + 37 * sqrt(5)) / 66
+	C48 = 10 * (5 + sqrt(5)) / 33
+	C49 = (11 + 6 * sqrt(5)) / 11
+	C50 = (25 + 22 * sqrt(5)) / 33
+	C51 = 5 * (7 + 4 * sqrt(5)) / 33
+	C52 = 4 * (7 + 6 * sqrt(5)) / 33
+	C53 = (25 + 6 * sqrt(5)) / 15
+	C54 = (15 + 29 * sqrt(5)) / 30
+	C55 = (20 + 9 * sqrt(5)) / 15
+	C56 = 4 * (3 + 2 * sqrt(5)) / 11
+	C57 = (6 + sqrt(5)) / 3
+	C58 = (41 + 9 * sqrt(5)) / 22
+	C59 = (25 + 27 * sqrt(5)) / 30
+	C60 = (25 + 8 * sqrt(5)) / 15
+	C61 = (33 + 17 * sqrt(5)) / 22
+	C62 = 2 * (31 + 11 * sqrt(5)) / 33
+	C63 = (55 + 26 * sqrt(5)) / 33
+	C64 = (69 + 20 * sqrt(5)) / 33
+	C65 = 4 * (11 + 8 * sqrt(5)) / 33
+	C66 = 2 * (29 + 13 * sqrt(5)) / 33
+	C67 = 2 * (35 + 11 * sqrt(5)) / 33
+	C68 = (27 + 8 * sqrt(5)) / 11
+	C69 = 5 * (5 + 2 * sqrt(5)) / 11
+	C70 = (57 + 25 * sqrt(5)) / 22
+	C71 = (27 + 14 * sqrt(5)) / 11
+	C72 = 5 * (13 + 5 * sqrt(5)) / 22
+	C73 = 4 * (7 + 4 * sqrt(5)) / 11
+	C74 = (29 + 16 * sqrt(5)) / 11
+	C75 = 2 * (19 + 7 * sqrt(5)) / 11
+	C76 = (73 + 33 * sqrt(5)) / 22
+	C77 = (85 + 29 * sqrt(5)) / 22
+	C78 = 6 * (7 + 3 * sqrt(5)) / 11
+	C79 = (41 + 20 * sqrt(5)) / 11
+	C80 = (39 + 22 * sqrt(5)) / 11
+-->
+<INPUT type=hidden class=Vertices value="C74 -C73 C11,C46 -C73 -C72,
+C23 -C65 -C4,C20 -C54 C7,-C59 -C7 C13,-C63 -C9 C25,-C69 C37 C77,-C80 C37 C15,
+-C50 C45 C44,-C28 C32 C40,C22 C36 -C35,C41 C52 -C38,C79 C56 -C12,C68 C56 -C76,
+C64 C1 -C26,C60 C0 -C14,-C18 -C57 -C10,-C17 -C67 -C3,-C30 -C75 C70,
+-C71 -C75 -C16,-C49 -C48 C43,-C27 -C33 C39,-C27 C53 -C5,-C30 C62 C6,
+C29 C78 C61,-C49 C78 -C58,C21 C66 -C2,C19 C55 C8,C31 -C24 -C42,C51 -C34 -C47">
+<INPUT type=hidden class=Faces value="0 1 26 25 24 29 #,2 3 28 27 26 1 #,
+4 5 0 29 28 3 #,6 7 2 1 0 5 #,8 9 4 3 2 7 #,10 11 6 5 4 9 #,12 13 8 7 6 11 #,
+14 15 10 9 8 13 #,16 17 12 11 10 15 #,18 19 14 13 12 17 #,20 21 16 15 14 19 #,
+22 23 18 17 16 21 #,24 25 20 19 18 23 #,26 27 22 21 20 25 #,
+28 29 24 23 22 27 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Regular Hexagonal Toroid with 15 faces <NOBR>(type A)</NOBR> <NOBR>(knot form 2)</NOBR>
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="knot form 1" onClick="window.location.href='RegularHexagonalToroid15A_Knot1.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>knot form 2</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="knot form 3" onClick="window.location.href='RegularHexagonalToroid15A_Knot3.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="knot form 4" onClick="window.location.href='RegularHexagonalToroid15A_Knot4.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="knot form 5" onClick="window.location.href='RegularHexagonalToroid15A_Knot5.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="knot form 6" onClick="window.location.href='RegularHexagonalToroid15A_Knot6.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>30 &nbsp;(30[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>15 &nbsp;({10 + 5} nonconvex hexagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>45 &nbsp;(6 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>5-fold Dihedral &nbsp;(D5)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (10): &nbsp;</NOBR></TD><TD><NOBR>sqrt(5*(5979&#8722;520*sqrt(5)))/165 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.94049248100767717246</TD></TR>
+<TR><TD><NOBR>Edge 2 (5): &nbsp;</NOBR></TD><TD><NOBR>(5*sqrt(31)+sqrt(155))/15 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.6859147608092561324</TD></TR>
+<TR><TD><NOBR>Edge 3 (5): &nbsp;</NOBR></TD><TD><NOBR>(3+5*sqrt(5))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.7267799624996494940</TD></TR>
+<TR><TD><NOBR>Edge 4 (10): &nbsp;</NOBR></TD><TD><NOBR>4*sqrt(2*(597+265*sqrt(5)))/33 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;5.9122646060921658488</TD></TR>
+<TR><TD><NOBR>Edge 5 (5): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(1565+649*sqrt(5)))/11 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;7.0607846324896996318</TD></TR>
+<TR><TD><NOBR>Edge 6 (10): &nbsp;</NOBR></TD><TD><NOBR>8*(20+11*sqrt(5))/33 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;10.8113327884842876753</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>(1742839+802497*sqrt(5))/35937 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;98.429942503259836158</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RegularHexagonalToroid15A_Knot2.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

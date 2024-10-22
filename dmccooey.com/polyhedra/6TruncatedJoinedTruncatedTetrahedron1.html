@@ -1,0 +1,144 @@
+<!-- File:   6TruncatedJoinedTruncatedTetrahedron1.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>6-Truncated Joined Truncated Tetrahedron (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='ExpandedJoinedTruncatedPentakisDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Derived.html"><B>Derived Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='TetrakisCuboctahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	6-Truncated Joined Truncated Tetrahedron (canonical)
+
+	(12) SHORT EDGE = 0.875844005734673971371592566741
+		= square-root of a root of the polynomial:
+			33282*(x^3) - 291489*(x^2) + 271784*x - 51984
+	(24) MEDIUM EDGE = 0.995406038292710998175432869672
+		= square-root of a root of the polynomial:
+			18*(x^3) - 609*(x^2) + 1268*x - 676
+	(24) LONG EDGE = 1.06564541195798766991336628697
+		= square-root of a root of the polynomial:
+			(x^3) - 80*(x^2) + 1104*x - 1152
+	EDGE-SCRIBED RADIUS = 1.96257486685739760540167259916
+		= root of the polynomial:  (x^3) + 9*(x^2) + 6*x - 54
+	VOLUME = 27.9868303098523928378320718933
+		= root of the polynomial:
+			129*(x^3) - 249336*(x^2) + 20950592*x - 393872896
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          12
+	MIRROR ROTATION SYMMETRIES:   12
+	ROTATION AXES:                 7 (4[3] + 3[2])
+	MIRROR PLANES:                 6
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Full Tetrahedral (Td)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="4 40 22">
+<INPUT type=hidden class=Constants value="0.246474902864174917999988468718,
+0.703858359710812141900284532167,
+1.15794134742318657946055176118,
+1.75352509713582508200001153128">
+<!--
+	C0 = root of the polynomial:  (x^3) - 5*(x^2) - 11*x + 3
+	C1 = root of the polynomial:  6*(x^3) + 15*(x^2) - 32*x + 13
+	C2 = root of the polynomial:  43*(x^3) + 21*(x^2) - 525*x + 513
+	C3 = root of the polynomial:  (x^3) - (x^2) - 19*x + 31
+-->
+<INPUT type=hidden class=Vertices value="1.0 -C0 C3,1.0 C0 -C3,-1.0 C0 C3,
+-1.0 -C0 -C3,C3 -1.0 C0,C3 1.0 -C0,-C3 1.0 C0,-C3 -1.0 -C0,C0 -C3 1.0,
+C0 C3 -1.0,-C0 C3 1.0,-C0 -C3 -1.0,C0 -1.0 C3,C0 1.0 -C3,-C0 1.0 C3,
+-C0 -1.0 -C3,C3 -C0 1.0,C3 C0 -1.0,-C3 C0 1.0,-C3 -C0 -1.0,1.0 -C3 C0,
+1.0 C3 -C0,-1.0 C3 C0,-1.0 -C3 -C0,C1 C1 C3,C1 -C1 -C3,-C1 -C1 C3,-C1 C1 -C3,
+C3 C1 C1,C3 -C1 -C1,-C3 -C1 C1,-C3 C1 -C1,C1 C3 C1,C1 -C3 -C1,-C1 -C3 C1,
+-C1 C3 -C1,C2 C2 C2,C2 -C2 -C2,-C2 -C2 C2,-C2 C2 -C2">
+<INPUT type=hidden class=Faces value="0 12 8 20 4 16 #,1 13 9 21 5 17 #,
+2 14 10 22 6 18 #,3 15 11 23 7 19 #,2 26 12 0 24 14 #,3 27 13 1 25 15 #,
+4 29 17 5 28 16 #,7 30 18 6 31 19 #,8 34 23 11 33 20 #,9 35 22 10 32 21 #,
+36 24 0 16 28 #,36 28 5 21 32 #,36 32 10 14 24 #,37 25 1 17 29 #,
+37 29 4 20 33 #,37 33 11 15 25 #,38 26 2 18 30 #,38 30 7 23 34 #,
+38 34 8 12 26 #,39 27 3 19 31 #,39 31 6 22 35 #,39 35 9 13 27 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+6-Truncated Joined Truncated Tetrahedron
+<BR>(canonical)
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>version 1</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="version 2" onClick="window.location.href='6TruncatedJoinedTruncatedTetrahedron2.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>40 &nbsp;(4[3] + 36[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>22 &nbsp;(12 mirror-symmetric pentagons + 4 regular hexagons</NOBR><BR><NOBR> &nbsp; &nbsp; + 6 bi-mirror-symmetric hexagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>60 &nbsp;(12 short + 24 medium + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Tetrahedral &nbsp;(Td)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on regular hexagon origin distance = sqrt(3))</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[33282*(x^3)&#8722;291489*(x^2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +271784*x&#8722;51984]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.87584400573467397137</TD></TR>
+<TR><TD><NOBR>Medium Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[18*(x^3)&#8722;609*(x^2)+1268*x&#8722;676]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.99540603829271099818</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[(x^3)&#8722;80*(x^2)+1104*x&#8722;1152]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0656454119579876699</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>root[(x^3)+9*(x^2)+6*x&#8722;54] &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.9625748668573976054</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>root[129*(x^3)&#8722;249336*(x^2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +20950592*x&#8722;393872896] &nbsp; &nbsp;</NOBR></TD><TD>&#8776;27.986830309852392838</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='6TruncatedJoinedTruncatedTetrahedron1.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

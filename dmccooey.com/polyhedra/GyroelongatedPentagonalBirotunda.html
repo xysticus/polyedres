@@ -1,0 +1,150 @@
+<!-- File:   GyroelongatedPentagonalBirotunda.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2019 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Gyroelongated Pentagonal Birotunda</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='GyroelongatedPentagonalCupolarotunda.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="JohnsonPage3.html"><B>Johnson Solids (Page 3)</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='AugmentedTriangularPrism.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Gyroelongated Pentagonal Birotunda
+
+	(90) EDGE = 1
+	VOLUME = 20.5848138117963990020365269299
+		= (45+17*sqrt(5) + 5*sqrt(2*(sqrt(10*(65+29*sqrt(5)))-1-sqrt(5)))) / 6
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          10
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                 6 (1[5] + 5[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  5-fold Dihedral (D5)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="14 40 52">
+<INPUT type=hidden class=Constants value="0.262865556059566803012834542424,
+0.425325404176019966090770248532,
+0.431198501929729241723526342454,
+0.6881909602355867691036047909554,
+0.809016994374947424102293417183,
+0.850650808352039932181540497063,
+0.951056516295153572116439333379,
+1.11351636441160673519437503949,
+1.28184931028176917390506683952,
+1.30901699437494742410229341718,
+1.37638192047117353820720958191,
+1.53884176858762670128514528802,
+1.61803398874989484820458683437,
+1.80758042240090277993073592436">
+<!--
+	C0 = sqrt(10 * (5 - sqrt(5))) / 20
+	C1 = sqrt(10 * (5 + sqrt(5))) / 20
+	C2 = sqrt(2 * (sqrt(2 * (25 + 11 * sqrt(5))) - 2 * sqrt(5) - 4)) / 4
+	C3 = sqrt(5 * (5 + 2 * sqrt(5))) / 10
+	C4 = (1 + sqrt(5)) / 4
+	C5 = sqrt(10 * (5 + sqrt(5))) / 10
+	C6 = sqrt(2 * (5 + sqrt(5))) / 4
+	C7 = sqrt(10 * (25 + 11 * sqrt(5))) / 20
+	C8 = (2 * sqrt(10 * (5 + sqrt(5)))
+		+ 5 * sqrt(2 * (sqrt(2 * (25 + 11 * sqrt(5))) - 2 * sqrt(5) - 4))) / 20
+	C9 = (3 + sqrt(5)) / 4
+	C10 = sqrt(5 * (5 + 2 * sqrt(5))) / 5
+	C11 = sqrt(5 + 2 * sqrt(5)) / 2
+	C12 = (1 + sqrt(5)) / 2
+	C13 = (4 * sqrt(5 * (5 + 2 * sqrt(5)))
+		+ 5 * sqrt(2 * (sqrt(2 * (25 + 11 * sqrt(5))) - 2 * sqrt(5) - 4))) / 20
+-->
+<INPUT type=hidden class=Vertices value="0.0 C5 C13,-C5 0.0 -C13,C4 C0 C13,
+-C4 C0 C13,-C0 C4 -C13,-C0 -C4 -C13,0.5 -C3 C13,-0.5 -C3 C13,C3 0.5 -C13,
+C3 -0.5 -C13,0.0 -C10 C8,C10 0.0 -C8,C9 -C1 C8,-C9 -C1 C8,C1 C9 -C8,C1 -C9 -C8,
+C4 C7 C8,-C4 C7 C8,-C7 C4 -C8,-C7 -C4 -C8,C12 0.0 C2,-C12 0.0 C2,0.0 C12 -C2,
+0.0 -C12 -C2,0.5 C11 C2,0.5 -C11 C2,-0.5 C11 C2,-0.5 -C11 C2,C11 0.5 -C2,
+C11 -0.5 -C2,-C11 0.5 -C2,-C11 -0.5 -C2,C9 C6 C2,C9 -C6 C2,-C9 C6 C2,
+-C9 -C6 C2,C6 C9 -C2,C6 -C9 -C2,-C6 C9 -C2,-C6 -C9 -C2">
+<INPUT type=hidden class=Faces value="0 3 7 6 2 #,1 4 8 9 5 #,24 26 17 0 16 #,
+34 21 13 3 17 #,35 27 10 7 13 #,25 33 12 6 10 #,20 32 16 2 12 #,
+31 30 18 1 19 #,38 22 14 4 18 #,36 28 11 8 14 #,29 37 15 9 11 #,
+23 39 19 5 15 #,24 16 32 #,34 17 26 #,35 13 21 #,25 10 27 #,20 12 33 #,
+31 19 39 #,38 18 30 #,36 14 22 #,29 11 28 #,23 15 37 #,24 32 36 #,34 26 38 #,
+35 21 31 #,25 27 23 #,20 33 29 #,31 39 35 #,38 30 34 #,36 22 24 #,29 28 20 #,
+23 37 25 #,24 22 26 #,34 30 21 #,35 39 27 #,25 37 33 #,20 28 32 #,31 21 30 #,
+38 26 22 #,36 32 28 #,29 33 37 #,23 27 39 #,0 2 16 #,3 0 17 #,7 3 13 #,
+6 7 10 #,2 6 12 #,1 5 19 #,4 1 18 #,8 4 14 #,9 8 11 #,5 9 15 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="783585844 -601266566 -95231268 -124107805">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=10% align=left style="font-size:60%"><NOBR>(J48)</NOBR></TD>
+<TD width=80% align=center>Gyroelongated Pentagonal Birotunda</TD>
+<TD width=10% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>40 &nbsp;({10 * 2}[4] + {10 * 2}[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>52 &nbsp;({10 * 4} equilateral triangles + {10 + 2} regular pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>90</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>5-fold Dihedral &nbsp;(D5)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>(45+17*sqrt(5)+5*sqrt(2 &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; *(sqrt(10*(65+29*sqrt(5))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;1&#8722;sqrt(5))))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;20.584813811796399002</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='GyroelongatedPentagonalBirotunda.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

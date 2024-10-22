@@ -1,0 +1,126 @@
+<!-- File:   TruncatedTetrahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Truncated Tetrahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='TruncatedIcosidodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Archimedean.html"><B>Archimedean Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='Cuboctahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Truncated Tetrahedron
+
+	(18) EDGE = 1
+	RADIUS = sqrt(22) / 4
+	MIDRADIUS = 3 * sqrt(2) / 4
+	HEXAGON CENTER RADIUS = sqrt(6) / 4
+	TRIANGLE CENTER RADIUS = 5 * sqrt(6) / 12
+	VOLUME = 23 * sqrt(2) / 12
+	HEXAGON-HEXAGON ANGLE = acos(1/3)
+		= 70.5287793655093086307540006600 degrees
+	HEXAGON-TRIANGLE ANGLE = acos(-1/3)
+		= 109.471220634490691369245999340 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          12
+	MIRROR ROTATION SYMMETRIES:   12
+	ROTATION AXES:                 7 (4[3] + 3[2])
+	MIRROR PLANES:                 6
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Full Tetrahedral (Td)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="2 12 8">
+<INPUT type=hidden class=Constants value="0.353553390593273762200422181052,
+1.06066017177982128660126654316">
+<!--
+	C0 = sqrt(2) / 4
+	C1 = 3 * sqrt(2) / 4
+-->
+<INPUT type=hidden class=Vertices value="C0 -C0 C1,C0 C0 -C1,-C0 C0 C1,
+-C0 -C0 -C1,C1 -C0 C0,C1 C0 -C0,-C1 C0 C0,-C1 -C0 -C0,C0 -C1 C0,C0 C1 -C0,
+-C0 C1 C0,-C0 -C1 -C0">
+<INPUT type=hidden class=Faces value="0 4 5 9 10 2 #,1 5 4 8 11 3 #,
+2 6 7 11 8 0 #,3 7 6 10 9 1 #,0 8 4 #,1 9 5 #,2 10 6 #,3 11 7 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #2)</NOBR></TD>
+<TD width=40% align=center><NOBR>Truncated Tetrahedron</NOBR></TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>12 &nbsp;(12[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>8 &nbsp;(4 equilateral triangles + 4 regular hexagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>18</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Tetrahedral &nbsp;(Td)</NOBR></TD></TR>
+<TR><TD><NOBR>Hexagon-Hexagon Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(1/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;70.528779366 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Hexagon-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;1/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;109.471220634 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="TriakisTetrahedron.html">Triakis Tetrahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(22)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1726039399558573886</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(2)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0606601717798212866</TD></TR>
+<TR><TD><NOBR>Hexagon Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.612372435695794524549</TD></TR>
+<TR><TD><NOBR>Triangle Center Radius: &nbsp;</NOBR></TD><TD><NOBR>5*sqrt(6)/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0206207261596575409</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>23*sqrt(2)/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.7105759945484321769</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='TruncatedTetrahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

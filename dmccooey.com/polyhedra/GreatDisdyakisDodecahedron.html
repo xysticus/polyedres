@@ -1,0 +1,139 @@
+<!-- File:   GreatDisdyakisDodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Great Disdyakis Dodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='TetradyakisHexahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="SelfIntersectingTruncatedQuasiRegularDual.html"><B>Self-Intersecting Truncated Quasi-Regular Duals</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='TridyakisIcosahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Great Disdyakis Dodecahedron
+
+	(24) SHORT EDGE = 3 * sqrt(6 * (2 - sqrt(2))) / 7
+	(24) MEDIUM EDGE = 2 * sqrt(3 * (10 + sqrt(2))) / 7
+	(24) LONG EDGE = 2 * sqrt(6 * (10 - sqrt(2))) / 7
+	(6) INNER VERTEX RADIUS = 3 * (3 * sqrt(2) - 2) / 7
+	(12) MIDDLE VERTEX RADIUS = 3 * (4 - sqrt(2)) / 7
+	(8) OUTER VERTEX RADIUS = sqrt(6)
+	EDGE-SCRIBED RADIUS = sqrt(6 * (2 - sqrt(2))) / 2
+	INRADIUS = 3 * sqrt(194 * (15 - 8 * sqrt(2))) / 97
+	VOLUME = 8.52096471167509814677759661231
+		= 144 * (sqrt(2) - 1) / 7
+	DIHEDRAL ANGLE 1 = acos(-0.557004507747658344478141601129)
+		= acos(-(71 - 12 * sqrt(2)) / 97)
+		= 123.848891579438222741114765771 degrees
+	DIHEDRAL ANGLE 2 = acos(0.557004507747658344478141601129)
+		= acos((71 - 12 * sqrt(2)) / 97)
+		= 236.151108420561777258885234229 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:   24
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 9
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Octahedral (Oh)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="3 26 48">
+<INPUT type=hidden class=Constants value="0.783611624891224327544304620751,
+0.961131723051122205602171216841,
+1.41421356237309504880168872421">
+<!--
+	C0 = 3 * (2 * sqrt(2) - 1) / 7
+	C1 = 3 * (3 * sqrt(2) - 2) / 7
+	C2 = sqrt(2)
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C1,0.0 0.0 -C1,C1 0.0 0.0,
+-C1 0.0 0.0,0.0 C1 0.0,0.0 -C1 0.0,C0 0.0 C0,C0 0.0 -C0,-C0 0.0 C0,-C0 0.0 -C0,
+C0 C0 0.0,C0 -C0 0.0,-C0 C0 0.0,-C0 -C0 0.0,0.0 C0 C0,0.0 C0 -C0,0.0 -C0 C0,
+0.0 -C0 -C0,C2 C2 C2,C2 C2 -C2,C2 -C2 C2,C2 -C2 -C2,-C2 C2 C2,-C2 C2 -C2,
+-C2 -C2 C2,-C2 -C2 -C2">
+<INPUT type=hidden class=Faces value="0 6 18 #,0 18 14 #,0 14 22 #,0 22 8 #,
+0 8 24 #,0 24 16 #,0 16 20 #,0 20 6 #,1 7 21 #,1 21 17 #,1 17 25 #,1 25 9 #,
+1 9 23 #,1 23 15 #,1 15 19 #,1 19 7 #,2 6 20 #,2 20 11 #,2 11 21 #,2 21 7 #,
+2 7 19 #,2 19 10 #,2 10 18 #,2 18 6 #,3 8 22 #,3 22 12 #,3 12 23 #,3 23 9 #,
+3 9 25 #,3 25 13 #,3 13 24 #,3 24 8 #,4 10 19 #,4 19 15 #,4 15 23 #,4 23 12 #,
+4 12 22 #,4 22 14 #,4 14 18 #,4 18 10 #,5 11 20 #,5 20 16 #,5 16 24 #,
+5 24 13 #,5 13 25 #,5 25 17 #,5 17 21 #,5 21 11 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Great Disdyakis Dodecahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>26 &nbsp;(12[4] + 8[6] + 6[8])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>48 &nbsp;(obtuse triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>72 &nbsp;(24 short + 24 medium + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Octahedral &nbsp;(Oh)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 1 (48): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(71&#8722;12*sqrt(2))/97) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;123.848891579 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 2 (24): &nbsp;</NOBR></TD><TD><NOBR>acos((71&#8722;12*sqrt(2))/97) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;236.151108421 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="GreatTruncatedCuboctahedron.html">Great Truncated Cuboctahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length Great Truncated Cuboctahedron)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(6*(2&#8722;sqrt(2)))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.803467836266869266454</TD></TR>
+<TR><TD><NOBR>Medium Edge (24): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(3*(10+sqrt(2)))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.6719203351570846838</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(6*(10&#8722;sqrt(2)))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.0506787054834752969</TD></TR>
+<TR><TD><NOBR>[8]-Vertex Radius (6): &nbsp;</NOBR></TD><TD><NOBR>3*(3*sqrt(2)&#8722;2)/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.96113172305112220560</TD></TR>
+<TR><TD><NOBR>[4]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>3*(4&#8722;sqrt(2))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1081941875543878362</TD></TR>
+<TR><TD><NOBR>[6]-Vertex Radius (8): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.4494897427831780982</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(2&#8722;sqrt(2)))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.93737914231134747753</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(194*(15&#8722;8*sqrt(2)))/97 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.82707562711755696721</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>144*(sqrt(2)&#8722;1)/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;8.5209647116750981468</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='GreatDisdyakisDodecahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,208 @@
+<!-- File:   RegularHexagonalToroid13A.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Regular Hexagonal Toroid with 13 faces (type A)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RegularHexagonalToroid12D2.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalRegularHexagonal.html"><B>Regular Hexagonal Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RegularHexagonalToroid13B2.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Regular Hexagonal Toroid with 13 faces (type A)
+
+	(1) EDGE 1 = 18 * sqrt(5) / 29
+	(1) EDGE 2 = 9 / 4
+	(1) EDGE 3 = 7 * sqrt(13) / 10
+	(1) EDGE 4 = 2 * sqrt(2)
+	(1) EDGE 5 = 3
+	(1) EDGE 6 = 3 * sqrt(6) / 2
+	(1) EDGE 7 = 3 * sqrt(2)
+	(1) EDGE 8 = 123 * sqrt(1202) / 970
+	(1) EDGE 9 = 33 * sqrt(4749) / 493
+	(1) EDGE 10 = 9 * sqrt(5) / 4
+	(1) EDGE 11 = 21 / 4
+	(1) EDGE 12 = 11 / 2
+	(1) EDGE 13 = 39 * sqrt(2) / 10
+	(1) EDGE 14 = 4 * sqrt(2)
+	(1) EDGE 15 = 6
+	(1) EDGE 16 = 11 * sqrt(5) / 4
+	(1) EDGE 17 = 1215 * sqrt(77) / 1552
+	(1) EDGE 18 = 2 * sqrt(14)
+	(1) EDGE 19 = 15 / 2
+	(1) EDGE 20 = 81 * sqrt(62) / 85
+	(1) EDGE 21 = 63 * sqrt(2) / 10
+	(1) EDGE 22 = 9
+	(1) EDGE 23 = 243 * sqrt(13) / 80
+	(1) EDGE 24 = 8 * sqrt(2)
+	(1) EDGE 25 = 300 * sqrt(74) / 221
+	(1) EDGE 26 = 12
+	(1) EDGE 27 = 715 / 58
+	(2) EDGE 28 = 6 * sqrt(5)
+	(1) EDGE 29 = 48 * sqrt(2) / 5
+	(1) EDGE 30 = 15 * sqrt(17) / 4
+	(1) EDGE 31 = 111 * sqrt(5) / 16
+	(1) EDGE 32 = 4 * sqrt(17)
+	(1) EDGE 33 = 31 * sqrt(38) / 10
+	(1) EDGE 34 = 74 * sqrt(14) / 13
+	(1) EDGE 35 = 687 * sqrt(1873) / 1261
+	(1) EDGE 36 = 24
+	(1) EDGE 37 = 37 * sqrt(17) / 5
+	(1) EDGE 38 = 8 * sqrt(17)
+	VOLUME = 124667338125 / 79574144
+
+	ROTATION SYMMETRIES:           1
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                 0
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  No Symmetry (C1)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="12 26 13">
+<INPUT type=hidden class=Constants value="1.76288659793814432989690721649,
+1.76470588235294117647058823529,
+2.30769230769230769230769230769,
+4.24137931034482758620689655172,
+5.37931034482758620689655172414,
+5.64705882352941176470588235294,
+6.1875,
+6.30927835051546391752577319588,
+8.53608247422680412371134020619,
+9.882352941176470588235294117647,
+11.0769230769230769230769230769,
+19.3846153846153846153846153846">
+<!--
+	C0 = 171 / 97
+	C1 = 30 / 17
+	C2 = 30 / 13
+	C3 = 123 / 29
+	C4 = 156 / 29
+	C5 = 96 / 17
+	C6 = 99 / 16
+	C7 = 612 / 97
+	C8 = 828 / 97
+	C9 = 168 / 17
+	C10 = 144 / 13
+	C11 = 252 / 13
+-->
+<INPUT type=hidden class=Vertices value="-4.5 -6.0 0.75,1.0 -6.0 -2.0,
+-3.0 -6.0 -6.0,-4.5 -4.5 -9.0,-4.5 -8.25 6.0,-4.5 -6.0 6.0,3.0 -6.0 6.0,
+3.0 -6.0 -18.0,3.0 -14.0 14.0,-9.0 -6.0 6.0,-3.0 6.0 6.0,3.0 6.0 6.0,
+3.0 6.0 -3.0,3.0 15.6 6.6,-C1 C9 C5,-C3 6.0 C4,0.5 6.0 -6.0,6.0 6.0 -6.0,
+8.0 8.0 -6.0,C2 C11 C10,C0 C7 -C8,-0.9 3.9 -6.0,3.0 0.0 -6.0,11.0 8.0 -6.0,
+-4.5 1.8 -15.3,-4.5 7.875 -C6">
+<INPUT type=hidden class=Faces value="0 1 22 21 20 25 #,2 3 24 23 22 1 #,
+4 5 0 25 24 3 #,6 7 2 1 0 5 #,8 9 4 3 2 7 #,10 11 6 5 4 9 #,12 13 8 7 6 11 #,
+14 15 10 9 8 13 #,16 17 12 11 10 15 #,18 19 14 13 12 17 #,20 21 16 15 14 19 #,
+22 23 18 17 16 21 #,24 25 20 19 18 23 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="1 0 -1 0">
+</DIV>
+<BR>
+<CENTER>
+Regular Hexagonal Toroid with 13 faces <NOBR>(type A)</NOBR>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>26 &nbsp;(26[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>13 &nbsp;({1 * 13} nonconvex hexagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>39 &nbsp;(38 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>2-fold Cyclic &nbsp;(C2)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (1): &nbsp;</NOBR></TD><TD><NOBR>18*sqrt(5)/29 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3879042618964211909</TD></TR>
+<TR><TD><NOBR>Edge 2 (1): &nbsp;</NOBR></TD><TD><NOBR>9/4 &nbsp; &nbsp;</NOBR></TD><TD>2.25</TD></TR>
+<TR><TD><NOBR>Edge 3 (1): &nbsp;</NOBR></TD><TD><NOBR>7*sqrt(13)/10 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.5238858928247925052</TD></TR>
+<TR><TD><NOBR>Edge 4 (1): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.8284271247461900976</TD></TR>
+<TR><TD><NOBR>Edge 5 (1): &nbsp;</NOBR></TD><TD>3</TD></TR>
+<TR><TD><NOBR>Edge 6 (1): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(6)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.6742346141747671473</TD></TR>
+<TR><TD><NOBR>Edge 7 (1): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.2426406871192851464</TD></TR>
+<TR><TD><NOBR>Edge 8 (1): &nbsp;</NOBR></TD><TD><NOBR>123*sqrt(1202)/970 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.3962826933468970849</TD></TR>
+<TR><TD><NOBR>Edge 9 (1): &nbsp;</NOBR></TD><TD><NOBR>33*sqrt(4749)/493 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.6128369661879245076</TD></TR>
+<TR><TD><NOBR>Edge 10 (1): &nbsp;</NOBR></TD><TD><NOBR>9*sqrt(5)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;5.0311529493745268169</TD></TR>
+<TR><TD><NOBR>Edge 11 (1): &nbsp;</NOBR></TD><TD><NOBR>21/4 &nbsp; &nbsp;</NOBR></TD><TD>5.25</TD></TR>
+<TR><TD><NOBR>Edge 12 (1): &nbsp;</NOBR></TD><TD><NOBR>11/2 &nbsp; &nbsp;</NOBR></TD><TD>5.5</TD></TR>
+<TR><TD><NOBR>Edge 13 (1): &nbsp;</NOBR></TD><TD><NOBR>39*sqrt(2)/10 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;5.5154328932550706903</TD></TR>
+<TR><TD><NOBR>Edge 14 (1): &nbsp;</NOBR></TD><TD><NOBR>4*sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;5.6568542494923801952</TD></TR>
+<TR><TD><NOBR>Edge 15 (1): &nbsp;</NOBR></TD><TD>6</TD></TR>
+<TR><TD><NOBR>Edge 16 (1): &nbsp;</NOBR></TD><TD><NOBR>11*sqrt(5)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;6.1491869381244216651</TD></TR>
+<TR><TD><NOBR>Edge 17 (1): &nbsp;</NOBR></TD><TD><NOBR>1215*sqrt(77)/1552 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;6.8695758573978275151</TD></TR>
+<TR><TD><NOBR>Edge 18 (1): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(14) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;7.4833147735478827712</TD></TR>
+<TR><TD><NOBR>Edge 19 (1): &nbsp;</NOBR></TD><TD><NOBR>15/2 &nbsp; &nbsp;</NOBR></TD><TD>7.5</TD></TR>
+<TR><TD><NOBR>Edge 20 (1): &nbsp;</NOBR></TD><TD><NOBR>81*sqrt(62)/85 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;7.5034663269994905011</TD></TR>
+<TR><TD><NOBR>Edge 21 (1): &nbsp;</NOBR></TD><TD><NOBR>63*sqrt(2)/10 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;8.909545442950498807451</TD></TR>
+<TR><TD><NOBR>Edge 22 (1): &nbsp;</NOBR></TD><TD>9</TD></TR>
+<TR><TD><NOBR>Edge 23 (1): &nbsp;</NOBR></TD><TD><NOBR>243*sqrt(13)/80 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;10.951861999221867478</TD></TR>
+<TR><TD><NOBR>Edge 24 (1): &nbsp;</NOBR></TD><TD><NOBR>8*sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;11.313708498984760390</TD></TR>
+<TR><TD><NOBR>Edge 25 (1): &nbsp;</NOBR></TD><TD><NOBR>300*sqrt(74)/221 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;11.677364615894968468</TD></TR>
+<TR><TD><NOBR>Edge 26 (1): &nbsp;</NOBR></TD><TD>12</TD></TR>
+<TR><TD><NOBR>Edge 27 (1): &nbsp;</NOBR></TD><TD><NOBR>715/58 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;12.327586206896551724</TD></TR>
+<TR><TD><NOBR>Edge 28 (2): &nbsp;</NOBR></TD><TD><NOBR>6*sqrt(5) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;13.416407864998738178</TD></TR>
+<TR><TD><NOBR>Edge 29 (1): &nbsp;</NOBR></TD><TD><NOBR>48*sqrt(2)/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;13.576450198781712468</TD></TR>
+<TR><TD><NOBR>Edge 30 (1): &nbsp;</NOBR></TD><TD><NOBR>15*sqrt(17)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;15.461646096066227062</TD></TR>
+<TR><TD><NOBR>Edge 31 (1): &nbsp;</NOBR></TD><TD><NOBR>111*sqrt(5)/16 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;15.512721593904791019</TD></TR>
+<TR><TD><NOBR>Edge 32 (1): &nbsp;</NOBR></TD><TD><NOBR>4*sqrt(17) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;16.492422502470642199</TD></TR>
+<TR><TD><NOBR>Edge 33 (1): &nbsp;</NOBR></TD><TD><NOBR>31*sqrt(38)/10 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;19.109683409203826996</TD></TR>
+<TR><TD><NOBR>Edge 34 (1): &nbsp;</NOBR></TD><TD><NOBR>74*sqrt(14)/13 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;21.298665124713204810</TD></TR>
+<TR><TD><NOBR>Edge 35 (1): &nbsp;</NOBR></TD><TD><NOBR>687*sqrt(1873)/1261 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;23.578194132844900674</TD></TR>
+<TR><TD><NOBR>Edge 36 (1): &nbsp;</NOBR></TD><TD>24</TD></TR>
+<TR><TD><NOBR>Edge 37 (1): &nbsp;</NOBR></TD><TD><NOBR>37*sqrt(17)/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;30.510981629570688069</TD></TR>
+<TR><TD><NOBR>Edge 38 (1): &nbsp;</NOBR></TD><TD><NOBR>8*sqrt(17) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;32.984845004941284399</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>124667338125/79574144 &nbsp; &nbsp;</NOBR></TD><TD>1566.6814854458252168</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RegularHexagonalToroid13A.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Lajos Szilassi, personal communication</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

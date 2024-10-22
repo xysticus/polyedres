@@ -1,0 +1,133 @@
+<!-- File:   GyrateDeltoidalIcositetrahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Gyrate Deltoidal Icositetrahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='BilinskiDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Other.html"><B>Other Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='EqualEdgeTetracontahedron1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Gyrate Deltoidal Icositetrahedron
+
+	(24) SHORT EDGE = 2 * sqrt(10 - sqrt(2)) / 7
+	(24) LONG EDGE = sqrt(2 * (2 - sqrt(2)))
+	KITE LENGTH = 2 * sqrt(31 - 8 * sqrt(2)) / 7
+	KITE WIDTH = sqrt(2)
+	(8) INNER VERTEX RADIUS = (4 * sqrt(3) + sqrt(6)) / 7
+	(18) OUTER VERTEX RADIUS = sqrt(2)
+	EDGE-SCRIBED RADIUS = sqrt(2 * (2 + sqrt(2))) / 2
+	INRADIUS = sqrt(34 * (7 + 4 * sqrt(2))) / 17
+	VOLUME = 16 * (1 + 2 * sqrt(2)) / 7
+	DIHEDRAL ANGLE = acos(-(7 + 4 * sqrt(2)) / 17)
+		= 138.117959055512322254739639927 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:           8
+	MIRROR ROTATION SYMMETRIES:    8
+	ROTATION AXES:                 5 (1[4] + 4[2])
+	MIRROR PLANES:                 4
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  4-fold Antiprismatic (D4v)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="4 26 24">
+<INPUT type=hidden class=Constants value="0.7071067811865475244008443621048,
+0.773459080339013578400241246316,
+1.09383632135605431360096498526,
+1.41421356237309504880168872421">
+<!--
+	C0 = sqrt(2) / 2
+	C1 = (4 + sqrt(2)) / 7
+	C2 = (2 + 4 * sqrt(2)) / 7
+	C3 = sqrt(2)
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C3,0.0 0.0 -C3,C3 0.0 0.0,
+-C3 0.0 0.0,0.0 C3 0.0,0.0 -C3 0.0,0.0 C2 C1,0.0 -C2 C1,C2 0.0 C1,-C2 0.0 C1,
+1.0 0.0 -1.0,-1.0 0.0 -1.0,1.0 1.0 0.0,1.0 -1.0 0.0,-1.0 1.0 0.0,-1.0 -1.0 0.0,
+0.0 1.0 -1.0,0.0 -1.0 -1.0,C0 C0 1.0,C0 -C0 1.0,-C0 C0 1.0,-C0 -C0 1.0,
+C1 C1 -C1,C1 -C1 -C1,-C1 C1 -C1,-C1 -C1 -C1">
+<INPUT type=hidden class=Faces value="0 18 6 20 #,0 20 9 21 #,0 21 7 19 #,
+0 19 8 18 #,1 10 23 17 #,1 17 25 11 #,1 11 24 16 #,1 16 22 10 #,2 8 19 13 #,
+2 13 23 10 #,2 10 22 12 #,2 12 18 8 #,3 9 20 14 #,3 14 24 11 #,3 11 25 15 #,
+3 15 21 9 #,4 6 18 12 #,4 12 22 16 #,4 16 24 14 #,4 14 20 6 #,5 7 21 15 #,
+5 15 25 17 #,5 17 23 13 #,5 13 19 7 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Gyrate Deltoidal Icositetrahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>26 &nbsp;(8[3] + 6[4] + 12[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>24 &nbsp;(tri-equiangular kites)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>48 &nbsp;(24 short + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>4-fold Antiprismatic &nbsp;(D4v)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(7+4*sqrt(2))/17) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;138.117959056 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="ElongatedSquareGyrobicupola.html">Elongated Square Gyrobicupola</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length Elongated Square Gyrobicupola)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(10&#8722;sqrt(2))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.83718607580427642316</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(2&#8722;sqrt(2))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0823922002923939688</TD></TR>
+<TR><TD><NOBR>Kite Length: &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(31&#8722;8*sqrt(2))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2676924722362712507</TD></TR>
+<TR><TD><NOBR>Kite Width: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4142135623730950488</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (8): &nbsp;</NOBR></TD><TD><NOBR>(4*sqrt(3)+sqrt(6))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3396704247226696103</TD></TR>
+<TR><TD><NOBR>[4]-Vertex Radius (18): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4142135623730950488</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(2+sqrt(2)))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3065629648763765279</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(34*(7+4*sqrt(2)))/17 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2202629537976100741</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>16*(1+2*sqrt(2))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;8.7506905708484345088</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='GyrateDeltoidalIcositetrahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

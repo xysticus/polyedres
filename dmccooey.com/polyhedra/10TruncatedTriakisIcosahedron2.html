@@ -1,0 +1,192 @@
+<!-- File:   10TruncatedTriakisIcosahedron2.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>10-Truncated Triakis Icosahedron (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='6TruncatedPentakisDodecahedron2.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="TruncatedCatalan.html"><B>Truncated Catalan Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='TruncatedDisdyakisDodecahedron2.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	10-Truncated Triakis Icosahedron (canonical)
+
+	(60) SHORT EDGE = (15 - sqrt(5) + sqrt(2 * (65 - 19 * sqrt(5)))) / 22
+	(150) LONG EDGE = 1
+	RADIUS = sqrt(2 * (45 + 17*sqrt(5) + 4 * sqrt(2 * (25 + 11*sqrt(5))))) / 4
+	EDGE-SCRIBED RADIUS = (1 + sqrt(5) + 4 * sqrt(5 + 2 * sqrt(5))) / 4
+	VOLUME = 5 * (365 + 247*sqrt(5) + 2 * sqrt(2*(77285 + 33311*sqrt(5)))) / 44
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="16 140 72">
+<INPUT type=hidden class=Constants value="0.762865556059566803012834542424,
+0.951056516295153572116439333379,
+1.39365488447020512065367684917,
+1.45105651629515357211643933338,
+1.53884176858762670128514528802,
+2.18539891484612096230950299909,
+2.25498097166009987658865538962,
+2.30170732464719350429797983044,
+2.34785876296257412538743870520,
+2.77318416713859409147820895373,
+2.98989828488278027340158462140,
+3.25276384094234707641441916382,
+3.29891527925772769750387803858,
+3.64863585613030499724233223878,
+3.72424068343374766359464828711,
+3.88670053155020082667258399322">
+<!--
+	C0 = (10 + sqrt(10 * (5 - sqrt(5)))) / 20
+	C1 = sqrt(2 * (5 + sqrt(5))) / 4
+	C2 = (15 - sqrt(5) + 4 * sqrt(5 * (25 + 2 * sqrt(5)))) / 44
+	C3 = (2 + sqrt(2 * (5 + sqrt(5)))) / 4
+	C4 = sqrt(5 + 2 * sqrt(5)) / 2
+	C5 = (5 + 5 * sqrt(5) + 4 * sqrt(5 * (5 + 2 * sqrt(5)))) / 20
+	C6 = (5 + 7 * sqrt(5) + 2 * sqrt(10 * (85 + 31 * sqrt(5)))) / 44
+	C7 = (10 + sqrt(10 * (65 + 29 * sqrt(5)))) / 20
+	C8 = (1 + sqrt(5) + 2 * sqrt(5 + 2 * sqrt(5))) / 4
+	C9 = (5 + 5 * sqrt(5) + sqrt(10 * (85 + 31 * sqrt(5)))) / 20
+	C10 = (2 + sqrt(2 * (25 + 11 * sqrt(5)))) / 4
+	C11 = (5 + 4 * sqrt(5 * (5 + 2 * sqrt(5)))) / 10
+	C12 = (1 + sqrt(5) + sqrt(2 * (25 + 11 * sqrt(5)))) / 4
+	C13 = (10 + 3 * sqrt(5) + sqrt(10 * (205 + 89 * sqrt(5)))) / 22
+	C14 = (5 + 5 * sqrt(5) + 2 * sqrt(5 * (85 + 38 * sqrt(5)))) / 20
+	C15 = (1 + sqrt(5) + 4 * sqrt(5 + 2 * sqrt(5))) / 4
+-->
+<INPUT type=hidden class=Vertices value="0.5 0.0 C15,0.5 0.0 -C15,-0.5 0.0 C15,
+-0.5 0.0 -C15,C15 0.5 0.0,C15 -0.5 0.0,-C15 0.5 0.0,-C15 -0.5 0.0,0.0 C15 0.5,
+0.0 C15 -0.5,0.0 -C15 0.5,0.0 -C15 -0.5,C0 C1 C14,C0 C1 -C14,C0 -C1 C14,
+C0 -C1 -C14,-C0 C1 C14,-C0 C1 -C14,-C0 -C1 C14,-C0 -C1 -C14,C14 C0 C1,
+C14 C0 -C1,C14 -C0 C1,C14 -C0 -C1,-C14 C0 C1,-C14 C0 -C1,-C14 -C0 C1,
+-C14 -C0 -C1,C1 C14 C0,C1 C14 -C0,C1 -C14 C0,C1 -C14 -C0,-C1 C14 C0,
+-C1 C14 -C0,-C1 -C14 C0,-C1 -C14 -C0,0.0 C2 C13,0.0 C2 -C13,0.0 -C2 C13,
+0.0 -C2 -C13,C13 0.0 C2,C13 0.0 -C2,-C13 0.0 C2,-C13 0.0 -C2,C2 C13 0.0,
+C2 -C13 0.0,-C2 C13 0.0,-C2 -C13 0.0,C3 C4 C12,C3 C4 -C12,C3 -C4 C12,
+C3 -C4 -C12,-C3 C4 C12,-C3 C4 -C12,-C3 -C4 C12,-C3 -C4 -C12,C12 C3 C4,
+C12 C3 -C4,C12 -C3 C4,C12 -C3 -C4,-C12 C3 C4,-C12 C3 -C4,-C12 -C3 C4,
+-C12 -C3 -C4,C4 C12 C3,C4 C12 -C3,C4 -C12 C3,C4 -C12 -C3,-C4 C12 C3,
+-C4 C12 -C3,-C4 -C12 C3,-C4 -C12 -C3,0.0 C5 C11,0.0 C5 -C11,0.0 -C5 C11,
+0.0 -C5 -C11,C11 0.0 C5,C11 0.0 -C5,-C11 0.0 C5,-C11 0.0 -C5,C5 C11 0.0,
+C5 -C11 0.0,-C5 C11 0.0,-C5 -C11 0.0,C1 C8 C10,C1 C8 -C10,C1 -C8 C10,
+C1 -C8 -C10,-C1 C8 C10,-C1 C8 -C10,-C1 -C8 C10,-C1 -C8 -C10,C10 C1 C8,
+C10 C1 -C8,C10 -C1 C8,C10 -C1 -C8,-C10 C1 C8,-C10 C1 -C8,-C10 -C1 C8,
+-C10 -C1 -C8,C8 C10 C1,C8 C10 -C1,C8 -C10 C1,C8 -C10 -C1,-C8 C10 C1,
+-C8 C10 -C1,-C8 -C10 C1,-C8 -C10 -C1,C7 C4 C9,C7 C4 -C9,C7 -C4 C9,C7 -C4 -C9,
+-C7 C4 C9,-C7 C4 -C9,-C7 -C4 C9,-C7 -C4 -C9,C9 C7 C4,C9 C7 -C4,C9 -C7 C4,
+C9 -C7 -C4,-C9 C7 C4,-C9 C7 -C4,-C9 -C7 C4,-C9 -C7 -C4,C4 C9 C7,C4 C9 -C7,
+C4 -C9 C7,C4 -C9 -C7,-C4 C9 C7,-C4 C9 -C7,-C4 -C9 C7,-C4 -C9 -C7,C6 C6 C6,
+C6 C6 -C6,C6 -C6 C6,C6 -C6 -C6,-C6 C6 C6,-C6 C6 -C6,-C6 -C6 C6,-C6 -C6 -C6">
+<INPUT type=hidden class=Faces value="0 14 50 110 94 76 92 108 48 12 #,
+1 13 49 109 93 77 95 111 51 15 #,2 16 52 112 96 78 98 114 54 18 #,
+3 19 55 115 99 79 97 113 53 17 #,4 21 57 117 101 80 100 116 56 20 #,
+5 22 58 118 102 81 103 119 59 23 #,6 24 60 120 104 82 105 121 61 25 #,
+7 27 63 123 107 83 106 122 62 26 #,8 32 68 128 88 72 84 124 64 28 #,
+9 29 65 125 85 73 89 129 69 33 #,10 30 66 126 86 74 90 130 70 34 #,
+11 35 71 131 91 75 87 127 67 31 #,36 12 48 84 72 #,36 72 88 52 16 #,
+36 16 2 0 12 #,37 13 1 3 17 #,37 17 53 89 73 #,37 73 85 49 13 #,38 14 0 2 18 #,
+38 18 54 90 74 #,38 74 86 50 14 #,39 15 51 87 75 #,39 75 91 55 19 #,
+39 19 3 1 15 #,40 20 56 92 76 #,40 76 94 58 22 #,40 22 5 4 20 #,41 21 4 5 23 #,
+41 23 59 95 77 #,41 77 93 57 21 #,42 24 6 7 26 #,42 26 62 98 78 #,
+42 78 96 60 24 #,43 25 61 97 79 #,43 79 99 63 27 #,43 27 7 6 25 #,
+44 28 64 100 80 #,44 80 101 65 29 #,44 29 9 8 28 #,45 30 10 11 31 #,
+45 31 67 103 81 #,45 81 102 66 30 #,46 32 8 9 33 #,46 33 69 105 82 #,
+46 82 104 68 32 #,47 34 70 106 83 #,47 83 107 71 35 #,47 35 11 10 34 #,
+132 108 92 56 116 #,132 116 100 64 124 #,132 124 84 48 108 #,
+133 109 49 85 125 #,133 125 65 101 117 #,133 117 57 93 109 #,
+134 110 50 86 126 #,134 126 66 102 118 #,134 118 58 94 110 #,
+135 111 95 59 119 #,135 119 103 67 127 #,135 127 87 51 111 #,
+136 112 52 88 128 #,136 128 68 104 120 #,136 120 60 96 112 #,
+137 113 97 61 121 #,137 121 105 69 129 #,137 129 89 53 113 #,
+138 114 98 62 122 #,138 122 106 70 130 #,138 130 90 54 114 #,
+139 115 55 91 131 #,139 131 71 107 123 #,139 123 63 99 115 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+10-Truncated Triakis Icosahedron
+<BR>(canonical)
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="version 1" onClick="window.location.href='10TruncatedTriakisIcosahedron1.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>version 2</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>140 &nbsp;(20[3] + 60[3] + 60[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>72 &nbsp;(60 mirror-symmetric pentagons + 12 regular decagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>210 &nbsp;(60 short + 150 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on long edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD><NOBR>(15&#8722;sqrt(5)+sqrt(2*(65&#8722;19*sqrt(5))))/22 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.88519673635010309707</TD></TR>
+<TR><TD><NOBR>Long Edge (150): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Max Vertex Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(45+17*sqrt(5)+4*sqrt(2*(25+11*sqrt(5)))))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.9187295163040551007</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>(1+sqrt(5)+4*sqrt(5+2*sqrt(5)))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.8867005315502008267</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>5*(365+247*sqrt(5) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +2*sqrt(2*(77285+33311*sqrt(5))))/44 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;229.45459936431466091</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='10TruncatedTriakisIcosahedron2.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,130 @@
+<!-- File:   SimplestD5v_1.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Simplest Canonical Polyhedron with D5v Symmetry (1 of 2) (Pentagonal Antiprism)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='SimplestD4v_1.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Simplest.html"><B>Simplest Canonical Polyhedra of Each Symmetry Type</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SimplestD6v_1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Simplest Canonical Polyhedron with D5v Symmetry (1 of 2)
+	(Pentagonal Antiprism)
+
+	(20) EDGE = sqrt(5) - 1
+	RADIUS = sqrt(2 * (5 - sqrt(5))) / 2
+	MIDRADIUS = 1
+	PENTAGON CENTER RADIUS = sqrt(10 * (5 - sqrt(5))) / 10
+	TRIANGLE CENTER RADIUS = (sqrt(3) + sqrt(15)) / 6
+	VOLUME = 4 * sqrt(5) / 3
+	PENTAGON-TRIANGLE ANGLE = acos(-sqrt(15 * (5 - 2 * sqrt(5))) / 15)
+		= 100.812316963571706291284944774 degrees
+	TRIANGLE-TRIANGLE ANGLE = acos(-sqrt(5) / 3)
+		= 138.189685104221401934142083269 degrees
+
+	ROTATION SYMMETRIES:          10
+	MIRROR ROTATION SYMMETRIES:   10
+	ROTATION AXES:                 6 (1[5] + 5[2])
+	MIRROR PLANES:                 5
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  5-fold Antiprismatic (D5v)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="1 10 12">
+<INPUT type=hidden class=Constants value="0.618033988749894848204586834366">
+<!--
+	C0 = (sqrt(5) - 1) / 2
+-->
+<INPUT type=hidden class=Vertices value="C0 0.0 1.0,C0 0.0 -1.0,-C0 0.0 1.0,
+-C0 0.0 -1.0,0.0 1.0 C0,0.0 1.0 -C0,0.0 -1.0 C0,0.0 -1.0 -C0,1.0 C0 0.0,
+-1.0 -C0 0.0">
+<INPUT type=hidden class=Faces value="0 6 7 1 8 #,2 4 5 3 9 #,0 4 2 #,0 2 6 #,
+6 2 9 #,6 9 7 #,7 9 3 #,7 3 1 #,1 3 5 #,1 5 8 #,8 5 4 #,8 4 0 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Simplest Canonical Polyhedron with D5v Symmetry
+<BR><NOBR>(Pentagonal Antiprism)</NOBR>
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>(1 of 2)</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="(2 of 2)" onClick="window.location.href='SimplestD5v_2.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>10 &nbsp;(10[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>12 &nbsp;(10 equilateral triangles + 2 regular pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>20 &nbsp;(all same length)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>5-fold Antiprismatic &nbsp;(D5v)</NOBR></TD></TR>
+<TR><TD><NOBR>Pentagon-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(15*(5&#8722;2*sqrt(5)))/15) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;100.812316964 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Triangle-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(5)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;138.189685104 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="SimplestD5v_2.html">Simplest D5v (2 of 2)</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on midscribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge Length: &nbsp;</NOBR></TD><TD><NOBR>sqrt(5)&#8722;1 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2360679774997896964</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(5&#8722;sqrt(5)))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1755705045849462583</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Pentagon Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(10*(5&#8722;sqrt(5)))/10 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.52573111211913360603</TD></TR>
+<TR><TD><NOBR>Triangle Center Radius: &nbsp;</NOBR></TD><TD><NOBR>(sqrt(3)+sqrt(15))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.934172358962715696451</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>4*sqrt(5)/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.9814239699997195952</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SimplestD5v_1.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

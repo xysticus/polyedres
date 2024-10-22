@@ -1,0 +1,158 @@
+<!-- File:   OrthokisPropelloCube.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Orthokis Propello Cube (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RhexpropelloDodecahedron1.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Derived.html"><B>Derived Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='OrthotruncatedPropelloOctahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Orthokis Propello Cube (canonical)
+
+	(24) SHORT EDGE = 0.516840544318016673542149537828
+		= square-root of a root of the polynomial:
+		1369*(x^5) - 11340*(x^4) + 39236*(x^3) - 62876*(x^2) + 30048*x - 4232
+	(24) MEDIUM EDGE = 0.552232657999035737483217511953
+		= square-root of a root of the polynomial:
+		25*(x^5) - 604*(x^4) + 2016*(x^3) - 4288*(x^2) + 2816*x - 512
+	(36) LONG EDGE = 0.722217626811618828601256428701
+		= square-root of a root of the polynomial:
+		(x^5) - 4*(x^4) + 336*(x^3) - 1728*(x^2) + 1792*x - 512
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 4.05390745760439928282117225941
+		= square-root of a root of the polynomial:
+		34225*(x^5) - 58879232*(x^4) + 58527498240*(x^3)
+		- 11031888396288*(x^2) + 240385821507584*x - 1226552599642112
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="5 38 48">
+<INPUT type=hidden class=Constants value="0.169629045867806101469209015384,
+0.481689876410830431842005085217,
+0.587800511503717482899570872621,
+0.932523685962264616959683638993,
+1.01205354206826040337495494296">
+<!--
+	C0 = 0.169629045867806101469209015384
+		= square-root of a root of the polynomial:
+		2*(x^5) + 32*(x^4) + 734*(x^3) - 412*(x^2) + 46*x - 1
+	C1 = 0.481689876410830431842005085217
+		= square-root of a root of the polynomial:
+		2*(x^5) - 36*(x^4) + 334*(x^3) - 568*(x^2) + 222*x - 25
+	C2 = 0.587800511503717482899570872621
+		= square-root of a root of the polynomial:
+		50*(x^5) - 476*(x^4) + 414*(x^3) - 132*(x^2) + 18*x - 1
+	C3 = 0.932523685962264616959683638993
+		= square-root of a root of the polynomial:
+		2*(x^5) - 8*(x^4) + 54*(x^3) - 80*(x^2) + 34*x - 1
+	C4 = 1.01205354206826040337495494296
+		= square-root of a root of the polynomial:
+		2738*(x^5) - 11284*(x^4) + 16802*(x^3) - 11164*(x^2) + 3436*x - 529
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C4,0.0 0.0 -C4,C4 0.0 0.0,
+-C4 0.0 0.0,0.0 C4 0.0,0.0 -C4 0.0,C1 C0 C3,C1 -C0 -C3,-C1 -C0 C3,-C1 C0 -C3,
+C3 C1 C0,C3 -C1 -C0,-C3 -C1 C0,-C3 C1 -C0,C0 C3 C1,C0 -C3 -C1,-C0 -C3 C1,
+-C0 C3 -C1,C0 -C1 C3,C0 C1 -C3,-C0 C1 C3,-C0 -C1 -C3,C3 -C0 C1,C3 C0 -C1,
+-C3 C0 C1,-C3 -C0 -C1,C1 -C3 C0,C1 C3 -C0,-C1 C3 C0,-C1 -C3 -C0,C2 C2 C2,
+C2 C2 -C2,C2 -C2 C2,C2 -C2 -C2,-C2 C2 C2,-C2 C2 -C2,-C2 -C2 C2,-C2 -C2 -C2">
+<INPUT type=hidden class=Faces value="30 6 22 10 #,30 10 27 14 #,30 14 20 6 #,
+31 19 17 27 #,31 27 10 23 #,31 23 7 19 #,32 18 16 26 #,32 26 11 22 #,
+32 22 6 18 #,33 7 23 11 #,33 11 26 15 #,33 15 21 7 #,34 20 14 28 #,
+34 28 13 24 #,34 24 8 20 #,35 9 25 13 #,35 13 28 17 #,35 17 19 9 #,
+36 8 24 12 #,36 12 29 16 #,36 16 18 8 #,37 21 15 29 #,37 29 12 25 #,
+37 25 9 21 #,0 6 20 #,0 20 8 #,0 8 18 #,0 18 6 #,1 7 21 #,1 21 9 #,1 9 19 #,
+1 19 7 #,2 10 22 #,2 22 11 #,2 11 23 #,2 23 10 #,3 12 24 #,3 24 13 #,3 13 25 #,
+3 25 12 #,4 14 27 #,4 27 17 #,4 17 28 #,4 28 14 #,5 15 26 #,5 26 16 #,
+5 16 29 #,5 29 15 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Orthokis Propello Cube (canonical)
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>canonical form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="biscribed form" onClick="window.location.href='BiscribedOrthokisPropelloCube.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>38 &nbsp;(8[3] + 6[4] + 24[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>48 &nbsp;(24 isosceles triangles + 24 tri-equiangular kites)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>84 &nbsp;(24 short + 24 medium + 36 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="OrthotruncatedPropelloOctahedron.html">Orthotruncated Propello Octahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on circumscribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[1369*(x^5)&#8722;11340*(x^4) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +39236*(x^3)&#8722;62876*(x^2)+30048*x&#8722;4232]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.51684054431801667354</TD></TR>
+<TR><TD><NOBR>Medium Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[25*(x^5)&#8722;604*(x^4) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +2016*(x^3)&#8722;4288*(x^2)+2816*x&#8722;512]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.55223265799903573748</TD></TR>
+<TR><TD><NOBR>Long Edge (36): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[(x^5)&#8722;4*(x^4) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +336*(x^3)&#8722;1728*(x^2)+1792*x&#8722;512]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.72221762681161882860</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(root[34225*(x^5)&#8722;58879232*(x^4) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +58527498240*(x^3)&#8722;11031888396288*(x^2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +240385821507584*x&#8722;1226552599642112]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.0539074576043992828</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='OrthokisPropelloCube.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

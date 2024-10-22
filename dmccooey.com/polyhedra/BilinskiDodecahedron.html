@@ -1,0 +1,124 @@
+<!-- File:   BilinskiDodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Bilinski's Dodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RhombicIcosahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Other.html"><B>Other Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='GyrateDeltoidalIcositetrahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Bilinski's Dodecahedron
+
+	(24) EDGE = 1
+	RHOMBUS LENGTH = sqrt(10 * (5 + sqrt(5))) / 5
+	RHOMBUS WIDTH = sqrt(10 * (5 - sqrt(5))) / 5
+	VOLUME = 4 * sqrt(5 + 2 * sqrt(5)) / 5
+	DIHEDRAL ANGLE 1 = acos((sqrt(5) - 1) / 4) = 72 degrees
+	DIHEDRAL ANGLE 2 = acos(-(sqrt(5) - 1) / 4) = 108 degrees
+	DIHEDRAL ANGLE 3 = acos(-(1 + sqrt(5)) / 4) = 144 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:           4
+	MIRROR ROTATION SYMMETRIES:    4
+	ROTATION AXES:                 3 (3[2])
+	MIRROR PLANES:                 3
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  2-fold Prismatic (D2h)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="3 14 12">
+<INPUT type=hidden class=Constants value="0.525731112119133606025669084848,
+0.850650808352039932181540497063,
+1.37638192047117353820720958191">
+<!--
+	C0 = sqrt(10 * (5 - sqrt(5))) / 10
+	C1 = sqrt(10 * (5 + sqrt(5))) / 10
+	C2 = sqrt(5 * (5 + 2 * sqrt(5))) / 5
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C2,0.0 0.0 -C2,C1 -C0 0.0,
+-C1 C0 0.0,C1 C0 0.0,-C1 -C0 0.0,C1 0.0 C1,C1 0.0 -C1,0.0 -C0 C0,0.0 -C0 -C0,
+0.0 C0 C0,0.0 C0 -C0,-C1 0.0 C1,-C1 0.0 -C1">
+<INPUT type=hidden class=Faces value="6 0 8 2 #,6 2 7 4 #,6 4 10 0 #,9 1 7 2 #,
+9 2 8 5 #,9 5 13 1 #,11 1 13 3 #,11 3 10 4 #,11 4 7 1 #,12 0 10 3 #,
+12 3 13 5 #,12 5 8 0 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="612372436 353553391 612372436 353553391">
+</DIV>
+<BR>
+<CENTER>
+Bilinski's Dodecahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>14 &nbsp;(4[3] + 4[3] + 4[4] + 2[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>12 &nbsp;(rhombi)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>24 &nbsp;(equal length)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>2-fold Prismatic &nbsp;(D2h)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 1 (4): &nbsp;</NOBR></TD><TD><NOBR>acos((sqrt(5)&#8722;1)/4) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>72 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 2 (8): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(sqrt(5)&#8722;1)/4) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>108 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 3 (12): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(1+sqrt(5))/4) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>144 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center>The dual has the same polyhedral graph as the <A href="Cuboctahedron.html">Cuboctahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Rhombus Length: &nbsp;</NOBR></TD><TD><NOBR>sqrt(10*(5+sqrt(5)))/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.7013016167040798644</TD></TR>
+<TR><TD><NOBR>Rhombus Width: &nbsp;</NOBR></TD><TD><NOBR>sqrt(10*(5&#8722;sqrt(5)))/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0514622242382672121</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>4*sqrt(5+2*sqrt(5))/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.4621468297402027221</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='BilinskiDodecahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Stanko Bilinski, &Uuml;ber die Rhombenisoeder, <I>Glasnik Mat.-Fiz.<BR>Astronom. Dru&scaron;tvo Mat. Fiz. Hrvatske Ser. II</I> <B>15</B> (1960), 251-262.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,151 @@
+<!-- File:   SimplestD7h_2.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Simplest Canonical Polyhedron with D7h Symmetry (2 of 2) (Heptagonal Prism)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='SimplestD6h_1.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Simplest.html"><B>Simplest Canonical Polyhedra of Each Symmetry Type</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SimplestD8h_1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Simplest Canonical Polyhedron with D7h Symmetry (2 of 2) (Heptagonal Prism)
+
+	(21) EDGE = 0.867767478235116240951536665697
+		= square-root of a root of the polynomial:  (x^3) - 7*(x^2) + 14*x - 7
+	RADIUS = 1.09007114404089847677677121990
+		= square-root of a root of the polynomial:
+			64*(x^3) - 304*(x^2) + 472*x - 239
+	MIDRADIUS = 1
+	HEPTAGON CENTER RADIUS = 0.433883739117558120475768332848
+		= square-root of a root of the polynomial:
+			64*(x^3) - 112*(x^2) + 56*x - 7
+	SQUARE CENTER RADIUS = 0.900968867902419126236102319507
+		= root of the polynomial:  8*(x^3) - 4*(x^2) - 4*x + 1
+		= cos(pi/7)
+	VOLUME = 2.37456776881136652681519914254
+		= root of the polynomial:  64*(x^3) - 1372*x + 2401
+	HEPTAGON-SQUARE ANGLE = acos(0) = 90 degrees
+	SQUARE-SQUARE ANGLE = acos(-0.623489801858733530525004884004)
+		= acos(-root[8*(x^3) + 4*(x^2) - 4*x - 1]) = 900/7 degrees
+
+	ROTATION SYMMETRIES:          14
+	MIRROR ROTATION SYMMETRIES:   14
+	ROTATION AXES:                 8 (1[7] + 7[2])
+	MIRROR PLANES:                 8
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  7-fold Prismatic (D7h)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="6 14 9">
+<INPUT type=hidden class=Constants value="0.222520933956314404288902564497,
+0.433883739117558120475768332848,
+0.623489801858733530525004884004,
+0.781831482468029808708444526674,
+0.900968867902419126236102319507,
+0.974927912181823607018131682994">
+<!--
+	C0 = root of the polynomial:  8*(x^3) - 4*(x^2) - 4*x + 1
+		= sin(pi/14)
+	C1 = square-root of a root of the polynomial:
+		64*(x^3) - 112*(x^2) + 56*x - 7
+	C2 = root of the polynomial:  8*(x^3) + 4*(x^2) - 4*x - 1
+	C3 = square-root of a root of the polynomial:
+		64*(x^3) - 112*(x^2) + 56*x - 7
+	C4 = root of the polynomial:  8*(x^3) - 4*(x^2) - 4*x + 1
+		= cos(pi/7)
+	C5 = square-root of a root of the polynomial:
+		64*(x^3) - 112*(x^2) + 56*x - 7
+-->
+<INPUT type=hidden class=Vertices value="C5 -C0 C1,C5 -C0 -C1,-C5 -C0 C1,
+-C5 -C0 -C1,C3 C2 C1,C3 C2 -C1,-C3 C2 C1,-C3 C2 -C1,C1 -C4 C1,C1 -C4 -C1,
+-C1 -C4 C1,-C1 -C4 -C1,0.0 1.0 C1,0.0 1.0 -C1">
+<INPUT type=hidden class=Faces value="0 4 12 6 2 10 8 #,1 9 11 3 7 13 5 #,
+0 1 5 4 #,4 5 13 12 #,12 13 7 6 #,6 7 3 2 #,2 3 11 10 #,10 11 9 8 #,8 9 1 0 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Simplest Canonical Polyhedron with D7h Symmetry
+<BR><NOBR>(Heptagonal Prism)</NOBR>
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="(1 of 2)" onClick="window.location.href='SimplestD7h_1.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>(2 of 2)</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>14 &nbsp;(14[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>9 &nbsp;(7 squares + 2 regular heptagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>21 &nbsp;(all same length)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>7-fold Prismatic &nbsp;(D7h)</NOBR></TD></TR>
+<TR><TD><NOBR>Heptagon-Square Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(0) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>90 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Square-Square Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(-root[8*(x^3)+4*(x^2)&#8722;4*x&#8722;1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = 900/7 degrees &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;128.571428571 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="SimplestD7h_1.html">Simplest D7h (1 of 2)</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on midscribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge Length: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[(x^3)&#8722;7*(x^2)+14*x&#8722;7]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.867767478235116240952</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[64*(x^3)&#8722;304*(x^2)+472*x&#8722;239]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0900711440408984768</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Heptagon Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[64*(x^3)&#8722;112*(x^2)+56*x&#8722;7]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.43388373911755812048</TD></TR>
+<TR><TD><NOBR>Square Center Radius: &nbsp;</NOBR></TD><TD><NOBR>root[8*(x^3)&#8722;4*(x^2)&#8722;4*x+1] = cos(&#960;/7) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.90096886790241912624</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>root[64*(x^3)&#8722;1372*x+2401] &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.3745677688113665268</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SimplestD7h_2.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

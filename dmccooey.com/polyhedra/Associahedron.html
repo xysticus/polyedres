@@ -1,0 +1,140 @@
+<!-- File:   Associahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Associahedron (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='CanonicalJoinedTruncatedIcosahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Other.html"><B>Other Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='Schonhardt.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Associahedron (canonical)
+
+	(15) SHORT EDGE = 3 * (2 - sqrt(2))
+	(6) LONG EDGE = 2
+	RADIUS = 3 * sqrt(2) - 2
+	INRADIUS = (3 * sqrt(42) - 2 * sqrt(21)) / 7
+	VOLUME = 3 * (68 * sqrt(3) - 45 * sqrt(6))
+	PENTAGON-PENTAGON ANGLE = acos(-1/7)
+		= 98.2132107017381887890349494803 degrees
+	PENTAGON-SQUARE ANGLE = acos(-sqrt(7) / 7)
+		= 112.207654298596487487055620026 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:           6
+	MIRROR ROTATION SYMMETRIES:    6
+	ROTATION AXES:                 4 (1[3] + 3[2])
+	MIRROR PLANES:                 4
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  3-fold Prismatic (D3h)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="8 14 9">
+<INPUT type=hidden class=Constants value="0.210132999037012560241033429047,
+0.866025403784438646763723170753,
+0.878679656440357426797466913685453,
+1.24264068711928514640506617263,
+1.73205080756887729352744634151,
+1.942183806605889853768479770553,
+2.12132034355964257320253308631,
+2.24264068711928514640506617263">
+<!--
+	C0 = (3 * sqrt(6) - 4 * sqrt(3)) / 2
+	C1 = sqrt(3) / 2
+	C2 = 3 * (2 - sqrt(2)) / 2
+	C3 = 3 * (sqrt(2) - 1)
+	C4 = sqrt(3)
+	C5 = (3 * sqrt(6) - 2 * sqrt(3)) / 2
+	C6 = 3 * sqrt(2) / 2
+	C7 = 3 * sqrt(2) - 2
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C7,0.0 0.0 -C7,0.0 C4 C3,
+0.0 C4 -C3,1.5 -C1 C3,1.5 -C1 -C3,-1.5 -C1 C3,-1.5 -C1 -C3,C6 C0 0.0,
+-C6 C0 0.0,C3 C4 0.0,-C3 C4 0.0,C2 -C5 0.0,-C2 -C5 0.0">
+<INPUT type=hidden class=Faces value="0 2 11 9 6 #,0 4 8 10 2 #,0 6 13 12 4 #,
+1 3 10 8 5 #,1 5 12 13 7 #,1 7 9 11 3 #,2 10 3 11 #,4 12 5 8 #,6 9 7 13 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="1 -1 0 0">
+</DIV>
+<BR>
+<CENTER>
+Associahedron (canonical)
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>14 &nbsp;(2[3] + 6[3] + 6[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>9 &nbsp;(3 squares + 6 mirror-symmetric pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>21 &nbsp;(15 short + 6 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>3-fold Prismatic &nbsp;(D3h)</NOBR></TD></TR>
+<TR><TD><NOBR>Pentagon-Pentagon Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;1/7) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;98.213210702 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Pentagon-Square Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(7)/7) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;112.207654299 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on long edge length = 2)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (15): &nbsp;</NOBR></TD><TD><NOBR>3*(2&#8722;sqrt(2)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.7573593128807148536</TD></TR>
+<TR><TD><NOBR>Long Edge (6): &nbsp;</NOBR></TD><TD>2</TD></TR>
+<TR><TD><NOBR>5-5-5 Vertex Radius (2): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(2)&#8722;2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.2426406871192851464</TD></TR>
+<TR><TD><NOBR>4-5-5 Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(5&#8722;3*sqrt(2))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.1317025771163033244</TD></TR>
+<TR><TD><NOBR>Pentagon Plane Radius: &nbsp;</NOBR></TD><TD><NOBR>(3*sqrt(42)&#8722;2*sqrt(21))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4681529579017000971</TD></TR>
+<TR><TD><NOBR>Square Plane Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(3) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.73205080756887729353</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>(3*sqrt(6)&#8722;2*sqrt(3))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.9421838066058898538</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>3*(68*sqrt(3)&#8722;45*sqrt(6)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;22.657249468321924623</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='Associahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>James Dillon Stasheff, Homotopy Associativity of H-spaces, I and II,<BR><I>Transactions of the American Mathematical Society</I> <B>108</B> (1963), 275-312.</TD></TR>
+<TR><TD></TD><TD valign=top>[2]</TD><TD><A href=http://www.cs.bsu.edu/homepages/fischer/math215/associahedron.html>The 3-Dimensional Associahedron</A></TD></TR>
+<TR><TD></TD><TD valign=top>[3]</TD><TD><A href=http://mathworld.wolfram.com/CanonicalPolyhedron.html>Canonical Polyhedron (Wolfram MathWorld)</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

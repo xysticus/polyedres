@@ -1,0 +1,182 @@
+<!-- File:   TetrahedrallyExpandedTetratedDodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2019 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Tetrahedrally Expanded Tetrated Dodecahedron (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='TetratedDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Derived.html"><B>Derived Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='PyritohedrallyExpandedDodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Tetrahedrally Expanded Tetrated Dodecahedron (canonical)
+
+	(12) EDGE 1 = 0.472900193937858391583052586316
+		= square-root of a root of the polynomial:  19321*(x^5)
+		- 462520*(x^4) + 3777760*(x^3) - 10985984*(x^2) + 2355456*x - 18432
+	(24) EDGE 2 = 0.498933651347471300918317557810
+		= square-root of a root of the polynomial:
+		126765081*(x^5) - 1063106802*(x^4) + 1727599168*(x^3)
+		- 1168221120*(x^2) + 350717696*x - 37601792
+	(24) EDGE 3 = 0.524967108757084210253582529303
+		= square-root of a root of the polynomial:  6561*(x^5)
+		- 47088*(x^4) + 122464*(x^3) - 194304*(x^2) + 164096*x - 32768
+	(24) EDGE 4 = 0.528925312406328946788891824120
+		= square-root of a root of the polynomial:
+		112593321*(x^5) - 1016019234*(x^4) + 3416454208*(x^3)
+		- 5223418624*(x^2) + 3365978112*x - 601628672
+	(12) EDGE 5 = 0.532883516055573683324201118937
+		= square-root of a root of the polynomial:  17161*(x^5)
+		- 177208*(x^4) + 850144*(x^3) - 2451968*(x^2) + 696576*x - 18432
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 3.99029154679329980115923281014
+		= square-root of a root of the polynomial:
+		7505060837136060780851939630552102828409*(x^5)
+		- 1104516889491051267767578509695441647695936*(x^4)
+		+ 46863437421276051139020925679023977587933184*(x^3)
+		- 908967127902291044540988092232192105356722176*(x^2)
+		+ 11147078069157624172197515259013696791181787136*x
+		- 72906751053915098769195449566250636645106712576
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          12
+	MIRROR ROTATION SYMMETRIES:   12
+	ROTATION AXES:                 7 (4[3] + 3[2])
+	MIRROR PLANES:                 6
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Full Tetrahedral (Td)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="6 48 50">
+<INPUT type=hidden class=Constants value="0.31927454038154877553250499412502,
+0.371207802502030041388840818731,
+0.460481511191624127053032785536,
+0.696080088166975400570379096826,
+0.794872445149517248826949263391,
+0.964936466136919778122114863406">
+<!--
+	C0 = 0.31927454038154877553250499412502
+		= square-root of a root of the polynomial:  154449*(x^5)
+		- 977889*(x^4) + 2372272*(x^3) - 2462176*(x^2) + 651776*x - 43264
+	C1 = 0.371207802502030041388840818731
+		= square-root of a root of the polynomial:
+		6561*(x^5) - 23544*(x^4) + 30616*(x^3) - 24288*(x^2) + 10256*x - 1024
+	C2 = 0.460481511191624127053032785536
+		= square-root of a root of the polynomial:  173889*(x^5)
+		- 486489*(x^4) + 481168*(x^3) - 204504*(x^2) + 38768*x - 2704
+	C3 = 0.696080088166975400570379096826
+		= square-root of a root of the polynomial:
+		154449*(x^5) - 96537*(x^4) - 992*(x^3) + 4488*(x^2) + 560*x - 16
+	C4 = 0.794872445149517248826949263391
+		= square-root of a root of the polynomial:  173889*(x^5)
+		- 937137*(x^4) + 1672048*(x^3) - 1436320*(x^2) + 594944*x - 92416
+	C5 = 0.964936466136919778122114863406
+		= square-root of a root of the polynomial:
+		6561*(x^5) - 21033*(x^4) + 26176*(x^3) - 14904*(x^2) + 3248*x - 16
+-->
+<INPUT type=hidden class=Vertices value="C1 0.0 C5,C1 0.0 -C5,-C1 0.0 C5,
+-C1 0.0 -C5,C5 C1 0.0,C5 -C1 0.0,-C5 C1 0.0,-C5 -C1 0.0,0.0 C5 C1,0.0 C5 -C1,
+0.0 -C5 C1,0.0 -C5 -C1,0.0 C1 C5,0.0 C1 -C5,0.0 -C1 C5,0.0 -C1 -C5,C5 0.0 C1,
+C5 0.0 -C1,-C5 0.0 C1,-C5 0.0 -C1,C1 C5 0.0,C1 -C5 0.0,-C1 C5 0.0,-C1 -C5 0.0,
+C2 -C2 C4,C2 C2 -C4,-C2 C2 C4,-C2 -C2 -C4,C4 -C2 C2,C4 C2 -C2,-C4 C2 C2,
+-C4 -C2 -C2,C2 -C4 C2,C2 C4 -C2,-C2 C4 C2,-C2 -C4 -C2,C3 C0 C3,C3 -C0 -C3,
+-C3 -C0 C3,-C3 C0 -C3,C3 C3 C0,C3 -C3 -C0,-C3 -C3 C0,-C3 C3 -C0,C0 C3 C3,
+C0 -C3 -C3,-C0 -C3 C3,-C0 C3 -C3">
+<INPUT type=hidden class=Faces value="0 24 28 16 36 #,1 25 29 17 37 #,
+2 26 30 18 38 #,3 27 31 19 39 #,4 29 33 20 40 #,5 28 32 21 41 #,
+6 30 34 22 43 #,7 31 35 23 42 #,8 34 26 12 44 #,9 33 25 13 47 #,
+10 32 24 14 46 #,11 35 27 15 45 #,0 12 2 14 #,1 15 3 13 #,4 16 5 17 #,
+6 19 7 18 #,8 20 9 22 #,10 23 11 21 #,0 36 44 12 #,1 37 45 15 #,2 38 46 14 #,
+3 39 47 13 #,4 40 36 16 #,5 41 37 17 #,6 43 39 19 #,7 42 38 18 #,8 44 40 20 #,
+9 47 43 22 #,10 46 42 23 #,11 45 41 21 #,36 40 44 #,37 41 45 #,38 42 46 #,
+39 43 47 #,24 32 28 #,25 33 29 #,26 34 30 #,27 35 31 #,0 14 24 #,1 13 25 #,
+2 12 26 #,3 15 27 #,4 17 29 #,5 16 28 #,6 18 30 #,7 19 31 #,8 22 34 #,
+9 20 33 #,10 21 32 #,11 23 35 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Tetrahedrally Expanded Tetrated Dodecahedron (canonical)
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>canonical form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="equal-edge form" onClick="window.location.href='EqualEdgeTetrahedrallyExpandedTetratedDodecahedron.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>48 &nbsp;(24[4] + 12[4] + 12[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>50 &nbsp;({4 * 2} equilateral triangles + 12 isosceles triangles</NOBR><BR><NOBR> &nbsp; &nbsp; + 6 squares + 12 isosceles trapezoids</NOBR><BR><NOBR> &nbsp; &nbsp; + 12 mirror-symmetric pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>96 &nbsp;(5 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Tetrahedral &nbsp;(Td)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[19321*(x^5)&#8722;462520*(x^4)</NOBR><BR><NOBR> &nbsp; &nbsp;+3777760*(x^3)&#8722;10985984*(x^2)</NOBR><BR><NOBR> &nbsp; &nbsp;+2355456*x&#8722;18432]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.47290019393785839158</TD></TR>
+<TR><TD><NOBR>Edge 2 (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[126765081*(x^5)</NOBR><BR><NOBR> &nbsp; &nbsp;&#8722;1063106802*(x^4)</NOBR><BR><NOBR> &nbsp; &nbsp;+1727599168*(x^3)</NOBR><BR><NOBR> &nbsp; &nbsp;&#8722;1168221120*(x^2)</NOBR><BR><NOBR> &nbsp; &nbsp;+350717696*x&#8722;37601792]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.49893365134747130092</TD></TR>
+<TR><TD><NOBR>Edge 3 (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[6561*(x^5)&#8722;47088*(x^4)</NOBR><BR><NOBR> &nbsp; &nbsp;+122464*(x^3)&#8722;194304*(x^2)</NOBR><BR><NOBR> &nbsp; &nbsp;+164096*x&#8722;32768]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.524967108757084210254</TD></TR>
+<TR><TD><NOBR>Edge 4 (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[112593321*(x^5)</NOBR><BR><NOBR> &nbsp; &nbsp;&#8722;1016019234*(x^4)</NOBR><BR><NOBR> &nbsp; &nbsp;+3416454208*(x^3)</NOBR><BR><NOBR> &nbsp; &nbsp;&#8722;5223418624*(x^2)</NOBR><BR><NOBR> &nbsp; &nbsp;+3365978112*x&#8722;601628672]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.52892531240632894679</TD></TR>
+<TR><TD><NOBR>Edge 5 (12): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[17161*(x^5)&#8722;177208*(x^4)</NOBR><BR><NOBR> &nbsp; &nbsp;+850144*(x^3)&#8722;2451968*(x^2)</NOBR><BR><NOBR> &nbsp; &nbsp;+696576*x&#8722;18432]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.53288351605557368332</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(root[5th-order polynomial]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.9902915467932998012</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='TetrahedrallyExpandedTetratedDodecahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href="http://www.orchidpalms.com/polyhedra/acrohedra/nearmiss/Tetrated Dodecahedra.html">Jim McNeill: Near Misses based on dodecahedra</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

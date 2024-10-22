@@ -1,0 +1,152 @@
+<!-- File:   GreatIcosicosidodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Great Icosicosidodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='SmallIcosicosidodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="SelfIntersectingQuasiQuasiRegular.html"><B>Self-Intersecting Quasi-Quasi-Regular Polyhedra</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='Rhombidodecadodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Great Icosicosidodecahedron
+
+	(120) EDGE = 1
+	RADIUS = sqrt(2 * (17 - 3 * sqrt(5))) / 4
+	MIDRADIUS = sqrt(6 * (5 - sqrt(5))) / 4
+	HEXAGON CENTER RADIUS = (sqrt(15) - sqrt(3)) / 4
+	PENTAGON CENTER RADIUS = sqrt(10 * (65 - 19 * sqrt(5))) / 20
+	TRIANGLE CENTER RADIUS = (9 * sqrt(3) - sqrt(15)) / 12
+	HEXAGON-PENTAGON ANGLE = acos(0.187592474085079899860139346908)
+		= acos(sqrt(15 * (5 - 2 * sqrt(5))) / 15)
+		= 79.18768303642829370871505522552 degrees
+	HEXAGON-TRIANGLE ANGLE = acos(0.745355992499929898803057889577)
+		= acos(sqrt(5) / 3) = 318.189685104221401934142083269 degrees
+
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="4 60 52">
+<INPUT type=hidden class=Constants value="0.190983005625052575897706582817,
+0.618033988749894848204586834366,
+0.809016994374947424102293417183,
+1.11803398874989484820458683437">
+<!--
+	C0 = (3 - sqrt(5)) / 4
+	C1 = (sqrt(5) - 1) / 2
+	C2 = (1 + sqrt(5)) / 4
+	C3 = sqrt(5) / 2
+-->
+<INPUT type=hidden class=Vertices value="0.0 C0 C3,0.0 C0 -C3,0.0 -C0 C3,
+0.0 -C0 -C3,C3 0.0 C0,C3 0.0 -C0,-C3 0.0 C0,-C3 0.0 -C0,C0 C3 0.0,C0 -C3 0.0,
+-C0 C3 0.0,-C0 -C3 0.0,C0 0.5 1.0,C0 0.5 -1.0,C0 -0.5 1.0,C0 -0.5 -1.0,
+-C0 0.5 1.0,-C0 0.5 -1.0,-C0 -0.5 1.0,-C0 -0.5 -1.0,1.0 C0 0.5,1.0 C0 -0.5,
+1.0 -C0 0.5,1.0 -C0 -0.5,-1.0 C0 0.5,-1.0 C0 -0.5,-1.0 -C0 0.5,-1.0 -C0 -0.5,
+0.5 1.0 C0,0.5 1.0 -C0,0.5 -1.0 C0,0.5 -1.0 -C0,-0.5 1.0 C0,-0.5 1.0 -C0,
+-0.5 -1.0 C0,-0.5 -1.0 -C0,0.5 C1 C2,0.5 C1 -C2,0.5 -C1 C2,0.5 -C1 -C2,
+-0.5 C1 C2,-0.5 C1 -C2,-0.5 -C1 C2,-0.5 -C1 -C2,C2 0.5 C1,C2 0.5 -C1,
+C2 -0.5 C1,C2 -0.5 -C1,-C2 0.5 C1,-C2 0.5 -C1,-C2 -0.5 C1,-C2 -0.5 -C1,
+C1 C2 0.5,C1 C2 -0.5,C1 -C2 0.5,C1 -C2 -0.5,-C1 C2 0.5,-C1 C2 -0.5,-C1 -C2 0.5,
+-C1 -C2 -0.5">
+<INPUT type=hidden class=Faces value="0 42 11 55 5 44 #,0 48 7 59 9 38 #,
+1 39 9 58 6 49 #,1 45 4 54 11 43 #,2 36 8 57 7 50 #,2 46 5 53 10 40 #,
+3 41 10 52 4 47 #,3 51 6 56 8 37 #,15 13 29 44 46 31 #,15 23 22 14 58 59 #,
+18 16 32 49 51 34 #,18 26 27 19 55 54 #,20 21 13 57 56 12 #,
+20 28 32 24 42 38 #,25 24 16 52 53 17 #,25 33 29 21 39 43 #,
+30 22 36 40 26 34 #,30 47 45 28 12 14 #,35 27 41 37 23 31 #,
+35 50 48 33 17 19 #,0 44 29 33 48 #,1 49 32 28 45 #,2 50 35 31 46 #,
+3 47 30 34 51 #,4 52 16 18 54 #,5 55 19 17 53 #,6 58 14 12 56 #,
+7 57 13 15 59 #,8 36 22 23 37 #,9 39 21 20 38 #,10 41 27 26 40 #,
+11 42 24 25 43 #,0 38 42 #,1 43 39 #,2 40 36 #,3 37 41 #,4 45 47 #,5 46 44 #,
+6 51 49 #,7 48 50 #,8 56 57 #,9 59 58 #,10 53 52 #,11 54 55 #,12 28 20 #,
+13 21 29 #,14 22 30 #,15 31 23 #,16 24 32 #,17 33 25 #,18 34 26 #,19 27 35 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #48)</NOBR></TD>
+<TD width=40% align=center><NOBR>Great Icosicosidodecahedron</NOBR></TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>60 &nbsp;(60[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>52 &nbsp;(20 equilateral triangles + 12 regular pentagons</NOBR><BR><NOBR> &nbsp; &nbsp; + 20 regular hexagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>120</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Hexagon-Pentagon Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(15*(5&#8722;2*sqrt(5)))/15) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;79.187683036 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Hexagon-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(5)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;318.189685104 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="GreatIcosacronicHexecontahedron.html">Great Icosacronic Hexecontahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(17&#8722;3*sqrt(5)))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1342285961998925302</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(5&#8722;sqrt(5)))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0180739209102543669</TD></TR>
+<TR><TD><NOBR>Hexagon Center Radius: &nbsp;</NOBR></TD><TD><NOBR>(sqrt(15)&#8722;sqrt(3))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.53523313465963489791</TD></TR>
+<TR><TD><NOBR>Pentagon Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(10*(65&#8722;19*sqrt(5)))/20 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.750245100408926292247</TD></TR>
+<TR><TD><NOBR>Triangle Center Radius: &nbsp;</NOBR></TD><TD><NOBR>(9*sqrt(3)&#8722;sqrt(15))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.976289493492706563047</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='GreatIcosicosidodecahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Jean Paul Albert Badoureau, M&eacute;moire sur les Figures Isoc&egrave;les,<BR><I>Journal de l'&Eacute;cole polytechnique</I> <B>49</B> (1881), 47-172.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

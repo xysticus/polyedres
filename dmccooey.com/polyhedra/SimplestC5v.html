@@ -1,0 +1,114 @@
+<!-- File:   SimplestC5v.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Simplest Canonical Polyhedron with C5v Symmetry (Pentagonal Pyramid)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='SimplestC4v.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Simplest.html"><B>Simplest Canonical Polyhedra of Each Symmetry Type</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SimplestC6v.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Simplest Canonical Polyhedron with C5v Symmetry (Pentagonal Pyramid)
+
+	(5) SHORT EDGE = 2 * sqrt(2 * (sqrt(5) - 2))
+	(5) LONG EDGE = 2 * sqrt(1 + sqrt(5))
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 4 * (5 - sqrt(5)) / 3
+
+	ROTATION SYMMETRIES:           5
+	MIRROR ROTATION SYMMETRIES:    5
+	ROTATION AXES:                 1 (1[5])
+	MIRROR PLANES:                 5
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  5-fold Pyramidal (C5v)
+	TOPOLOGICALLY SELF-DUAL:     YES
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="4 6 6">
+<INPUT type=hidden class=Constants value="0.236067977499789696409173668731,
+0.48586827175664567818286387589453,
+1.08643448375820089395625329579,
+2.05817102727149225032198104758">
+<!--
+	C0 = sqrt(5) - 2
+	C1 = sqrt(sqrt(5) - 2)
+	C2 = sqrt(5 * (sqrt(5) - 2))
+	C3 = sqrt(2 + sqrt(5))
+-->
+<INPUT type=hidden class=Vertices value="C3 C3 -1.0,-C1 -C1 -1.0,C1 -C1 1.0,
+-C1 C1 1.0,C1 -C2 -C0,-C2 C1 -C0">
+<INPUT type=hidden class=Faces value="1 4 2 3 5 #,0 1 5 #,0 5 3 #,0 3 2 #,
+0 2 4 #,0 4 1 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Simplest Canonical Polyhedron with C5v Symmetry
+<BR><NOBR>(Pentagonal Pyramid)</NOBR>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>6 &nbsp;(5[3] + 1[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>6 &nbsp;(5 isosceles triangles + 1 regular pentagon)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>10 &nbsp;(5 short + 5 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>5-fold Pyramidal &nbsp;(C5v)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2>Pentagonal Pyramid (itself)</TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (5): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(2*(sqrt(5)&#8722;2)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3742429988900498566</TD></TR>
+<TR><TD><NOBR>Long Edge (5): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(1+sqrt(5)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.59781487989573454452</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>4*(5&#8722;sqrt(5))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.685242696666947071454</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SimplestC5v.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,137 @@
+<!-- File:   OctagrammicAntiprism.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Octagrammic Antiprism</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='HeptagrammicCrossedAntiprism.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="StarPrismAntiprism.html"><B>Star Prisms &amp; Antiprisms</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='OctagrammicCrossedAntiprism.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Octagrammic Antiprism
+
+	(32) EDGE = 1
+	RADIUS = sqrt(2 * (6 - 2 * sqrt(2) + sqrt(2 * (10 - 7 * sqrt(2))))) / 4
+	MIDRADIUS = sqrt(2 * (4 - 2 * sqrt(2) + sqrt(2 * (10 - 7 * sqrt(2))))) / 4
+	OCTAGRAM CENTER RADIUS
+		= sqrt(2 * (2 * sqrt(2) + sqrt(2 * (10 - 7 * sqrt(2))) - 2)) / 4
+	TRIANGLE CENTER RADIUS
+		= sqrt(6 * (10 - 6 * sqrt(2) + 3 * sqrt(2 * (10 - 7 * sqrt(2))))) / 12
+	OCTAGRAM-TRIANGLE ANGLE
+		= acos(-sqrt(3 * (7 - 4 * sqrt(2) - 2 * sqrt(2*(10 - 7*sqrt(2))))) / 3)
+		= 112.691744664988457308346128386 degrees
+	TRIANGLE-TRIANGLE ANGLE = acos(-(2 * sqrt(2 - sqrt(2)) - 1) / 3)
+		= 100.189899875896509423045413720 degrees
+
+	ROTATION SYMMETRIES:          16
+	MIRROR ROTATION SYMMETRIES:   16
+	ROTATION AXES:                 9 (1[8] + 8[2])
+	MIRROR PLANES:                 8
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  8-fold Antiprismatic (D8v)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="4 16 18">
+<INPUT type=hidden class=Constants value="0.2071067811865475244008443621048,
+0.382683432365089771728459984030,
+0.399494783118965649860024011727,
+0.541196100146196984399723205366">
+<!--
+	C0 = (sqrt(2) - 1) / 2
+	C1 = sqrt(2 - sqrt(2)) / 2
+	C2 = sqrt(2 * (2 * sqrt(2) + sqrt(2 * (10 - 7 * sqrt(2))) - 2)) / 4
+	C3 = sqrt(2 * (2 - sqrt(2))) / 2
+-->
+<INPUT type=hidden class=Vertices value="C0 0.5 C2,C0 -0.5 C2,-C0 0.5 C2,
+-C0 -0.5 C2,-0.5 -C0 C2,-0.5 C0 C2,0.5 -C0 C2,0.5 C0 C2,C3 0.0 -C2,-C3 0.0 -C2,
+0.0 -C3 -C2,0.0 C3 -C2,-C1 C1 -C2,-C1 -C1 -C2,C1 C1 -C2,C1 -C1 -C2">
+<INPUT type=hidden class=Faces value="0 4 6 2 3 7 5 1 #,
+8 13 11 15 9 14 10 12 #,0 1 8 #,0 8 12 #,1 5 13 #,1 13 8 #,2 6 14 #,2 14 9 #,
+3 2 9 #,3 9 15 #,4 0 12 #,4 12 10 #,5 7 11 #,5 11 13 #,6 4 10 #,6 10 14 #,
+7 3 15 #,7 15 11 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="12 -3 -4 0">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #79)</NOBR></TD>
+<TD width=40% align=center>Octagrammic Antiprism</TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>16 &nbsp;(16[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>18 &nbsp;(16 equilateral triangles + 2 regular octagrams)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>32</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>8-fold Antiprismatic &nbsp;(D8v)</NOBR></TD></TR>
+<TR><TD><NOBR>Octagram-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(3*(7&#8722;4*sqrt(2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;2*sqrt(2*(10&#8722;7*sqrt(2)))))/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;112.69174466499 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Triangle-Triangle Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(2*sqrt(2&#8722;sqrt(2))&#8722;1)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;100.189899876 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="OctagrammicTrapezohedron.html">Octagrammic Trapezohedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(6&#8722;2*sqrt(2)+sqrt(2*(10&#8722;7*sqrt(2)))))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.67267324947014347403</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(4&#8722;2*sqrt(2)+sqrt(2*(10&#8722;7*sqrt(2)))))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.44998811156820785232</TD></TR>
+<TR><TD><NOBR>Octagram Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(2*sqrt(2)+sqrt(2*(10&#8722;7*sqrt(2)))&#8722;2))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.39949478311896564986</TD></TR>
+<TR><TD><NOBR>Triangle Center Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(10&#8722;6*sqrt(2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +3*sqrt(2*(10&#8722;7*sqrt(2)))))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.34518975538012211441</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='OctagrammicAntiprism.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Jean Paul Albert Badoureau, M&eacute;moire sur les Figures Isoc&egrave;les,<BR><I>Journal de l'&Eacute;cole polytechnique</I> <B>49</B> (1881), 47-172.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

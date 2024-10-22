@@ -1,0 +1,142 @@
+<!-- File:   Szilassi1.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Szilassi Polyhedron (version 1)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RegularHexagonalToroid24.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalRegularHexagonal.html"><B>Regular Hexagonal Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RegularHexagonalToroid8_1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Szilassi Polyhedron (version 1)
+
+	(2) EDGE 1 = 5 / 2
+	(2) EDGE 2 = 5 * sqrt(2) / 2
+	(2) EDGE 3 = 3 * sqrt(106) / 4
+	(2) EDGE 4 = 18 * sqrt(6) / 5
+	(2) EDGE 5 = sqrt(1514) / 4
+	(1) EDGE 6 = 15 * sqrt(2) / 2
+	(2) EDGE 7 = 5 * sqrt(21) / 2
+	(2) EDGE 8 = 23 / 2
+	(2) EDGE 9 = 7 * sqrt(206) / 5
+	(2) EDGE 10 = 5 * sqrt(21)
+	(1) EDGE 11 = 24
+	(1) EDGE 12 = 126 / 5
+	VOLUME = 5226 / 5
+
+	ROTATION SYMMETRIES:           2
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                 1 (1[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  2-fold Cyclic (C2)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="0 14 7">
+<INPUT type=hidden class=Vertices value="12.0 0.0 12.0,-12.0 0.0 12.0,
+0.0 12.6 -12.0,0.0 -12.6 -12.0,2.0 -5.0 -8.0,-2.0 5.0 -8.0,3.75 3.75 -3.0,
+-3.75 -3.75 -3.0,4.5 -2.5 2.0,-4.5 2.5 2.0,7.0 0.0 2.0,-7.0 0.0 2.0,
+7.0 2.5 2.0,-7.0 -2.5 2.0">
+<INPUT type=hidden class=Faces value="0 1 13 8 7 4 #,0 4 3 2 10 12 #,
+0 12 9 6 5 1 #,11 3 4 7 6 9 #,11 9 12 10 8 13 #,11 13 1 5 2 3 #,
+2 5 6 7 8 10 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="74 -57 23 27">
+</DIV>
+<BR>
+<CENTER>
+Szilassi Polyhedron <NOBR>(version 1)</NOBR>
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>version 1</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="version 2" onClick="window.location.href='Szilassi2.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>14 &nbsp;(2[3] + 2[3] + 2[3] + 2[3] + 2[3] + 2[3] + 2[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>7 &nbsp;(1 convex hexagon + {2 * 3} nonconvex hexagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>21 &nbsp;(12 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>2-fold Cyclic &nbsp;(C2)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Toroid: &nbsp;</NOBR></TD><TD colspan=2><A href="Csaszar4.html">Cs&aacute;sz&aacute;r Polyhedron</A></TD></TR>
+<TR><TD colspan=3 align=center>(values below based on the description from "On Three Classes of Regular Toroids", 2004, by Lajos Szilassi)</TD></TR>
+<TR><TD><NOBR>Edge 1 (2): &nbsp;</NOBR></TD><TD><NOBR>5/2 &nbsp; &nbsp;</NOBR></TD><TD>2.5</TD></TR>
+<TR><TD><NOBR>Edge 2 (2): &nbsp;</NOBR></TD><TD><NOBR>5*sqrt(2)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.5355339059327376220</TD></TR>
+<TR><TD><NOBR>Edge 3 (2): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(106)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;7.7217226057402502368</TD></TR>
+<TR><TD><NOBR>Edge 4 (2): &nbsp;</NOBR></TD><TD><NOBR>18*sqrt(6)/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;8.81816307401944115351</TD></TR>
+<TR><TD><NOBR>Edge 5 (2): &nbsp;</NOBR></TD><TD><NOBR>sqrt(1514)/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;9.7275382291718596977</TD></TR>
+<TR><TD><NOBR>Edge 6 (1): &nbsp;</NOBR></TD><TD><NOBR>15*sqrt(2)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;10.606601717798212866</TD></TR>
+<TR><TD><NOBR>Edge 7 (2): &nbsp;</NOBR></TD><TD><NOBR>5*sqrt(21)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;11.456439237389600016</TD></TR>
+<TR><TD><NOBR>Edge 8 (2): &nbsp;</NOBR></TD><TD><NOBR>23/2 &nbsp; &nbsp;</NOBR></TD><TD>11.5</TD></TR>
+<TR><TD><NOBR>Edge 9 (2): &nbsp;</NOBR></TD><TD><NOBR>7*sqrt(206)/5 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;20.093780132170253246</TD></TR>
+<TR><TD><NOBR>Edge 10 (2): &nbsp;</NOBR></TD><TD><NOBR>5*sqrt(21) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;22.912878474779200033</TD></TR>
+<TR><TD><NOBR>Edge 11 (1): &nbsp;</NOBR></TD><TD>24</TD></TR>
+<TR><TD><NOBR>Edge 12 (1): &nbsp;</NOBR></TD><TD><NOBR>126/5 &nbsp; &nbsp;</NOBR></TD><TD>25.2</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>5226/5 &nbsp; &nbsp;</NOBR></TD><TD>1045.2</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='Szilassi1.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://symmetry-us.com/Journals/visbook/szilassi/index.html>On Some Regular Toroids (Lajos Szilassi)</A></TD></TR>
+<TR><TD></TD><TD valign=top>[2]</TD><TD>Lajos Szilassi, On Three Classes of Regular Toroids,<BR><I>3rd International Conference APLIMAT</I> 2004.</TD></TR>
+<TR><TD></TD><TD valign=top>[3]</TD><TD><A href=http://www.minortriad.com/szilassi.html>the Szilassi polyhedron (Tom Ace)</A></TD></TR>
+<TR><TD></TD><TD valign=top>[4]</TD><TD><A href=http://demonstrations.wolfram.com/TheParametrizedSzilassiPolyhedron>The Parametrized Szilassi Polyhedron</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,154 @@
+<!-- File:   RhexpropelloCube1.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Hexpropello Cube (dextro) (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='PentakisIcosidodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Derived.html"><B>Derived Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RhexpropelloDodecahedron1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Hexpropello Cube (dextro) (canonical)
+
+	(24) SHORT EDGE = 0.344061938246012531704006608740
+		= square-root of a root of the polynomial:  49*(x^3)-20*(x^2)+272*x-32
+	(24) MEDIUM EDGE = 0.409945630749550088084017727276
+		= square-root of a root of the polynomial:  49*(x^3)-82*(x^2)+60*x-8
+	(36) LONG EDGE = 0.475829323253087644464028845812
+		= square-root of a root of the polynomial:  (x^3)-12*(x^2)+144*x-32
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 3.81338593296528411368984938141
+		= square-root of a root of the polynomial:
+		117649*(x^3) - 62905312*(x^2) + 10093554688*x - 133838962688
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="6 56 30">
+<INPUT type=hidden class=Constants value="0.0689655923405213154547885623658,
+0.175427019490384888694738333953,
+0.233308927707283627913874589066,
+0.593465355971987310501673995610,
+0.820748206401107738300014728600,
+0.985091541767870050759100755299">
+<!--
+	C0 = square-root of a root of the polynomial:  98*(x^3)+52*(x^2)+210*x-1
+	C1 = square-root of a root of the polynomial:  2*(x^3)+16*(x^2)+32*x-1
+	C2 = square-root of a root of the polynomial:  98*(x^3)-72*(x^2)+22*x-1
+	C3 = square-root of a root of the polynomial:  2*(x^3) - 4*(x^2) + 4*x - 1
+	C4 = square-root of a root of the polynomial:  2*(x^3)-24*(x^2)+88*x-49
+	C5 = square-root of a root of the polynomial:  98*(x^3)-284*(x^2)+308*x-121
+-->
+<INPUT type=hidden class=Vertices value="C2 -C0 C5,C2 C0 -C5,-C2 C0 C5,
+-C2 -C0 -C5,C5 -C2 C0,C5 C2 -C0,-C5 C2 C0,-C5 -C2 -C0,C0 -C5 C2,C0 C5 -C2,
+-C0 C5 C2,-C0 -C5 -C2,C0 C2 C5,C0 -C2 -C5,-C0 -C2 C5,-C0 C2 -C5,C5 C0 C2,
+C5 -C0 -C2,-C5 -C0 C2,-C5 C0 -C2,C2 C5 C0,C2 -C5 -C0,-C2 -C5 C0,-C2 C5 -C0,
+C3 -C1 C4,C3 C1 -C4,-C3 C1 C4,-C3 -C1 -C4,C4 -C3 C1,C4 C3 -C1,-C4 C3 C1,
+-C4 -C3 -C1,C1 -C4 C3,C1 C4 -C3,-C1 C4 C3,-C1 -C4 -C3,C1 C3 C4,C1 -C3 -C4,
+-C1 -C3 C4,-C1 C3 -C4,C4 C1 C3,C4 -C1 -C3,-C4 -C1 C3,-C4 C1 -C3,C3 C4 C1,
+C3 -C4 -C1,-C3 -C4 C1,-C3 C4 -C1,C3 C3 C3,C3 C3 -C3,C3 -C3 C3,C3 -C3 -C3,
+-C3 C3 C3,-C3 C3 -C3,-C3 -C3 C3,-C3 -C3 -C3">
+<INPUT type=hidden class=Faces value="48 36 12 0 24 40 #,48 40 16 5 29 44 #,
+48 44 20 10 34 36 #,49 25 1 15 39 33 #,49 33 9 20 44 29 #,49 29 5 17 41 25 #,
+50 24 0 14 38 32 #,50 32 8 21 45 28 #,50 28 4 16 40 24 #,51 37 13 1 25 41 #,
+51 41 17 4 28 45 #,51 45 21 11 35 37 #,52 26 2 12 36 34 #,52 34 10 23 47 30 #,
+52 30 6 18 42 26 #,53 39 15 3 27 43 #,53 43 19 6 30 47 #,53 47 23 9 33 39 #,
+54 38 14 2 26 42 #,54 42 18 7 31 46 #,54 46 22 8 32 38 #,55 27 3 13 37 35 #,
+55 35 11 22 46 31 #,55 31 7 19 43 27 #,2 14 0 12 #,3 15 1 13 #,4 17 5 16 #,
+7 18 6 19 #,8 22 11 21 #,9 23 10 20 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Hexpropello Cube (dextro) (canonical)
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>version 1</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="version 2" onClick="window.location.href='RhexpropelloCube2.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="version 3" onClick="window.location.href='RhexpropelloCube3.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="biscribed form" onClick="window.location.href='BiscribedRhexpropelloCube.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>56 &nbsp;(8[3] + 24[3] + 24[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>30 &nbsp;(6 squares + 24 mirror-symmetric hexagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>84 &nbsp;(24 short + 24 medium + 36 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="TetrakisLsnubCube.html">Tetrakis Snub Cube (laevo)</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[49*(x^3)&#8722;20*(x^2)+272*x&#8722;32]); &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.34406193824601253170</TD></TR>
+<TR><TD><NOBR>Medium Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[49*(x^3)&#8722;82*(x^2)+60*x&#8722;8]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.40994563074955008808</TD></TR>
+<TR><TD><NOBR>Long Edge (36): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[(x^3)&#8722;12*(x^2)+144*x&#8722;32]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.47582932325308764446</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(root[117649*(x^3)&#8722;62905312*(x^2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +10093554688*x&#8722;133838962688]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.8133859329652841137</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RhexpropelloCube1.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

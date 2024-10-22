@@ -1,0 +1,142 @@
+<!-- File:   PentagonalAntiprismTrapezohedronToroid.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Pentagonal Antiprism-Trapezohedron Toroid</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='SquareAntiprismTrapezohedronToroid.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalNonRegular.html"><B>Non-Regular Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='HexagonalAntiprismTrapezohedronToroid.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Pentagonal Antiprism-Trapezohedron Toroid
+
+	(10) SHORT EDGE = (3 - sqrt(5)) / 2
+	(10) MEDIUM EDGE = (sqrt(5) - 1) / 2
+	(20) LONG EDGE = 1
+	(10) INNER VERTEX RADIUS = (sqrt(15) - sqrt(3)) / 4
+	(10) OUTER VERTEX RADIUS = sqrt(2 * (5 + sqrt(5))) / 4
+	VOLUME = 5 * (sqrt(5) - 1) / 12
+	DIHEDRAL ANGLE 1 = acos(0.794654472291766122955530928328)
+		= acos(sqrt(15 * (5 + 2 * sqrt(5))) / 15)
+		= 37.3773681406496956428571384949 degrees
+	DIHEDRAL ANGLE 2 = acos(-0.447213595499957939281834733746)
+		= acos(-sqrt(5) / 5)
+		= 116.565051177077989351572193720 degrees
+	DIHEDRAL ANGLE 3 = acos(-0.447213595499957939281834733746)
+		= acos(-sqrt(5) / 3)
+		= 138.189685104221401934142083269 degrees
+	DIHEDRAL ANGLE 4 = acos(-0.447213595499957939281834733746)
+		= acos(-sqrt(5) / 5)
+		= 243.434948822922010648427806280 degrees
+
+	EULER CHARACTERISTIC:          0
+	ROTATION SYMMETRIES:          10
+	MIRROR ROTATION SYMMETRIES:   10
+	ROTATION AXES:                 6 (1[5] + 5[2])
+	MIRROR PLANES:                 5
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  5-fold Antiprismatic (D5v)
+	TOPOLOGICALLY SELF-DUAL:     YES
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="3 20 20">
+<INPUT type=hidden class=Constants value="0.190983005625052575897706582817,
+0.309016994374947424102293417183,
+0.809016994374947424102293417183">
+<!--
+	C0 = (3 - sqrt(5)) / 4
+	C1 = (sqrt(5) - 1) / 4
+	C2 = (1 + sqrt(5)) / 4
+-->
+<INPUT type=hidden class=Vertices value="0.5 0.0 C2,0.5 0.0 -C2,-0.5 0.0 C2,
+-0.5 0.0 -C2,0.0 C2 0.5,0.0 C2 -0.5,0.0 -C2 0.5,0.0 -C2 -0.5,C2 0.5 0.0,
+-C2 -0.5 0.0,0.0 C0 0.5,0.0 C0 -0.5,0.0 -C0 0.5,0.0 -C0 -0.5,C1 C1 C1,
+C1 C1 -C1,-C1 -C1 C1,-C1 -C1 -C1,C0 0.5 0.0,-C0 -0.5 0.0">
+<INPUT type=hidden class=Faces value="0 6 16 12 10 #,1 8 18 15 11 #,
+2 4 14 10 12 #,3 9 19 17 13 #,4 5 15 18 14 #,5 3 13 11 15 #,6 7 17 19 16 #,
+7 1 11 13 17 #,8 0 10 14 18 #,9 2 12 16 19 #,2 6 0 #,2 0 4 #,3 1 7 #,3 7 9 #,
+4 0 8 #,4 8 5 #,5 8 1 #,5 1 3 #,6 2 9 #,6 9 7 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="2759 7926 -3948 -3740">
+</DIV>
+<BR>
+<CENTER>
+Pentagonal Antiprism-Trapezohedron Toroid
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>20 &nbsp;(10[3] + 10[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>20 &nbsp;(10 equilateral triangles + 10 mirror-symmetric pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>40 &nbsp;(10 short + 10 medium + 20 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>5-fold Antiprismatic &nbsp;(D5v)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 1 (10): &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(15*(5+2*sqrt(5)))/15) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;37.377368141 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 2 (10): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(5)/5) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;116.565051177 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 3 (10): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(5)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;138.189685104 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 4 (10): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(5)/5) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;243.434948823 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Toroid: &nbsp;</NOBR></TD><TD colspan=2>Pentagonal Antiprism-Trapezohedron Toroid (itself)</TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on a Pentagonal Antiprism with edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (10): &nbsp;</NOBR></TD><TD><NOBR>(3&#8722;sqrt(5))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.38196601125010515180</TD></TR>
+<TR><TD><NOBR>Medium Edge (10): &nbsp;</NOBR></TD><TD><NOBR>(sqrt(5)&#8722;1)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.61803398874989484820</TD></TR>
+<TR><TD><NOBR>Long Edge (20): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (10): &nbsp;</NOBR></TD><TD><NOBR>(sqrt(15)&#8722;sqrt(3))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.53523313465963489791</TD></TR>
+<TR><TD><NOBR>[5]-Vertex Radius (10): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(5+sqrt(5)))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.95105651629515357212</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>5*(sqrt(5)&#8722;1)/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.51502832395824570684</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='PentagonalAntiprismTrapezohedronToroid.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Paul Gailiunas, Some Self-reciprocal Polyhedra.</TD></TR>
+<TR><TD></TD><TD valign=top>[2]</TD><TD>T. Bakos, Octahedra Inscribed in a Cube,<BR><I>The Mathematical Gazette</I> <B>43</B> (1959), 17-20.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

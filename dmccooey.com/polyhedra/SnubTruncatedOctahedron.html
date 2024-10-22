@@ -1,0 +1,165 @@
+<!-- File:   SnubTruncatedOctahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Snub Truncated Octahedron (canonical)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='132Pentagons.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Derived.html"><B>Derived Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='DualSnubTruncatedOctahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Snub Truncated Octahedron (canonical)
+
+	(24) EDGE 1 = 0.357867136095319495029679348082
+	(48) EDGE 2 = 0.402467146729432259053861079240
+	(24) EDGE 3 = 0.411012446967044906674104817081
+	(72) EDGE 4 = 0.455612457601157670698286548239
+	(12) EDGE 5 = 0.464157757838770318318530286081
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 4.02674978768420605871898968494
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="9 72 110">
+<INPUT type=hidden class=Constants value="0.0715867180534110014685116642048,
+0.177333185545095990736826818470,
+0.242713381062673184649329165829,
+0.250698939801125022525643382407,
+0.460446667060445606324336384516,
+0.6012447309869901865555623843647,
+0.812968831386104862246126339844951,
+0.880401141056620410688535775756,
+0.983861158002354272558905214052">
+<!--
+	C0 = 0.0715867180534110014685116642048
+	C1 = 0.177333185545095990736826818470
+	C2 = 0.242713381062673184649329165829
+	C3 = 0.250698939801125022525643382407
+	C4 = 0.460446667060445606324336384516
+	C5 = 0.6012447309869901865555623843647
+	C6 = 0.812968831386104862246126339844951
+	C7 = 0.880401141056620410688535775756
+	C8 = 0.983861158002354272558905214052
+-->
+<INPUT type=hidden class=Vertices value="C2 -C0 C8,C2 C0 -C8,-C2 C0 C8,
+-C2 -C0 -C8,C8 -C2 C0,C8 C2 -C0,-C8 C2 C0,-C8 -C2 -C0,C0 -C8 C2,C0 C8 -C2,
+-C0 C8 C2,-C0 -C8 -C2,C0 C2 C8,C0 -C2 -C8,-C0 -C2 C8,-C0 C2 -C8,C8 C0 C2,
+C8 -C0 -C2,-C8 -C0 C2,-C8 C0 -C2,C2 C8 C0,C2 -C8 -C0,-C2 -C8 C0,-C2 C8 -C0,
+C4 C3 C7,C4 -C3 -C7,-C4 -C3 C7,-C4 C3 -C7,C7 C4 C3,C7 -C4 -C3,-C7 -C4 C3,
+-C7 C4 -C3,C3 C7 C4,C3 -C7 -C4,-C3 -C7 C4,-C3 C7 -C4,C3 -C4 C7,C3 C4 -C7,
+-C3 C4 C7,-C3 -C4 -C7,C7 -C3 C4,C7 C3 -C4,-C7 C3 C4,-C7 -C3 -C4,C4 -C7 C3,
+C4 C7 -C3,-C4 C7 C3,-C4 -C7 -C3,C5 -C1 C6,C5 C1 -C6,-C5 C1 C6,-C5 -C1 -C6,
+C6 -C5 C1,C6 C5 -C1,-C6 C5 C1,-C6 -C5 -C1,C1 -C6 C5,C1 C6 -C5,-C1 C6 C5,
+-C1 -C6 -C5,C1 C5 C6,C1 -C5 -C6,-C1 -C5 C6,-C1 C5 -C6,C6 C1 C5,C6 -C1 -C5,
+-C6 -C1 C5,-C6 C1 -C5,C5 C6 C1,C5 -C6 -C1,-C5 -C6 C1,-C5 C6 -C1">
+<INPUT type=hidden class=Faces value="32 60 24 64 28 68 #,33 61 25 65 29 69 #,
+34 62 26 66 30 70 #,35 63 27 67 31 71 #,36 56 44 52 40 48 #,
+37 57 45 53 41 49 #,38 58 46 54 42 50 #,39 59 47 55 43 51 #,2 14 0 12 #,
+3 15 1 13 #,4 17 5 16 #,7 18 6 19 #,8 22 11 21 #,9 23 10 20 #,0 14 36 #,
+1 15 37 #,2 12 38 #,3 13 39 #,4 16 40 #,5 17 41 #,6 18 42 #,7 19 43 #,
+8 21 44 #,9 20 45 #,10 23 46 #,11 22 47 #,12 0 24 #,13 1 25 #,14 2 26 #,
+15 3 27 #,16 5 28 #,17 4 29 #,18 7 30 #,19 6 31 #,20 10 32 #,21 11 33 #,
+22 8 34 #,23 9 35 #,24 0 48 #,25 1 49 #,26 2 50 #,27 3 51 #,28 5 53 #,
+29 4 52 #,30 7 55 #,31 6 54 #,32 10 58 #,33 11 59 #,34 8 56 #,35 9 57 #,
+36 14 62 #,37 15 63 #,38 12 60 #,39 13 61 #,40 16 64 #,41 17 65 #,42 18 66 #,
+43 19 67 #,44 21 69 #,45 20 68 #,46 23 71 #,47 22 70 #,48 64 24 #,49 65 25 #,
+50 66 26 #,51 67 27 #,52 69 29 #,53 68 28 #,54 71 31 #,55 70 30 #,56 62 34 #,
+57 63 35 #,58 60 32 #,59 61 33 #,60 58 38 #,61 59 39 #,62 56 36 #,63 57 37 #,
+64 48 40 #,65 49 41 #,66 50 42 #,67 51 43 #,68 53 45 #,69 52 44 #,70 55 47 #,
+71 54 46 #,0 36 48 #,1 37 49 #,2 38 50 #,3 39 51 #,4 40 52 #,5 41 53 #,
+6 42 54 #,7 43 55 #,8 44 56 #,9 45 57 #,10 46 58 #,11 47 59 #,12 24 60 #,
+13 25 61 #,14 26 62 #,15 27 63 #,16 28 64 #,17 29 65 #,18 30 66 #,19 31 67 #,
+20 32 68 #,21 33 69 #,22 34 70 #,23 35 71 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Snub Truncated Octahedron (canonical)
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>canonical form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="biscribed form" onClick="window.location.href='BiscribedSnubTruncatedOctahedron.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>72 &nbsp;(24[5] + 24[5] + 24[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>110 &nbsp;({24 * 2} isosceles triangles + {24 * 2} acute triangles</NOBR><BR><NOBR> &nbsp; &nbsp; + 6 squares + 8 triambi)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>180 &nbsp;(5 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="DualSnubTruncatedOctahedron.html">Dual Snub Truncated Octahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (24): &nbsp;</NOBR></TD><TD>&#8776;0.35786713609531949503</TD></TR>
+<TR><TD><NOBR>Edge 2 (48): &nbsp;</NOBR></TD><TD>&#8776;0.402467146729432259054</TD></TR>
+<TR><TD><NOBR>Edge 3 (24): &nbsp;</NOBR></TD><TD>&#8776;0.41101244696704490667</TD></TR>
+<TR><TD><NOBR>Edge 4 (72): &nbsp;</NOBR></TD><TD>&#8776;0.45561245760115767070</TD></TR>
+<TR><TD><NOBR>Edge 5 (12): &nbsp;</NOBR></TD><TD>&#8776;0.46415775783877031832</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD>&#8776;4.0267497876842060587</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SnubTruncatedOctahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

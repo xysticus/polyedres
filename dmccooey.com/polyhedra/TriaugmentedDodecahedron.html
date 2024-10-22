@@ -1,0 +1,119 @@
+<!-- File:   TriaugmentedDodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2019 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Triaugmented Dodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='MetabiaugmentedDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="JohnsonPage4.html"><B>Johnson Solids (Page 4)</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='MetabidiminishedIcosahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Triaugmented Dodecahedron
+
+	(45) EDGE = 1
+	VOLUME = 8.56762745781210568076720062887 = (35 + 15 * sqrt(5)) / 8
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:           3
+	MIRROR ROTATION SYMMETRIES:    3
+	ROTATION AXES:                 1 (1[3])
+	MIRROR PLANES:                 3
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  3-fold Pyramidal (C3v)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="4 23 24">
+<INPUT type=hidden class=Constants value="0.809016994374947424102293417183,
+0.861803398874989484820458683437,
+1.30901699437494742410229341718,
+1.39442719099991587856366946749">
+<!--
+	C0 = (1 + sqrt(5)) / 4
+	C1 = (15 + sqrt(5)) / 20
+	C2 = (3 + sqrt(5)) / 4
+	C3 = (5 + 4 * sqrt(5)) / 10
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.5 C2,0.0 0.5 -C2,0.0 -0.5 C2,
+0.0 -0.5 -C2,C2 0.0 0.5,C2 0.0 -0.5,-C2 0.0 0.5,-C2 0.0 -0.5,0.5 C2 0.0,
+0.5 -C2 0.0,-0.5 C2 0.0,-0.5 -C2 0.0,C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0,
+-C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0,C3 C1 0.0,-C3 C1 0.0,0.0 -C3 C1">
+<INPUT type=hidden class=Faces value="0 2 14 4 12 #,0 12 8 10 16 #,
+0 16 6 18 2 #,7 17 1 3 19 #,7 19 11 18 6 #,9 11 19 3 15 #,9 15 5 4 14 #,
+13 5 15 3 1 #,13 1 17 10 8 #,20 4 5 #,20 5 13 #,20 13 8 #,20 8 12 #,20 12 4 #,
+21 6 16 #,21 16 10 #,21 10 17 #,21 17 7 #,21 7 6 #,22 2 18 #,22 18 11 #,
+22 11 9 #,22 9 14 #,22 14 2 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=10% align=left style="font-size:60%"><NOBR>(J61)</NOBR></TD>
+<TD width=80% align=center>Triaugmented Dodecahedron</TD>
+<TD width=10% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>23 &nbsp;({3 + 1 * 2}[3] + {6 * 2 + 3}[4] + 3[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>24 &nbsp;({6 * 2 + 3} equilateral triangles + {3 * 3} regular pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>45</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>3-fold Pyramidal &nbsp;(C3v)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>(35+15*sqrt(5))/8 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;8.5676274578121056808</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='TriaugmentedDodecahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,140 @@
+<!-- File:   GeodesicCube6.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Geodesic Cube Pattern 6 [3,1]</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='GeodesicCube5.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="GeodesicCubes.html"><B>Geodesic Cubes</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='GeodesicCube7.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Geodesic Cube Pattern 6 [3,1]
+
+	(24) SHORT EDGE = 0.3509663542796838956089027958354
+	(72) MEDIUM EDGE = 0.478198249289282149737903211988
+	(24) LONG EDGE = 0.509157491041580719428633459701
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 4.07666643839324291638859282042
+
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="8 62 60">
+<INPUT type=hidden class=Constants value="0.150759968286072637891665565260,
+0.299283146685370174015872480259,
+0.468751303913941846771131749668,
+0.581410987576762971918589193929,
+0.583063946019124471221210293972,
+0.790165702394707541452101327574,
+0.904478344499890165902179871878,
+1.03403527301056091070209573570">
+<!--
+	C0 = 0.150759968286072637891665565260
+	C1 = 0.299283146685370174015872480259
+	C2 = 0.468751303913941846771131749668
+	C3 = 0.581410987576762971918589193929
+	C4 = 0.583063946019124471221210293972
+	C5 = 0.790165702394707541452101327574
+	C6 = 0.904478344499890165902179871878
+	C7 = 1.03403527301056091070209573570
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C7,0.0 0.0 -C7,C7 0.0 0.0,
+-C7 0.0 0.0,0.0 C7 0.0,0.0 -C7 0.0,C2 -C0 C6,C2 C0 -C6,-C2 C0 C6,-C2 -C0 -C6,
+C6 -C2 C0,C6 C2 -C0,-C6 C2 C0,-C6 -C2 -C0,C0 -C6 C2,C0 C6 -C2,-C0 C6 C2,
+-C0 -C6 -C2,C0 C2 C6,C0 -C2 -C6,-C0 -C2 C6,-C0 C2 -C6,C6 C0 C2,C6 -C0 -C2,
+-C6 -C0 C2,-C6 C0 -C2,C2 C6 C0,C2 -C6 -C0,-C2 -C6 C0,-C2 C6 -C0,C4 C1 C5,
+C4 -C1 -C5,-C4 -C1 C5,-C4 C1 -C5,C5 C4 C1,C5 -C4 -C1,-C5 -C4 C1,-C5 C4 -C1,
+C1 C5 C4,C1 -C5 -C4,-C1 -C5 C4,-C1 C5 -C4,C1 -C4 C5,C1 C4 -C5,-C1 C4 C5,
+-C1 -C4 -C5,C5 -C1 C4,C5 C1 -C4,-C5 C1 C4,-C5 -C1 -C4,C4 -C5 C1,C4 C5 -C1,
+-C4 C5 C1,-C4 -C5 -C1,C3 C3 C3,C3 C3 -C3,C3 -C3 C3,C3 -C3 -C3,-C3 C3 C3,
+-C3 C3 -C3,-C3 -C3 C3,-C3 -C3 -C3">
+<INPUT type=hidden class=Faces value="6 46 22 30 #,7 47 23 31 #,8 48 24 32 #,
+9 49 25 33 #,10 50 27 35 #,11 51 26 34 #,12 52 29 37 #,13 53 28 36 #,
+14 42 20 40 #,15 43 21 41 #,16 44 18 38 #,17 45 19 39 #,0 6 30 18 #,
+0 18 44 8 #,0 8 32 20 #,0 20 42 6 #,1 7 31 19 #,1 19 45 9 #,1 9 33 21 #,
+1 21 43 7 #,2 10 35 23 #,2 23 47 11 #,2 11 34 22 #,2 22 46 10 #,3 12 37 25 #,
+3 25 49 13 #,3 13 36 24 #,3 24 48 12 #,4 15 41 29 #,4 29 52 16 #,4 16 38 26 #,
+4 26 51 15 #,5 14 40 28 #,5 28 53 17 #,5 17 39 27 #,5 27 50 14 #,54 30 22 34 #,
+54 34 26 38 #,54 38 18 30 #,55 43 15 51 #,55 51 11 47 #,55 47 7 43 #,
+56 42 14 50 #,56 50 10 46 #,56 46 6 42 #,57 31 23 35 #,57 35 27 39 #,
+57 39 19 31 #,58 44 16 52 #,58 52 12 48 #,58 48 8 44 #,59 33 25 37 #,
+59 37 29 41 #,59 41 21 33 #,60 32 24 36 #,60 36 28 40 #,60 40 20 32 #,
+61 45 17 53 #,61 53 13 49 #,61 49 9 45 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Geodesic Cube <NOBR>Pattern 6 [3,1]</NOBR>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>62 &nbsp;(8[3] + 6[4] + 24[4] + 24[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>60 &nbsp;(12 rhombi + {24 * 2} kites)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>120 &nbsp;(24 short + 72 medium + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD>&#8776;0.35096635427968389561</TD></TR>
+<TR><TD><NOBR>Medium Edge (72): &nbsp;</NOBR></TD><TD>&#8776;0.47819824928928214974</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD>&#8776;0.50915749104158071943</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD>&#8776;4.0766664383932429164</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='GeodesicCube6.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

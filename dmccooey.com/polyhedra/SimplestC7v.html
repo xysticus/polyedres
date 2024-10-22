@@ -1,0 +1,126 @@
+<!-- File:   SimplestC7v.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Simplest Canonical Polyhedron with C7v Symmetry (Heptagonal Pyramid)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='SimplestC6v.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Simplest.html"><B>Simplest Canonical Polyhedra of Each Symmetry Type</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SimplestC8v.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Simplest Canonical Polyhedron with C7v Symmetry (Heptagonal Pyramid)
+
+	(7) SHORT EDGE = 0.937726033230356180002765246060
+		= square-root of a root of the polynomial:
+			(x^3) - 8*(x^2) - 576*x + 512
+	(7) LONG EDGE = 4.73450122889821478814609014887
+		= square-root of a root of the polynomial:
+			(x^3) - 32*(x^2) + 192*x + 512
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 4.90977705680787280968905560257
+		= root of the polynomial:  27*(x^3) - 1008*(x^2) + 9408*x - 25088
+
+	ROTATION SYMMETRIES:           7
+	MIRROR ROTATION SYMMETRIES:    7
+	ROTATION AXES:                 1 (1[7])
+	MIRROR PLANES:                 7
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  7-fold Pyramidal (C7v)
+	TOPOLOGICALLY SELF-DUAL:     YES
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="6 8 8">
+<INPUT type=hidden class=Constants value="0.286208264215581112211200979957,
+0.331536218496173329995279382439,
+0.603875471609676504944409278030,
+0.626631214416626160441798949951,
+0.863279027292412084294329503684,
+3.01626170599379698902101672220">
+<!--
+	C0 = root of the polynomial:  (x^3) - 9*(x^2) - x + 1
+	C1 = square-root of a root of the polynomial:  (x^3) - (x^2) - 9*x + 1
+	C2 = root of the polynomial:  (x^3) + 7*(x^2) + 7*x - 7
+		= tan(pi/14) * sqrt(7)
+		= 4 * cos(pi/7) - 3
+	C3 = square-root of a root of the polynomial:
+		(x^3) + 47*(x^2) - 449*x + 169
+	C4 = square-root of a root of the polynomial:  (x^3) + 31*(x^2) - 25*x + 1
+	C5 = square-root of a root of the polynomial:  (x^3) - 9*(x^2) - x + 1
+-->
+<INPUT type=hidden class=Vertices value="C5 C5 -1.0,-C1 -C1 -1.0,C1 -C1 1.0,
+-C1 C1 1.0,C1 -C4 -C2,-C4 C1 -C2,C3 -C4 C0,-C4 C3 C0">
+<INPUT type=hidden class=Faces value="1 4 6 2 3 7 5 #,0 1 5 #,0 5 7 #,0 7 3 #,
+0 3 2 #,0 2 6 #,0 6 4 #,0 4 1 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Simplest Canonical Polyhedron with C7v Symmetry
+<BR><NOBR>(Heptagonal Pyramid)</NOBR>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>8 &nbsp;(7[3] + 1[7])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>8 &nbsp;(7 isosceles triangles + 1 regular heptagon)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>14 &nbsp;(7 short + 7 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>7-fold Pyramidal &nbsp;(C7v)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2>Heptagonal Pyramid (itself)</TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (7): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[(x^3)&#8722;8*(x^2)&#8722;576*x+512]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.93772603323035618000</TD></TR>
+<TR><TD><NOBR>Long Edge (7): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[(x^3)&#8722;32*(x^2)+192*x+512]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.7345012288982147881</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>root[27*(x^3)&#8722;1008*(x^2)+9408*x&#8722;25088] &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.9097770568078728097</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SimplestC7v.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

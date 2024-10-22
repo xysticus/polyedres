@@ -1,0 +1,123 @@
+<!-- File:   OctagonalIrisToroid.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Octagonal Iris Toroid</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='HeptagonalIrisToroid.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalNonRegular.html"><B>Non-Regular Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='IsohedralToroid24.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Octagonal Iris Toroid
+
+	(24) SHORT EDGE = 1
+	(8) MEDIUM EDGE = sqrt(3 + sqrt(2))
+	(8) LONG EDGE = sqrt(2 * (2 + sqrt(2)))
+	RADIUS = sqrt(5 + 2 * sqrt(2)) / 2
+	VOLUME = 2 * (2 + sqrt(2)) / 3
+	DIHEDRAL ANGLE 1 = acos((7 + 4 * sqrt(2)) / 17)
+		= 41.8820409444876777452603600728 degrees
+	DIHEDRAL ANGLE 2 = acos(sqrt(34 * (5 - 2 * sqrt(2))) / 17)
+		= 59.63880659517828630514198049353 degrees
+	DIHEDRAL ANGLE 3 = acos(-sqrt(2) / 2) = 135 degrees
+	DIHEDRAL ANGLE 4 = acos((3 + 9 * sqrt(2)) / 17)
+		= 337.694288207642543487748805736 degrees
+
+	ROTATION SYMMETRIES:          16
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                 9 (1[8] + 8[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  8-fold Dihedral (D8)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="1 16 24">
+<INPUT type=hidden class=Constants value="1.20710678118654752440084436210">
+<!--
+	C0 = (1 + sqrt(2)) / 2
+-->
+<INPUT type=hidden class=Vertices value="C0 0.5 0.5,C0 0.5 -0.5,C0 -0.5 0.5,
+C0 -0.5 -0.5,-C0 0.5 0.5,-C0 0.5 -0.5,-C0 -0.5 0.5,-C0 -0.5 -0.5,0.5 C0 0.5,
+0.5 C0 -0.5,0.5 -C0 0.5,0.5 -C0 -0.5,-0.5 C0 0.5,-0.5 C0 -0.5,-0.5 -C0 0.5,
+-0.5 -C0 -0.5">
+<INPUT type=hidden class=Faces value="0 1 9 8 #,8 9 13 12 #,12 13 5 4 #,
+4 5 7 6 #,6 7 15 14 #,14 15 11 10 #,10 11 3 2 #,2 3 1 0 #,0 11 15 #,0 15 2 #,
+2 15 7 #,2 7 10 #,4 9 1 #,4 1 12 #,6 13 9 #,6 9 4 #,8 3 11 #,8 11 0 #,10 7 5 #,
+10 5 14 #,12 1 3 #,12 3 8 #,14 13 6 #,14 5 13 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="12 -3 -4 0">
+</DIV>
+<BR>
+<CENTER>
+Octagonal Iris Toroid
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>16 &nbsp;(16[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>24 &nbsp;(8 squares + 16 obtuse triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>40 &nbsp;(24 short + 8 medium + 8 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>8-fold Dihedral &nbsp;(D8)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 1 (8): &nbsp;</NOBR></TD><TD><NOBR>acos((7+4*sqrt(2))/17) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;41.882040944 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 2 (16): &nbsp;</NOBR></TD><TD><NOBR>acos(sqrt(34*(5&#8722;2*sqrt(2)))/17) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;59.6388065952 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 3 (8): &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(2)/2) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>135 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle 4 (8): &nbsp;</NOBR></TD><TD><NOBR>acos((3+9*sqrt(2))/17) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;337.694288208 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on short edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Medium Edge (8): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3+sqrt(2)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.1010029896154586502</TD></TR>
+<TR><TD><NOBR>Long Edge (8): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(2+sqrt(2))) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.6131259297527530557</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>2*(2+sqrt(2))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.2761423749153966992</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='OctagonalIrisToroid.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

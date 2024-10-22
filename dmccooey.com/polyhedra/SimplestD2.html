@@ -1,0 +1,124 @@
+<!-- File:   SimplestD2.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Simplest Canonical Polyhedron with D2 Symmetry</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='SimplestS6_1.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Simplest.html"><B>Simplest Canonical Polyhedra of Each Symmetry Type</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SimplestD3_1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Simplest Canonical Polyhedron with D2 Symmetry
+
+	(4) EDGE 1 = 1.03072097438358053517372143687
+		= sqrt(3*(4 - cbrt(26*(3*sqrt(78)-26)) + cbrt(26*(3*sqrt(78)+26)))) / 6
+	(8) EDGE 2 = 1.24385705934973241157809164969
+	= sqrt(6*(cbrt(2*(3686-411*sqrt(78))) + cbrt(2*(3686+411*sqrt(78)))-20))/6
+	(4) EDGE 3 = 1.56811797380500995512966642727
+		= sqrt(3*(20 + cbrt(2*(58-3*sqrt(78))) + cbrt(2*(58+3*sqrt(78))))) / 6
+	(2) EDGE 4 = 1.78125405877116183153403664010
+		= 2 * sqrt(3*(2 - cbrt(2*(3*sqrt(78)-4)) + cbrt(2*(3*sqrt(78)+4)))) / 3
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 3.43678809329908216620499694963
+		= 4 * (18 + cbrt(6*(23*sqrt(78)-198)) - cbrt(6*(23*sqrt(78)+198))) / 9
+
+	ROTATION SYMMETRIES:           4
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                 3 (3[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  2-fold Dihedral (D2)
+	TOPOLOGICALLY SELF-DUAL:     YES
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="5 10 10">
+<INPUT type=hidden class=Constants value="0.2067834945278155879539697922448,
+0.328348469996338484074751195073,
+0.6297684119865747966594066548648,
+0.8278911690090962785410543603148,
+1.20788823148929217796730943256">
+<!--
+	C0 = (1 - cbrt(2 * (3 * sqrt(78) + 4)) + cbrt(2 * (3 * sqrt(78) - 4))) / 3
+	C1 = sqrt(3 * (cbrt(39*sqrt(78) + 307) - cbrt(39*sqrt(78) - 307) - 5)) / 3
+	C2 = sqrt(6 * (2 + cbrt(2*(3*sqrt(78)+4)) - cbrt(2*(3*sqrt(78)-4)))) / 6
+	C3 = sqrt(3 * (7 - cbrt(53 + 6 * sqrt(78)) - cbrt(53 - 6 * sqrt(78)))) / 3
+	C4 = sqrt(3 * (8 + cbrt(2*(58+3*sqrt(78))) + cbrt(2*(58-3*sqrt(78))))) / 6
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C4,0.0 0.0 -C4,C0 -C3 C2,
+C0 C3 -C2,-C0 C3 C2,-C0 -C3 -C2,1.0 C3 C1,1.0 -C3 -C1,-1.0 -C3 C1,-1.0 C3 -C1">
+<INPUT type=hidden class=Faces value="6 0 2 7 #,6 7 1 3 #,6 3 9 4 #,8 0 4 9 #,
+8 9 1 5 #,8 5 7 2 #,0 6 4 #,0 8 2 #,1 7 5 #,1 9 3 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Simplest Canonical Polyhedron with D2 Symmetry
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>10 &nbsp;(4[3] + 4[4] + 2[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>10 &nbsp;(4 acute triangles + 4 irregular tetragons + 2 rhombi)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>18 &nbsp;(4 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>2-fold Dihedral &nbsp;(D2)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2>Simplest D2 (itself)</TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (4): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(4&#8722;cbrt(26*(3*sqrt(78)&#8722;26)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(26*(3*sqrt(78)+26))))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0307209743835805352</TD></TR>
+<TR><TD><NOBR>Edge 2 (8): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(cbrt(2*(3686&#8722;411*sqrt(78))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(2*(3686+411*sqrt(78)))&#8722;20))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2438570593497324116</TD></TR>
+<TR><TD><NOBR>Edge 3 (4): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(20+cbrt(2*(58&#8722;3*sqrt(78))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(2*(58+3*sqrt(78)))))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.5681179738050099551</TD></TR>
+<TR><TD><NOBR>Edge 4 (2): &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(3*(2&#8722;cbrt(2*(3*sqrt(78)&#8722;4)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(2*(3*sqrt(78)+4))))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.78125405877116183153</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>4*(18+cbrt(6*(23*sqrt(78)&#8722;198)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;cbrt(6*(23*sqrt(78)+198)))/9 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.4367880932990821662</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SimplestD2.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

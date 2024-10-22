@@ -1,0 +1,178 @@
+<!-- File:   Heptagrammic72Trapezohedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Heptagrammic 7/2 Trapezohedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='PentagrammicConcaveTrapezohedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="StarDipyramidTrapezohedron.html"><B>Star Dipyramids &amp; Trapezohedra</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='Heptagrammic73Trapezohedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Heptagrammic 7/2 Trapezohedron
+
+	(14) SHORT EDGE = 0.667114583795489220286616062028
+		= square-root of a root of the polynomial:  (x^3) - (x^2) - 2*x + 1
+		= sqrt(2 * sin(pi/14))
+	(14) LONG EDGE = 0.885918345756451603988601901146
+		= square-root of a root of the polynomial:  49*(x^3)-49*(x^2)+7*x+1
+		= sqrt(7 * (4 * cos(2*pi/7) + 3)) / 7
+		= sqrt(7 * (1 + 1 / sin(pi/14))) / 7
+		= sqrt(7 * (8 * cos(pi/7) * cos(pi/7) - 1)) / 7
+		= sqrt(7 * (7 - 8 * sin(pi/7) * sin(pi/7))) / 7
+	(14) INNER VERTEX RADIUS = 0.665775327253554541102098683800
+		= square-root of a root of the polynomial:  448*(x^3) - 336*(x^2) + 27
+		= sqrt(9 - 3 * cot(2*pi/7) * cot(2*pi/7)) / 4
+		= sqrt(9 - 3 * tan(3*pi/14) * tan(3*pi/14)) / 4
+	(2) OUTER VERTEX RADIUS = 0.798184849030174119080013577449
+		= square-root of a root of the polynomial:
+			3136*(x^3) - 2352*(x^2) + 224*x + 1
+		= sqrt(14 * (2 * cos(pi/7) + 5 * cos(2*pi/7) + 4)) / 14
+		= sqrt(14 * (6 - 8 * sin(pi/14) + 7 / sin(pi/14))) / 28
+		= sqrt(14 * (28 * cos(pi/7) - 5 / cos(pi/7) + 16)) / 28
+		= sqrt(7 * (10 * cos(2*pi/7) + 1 / cos(2*pi/7) + 10)) / 14
+		= sqrt(14 * (4 * cos(2*pi/7) + 3) * (cos(2*pi/7) + 1)) / 14
+		= sqrt(14 * (1 / sin(pi/14) + 1) * (1 / sin(pi/14) + 2)) / 28
+	EDGE-SCRIBED RADIUS = 0.576191217740621626310287555887
+		= square-root of a root of the polynomial:  448*(x^3)-224*(x^2)+28*x-1
+		= 1 / (4 * sin(pi/7))
+	INRADIUS = 0.435184230741730606339427914143
+		= square-root of a root of the polynomial:
+			12992*(x^3) - 3024*(x^2) + 112*x - 1
+		= sqrt(406 * (236 * cos(pi/7) - 37/cos(pi/7) + 136)) / 812
+		= sqrt(406 * (62 + 59/sin(pi/14) - 88 * sin(pi/14))) / 812
+		= sqrt(406 * (22 * cos(pi/7) + 37 * cos(2*pi/7) + 34)) / 406
+		= sqrt(203 * (74 * cos(2*pi/7) + 11/cos(2*pi/7) + 90)) / 406
+	DIHEDRAL ANGLE = acos(-0.140888037721188926594636823658)
+		= acos(-root[29*(x^3) + 25*(x^2) + 3*x - 1])
+		= acos(-(16 * cos(pi/7) - 3 / cos(pi/7) - 7) / 29)
+		= acos(-(4 / sin(pi/14) - 4 * sin(pi/14) - 13) / 29)
+		= acos(-(4 * cos(pi/7) + 12 * cos(2*pi/7) - 7) / 29)
+		= acos(-(12 * cos(2*pi/7) + 1 / cos(2*pi/7) - 5) / 29)
+		= 98.0992364099680511174652281261 degrees
+
+	ROTATION SYMMETRIES:          14
+	MIRROR ROTATION SYMMETRIES:   14
+	ROTATION AXES:                 8 (1[7] + 7[2])
+	MIRROR PLANES:                 8
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  7-fold Prismatic (D7h)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="8 16 14">
+<INPUT type=hidden class=Constants value="0.142307478623063505834519223038,
+0.185110331655694381858865251820,
+0.277479066043685595711097435503,
+0.398736694441201980707844127107,
+0.576191217740621626310287555887,
+0.623489801858733530525004884004,
+0.639524003844966302873925303636,
+0.798184849030174119080013577449">
+<!--
+	C0 = square-root of a root of the polynomial:  448*(x^3)-336*(x^2)+56*x-1
+		= (1 - cos(2*pi/7)) * sqrt(7) / 7
+	C1 = square-root of a root of the polynomial:  64*(x^3)+80*(x^2)-32*x+1
+		= sqrt(2 * (4 * cos(pi/7) - 3 / cos(pi/7))) / 4
+		= sqrt(5 - 7 / (tan(2*pi/7) * tan(2*pi/7))) / 4
+		= sqrt(2 * (3 * cos(2*pi/7) - 2 * cos(pi/7))) / 2
+	C2 = root of the polynomial:  8*(x^3) - 8*(x^2) - 2*x + 1
+		= 1 / (4 * cos(pi/7))
+	C3 = square-root of a root of the polynomial:  448*(x^3)-560*(x^2)+84*x-1
+		= cot(2*pi/7) / 2
+	C4 = square-root of a root of the polynomial:  448*(x^3)-224*(x^2)+28*x-1
+		= 1 / (4 * sin(pi/7))
+	C5 = root of the polynomial:  8*(x^3) + 4*(x^2) - 4*x - 1
+		= cos(2*pi/7)
+	C6 = square-root of a root of the polynomial:  7*(x^3) - 14*(x^2) + 7*x - 1
+		= 1 / (2 * sin(2*pi/7))
+	C7 = square-root of a root of the polynomial:
+			3136*(x^3) - 2352*(x^2) + 224*x + 1
+		= sqrt(14 * (2 * cos(pi/7) + 5 * cos(2*pi/7) + 4)) / 14
+		= sqrt(14 * (6 - 8 * sin(pi/14) + 7 / sin(pi/14))) / 28
+		= sqrt(14 * (28 * cos(pi/7) - 5 / cos(pi/7) + 16)) / 28
+		= sqrt(7 * (10 * cos(2*pi/7) + 1 / cos(2*pi/7) + 10)) / 14
+		= sqrt(14 * (4 * cos(2*pi/7) + 3) * (cos(2*pi/7) + 1)) / 14
+		= sqrt(14 * (1 / sin(pi/14) + 1) * (1 / sin(pi/14) + 2)) / 28
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 -C7,0.0 0.0 C7,C2 C4 -C1,
+-C2 C4 C1,-C2 C4 -C1,C2 C4 C1,-C5 C0 -C1,C5 C0 C1,C5 C0 -C1,-C5 C0 C1,
+0.5 -C3 -C1,-0.5 -C3 C1,-0.5 -C3 -C1,0.5 -C3 C1,0.0 -C6 -C1,0.0 -C6 C1">
+<INPUT type=hidden class=Faces value="0 2 7 10 #,0 10 15 12 #,0 12 9 4 #,
+0 4 5 8 #,0 8 13 14 #,0 14 11 6 #,0 6 3 2 #,1 3 6 11 #,1 11 14 13 #,1 13 8 5 #,
+1 5 4 9 #,1 9 12 15 #,1 15 10 7 #,1 7 2 3 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="12 -3 -4 0">
+</DIV>
+<BR>
+<CENTER>
+Heptagrammic 7/2 Trapezohedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>16 &nbsp;(14[3] + 2[7])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>14 &nbsp;(tri-equiangular kites)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>28 &nbsp;(14 short + 14 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>7-fold Prismatic &nbsp;(D7h)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;root[29*(x^3)+25*(x^2)+3*x&#8722;1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = acos(&#8722;(16*cos(&#960;/7)&#8722;3/cos(&#960;/7)&#8722;7)/29) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;98.099236410 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="Heptagrammic72Antiprism.html">Heptagrammic 7/2 Antiprism</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length Heptagrammic 7/2 Antiprism)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (14): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[(x^3)&#8722;(x^2)&#8722;2*x+1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = sqrt(2*sin(&#960;/14)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.66711458379548922029</TD></TR>
+<TR><TD><NOBR>Long Edge (14): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[49*(x^3)&#8722;49*(x^2)+7*x+1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = sqrt((4*cos(2*&#960;/7)+3)/7) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.88591834575645160399</TD></TR>
+<TR><TD><NOBR>[7]-Vertex Radius (2): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[3136*(x^3)&#8722;2352*(x^2)+224*x+1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = sqrt((2*cos(&#960;/7)+5*cos(2*&#960;/7)+4)/14) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.79818484903017411908</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (14): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[448*(x^3)&#8722;336*(x^2)+27]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = sqrt(9&#8722;3*cot(2*&#960;/7)*cot(2*&#960;/7))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.66577532725355454110</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[448*(x^3)&#8722;224*(x^2)+28*x&#8722;1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = 1/(4*sin(&#960;/7)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.57619121774062162631</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[12992*(x^3)&#8722;3024*(x^2)+112*x&#8722;1]) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; = sqrt((236*cos(&#960;/7)&#8722;37/cos(&#960;/7)+136)/1624) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.43518423074173060634</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='Heptagrammic72Trapezohedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,128 @@
+<!-- File:   TetradyakisHexahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Tetradyakis Hexahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='GreatDisdyakisTriacontahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="SelfIntersectingTruncatedQuasiRegularDual.html"><B>Self-Intersecting Truncated Quasi-Regular Duals</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='GreatDisdyakisDodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Tetradyakis Hexahedron
+
+	(24) SHORT EDGE = 2 * (sqrt(6) - sqrt(3))
+	(24) MEDIUM EDGE = 3 * sqrt(6)
+	(24) LONG EDGE = 2 * (sqrt(3) + sqrt(6))
+	(6) INNER VERTEX RADIUS = 3 * (sqrt(2) - 1)
+	(8) MIDDLE VERTEX RADIUS = sqrt(3)
+	(6) OUTER VERTEX RADIUS = 3 * (1 + sqrt(2))
+	EDGE-SCRIBED RADIUS = sqrt(6) / 2
+	INRADIUS = 3 * sqrt(7) / 7
+	DIHEDRAL ANGLE = acos(-0.714285714285714285714285714286)
+		= acos(-5/7)
+		= 135.584691402807025025888759948 degrees
+
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:   24
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 9
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Octahedral (Oh)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="2 20 48">
+<INPUT type=hidden class=Constants value="1.24264068711928514640506617263,
+7.24264068711928514640506617263">
+<!--
+	C0 = 3 * (sqrt(2) - 1)
+	C1 = 3 * (1 + sqrt(2))
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C1,0.0 0.0 -C1,C1 0.0 0.0,
+-C1 0.0 0.0,0.0 C1 0.0,0.0 -C1 0.0,0.0 0.0 C0,0.0 0.0 -C0,C0 0.0 0.0,
+-C0 0.0 0.0,0.0 C0 0.0,0.0 -C0 0.0,1.0 1.0 1.0,1.0 1.0 -1.0,1.0 -1.0 1.0,
+1.0 -1.0 -1.0,-1.0 1.0 1.0,-1.0 1.0 -1.0,-1.0 -1.0 1.0,-1.0 -1.0 -1.0">
+<INPUT type=hidden class=Faces value="0 8 13 #,0 13 10 #,0 10 17 #,0 17 9 #,
+0 9 19 #,0 19 11 #,0 11 15 #,0 15 8 #,1 8 14 #,1 14 11 #,1 11 18 #,1 18 9 #,
+1 9 16 #,1 16 10 #,1 10 12 #,1 12 8 #,2 6 18 #,2 18 11 #,2 11 19 #,2 19 7 #,
+2 7 17 #,2 17 10 #,2 10 16 #,2 16 6 #,3 6 12 #,3 12 10 #,3 10 13 #,3 13 7 #,
+3 7 15 #,3 15 11 #,3 11 14 #,3 14 6 #,4 6 14 #,4 14 8 #,4 8 15 #,4 15 7 #,
+4 7 19 #,4 19 9 #,4 9 18 #,4 18 6 #,5 6 16 #,5 16 9 #,5 9 17 #,5 17 7 #,
+5 7 13 #,5 13 8 #,5 8 12 #,5 12 6 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Tetradyakis Hexahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>20 &nbsp;(8[6] + 6[8] + 6[8])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>48 &nbsp;(obtuse triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>72 &nbsp;(24 short + 24 medium + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Octahedral &nbsp;(Oh)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;5/7) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;135.584691403 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="CubitruncatedCuboctahedron.html">Cubitruncated Cuboctahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length Cubitruncated Cuboctahedron)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD><NOBR>2*(sqrt(6)&#8722;sqrt(3)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4348778704286016093</TD></TR>
+<TR><TD><NOBR>Medium Edge (24): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(6) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;7.3484692283495342946</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>2*(sqrt(3)+sqrt(6)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;8.3630811007041107834</TD></TR>
+<TR><TD><NOBR>[8]-Vertex Radius (6): &nbsp;</NOBR></TD><TD><NOBR>3*(sqrt(2)&#8722;1) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2426406871192851464</TD></TR>
+<TR><TD><NOBR>[6]-Vertex Radius (8): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.73205080756887729353</TD></TR>
+<TR><TD><NOBR>[8]-Vertex Radius (6): &nbsp;</NOBR></TD><TD><NOBR>3*(1+sqrt(2)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;7.2426406871192851464</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6)/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2247448713915890491</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(7)/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1338934190276816816</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='TetradyakisHexahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,142 @@
+<!-- File:   LpentagonalIcositetrahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Pentagonal Icositetrahedron (laevo)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RpentagonalIcositetrahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Catalan.html"><B>Catalan Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RhombicTriacontahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Pentagonal Icositetrahedron (laevo)
+
+	(36) SHORT EDGE
+		= sqrt(6*(4-cbrt(2*(13+3*sqrt(33)))-cbrt(2*(13-3*sqrt(33)))))/6
+	(24) LONG EDGE = sqrt(3*(4+cbrt(19+3*sqrt(33))+cbrt(19-3*sqrt(33))))/6
+	(32) INNER VERTEX RADIUS
+		= sqrt(2 * (6 + cbrt(6*(9 + sqrt(33))) + cbrt(6*(9 - sqrt(33))))) / 4
+	(6) OUTER VERTEX RADIUS
+		= sqrt(6*(14+cbrt(2*(1777+33*sqrt(33)))+cbrt(2*(1777-33*sqrt(33)))))/12
+	EDGE-SCRIBED RADIUS
+		= sqrt(3 * (7 + cbrt(199+3*sqrt(33)) + cbrt(199-3*sqrt(33)))) / 6
+	INRADIUS = sqrt(42 * (78 + cbrt(66 * (6039 + 49 * sqrt(33)))
+		+ cbrt(66 * (6039 - 49 * sqrt(33))))) / 84
+	VOLUME = sqrt(6 * (113 + cbrt(1327067 + 1419 * sqrt(33))
+		+ cbrt(1327067 - 1419 * sqrt(33)))) / 6
+	DIHEDRAL ANGLE
+		= acos((1-cbrt(2*(283+21*sqrt(33)))-cbrt(2*(283-21*sqrt(33))))/21)
+		= 136.3092328923242038182835507848 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="4 38 24">
+<INPUT type=hidden class=Constants value="0.218796643000480441021525033712,
+0.740183741369857222808508165943,
+1.02365617811269018236347687527,
+1.36141015192644253450100912043">
+<!--
+	C0 = sqrt(6 * (cbrt(6*(9 + sqrt(33))) + cbrt(6*(9 - sqrt(33))) - 6)) / 12
+	C1 = sqrt(6 * (6 + cbrt(6*(9 + sqrt(33))) + cbrt(6*(9 - sqrt(33))))) / 12
+	C2 = sqrt(6 * (18 + cbrt(6*(9 + sqrt(33))) + cbrt(6*(9 - sqrt(33))))) / 12
+	C3 = sqrt(6*(14+cbrt(2*(1777+33*sqrt(33)))+cbrt(2*(1777-33*sqrt(33)))))/12
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 -C3,0.0 0.0 C3,-C3 0.0 0.0,
+C3 0.0 0.0,0.0 -C3 0.0,0.0 C3 0.0,-C1 C0 -C2,-C1 -C0 C2,C1 -C0 -C2,C1 C0 C2,
+-C2 C1 -C0,-C2 -C1 C0,C2 -C1 -C0,C2 C1 C0,-C0 C2 -C1,-C0 -C2 C1,C0 -C2 -C1,
+C0 C2 C1,-C0 -C1 -C2,-C0 C1 C2,C0 C1 -C2,C0 -C1 C2,-C2 -C0 -C1,-C2 C0 C1,
+C2 C0 -C1,C2 -C0 C1,-C1 -C2 -C0,-C1 C2 C0,C1 C2 -C0,C1 -C2 C0,-C1 -C1 -C1,
+-C1 -C1 C1,-C1 C1 -C1,-C1 C1 C1,C1 -C1 -C1,C1 -C1 C1,C1 C1 -C1,C1 C1 C1">
+<INPUT type=hidden class=Faces value="0 18 30 22 6 #,0 8 34 16 18 #,
+0 20 36 24 8 #,0 6 32 14 20 #,1 19 33 23 7 #,1 9 37 17 19 #,1 21 35 25 9 #,
+1 7 31 15 21 #,2 23 33 27 10 #,2 11 31 7 23 #,2 22 30 26 11 #,2 10 32 6 22 #,
+3 25 35 29 12 #,3 13 37 9 25 #,3 24 36 28 13 #,3 12 34 8 24 #,4 29 35 21 15 #,
+4 16 34 12 29 #,4 26 30 18 16 #,4 15 31 11 26 #,5 28 36 20 14 #,
+5 17 37 13 28 #,5 27 33 19 17 #,5 14 32 10 27 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Pentagonal Icositetrahedron (laevo)
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>38 &nbsp;(32[3] + 6[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>24 &nbsp;(mirror-symmetric pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>60 &nbsp;(36 short + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos((1&#8722;cbrt(2*(283+21*sqrt(33))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;cbrt(2*(283&#8722;21*sqrt(33))))/21) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;136.309232892 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="RsnubCube.html">Snub Cube (dextro)</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length Snub Cube)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (36): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(4&#8722;cbrt(2*(13+3*sqrt(33))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;cbrt(2*(13&#8722;3*sqrt(33)))))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.593465355971987310502</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(4+cbrt(19+3*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(19&#8722;3*sqrt(33))))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.8425091624448604672504</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (32): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(6+cbrt(6*(9+sqrt(33))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(6*(9&#8722;sqrt(33)))))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2820358469890142117</TD></TR>
+<TR><TD><NOBR>[4]-Vertex Radius (6): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(14+cbrt(2*(1777+33*sqrt(33))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(2*(1777&#8722;33*sqrt(33)))))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.361410151926442534501</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(7+cbrt(199+3*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(199&#8722;3*sqrt(33))))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2472231679936432518</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(42*(78+cbrt(66*(6039+49*sqrt(33))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(66*(6039&#8722;49*sqrt(33)))))/84 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1576617909555498021</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(6*(113+cbrt(1327067+1419*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(1327067&#8722;1419*sqrt(33))))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;7.4473951888148613654</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='LpentagonalIcositetrahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Eug&egrave;ne Catalan, M&eacute;moire sur la Th&eacute;orie des Poly&egrave;dres,<BR><I>Journal de l'&Eacute;cole polytechnique</I> <B>41</B> (1865), 1-71, +7 plates.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

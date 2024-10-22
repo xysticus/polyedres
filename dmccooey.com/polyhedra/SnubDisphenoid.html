@@ -1,0 +1,120 @@
+<!-- File:   SnubDisphenoid.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2019 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Snub Disphenoid</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='TridiminishedRhombicosidodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="JohnsonPage5.html"><B>Johnson Solids (Page 5)</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='SnubSquareAntiprism.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Snub Disphenoid
+
+	(18) EDGE = 1
+	VOLUME = 0.859493646191300531555409636980
+		= square-root of a root of the polynomial:
+		5832*(x^3) - 1377*(x^2) - 2160*x - 4
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:           4
+	MIRROR ROTATION SYMMETRIES:    4
+	ROTATION AXES:                 3 (3[2])
+	MIRROR PLANES:                 2
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  2-fold Antiprismatic (D2v)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="3 8 12">
+<INPUT type=hidden class=Constants value="0.205561565853259538077851199951,
+0.644584273224154984541338729084,
+0.783930924232563649920229273668">
+<!--
+	C0 = 0.205561565853259538077851199951
+		= square-root of a root of the polynomial:
+		128*(x^3) + 176*(x^2) + 16*x - 1
+	C1 = 0.644584273224154984541338729084
+		= root of the polynomial:  2*(x^3) - 3*(x^2) - 2*x + 2
+	C2 = 0.783930924232563649920229273668
+		= square-root of a root of the polynomial:
+		32*(x^3) - 4*(x^2) - 8*x - 1
+-->
+<INPUT type=hidden class=Vertices value="0.5 0.0 -C2,-0.5 0.0 -C2,0.0 0.5 C2,
+0.0 -0.5 C2,C1 0.0 C0,-C1 0.0 C0,0.0 C1 -C0,0.0 -C1 -C0">
+<INPUT type=hidden class=Faces value="0 1 6 #,1 0 7 #,2 3 4 #,3 2 5 #,0 6 4 #,
+1 7 5 #,2 4 6 #,3 5 7 #,0 4 7 #,1 5 6 #,2 6 5 #,3 7 4 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="1 1 0 0">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=10% align=left style="font-size:60%"><NOBR>(J84)</NOBR></TD>
+<TD width=80% align=center>Snub Disphenoid</TD>
+<TD width=10% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>8 &nbsp;(4[4] + 4[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>12 &nbsp;({8 + 4} equilateral triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>18</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>2-fold Antiprismatic &nbsp;(D2v)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(root[5832*(x^3)&#8722;1377*(x^2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;2160*x&#8722;4]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.85949364619130053156</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='SnubDisphenoid.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

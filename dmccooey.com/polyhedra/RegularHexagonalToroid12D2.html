@@ -1,0 +1,132 @@
+<!-- File:   RegularHexagonalToroid12D2.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Regular Hexagonal Toroid with 12 faces (type D) (version 2)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RegularHexagonalToroid12C_Knot.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="ToroidalRegularHexagonal.html"><B>Regular Hexagonal Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RegularHexagonalToroid13A.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Regular Hexagonal Toroid with 12 faces (type D) (version 2)
+
+	(4) EDGE 1 = 3
+	(4) EDGE 2 = sqrt(10)
+	(6) EDGE 3 = 4
+	(8) EDGE 4 = 6
+	(4) EDGE 5 = 9
+	(4) EDGE 6 = 3 * sqrt(10)
+	(2) EDGE 7 = 12
+	(4) EDGE 8 = 4 * sqrt(10)
+	RADIUS = 6 * sqrt(3)
+	VOLUME = 756
+
+	ROTATION SYMMETRIES:           4
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                 3 (3[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  2-fold Dihedral (D2)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="0 24 12">
+<INPUT type=hidden class=Vertices value="6 -6 6,6 6 -2,6 -6 -6,-6 6 6,-6 6 -6,
+-6 -6 -2,6 -3 6,-6 3 6,3 -6 -6,-3 6 -6,3 3 -3,-3 -3 -3,6 6 2,-6 -6 2,6 -3 2,
+-6 3 2,3 -3 -3,3 3 3,3 -3 3,-3 3 -3,-3 3 3,-3 -3 3,3 -6 -2,-3 6 -2">
+<INPUT type=hidden class=Faces value="0 2 1 12 14 6 #,0 6 21 20 15 13 #,
+0 13 5 22 8 2 #,3 4 5 13 15 7 #,3 7 17 18 14 12 #,3 12 1 23 9 4 #,
+10 8 22 16 18 17 #,10 17 7 15 20 19 #,10 19 23 1 2 8 #,11 9 23 19 20 21 #,
+11 21 6 14 18 16 #,11 16 22 5 4 9 #">
+<INPUT type=hidden class=Background value="#606060">
+<INPUT type=hidden class=Quaternion value="89 -32 10 32">
+</DIV>
+<BR>
+<CENTER>
+Regular Hexagonal Toroid with 12 faces <NOBR>(type D)</NOBR> <NOBR>(version 2)</NOBR>
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="version 1" onClick="window.location.href='RegularHexagonalToroid12D1.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>version 2</NOBR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>24 &nbsp;(24[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>12 &nbsp;({4 * 3} nonconvex hexagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>36 &nbsp;(8 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>2-fold Dihedral &nbsp;(D2)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Toroid: &nbsp;</NOBR></TD><TD colspan=2><A href="RegularTriangularToroid24D.html">Regular Triangular Toroid with 24 faces (type D)</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on integer coordinates)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (4): &nbsp;</NOBR></TD><TD>3</TD></TR>
+<TR><TD><NOBR>Edge 2 (4): &nbsp;</NOBR></TD><TD><NOBR>sqrt(10) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.1622776601683793320</TD></TR>
+<TR><TD><NOBR>Edge 3 (6): &nbsp;</NOBR></TD><TD>4</TD></TR>
+<TR><TD><NOBR>Edge 4 (8): &nbsp;</NOBR></TD><TD>6</TD></TR>
+<TR><TD><NOBR>Edge 5 (4): &nbsp;</NOBR></TD><TD>9</TD></TR>
+<TR><TD><NOBR>Edge 6 (4): &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(10) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;9.4868329805051379960</TD></TR>
+<TR><TD><NOBR>Edge 7 (2): &nbsp;</NOBR></TD><TD>12</TD></TR>
+<TR><TD><NOBR>Edge 8 (4): &nbsp;</NOBR></TD><TD><NOBR>4*sqrt(10) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;12.649110640673517328</TD></TR>
+<TR><TD>Volume:</TD><TD colspan=2><NOBR>756 &nbsp;[EXACT]</NOBR></TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RegularHexagonalToroid12D2.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Lajos Szilassi, Locally regular toroids with hexagonal faces,<BR><I>Symmetry: Culture and Science</I> <B>20</B>(1-4) (2009), 269-295.</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

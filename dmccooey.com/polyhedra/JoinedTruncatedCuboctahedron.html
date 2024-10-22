@@ -1,0 +1,171 @@
+<!-- File:   JoinedTruncatedCuboctahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Joined Truncated Cuboctahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='JoinedIcosidodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Hull.html"><B>Archimedean-Catalan Hulls</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='JoinedTruncatedIcosahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Joined Truncated Cuboctahedron
+
+	(48) SHORT EDGE = sqrt(109 - 6 * sqrt(2)) / 14
+	(48) MEDIUM EDGE = sqrt(13 - 6 * sqrt(2)) / 2
+	(48) LONG EDGE = sqrt(23) * (3 + sqrt(2)) / 14
+	KITE1 LENGTH = 2 * sqrt(3 * (10 - sqrt(2))) / 7
+	KITE1 WIDTH = 1
+	KITE2 LENGTH = 3 * sqrt(6 * (2 + sqrt(2))) / 7
+	KITE2 WIDTH = 1
+	KITE3 LENGTH = 2 * sqrt(6 * (10 + sqrt(2))) / 7
+	KITE3 WIDTH = 1
+	(48) [3]-VERTEX RADIUS = sqrt(13 + 6 * sqrt(2)) / 2
+	(12) [4]-VERTEX RADIUS = 3 * (4 + sqrt(2)) / 7
+	(8) [6]-VERTEX RADIUS = sqrt(6)
+	(6) [8]-VERTEX RADIUS = 3 * (2 + 3 * sqrt(2)) / 7
+	INRADIUS = sqrt(6 * (2 + sqrt(2))) / 2
+	VOLUME = 12 * (12 + 13 * sqrt(2)) / 7
+	LONG EDGE ANGLE = acos(-11/12) = 156.443535690898770449293818034 degrees
+	MEDIUM EDGE ANGLE = acos(-(6 + sqrt(2)) / 8)
+		= 157.937808842458525538908634298 degrees
+	SHORT EDGE ANGLE = acos(-(10 + sqrt(2)) / 12)
+		= 162.023738220797421048672285464 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:   24
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 9
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Octahedral (Oh)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="5 74 72">
+<INPUT type=hidden class=Constants value="1.20710678118654752440084436210,
+1.41421356237309504880168872421,
+1.64075448203408147040144747789,
+1.91421356237309504880168872421,
+2.67541743733683649131645693113">
+<!--
+	C0 = (1 + sqrt(2)) / 2
+	C1 = sqrt(2)
+	C2 = 3 * (1 + 2 * sqrt(2)) / 7
+	C3 = (1 + 2 * sqrt(2)) / 2
+	C4 = 3 * (2 + 3 * sqrt(2)) / 7
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C4,0.0 0.0 -C4,C4 0.0 0.0,
+-C4 0.0 0.0,0.0 C4 0.0,0.0 -C4 0.0,C0 0.5 C3,C0 0.5 -C3,C0 -0.5 C3,C0 -0.5 -C3,
+-C0 0.5 C3,-C0 0.5 -C3,-C0 -0.5 C3,-C0 -0.5 -C3,C3 C0 0.5,C3 C0 -0.5,
+C3 -C0 0.5,C3 -C0 -0.5,-C3 C0 0.5,-C3 C0 -0.5,-C3 -C0 0.5,-C3 -C0 -0.5,
+0.5 C3 C0,0.5 C3 -C0,0.5 -C3 C0,0.5 -C3 -C0,-0.5 C3 C0,-0.5 C3 -C0,-0.5 -C3 C0,
+-0.5 -C3 -C0,0.5 C0 C3,0.5 C0 -C3,0.5 -C0 C3,0.5 -C0 -C3,-0.5 C0 C3,
+-0.5 C0 -C3,-0.5 -C0 C3,-0.5 -C0 -C3,C3 0.5 C0,C3 0.5 -C0,C3 -0.5 C0,
+C3 -0.5 -C0,-C3 0.5 C0,-C3 0.5 -C0,-C3 -0.5 C0,-C3 -0.5 -C0,C0 C3 0.5,
+C0 C3 -0.5,C0 -C3 0.5,C0 -C3 -0.5,-C0 C3 0.5,-C0 C3 -0.5,-C0 -C3 0.5,
+-C0 -C3 -0.5,C2 0.0 C2,C2 0.0 -C2,-C2 0.0 C2,-C2 0.0 -C2,C2 C2 0.0,C2 -C2 0.0,
+-C2 C2 0.0,-C2 -C2 0.0,0.0 C2 C2,0.0 C2 -C2,0.0 -C2 C2,0.0 -C2 -C2,C1 C1 C1,
+C1 C1 -C1,C1 -C1 C1,C1 -C1 -C1,-C1 C1 C1,-C1 C1 -C1,-C1 -C1 C1,-C1 -C1 -C1">
+<INPUT type=hidden class=Faces value="0 8 54 6 #,0 30 62 34 #,0 10 56 12 #,
+0 36 64 32 #,1 7 55 9 #,1 33 65 37 #,1 13 57 11 #,1 35 63 31 #,2 15 58 14 #,
+2 38 54 40 #,2 16 59 17 #,2 41 55 39 #,3 18 60 19 #,3 43 57 45 #,3 21 61 20 #,
+3 44 56 42 #,4 23 63 27 #,4 51 60 50 #,4 26 62 22 #,4 46 58 47 #,5 24 64 28 #,
+5 52 61 53 #,5 29 65 25 #,5 49 59 48 #,0 6 66 30 #,0 34 70 10 #,0 12 72 36 #,
+0 32 68 8 #,1 9 69 33 #,1 37 73 13 #,1 11 71 35 #,1 31 67 7 #,2 14 66 38 #,
+2 40 68 16 #,2 17 69 41 #,2 39 67 15 #,3 19 71 43 #,3 45 73 21 #,3 20 72 44 #,
+3 42 70 18 #,4 22 66 46 #,4 47 67 23 #,4 27 71 51 #,4 50 70 26 #,5 25 69 49 #,
+5 48 68 24 #,5 28 72 52 #,5 53 73 29 #,66 6 54 38 #,66 14 58 46 #,
+66 22 62 30 #,67 31 63 23 #,67 47 58 15 #,67 39 55 7 #,68 32 64 24 #,
+68 48 59 16 #,68 40 54 8 #,69 9 55 41 #,69 17 59 49 #,69 25 65 33 #,
+70 34 62 26 #,70 50 60 18 #,70 42 56 10 #,71 11 57 43 #,71 19 60 51 #,
+71 27 63 35 #,72 12 56 44 #,72 20 61 52 #,72 28 64 36 #,73 37 65 29 #,
+73 53 61 21 #,73 45 57 13 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Joined Truncated Cuboctahedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>74 &nbsp;(48[3] + 12[4] + 8[6] + 6[8])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>72 &nbsp;(24 short kites + 24 medium kites + 24 long kites)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>144 &nbsp;(48 short + 48 medium + 48 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Octahedral &nbsp;(Oh)</NOBR></TD></TR>
+<TR><TD><NOBR>Long Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;11/12) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;156.443535691 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Medium Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(6+sqrt(2))/8) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;157.937808842 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(10+sqrt(2))/12) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;162.023738221 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length <A href="TruncatedCuboctahedron.html">Truncated Cuboctahedron</A>)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (48): &nbsp;</NOBR></TD><TD><NOBR>sqrt(109&#8722;6*sqrt(2))/14 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.71612163566688262435498</TD></TR>
+<TR><TD><NOBR>Medium Edge (48): &nbsp;</NOBR></TD><TD><NOBR>sqrt(13&#8722;6*sqrt(2))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0623933623853066161</TD></TR>
+<TR><TD><NOBR>Long Edge (48): &nbsp;</NOBR></TD><TD><NOBR>sqrt(23)*(3+sqrt(2))/14 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.5121303252188161974</TD></TR>
+<TR><TD><NOBR>Short Kite Length: &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(3*(10&#8722;sqrt(2)))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4500488186822163018</TD></TR>
+<TR><TD><NOBR>Short Kite Width: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Medium Kite Length: &nbsp;</NOBR></TD><TD><NOBR>3*sqrt(6*(2+sqrt(2)))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.9397429472460411059</TD></TR>
+<TR><TD><NOBR>Medium Kite Width: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Long Kite Length: &nbsp;</NOBR></TD><TD><NOBR>2*sqrt(6*(10+sqrt(2)))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.3644524131865197592</TD></TR>
+<TR><TD><NOBR>Long Kite Width: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (48): &nbsp;</NOBR></TD><TD><NOBR>sqrt(13+6*sqrt(2))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.3176109128927665138</TD></TR>
+<TR><TD><NOBR>[4]-Vertex Radius (12): &nbsp;</NOBR></TD><TD><NOBR>3*(4+sqrt(2))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.3203772410170407352</TD></TR>
+<TR><TD><NOBR>[6]-Vertex Radius (8): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.4494897427831780982</TD></TR>
+<TR><TD><NOBR>[8]-Vertex Radius (6): &nbsp;</NOBR></TD><TD><NOBR>3*(2+3*sqrt(2))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.6754174373368364913</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(2+sqrt(2)))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.2630334384537146236</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>12*(12+13*sqrt(2))/7 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;52.088187961457546802</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='JoinedTruncatedCuboctahedron.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://www.georgehart.com/virtual-polyhedra/conway_notation.html>Conway Notation for Polyhedra (George Hart)</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

@@ -1,0 +1,168 @@
+<!-- File:   JoinedRsnubCube.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Joined Snub Cube (dextro)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='JoinedLsnubCube.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Hull.html"><B>Archimedean-Catalan Hulls</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='JoinedIcosidodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Joined Snub Cube (dextro)
+
+	(96) SHORT EDGE
+		= sqrt(6*(10-cbrt(2*(13+3*sqrt(33)))-cbrt(2*(13-3*sqrt(33)))))/12
+	(24) LONG EDGE = sqrt(6*(6+cbrt(6*(9+sqrt(33)))+cbrt(6*(9-sqrt(33)))))/12
+	RHOMBUS LENGTH = 1
+	RHOMBUS WIDTH
+		= sqrt(6*(4-cbrt(2*(13+3*sqrt(33)))-cbrt(2*(13-3*sqrt(33)))))/6
+	KITE LENGTH = sqrt(3*(4+cbrt(19+3*sqrt(33))+cbrt(19-3*sqrt(33))))/6
+	KITE WIDTH = 1
+	(32) INNER VERTEX RADIUS
+		= sqrt(2 * (6 + cbrt(6*(9 + sqrt(33))) + cbrt(6*(9 - sqrt(33))))) / 4
+	(24) MIDDLE VERTEX RADIUS
+		= sqrt(3 * (10 + cbrt(199+3*sqrt(33)) + cbrt(199-3*sqrt(33)))) / 6
+	(6) OUTER VERTEX RADIUS
+		= sqrt(6*(14+cbrt(2*(1777+33*sqrt(33)))+cbrt(2*(1777-33*sqrt(33)))))/12
+	INRADIUS = sqrt(3*(7+cbrt(199+3*sqrt(33))+cbrt(199-3*sqrt(33))))/6
+	VOLUME
+		= sqrt(116+6*cbrt(2*(1777+33*sqrt(33)))+6*cbrt(2*(1777-33*sqrt(33))))/2
+	LONG EDGE ANGLE = acos(-(cbrt(19+3*sqrt(33))+cbrt(19-3*sqrt(33))-2)/3)
+		= 147.064879199227277202064898622 degrees
+	SHORT EDGE ANGLE = acos(-(1+cbrt(19+3*sqrt(33))+cbrt(19+3*sqrt(33)))/6)
+		= 156.874001739016259375073883213 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Octahedral (O)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="7 62 60">
+<INPUT type=hidden class=Constants value="0.218796643000480441021525033712,
+0.33775397381375235213753224516503,
+0.621226410556585311692500954490,
+0.740183741369857222808508165943,
+1.02365617811269018236347687527,
+1.14261350892596209347948408672,
+1.36141015192644253450100912043">
+<!--
+	C0 = sqrt(6 * (cbrt(6*(9 + sqrt(33))) + cbrt(6*(9 - sqrt(33))) - 6)) / 12
+	C1 = sqrt(3 * (4 - cbrt(17 + 3*sqrt(33)) - cbrt(17 - 3*sqrt(33)))) / 6
+	C2 = sqrt(3 * (2 + cbrt(17 + 3*sqrt(33)) + cbrt(17 - 3*sqrt(33)))) / 6
+	C3 = sqrt(6 * (6 + cbrt(6*(9 + sqrt(33))) + cbrt(6*(9 - sqrt(33))))) / 12
+	C4 = sqrt(6 * (18 + cbrt(6*(9 + sqrt(33))) + cbrt(6*(9 - sqrt(33))))) / 12
+	C5 = sqrt(3 * (4 + cbrt(199 + 3*sqrt(33)) + cbrt(199 - 3*sqrt(33)))) / 6
+	C6 = sqrt(6*(14+cbrt(2*(1777+33*sqrt(33)))+cbrt(2*(1777-33*sqrt(33)))))/12
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C6,0.0 0.0 -C6,C6 0.0 0.0,
+-C6 0.0 0.0,0.0 -C6 0.0,0.0 C6 0.0,C2 -C1 C5,C2 C1 -C5,-C2 C1 C5,-C2 -C1 -C5,
+C5 -C2 C1,C5 C2 -C1,-C5 C2 C1,-C5 -C2 -C1,C1 -C5 C2,C1 C5 -C2,-C1 C5 C2,
+-C1 -C5 -C2,C1 C2 C5,C1 -C2 -C5,-C1 -C2 C5,-C1 C2 -C5,C5 C1 C2,C5 -C1 -C2,
+-C5 -C1 C2,-C5 C1 -C2,C2 C5 C1,C2 -C5 -C1,-C2 -C5 C1,-C2 C5 -C1,C3 C0 C4,
+C3 -C0 -C4,-C3 -C0 C4,-C3 C0 -C4,C4 C3 C0,C4 -C3 -C0,-C4 -C3 C0,-C4 C3 -C0,
+C0 C4 C3,C0 -C4 -C3,-C0 -C4 C3,-C0 C4 -C3,C0 -C3 C4,C0 C3 -C4,-C0 C3 C4,
+-C0 -C3 -C4,C4 -C0 C3,C4 C0 -C3,-C4 C0 C3,-C4 -C0 -C3,C3 -C4 C0,C3 C4 -C0,
+-C3 C4 C0,-C3 -C4 -C0,C3 -C3 C3,C3 -C3 -C3,C3 C3 C3,C3 C3 -C3,-C3 -C3 C3,
+-C3 -C3 -C3,-C3 C3 C3,-C3 C3 -C3">
+<INPUT type=hidden class=Faces value="0 20 42 6 #,0 8 32 20 #,0 18 44 8 #,
+0 6 30 18 #,1 21 43 7 #,1 9 33 21 #,1 19 45 9 #,1 7 31 19 #,2 22 46 10 #,
+2 11 34 22 #,2 23 47 11 #,2 10 35 23 #,3 24 48 12 #,3 13 36 24 #,3 25 49 13 #,
+3 12 37 25 #,4 27 50 14 #,4 17 39 27 #,4 28 53 17 #,4 14 40 28 #,5 26 51 15 #,
+5 16 38 26 #,5 29 52 16 #,5 15 41 29 #,54 10 46 6 #,54 14 50 10 #,54 6 42 14 #,
+55 27 39 19 #,55 23 35 27 #,55 19 31 23 #,56 26 38 18 #,56 22 34 26 #,
+56 18 30 22 #,57 11 47 7 #,57 15 51 11 #,57 7 43 15 #,58 28 40 20 #,
+58 24 36 28 #,58 20 32 24 #,59 13 49 9 #,59 17 53 13 #,59 9 45 17 #,
+60 12 48 8 #,60 16 52 12 #,60 8 44 16 #,61 29 41 21 #,61 25 37 29 #,
+61 21 33 25 #,6 46 22 30 #,7 47 23 31 #,8 48 24 32 #,9 49 25 33 #,
+10 50 27 35 #,11 51 26 34 #,12 52 29 37 #,13 53 28 36 #,14 42 20 40 #,
+15 43 21 41 #,16 44 18 38 #,17 45 19 39 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Joined Snub Cube (dextro)
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>62 &nbsp;(8[3] + 24[3] + 6[4] + 24[5])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>60 &nbsp;(24 kites + 36 rhombi)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>120 &nbsp;(96 short + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Octahedral &nbsp;(O)</NOBR></TD></TR>
+<TR><TD><NOBR>Long Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(cbrt(19+3*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(19&#8722;3*sqrt(33))&#8722;2)/3) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;147.064879199 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;(1+cbrt(19+3*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(19+3*sqrt(33)))/6) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;156.874001739 degrees</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on unit-edge-length <A href="RsnubCube.html">Snub Cube</A>)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (96): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(10&#8722;cbrt(2*(13+3*sqrt(33))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;cbrt(2*(13&#8722;3*sqrt(33)))))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.581420916535292358953</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(6+cbrt(6*(9+sqrt(33))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(6*(9&#8722;sqrt(33)))))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.74018374136985722281</TD></TR>
+<TR><TD><NOBR>Rhombus Length: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Rhombus Width: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(4&#8722;cbrt(2*(13+3*sqrt(33))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;cbrt(2*(13&#8722;3*sqrt(33)))))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.593465355971987310502</TD></TR>
+<TR><TD><NOBR>Kite Length: &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(4+cbrt(19+3*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(19&#8722;3*sqrt(33))))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.8425091624448604672504</TD></TR>
+<TR><TD><NOBR>Kite Width: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (8): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(6+cbrt(6*(9+sqrt(33))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(6*(9&#8722;sqrt(33)))))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2820358469890142117</TD></TR>
+<TR><TD><NOBR>[3]-Vertex Radius (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(2*(6+cbrt(6*(9+sqrt(33))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(6*(9&#8722;sqrt(33)))))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2820358469890142117</TD></TR>
+<TR><TD><NOBR>[4]-Vertex Radius (6): &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(14+cbrt(2*(1777+33*sqrt(33))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(2*(1777&#8722;33*sqrt(33)))))/12 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.361410151926442534501</TD></TR>
+<TR><TD><NOBR>[5]-Vertex Radius (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(10+cbrt(199+3*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(199&#8722;3*sqrt(33))))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3437133737446017013</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(3*(7+cbrt(199+3*sqrt(33)) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +cbrt(199&#8722;3*sqrt(33))))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2472231679936432518</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(116+6*cbrt(2*(1777+33*sqrt(33))) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +6*cbrt(2*(1777&#8722;33*sqrt(33))))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;8.64429023481174285147</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='JoinedRsnubCube.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD><A href=http://www.georgehart.com/virtual-polyhedra/conway_notation.html>Conway Notation for Polyhedra (George Hart)</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

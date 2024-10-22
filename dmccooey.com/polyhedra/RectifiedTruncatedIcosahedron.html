@@ -1,0 +1,162 @@
+<!-- File:   RectifiedTruncatedIcosahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Rectified Truncated Icosahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='RectifiedTruncatedCuboctahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="RectifiedArchimedean.html"><B>Rectified Archimedean Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='RectifiedTruncatedDodecahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Rectified Truncated Icosahedron
+
+	(60) SHORT EDGE = 1
+	(120) LONG EDGE = (sqrt(15) - sqrt(3)) / 2
+	RADIUS = 3
+	INRADIUS = (sqrt(3) + sqrt(15)) / 2
+	VOLUME = 73 * sqrt(5) - 60
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="7 90 92">
+<INPUT type=hidden class=Constants value="0.809016994374947424102293417183,
+0.927050983124842272306880251548,
+1.73606797749978969640917366873,
+2.23606797749978969640917366873,
+2.30901699437494742410229341718,
+2.427050983124842272306880251548,
+2.80901699437494742410229341718">
+<!--
+	C0 = (1 + sqrt(5)) / 4
+	C1 = 3 * (sqrt(5) - 1) / 4
+	C2 = (2 * sqrt(5) - 1) / 2
+	C3 = sqrt(5)
+	C4 = (7 + sqrt(5)) / 4
+	C5 = 3 * (1 + sqrt(5)) / 4
+	C6 = (9 + sqrt(5)) / 4
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 3.0,0.0 0.0 -3.0,3.0 0.0 0.0,
+-3.0 0.0 0.0,0.0 3.0 0.0,0.0 -3.0 0.0,C1 0.5 C6,C1 0.5 -C6,C1 -0.5 C6,
+C1 -0.5 -C6,-C1 0.5 C6,-C1 0.5 -C6,-C1 -0.5 C6,-C1 -0.5 -C6,C6 C1 0.5,
+C6 C1 -0.5,C6 -C1 0.5,C6 -C1 -0.5,-C6 C1 0.5,-C6 C1 -0.5,-C6 -C1 0.5,
+-C6 -C1 -0.5,0.5 C6 C1,0.5 C6 -C1,0.5 -C6 C1,0.5 -C6 -C1,-0.5 C6 C1,
+-0.5 C6 -C1,-0.5 -C6 C1,-0.5 -C6 -C1,C1 1.5 C5,C1 1.5 -C5,C1 -1.5 C5,
+C1 -1.5 -C5,-C1 1.5 C5,-C1 1.5 -C5,-C1 -1.5 C5,-C1 -1.5 -C5,C5 C1 1.5,
+C5 C1 -1.5,C5 -C1 1.5,C5 -C1 -1.5,-C5 C1 1.5,-C5 C1 -1.5,-C5 -C1 1.5,
+-C5 -C1 -1.5,1.5 C5 C1,1.5 C5 -C1,1.5 -C5 C1,1.5 -C5 -C1,-1.5 C5 C1,
+-1.5 C5 -C1,-1.5 -C5 C1,-1.5 -C5 -C1,C2 C0 C4,C2 C0 -C4,C2 -C0 C4,C2 -C0 -C4,
+-C2 C0 C4,-C2 C0 -C4,-C2 -C0 C4,-C2 -C0 -C4,C4 C2 C0,C4 C2 -C0,C4 -C2 C0,
+C4 -C2 -C0,-C4 C2 C0,-C4 C2 -C0,-C4 -C2 C0,-C4 -C2 -C0,C0 C4 C2,C0 C4 -C2,
+C0 -C4 C2,C0 -C4 -C2,-C0 C4 C2,-C0 C4 -C2,-C0 -C4 C2,-C0 -C4 -C2,0.0 2.0 C3,
+0.0 2.0 -C3,0.0 -2.0 C3,0.0 -2.0 -C3,C3 0.0 2.0,C3 0.0 -2.0,-C3 0.0 2.0,
+-C3 0.0 -2.0,2.0 C3 0.0,2.0 -C3 0.0,-2.0 C3 0.0,-2.0 -C3 0.0">
+<INPUT type=hidden class=Faces value="70 30 54 38 62 46 #,71 47 63 39 55 31 #,
+72 48 64 40 56 32 #,73 33 57 41 65 49 #,74 50 66 42 58 34 #,
+75 35 59 43 67 51 #,76 36 60 44 68 52 #,77 53 69 45 61 37 #,78 34 10 0 6 30 #,
+79 31 7 1 11 35 #,80 32 8 0 12 36 #,81 37 13 1 9 33 #,82 40 16 2 14 38 #,
+83 39 15 2 17 41 #,84 42 18 3 20 44 #,85 45 21 3 19 43 #,86 47 23 4 22 46 #,
+87 48 24 5 25 49 #,88 50 26 4 27 51 #,89 53 29 5 28 52 #,78 70 22 26 74 #,
+79 75 27 23 71 #,80 76 28 24 72 #,81 73 25 29 77 #,82 54 6 8 56 #,
+83 57 9 7 55 #,84 60 12 10 58 #,85 59 11 13 61 #,86 62 14 15 63 #,
+87 65 17 16 64 #,88 67 19 18 66 #,89 68 20 21 69 #,0 8 6 #,0 10 12 #,1 7 9 #,
+1 13 11 #,2 15 14 #,2 16 17 #,3 18 19 #,3 21 20 #,4 23 27 #,4 26 22 #,
+5 24 28 #,5 29 25 #,30 6 54 #,30 70 78 #,31 55 7 #,31 79 71 #,32 56 8 #,
+32 80 72 #,33 9 57 #,33 73 81 #,34 58 10 #,34 78 74 #,35 11 59 #,35 75 79 #,
+36 12 60 #,36 76 80 #,37 61 13 #,37 81 77 #,38 14 62 #,38 54 82 #,39 63 15 #,
+39 83 55 #,40 64 16 #,40 82 56 #,41 17 65 #,41 57 83 #,42 66 18 #,42 84 58 #,
+43 19 67 #,43 59 85 #,44 20 68 #,44 60 84 #,45 69 21 #,45 85 61 #,46 22 70 #,
+46 62 86 #,47 71 23 #,47 86 63 #,48 72 24 #,48 87 64 #,49 25 73 #,49 65 87 #,
+50 74 26 #,50 88 66 #,51 27 75 #,51 67 88 #,52 28 76 #,52 68 89 #,53 77 29 #,
+53 89 69 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Rectified Truncated Icosahedron
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>derived form</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="canonical form" onClick="window.location.href='CanonicalRectifiedTruncatedIcosahedron.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="equal-edge form" onClick="window.location.href='EqualEdgeRectifiedTruncatedIcosahedron.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>90 &nbsp;(30[4] + 60[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>92 &nbsp;(20 regular hexagons + 12 regular pentagons</NOBR><BR><NOBR> &nbsp; &nbsp; + 60 isosceles triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>180 &nbsp;(60 short + 120 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on short edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (60): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Long Edge (120): &nbsp;</NOBR></TD><TD><NOBR>(sqrt(15)&#8722;sqrt(3))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.0704662693192697958</TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD>3</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>73*sqrt(5)&#8722;60 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;103.23296235748464784</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='RectifiedTruncatedIcosahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

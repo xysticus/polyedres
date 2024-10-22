@@ -1,0 +1,123 @@
+<!-- File:   Dodecahedron.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Dodecahedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='Icosahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Platonic.html"><B>Platonic Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='Tetrahedron.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Dodecahedron
+
+	(30) EDGE = 1
+	RADIUS = (sqrt(3) + sqrt(15)) / 4
+	MIDRADIUS = (3 + sqrt(5)) / 4
+	INRADIUS = sqrt(10 * (25 + 11 * sqrt(5))) / 20
+	VOLUME = (15 + 7 * sqrt(5)) / 4
+	DIHEDRAL ANGLE = acos(-sqrt(5) / 5)
+		= 116.565051177077989351572193720 degrees
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          60
+	MIRROR ROTATION SYMMETRIES:   60
+	ROTATION AXES:                31 (6[5] + 10[3] + 15[2])
+	MIRROR PLANES:                15
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Icosahedral (Ih)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="2 20 12">
+<INPUT type=hidden class=Constants value="0.809016994374947424102293417183,
+1.30901699437494742410229341718">
+<!--
+	C0 = (1 + sqrt(5)) / 4
+	C1 = (3 + sqrt(5)) / 4
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.5 C1,0.0 0.5 -C1,0.0 -0.5 C1,
+0.0 -0.5 -C1,C1 0.0 0.5,C1 0.0 -0.5,-C1 0.0 0.5,-C1 0.0 -0.5,0.5 C1 0.0,
+0.5 -C1 0.0,-0.5 C1 0.0,-0.5 -C1 0.0,C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0,
+-C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0">
+<INPUT type=hidden class=Faces value="0 2 14 4 12 #,0 12 8 10 16 #,
+0 16 6 18 2 #,7 6 16 10 17 #,7 17 1 3 19 #,7 19 11 18 6 #,9 11 19 3 15 #,
+9 15 5 4 14 #,9 14 2 18 11 #,13 1 17 10 8 #,13 8 12 4 5 #,13 5 15 3 1 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+<TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD width=30% align=left style="font-size:60%"><NOBR>(Uniform #23)</NOBR></TD>
+<TD width=40% align=center>Dodecahedron</TD>
+<TD width=30% align=right></TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>20 &nbsp;(20[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>12 &nbsp;(regular pentagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD>30</TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Icosahedral &nbsp;(Ih)</NOBR></TD></TR>
+<TR><TD><NOBR>Dihedral Angle: &nbsp;</NOBR></TD><TD><NOBR>acos(&#8722;sqrt(5)/5) &nbsp; &nbsp;</NOBR></TD><TD><NOBR>&#8776;116.565051177 degrees</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Solid: &nbsp;</NOBR></TD><TD colspan=2><A href="Icosahedron.html">Icosahedron</A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Circumscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>(sqrt(3)+sqrt(15))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4012585384440735447</TD></TR>
+<TR><TD><NOBR>Midscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>(3+sqrt(5))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3090169943749474241</TD></TR>
+<TR><TD><NOBR>Inscribed Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(10*(25+11*sqrt(5)))/20 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.1135163644116067352</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>(15+7*sqrt(5))/4 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;7.6631189606246319687</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='Dodecahedron.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

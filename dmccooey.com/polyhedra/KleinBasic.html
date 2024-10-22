@@ -1,0 +1,159 @@
+<!-- File:   KleinBasic.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Klein Map {7,3}<sub>8</sub> (basic shape)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='OverarchingHendecagonalDodecahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="HigherGenus.html"><B>Higher Genus Toroidal Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='KleinDual.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Klein Map {7,3}_8 with basic shape
+
+	(12) EDGE 1 = 462.449997297005073731017870649951 = 34 * sqrt(185)
+	(12) EDGE 2 = 564.789341259199047926805557007 = 69 * sqrt(67)
+	(6) EDGE 3 = 591.141269071953730399105886720 = 418 * sqrt(2)
+	(12) EDGE 4 = 995.462204204659896840299486963 = 57 * sqrt(305)
+	(12) EDGE 5 = 1346.54558036480889115796379983 = 99 * sqrt(185)
+	(6) EDGE 6 = 1450.98311499479552007053263104 = 1026 * sqrt(2)
+	(12) EDGE 7 = 2547.98430136451193952374572459 = 152 * sqrt(281)
+	(12) EDGE 8 = 3216.84084157112131129427867889 = 399 * sqrt(65)
+	RADIUS = 4047.80273728846623497364210010 = 2337 * sqrt(3)
+	INRADIUS = 586.525161187380223834988318859 = 1710 * sqrt(34) / 17
+	VOLUME = 12635620920 [EXACT]
+
+	ROTATION SYMMETRIES:          12
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                 7 (4[3] + 3[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  Chiral Tetrahedral (T)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="0 56 24">
+<INPUT type=hidden class=Vertices value="513 -513 2337,513 513 -2337,
+-513 513 2337,-513 -513 -2337,2337 -513 513,2337 513 -513,-2337 513 513,
+-2337 -513 -513,513 -2337 513,513 2337 -513,-513 2337 513,-513 -2337 -513,
+2337 -2337 2337,2337 2337 -2337,-2337 2337 2337,-2337 -2337 -2337,342 57 1539,
+342 -57 -1539,-342 -57 1539,-342 57 -1539,1539 342 57,1539 -342 -57,
+-1539 -342 57,-1539 342 -57,57 1539 342,57 -1539 -342,-57 -1539 342,
+-57 1539 -342,209 209 855,209 -209 -855,-209 -209 855,-209 209 -855,
+855 209 209,855 -209 -209,-855 -209 209,-855 209 -209,209 855 209,
+209 -855 -209,-209 -855 209,-209 855 -209,549 141 549,549 -141 -549,
+-549 -141 549,-549 141 -549,549 549 141,549 -549 -141,-549 -549 141,
+-549 549 -141,141 549 549,141 -549 -549,-141 -549 549,-141 549 -549,
+342 -342 342,342 342 -342,-342 342 342,-342 -342 -342">
+<INPUT type=hidden class=Faces value="12 16 42 30 11 8 26 #008080,
+12 26 49 37 5 4 21 #008080,12 21 44 32 2 0 16 #008080,
+13 17 43 31 10 9 27 #008080,13 27 48 36 4 5 20 #008080,
+13 20 45 33 3 1 17 #008080,14 18 40 28 9 10 24 #008080,
+14 24 51 39 7 6 23 #008080,14 23 46 34 0 2 18 #008080,
+15 19 41 29 8 11 25 #008080,15 25 50 38 6 7 22 #008080,
+15 22 47 35 1 3 19 #008080,52 40 18 2 32 33 45 #ffc000,
+52 45 20 5 37 38 50 #ffc000,52 50 25 11 30 28 40 #ffc000,
+53 41 19 3 33 32 44 #ffc000,53 44 21 4 36 39 51 #ffc000,
+53 51 24 10 31 29 41 #ffc000,54 42 16 0 34 35 47 #ffc000,
+54 47 22 7 39 36 48 #ffc000,54 48 27 9 28 30 42 #ffc000,
+55 43 17 1 35 34 46 #ffc000,55 46 23 6 38 37 49 #ffc000,
+55 49 26 8 29 31 43 #ffc000">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Klein Map {7,3}<sub>8</sub> <NOBR>(basic shape)</NOBR>
+<TABLE>
+<TR>
+<TD align=center style="font-size:75%">
+<NOBR>version 1</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="version 2" onClick="window.location.href='KleinMinInteger.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="version 3" onClick="window.location.href='KleinSmallInteger.html'">
+</TD>
+<TD align=center>
+<INPUT type=button value="version 4" onClick="window.location.href='KleinMinRational.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>56 &nbsp;(4[3] + 4[3] + 12[3] + 12[3] + 12[3] + 12[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>24 &nbsp;({12 * 2} nonconvex heptagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>84 &nbsp;(8 different lengths)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Chiral Tetrahedral &nbsp;(T)</NOBR></TD></TR>
+<TR><TD><NOBR>Dual Toroid: &nbsp;</NOBR></TD><TD colspan=2><A href="KleinDual.html">Klein Map Dual {3,7}<sub>8</sub></A></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on integer coordinates)</NOBR></TD></TR>
+<TR><TD><NOBR>Edge 1 (12): &nbsp;</NOBR></TD><TD><NOBR>34*sqrt(185) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;462.44999729700507373</TD></TR>
+<TR><TD><NOBR>Edge 2 (12): &nbsp;</NOBR></TD><TD><NOBR>69*sqrt(67) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;564.78934125919904793</TD></TR>
+<TR><TD><NOBR>Edge 3 (6): &nbsp;</NOBR></TD><TD><NOBR>418*sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;591.14126907195373040</TD></TR>
+<TR><TD><NOBR>Edge 4 (12): &nbsp;</NOBR></TD><TD><NOBR>57*sqrt(305) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;995.46220420465989684</TD></TR>
+<TR><TD><NOBR>Edge 5 (12): &nbsp;</NOBR></TD><TD><NOBR>99*sqrt(185) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1346.5455803648088912</TD></TR>
+<TR><TD><NOBR>Edge 6 (6): &nbsp;</NOBR></TD><TD><NOBR>1026*sqrt(2) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1450.9831149947955201</TD></TR>
+<TR><TD><NOBR>Edge 7 (12): &nbsp;</NOBR></TD><TD><NOBR>152*sqrt(281) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2547.98430136451193952</TD></TR>
+<TR><TD><NOBR>Edge 8 (12): &nbsp;</NOBR></TD><TD><NOBR>399*sqrt(65) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3216.8408415711213113</TD></TR>
+<TR><TD>Volume:</TD><TD colspan=2><NOBR>12635620920 &nbsp;[EXACT]</NOBR></TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='KleinBasic.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Felix Klein, &Uuml;ber die Transformationen siebenter<BR>Ordnung der elliptischen Funktionen,<BR><I>Mathematische Annalen</I> <B>14</B> (1879), 428-471.</TD></TR>
+<TR><TD></TD><TD valign=top>[2]</TD><TD><A href=http://www.msri.org/communications/books/Book35/files/klein.pdf>Felix Klein, translated by Silvio Levy,<BR>On the Order-Seven Transformation of Elliptic Functions</A></TD></TR>
+<TR><TD></TD><TD valign=top>[3]</TD><TD><A href=http://math.ucr.edu/home/baez/klein.html>Klein's Quartic Curve (John Baez)</A></TD></TR>
+<TR><TD></TD><TD valign=top>[4]</TD><TD><A href=http://www.gregegan.net/SCIENCE/KleinQuartic/KleinQuartic.html>Klein's Quartic Curve (Greg Egan)</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

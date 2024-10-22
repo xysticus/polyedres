@@ -1,0 +1,197 @@
+<!-- File:   TruncatedDisdyakisDodecahedron2.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Truncated Disdyakis Dodecahedron
+(irregular hexagon sides: 1 short, 4 medium, 1 long)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='10TruncatedTriakisIcosahedron2.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="TruncatedCatalan.html"><B>Truncated Catalan Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='TruncatedPentakisDodecahedron1.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Truncated Disdyakis Dodecahedron with truncation depths chosen to make
+	the resulting hexagons have 1 short side, 4 medium sides, and 1 long side.
+
+	(24) SHORT EDGE = (-2 + 3 * sqrt(2) + 2 * sqrt(3)
+		- sqrt(3 * (22 - 13 * sqrt(2) + 12 * sqrt(3) - 8 * sqrt(6)))) / 3
+	(168) MEDIUM EDGE = 1
+	(24) LONG EDGE = (-2 + 4 * sqrt(2) + 2 * sqrt(3) - sqrt(6)
+		- sqrt(6 * (10 - 5 * sqrt(2) + 4 * sqrt(3) - 4 * sqrt(6)))) / 3
+	RADIUS = sqrt(6 * (28 + 7 * sqrt(2) + 4 * sqrt(3) + 6 * sqrt(6)
+		+ 4 * sqrt(3 * (8 + 2 * sqrt(2) + 2 * sqrt(3) + 3 * sqrt(6))))) / 6
+	VOLUME = 2 * (792 - 63 * sqrt(2) + 54 * sqrt(3) + 198 * sqrt(6)
+		+ 2*sqrt(3*(117340+9847*sqrt(2)+9240*sqrt(3)+47049*sqrt(6)))) / 27
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:   24
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 9
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Octahedral (Oh)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="11 144 74">
+<INPUT type=hidden class=Constants value="0.7071067811865475244008443621048,
+0.923879532511286756128183189397,
+1.30656296487637652785664317343,
+1.32818951761294536502324196688,
+1.73643780807680838138945597933,
+2.15242477577433603721995630878,
+2.55293438900453441412188400424,
+2.65242477577433603721995630878,
+2.96118267946839743048809801669,
+3.15242477577433603721995630878,
+3.68582687256851305407350799872">
+<!--
+	C0 = sqrt(2) / 2
+	C1 = sqrt(2 + sqrt(2)) / 2
+	C2 = sqrt(2 * (2 + sqrt(2))) / 2
+	C3 = (18 - 6 * sqrt(2) + 6 * sqrt(3) - 12 * sqrt(6)
+		+ sqrt(6 * (158 - 43 * sqrt(2) - 28 * sqrt(3) + 56 * sqrt(6)))) / 18
+	C4 = (18 - 6 * sqrt(2) + 6 * sqrt(3) - 9 * sqrt(6)
+		+ sqrt(6 * (158 - 43 * sqrt(2) - 28 * sqrt(3) + 56 * sqrt(6)))) / 18
+	C5 = sqrt(3 * (22 + 5 * sqrt(2) + 4 * sqrt(3) + 8 * sqrt(6))) / 6
+	C6 = (18 - 6 * sqrt(2) + 6 * sqrt(3) - 3 * sqrt(6)
+		+ sqrt(6 * (158 - 43 * sqrt(2) - 28 * sqrt(3) + 56 * sqrt(6)))) / 18
+	C7 = (3 + sqrt(3 * (22 + 5 * sqrt(2) + 4 * sqrt(3) + 8 * sqrt(6)))) / 6
+	C8 = (18 - 6 * sqrt(2) + 6 * sqrt(3)
+		+ sqrt(6 * (158 - 43 * sqrt(2) - 28 * sqrt(3) + 56 * sqrt(6)))) / 18
+	C9 = (6 + sqrt(3 * (22 + 5 * sqrt(2) + 4 * sqrt(3) + 8 * sqrt(6)))) / 6
+	C10 = (3 + sqrt(3 * (8 + 2 * sqrt(2) + 2 * sqrt(3) + 3 * sqrt(6)))) / 3
+-->
+<INPUT type=hidden class=Vertices value="C2 0.0 C10,C2 0.0 -C10,-C2 0.0 C10,
+-C2 0.0 -C10,C10 C2 0.0,C10 -C2 0.0,-C10 C2 0.0,-C10 -C2 0.0,0.0 C10 C2,
+0.0 C10 -C2,0.0 -C10 C2,0.0 -C10 -C2,0.0 C2 C10,0.0 C2 -C10,0.0 -C2 C10,
+0.0 -C2 -C10,C10 0.0 C2,C10 0.0 -C2,-C10 0.0 C2,-C10 0.0 -C2,C2 C10 0.0,
+C2 -C10 0.0,-C2 C10 0.0,-C2 -C10 0.0,C1 C1 C10,C1 C1 -C10,C1 -C1 C10,
+C1 -C1 -C10,-C1 C1 C10,-C1 C1 -C10,-C1 -C1 C10,-C1 -C1 -C10,C10 C1 C1,
+C10 C1 -C1,C10 -C1 C1,C10 -C1 -C1,-C10 C1 C1,-C10 C1 -C1,-C10 -C1 C1,
+-C10 -C1 -C1,C1 C10 C1,C1 C10 -C1,C1 -C10 C1,C1 -C10 -C1,-C1 C10 C1,
+-C1 C10 -C1,-C1 -C10 C1,-C1 -C10 -C1,C5 0.0 C9,C5 0.0 -C9,-C5 0.0 C9,
+-C5 0.0 -C9,C9 C5 0.0,C9 -C5 0.0,-C9 C5 0.0,-C9 -C5 0.0,0.0 C9 C5,0.0 C9 -C5,
+0.0 -C9 C5,0.0 -C9 -C5,0.0 C5 C9,0.0 C5 -C9,0.0 -C5 C9,0.0 -C5 -C9,C9 0.0 C5,
+C9 0.0 -C5,-C9 0.0 C5,-C9 0.0 -C5,C5 C9 0.0,C5 -C9 0.0,-C5 C9 0.0,-C5 -C9 0.0,
+C4 C4 C8,C4 C4 -C8,C4 -C4 C8,C4 -C4 -C8,-C4 C4 C8,-C4 C4 -C8,-C4 -C4 C8,
+-C4 -C4 -C8,C8 C4 C4,C8 C4 -C4,C8 -C4 C4,C8 -C4 -C4,-C8 C4 C4,-C8 C4 -C4,
+-C8 -C4 C4,-C8 -C4 -C4,C4 C8 C4,C4 C8 -C4,C4 -C8 C4,C4 -C8 -C4,-C4 C8 C4,
+-C4 C8 -C4,-C4 -C8 C4,-C4 -C8 -C4,C7 C0 C7,C7 C0 -C7,C7 -C0 C7,C7 -C0 -C7,
+-C7 C0 C7,-C7 C0 -C7,-C7 -C0 C7,-C7 -C0 -C7,C7 C7 C0,C7 C7 -C0,C7 -C7 C0,
+C7 -C7 -C0,-C7 C7 C0,-C7 C7 -C0,-C7 -C7 C0,-C7 -C7 -C0,C0 C7 C7,C0 C7 -C7,
+C0 -C7 C7,C0 -C7 -C7,-C0 C7 C7,-C0 C7 -C7,-C0 -C7 C7,-C0 -C7 -C7,C6 C3 C6,
+C6 C3 -C6,C6 -C3 C6,C6 -C3 -C6,-C6 C3 C6,-C6 C3 -C6,-C6 -C3 C6,-C6 -C3 -C6,
+C6 C6 C3,C6 C6 -C3,C6 -C6 C3,C6 -C6 -C3,-C6 C6 C3,-C6 C6 -C3,-C6 -C6 C3,
+-C6 -C6 -C3,C3 C6 C6,C3 C6 -C6,C3 -C6 C6,C3 -C6 -C6,-C3 C6 C6,-C3 C6 -C6,
+-C3 -C6 C6,-C3 -C6 -C6">
+<INPUT type=hidden class=Faces value="0 24 12 28 2 30 14 26 #,
+1 27 15 31 3 29 13 25 #,4 32 16 34 5 35 17 33 #,6 37 19 39 7 38 18 36 #,
+8 40 20 41 9 45 22 44 #,10 46 23 47 11 43 21 42 #,72 120 80 128 88 136 #,
+73 137 89 129 81 121 #,74 138 90 130 82 122 #,75 123 83 131 91 139 #,
+76 140 92 132 84 124 #,77 125 85 133 93 141 #,78 126 86 134 94 142 #,
+79 143 95 135 87 127 #,0 26 74 122 98 48 #,1 25 73 121 97 49 #,
+2 28 76 124 100 50 #,3 31 79 127 103 51 #,4 33 81 129 105 52 #,
+5 34 82 130 106 53 #,6 36 84 132 108 54 #,7 39 87 135 111 55 #,
+8 44 92 140 116 56 #,9 41 89 137 113 57 #,10 42 90 138 114 58 #,
+11 47 95 143 119 59 #,12 24 72 136 112 60 #,13 29 77 141 117 61 #,
+14 30 78 142 118 62 #,15 27 75 139 115 63 #,16 32 80 120 96 64 #,
+17 35 83 123 99 65 #,18 38 86 126 102 66 #,19 37 85 125 101 67 #,
+20 40 88 128 104 68 #,21 43 91 131 107 69 #,22 45 93 133 109 70 #,
+23 46 94 134 110 71 #,0 48 96 120 72 24 #,1 49 99 123 75 27 #,
+2 50 102 126 78 30 #,3 51 101 125 77 29 #,4 52 104 128 80 32 #,
+5 53 107 131 83 35 #,6 54 109 133 85 37 #,7 55 110 134 86 38 #,
+8 56 112 136 88 40 #,9 57 117 141 93 45 #,10 58 118 142 94 46 #,
+11 59 115 139 91 43 #,12 60 116 140 76 28 #,13 61 113 137 73 25 #,
+14 62 114 138 74 26 #,15 63 119 143 79 31 #,16 64 98 122 82 34 #,
+17 65 97 121 81 33 #,18 66 100 124 84 36 #,19 67 103 127 87 39 #,
+20 68 105 129 89 41 #,21 69 106 130 90 42 #,22 70 108 132 92 44 #,
+23 71 111 135 95 47 #,48 98 64 96 #,49 97 65 99 #,50 100 66 102 #,
+51 103 67 101 #,52 105 68 104 #,53 106 69 107 #,54 108 70 109 #,
+55 111 71 110 #,56 116 60 112 #,57 113 61 117 #,58 114 62 118 #,
+59 119 63 115 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Truncated Disdyakis Dodecahedron
+<BR>(irregular hexagon sides: <NOBR>1 short,</NOBR> <NOBR>4 medium,</NOBR> <NOBR>1 long)</NOBR>
+<TABLE>
+<TR>
+<TD align=center>
+<INPUT type=button value="version 1" onClick="window.location.href='TruncatedDisdyakisDodecahedron1.html'">
+</TD>
+<TD align=center style="font-size:75%">
+<NOBR>version 2</NOBR>
+</TD>
+<TD align=center>
+<INPUT type=button value="version 3" onClick="window.location.href='TruncatedDisdyakisDodecahedron3.html'">
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>144 &nbsp;(24[3] + 24[3] + 24[3] + 24[3] + 24[3] + 24[3])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>74 &nbsp;(12 squares + 8 regular hexagons + 48 irregular hexagons + 6 regular octagons)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>216 &nbsp;(24 short + 168 medium + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Octahedral &nbsp;(Oh)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on medium edge length = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD><NOBR>(&#8722;2+3*sqrt(2)+2*sqrt(3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;sqrt(3*(22&#8722;13*sqrt(2)+12*sqrt(3)&#8722;8*sqrt(6))))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.63682057096651000602</TD></TR>
+<TR><TD><NOBR>Medium Edge (168): &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>(&#8722;2+4*sqrt(2)+2*sqrt(3)&#8722;sqrt(6) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;sqrt(6*(10&#8722;5*sqrt(2)+4*sqrt(3)&#8722;4*sqrt(6))))/3 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.3585327044181696899</TD></TR>
+<TR><TD><NOBR>Max Vertex Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(6*(28+7*sqrt(2)+4*sqrt(3)+6*sqrt(6) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +4*sqrt(3*(8+2*sqrt(2)+2*sqrt(3)+3*sqrt(6)))))/6 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;3.9105532237440182029</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>2*(792&#8722;63*sqrt(2)+54*sqrt(3)+198*sqrt(6) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +2*sqrt(3*(117340+9847*sqrt(2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +9240*sqrt(3)+47049*sqrt(6))))/27 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;226.39349069791957008</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='TruncatedDisdyakisDodecahedron2.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

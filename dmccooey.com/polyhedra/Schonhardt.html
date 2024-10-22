@@ -1,0 +1,114 @@
+<!-- File:   Schonhardt.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Schonhardt Polyhedron</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='Associahedron.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="Other.html"><B>Other Solids</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='StewartsG3.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Schonhardt Polyhedron
+
+	(9) SHORT EDGE = sqrt(3)
+	(3) LONG EDGE = sqrt(3 + 2 * sqrt(3))
+	RADIUS = sqrt(5 + sqrt(3)) / 2
+	VOLUME = sqrt(3 * (1 + sqrt(3))) / 2
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:           6
+	MIRROR ROTATION SYMMETRIES:    0
+	ROTATION AXES:                 4 (1[3] + 3[2])
+	MIRROR PLANES:                 0
+	INVERTIBLE:                   NO
+	SYMMETRY CLASSIFICATION:  3-fold Dihedral (D3)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="viewer">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="2 6 8">
+<INPUT type=hidden class=Constants value="0.826445825140534740049120323293,
+0.866025403784438646763723170753">
+<!--
+	C0 = sqrt(1 + sqrt(3)) / 2
+	C1 = sqrt(3) / 2
+-->
+<INPUT type=hidden class=Vertices value="0.0 1.0 C0,-1.0 0.0 -C0,C1 -0.5 C0,
+0.5 C1 -C0,0.5 -C1 -C0,-C1 -0.5 C0">
+<INPUT type=hidden class=Faces value="0 2 4 #,0 4 3 #,0 3 5 #,0 5 2 #,1 2 5 #,
+1 5 3 #,1 3 4 #,1 4 2 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Sch&ouml;nhardt Polyhedron
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>6 &nbsp;(6[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>8 &nbsp;(2 equilateral triangles + 6 isosceles triangles)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>12 &nbsp;(9 short + 3 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>3-fold Dihedral &nbsp;(D3)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(This version uses a twist angle of 30 degrees)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (9): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.73205080756887729353</TD></TR>
+<TR><TD><NOBR>Long Edge (3): &nbsp;</NOBR></TD><TD><NOBR>sqrt(3+2*sqrt(3)) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;2.5424597568374124783</TD></TR>
+<TR><TD><NOBR>Radius: &nbsp;</NOBR></TD><TD><NOBR>sqrt(5+sqrt(3))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.2973097941094175380</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(3*(1+sqrt(3)))/2 &nbsp; &nbsp;</NOBR></TD><TD>&#8776;1.4314461588465903492</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='Schonhardt.txt'">
+<BR>
+<TABLE style="font-size:75%">
+<TR><TD valign=top>References:</TD><TD valign=top>[1]</TD><TD>Erich Sch&ouml;nhardt, &Uuml;ber Die Zerlegung Von Dreieckspolyedern<BR>in Tetraeder, <I>Mathematische Annalen</I> <B>98</B> (1928), 309-312.</TD></TR>
+<TR><TD></TD><TD valign=top>[2]</TD><TD><A href=http://www.ics.uci.edu/~eppstein/junkyard/untetra>Three Untetrahedralizable Objects</A></TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+<SCRIPT src="viewer.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>

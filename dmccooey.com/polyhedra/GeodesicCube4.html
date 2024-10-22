@@ -1,0 +1,144 @@
+<!-- File:   GeodesicCube4.html
+     Author: Dave McCooey
+             mccooeydave@gmail.com
+
+Copyright 2015 David I McCooey
+
+This document is copyrighted, and protected by the copyright
+laws of the United States.  All rights reserved.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Geodesic Cube Pattern 4 [2,2]</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#a0a0a0"
+	style="font-family:Verdana,Comic Sans MS"
+	link="#0000e0" vlink="#800000" alink="#ff0000">
+
+<CENTER>
+<INPUT type=button value="Main Menu" onClick="window.location.href='index.html'">
+</CENTER>
+
+<TABLE width=100%>
+<TR>
+<TD align=right>
+<INPUT type=button value="prev" onClick="window.location.href='GeodesicCube3.html'">
+</TD>
+<TD width=50% align=center style="font-size:120%"><A href="GeodesicCubes.html"><B>Geodesic Cubes</B></A></TD>
+<TD align=left>
+<INPUT type=button value="next" onClick="window.location.href='GeodesicCube5.html'">
+</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=7 cellspacing=7 cellpadding=2 bgcolor="#707070">
+<CAPTION align=top style="font-size:72%">
+<NOBR>(box: x-ray)</NOBR> &nbsp;<NOBR>(F: faces)</NOBR> &nbsp;<NOBR>(slider: perspective)</NOBR> &nbsp;<NOBR>(image: L=rotate R=zoom)</NOBR> &nbsp;<NOBR>(M: metrics)</NOBR>
+</CAPTION>
+
+<TR bgcolor="#606060">
+<TD align=center>
+<!--
+	Geodesic Cube Pattern 4 [2,2]
+
+	(24) SHORT EDGE = 0.406449103572618975429743376419
+		= square-root of a root of the polynomial:
+		576*(x^4) - 12176*(x^3) + 57065*(x^2) - 15296*x + 1024
+	(48) MEDIUM EDGE = 0.539176924005752473729083623262
+		= square-root of a root of the polynomial:
+		(x^4) - 54*(x^3) + 129*(x^2) - 88*x + 16
+	(24) LONG EDGE = 0.570883594801454412271598839212
+		= square-root of a root of the polynomial:
+		16*(x^4) - 1608*(x^3) + 10073*(x^2) - 4880*x + 576
+	EDGE-SCRIBED RADIUS = 1
+	VOLUME = 4.04890041178685201434059948587
+		= square-root of a root of the polynomial:
+		12*(x^4) - 95132*(x^3) + 165179027*(x^2) - 52653101056*x + 819200000000
+
+	EULER CHARACTERISTIC:          2
+	ROTATION SYMMETRIES:          24
+	MIRROR ROTATION SYMMETRIES:   24
+	ROTATION AXES:                13 (3[4] + 4[3] + 6[2])
+	MIRROR PLANES:                 9
+	INVERTIBLE:                  YES
+	SYMMETRY CLASSIFICATION:  Full Octahedral (Oh)
+	TOPOLOGICALLY SELF-DUAL:      NO
+-->
+<DIV name="convex">
+<CANVAS name="canvas" width=500 height=500>
+Please use a browser that supports "canvas"
+</CANVAS>
+<INPUT type=hidden class=Counts value="5 50 48">
+<INPUT type=hidden class=Constants value="0.386513110301877653828312524932,
+0.582732309959121680338911100249,
+0.732351670594488452466591047430,
+0.879711981261261077454890218663,
+1.04440354128474347019655741484">
+<!--
+	C0 = square-root of a root of the polynomial:
+		96*(x^4) - 208*(x^3) + 118*(x^2) - 20*x + 1
+	C1 = square-root of a root of the polynomial:
+		1728*(x^4) - 8816*(x^3) + 9851*(x^2) - 3904*x + 512
+	C2 = square-root of a root of the polynomial:
+		64*(x^4) - 560*(x^3) + 873*(x^2) - 496*x + 96
+	C3 = square-root of a root of the polynomial:
+		48*(x^4) - 632*(x^3) + 1147*(x^2) - 596*x + 50
+	C4 = square-root of a root of the polynomial:
+		4*(x^4) - 364*(x^3) + 1529*(x^2) - 2032*x + 864
+-->
+<INPUT type=hidden class=Vertices value="0.0 0.0 C4,0.0 0.0 -C4,C4 0.0 0.0,
+-C4 0.0 0.0,0.0 C4 0.0,0.0 -C4 0.0,C0 C0 C3,C0 C0 -C3,C0 -C0 C3,C0 -C0 -C3,
+-C0 C0 C3,-C0 C0 -C3,-C0 -C0 C3,-C0 -C0 -C3,C3 C0 C0,C3 C0 -C0,C3 -C0 C0,
+C3 -C0 -C0,-C3 C0 C0,-C3 C0 -C0,-C3 -C0 C0,-C3 -C0 -C0,C0 C3 C0,C0 C3 -C0,
+C0 -C3 C0,C0 -C3 -C0,-C0 C3 C0,-C0 C3 -C0,-C0 -C3 C0,-C0 -C3 -C0,C2 0.0 C2,
+C2 0.0 -C2,-C2 0.0 C2,-C2 0.0 -C2,C2 C2 0.0,C2 -C2 0.0,-C2 C2 0.0,-C2 -C2 0.0,
+0.0 C2 C2,0.0 C2 -C2,0.0 -C2 C2,0.0 -C2 -C2,C1 C1 C1,C1 C1 -C1,C1 -C1 C1,
+C1 -C1 -C1,-C1 C1 C1,-C1 C1 -C1,-C1 -C1 C1,-C1 -C1 -C1">
+<INPUT type=hidden class=Faces value="0 6 38 10 #,0 10 32 12 #,0 12 40 8 #,
+0 8 30 6 #,1 7 31 9 #,1 9 41 13 #,1 13 33 11 #,1 11 39 7 #,2 14 30 16 #,
+2 16 35 17 #,2 17 31 15 #,2 15 34 14 #,3 18 36 19 #,3 19 33 21 #,3 21 37 20 #,
+3 20 32 18 #,4 22 34 23 #,4 23 39 27 #,4 27 36 26 #,4 26 38 22 #,5 24 40 28 #,
+5 28 37 29 #,5 29 41 25 #,5 25 35 24 #,42 6 30 14 #,42 14 34 22 #,42 22 38 6 #,
+43 7 39 23 #,43 23 34 15 #,43 15 31 7 #,44 8 40 24 #,44 24 35 16 #,
+44 16 30 8 #,45 9 31 17 #,45 17 35 25 #,45 25 41 9 #,46 10 38 26 #,
+46 26 36 18 #,46 18 32 10 #,47 11 33 19 #,47 19 36 27 #,47 27 39 11 #,
+48 12 32 20 #,48 20 37 28 #,48 28 40 12 #,49 13 41 29 #,49 29 37 21 #,
+49 21 33 13 #">
+<INPUT type=hidden class=Background value="#606060">
+</DIV>
+<BR>
+<CENTER>
+Geodesic Cube <NOBR>Pattern 4 [2,2]</NOBR>
+</CENTER>
+</TD>
+</TR>
+<TR><TD align=center>
+<TABLE style="font-size:75%">
+<TR><TD>Vertices: &nbsp;</TD><TD colspan=2><NOBR>50 &nbsp;(8[3] + 6[4] + 12[4] + 24[4])</NOBR></TD></TR>
+<TR><TD>Faces:</TD><TD colspan=2><NOBR>48 &nbsp;({24 * 2} tri-equiangular kites)</NOBR></TD></TR>
+<TR><TD>Edges:</TD><TD colspan=2><NOBR>96 &nbsp;(24 short + 48 medium + 24 long)</NOBR></TD></TR>
+<TR><TD>Symmetry: &nbsp;</TD><TD colspan=2><NOBR>Full Octahedral &nbsp;(Oh)</NOBR></TD></TR>
+<TR><TD colspan=3 align=center><NOBR>(values below based on edge-scribed radius = 1)</NOBR></TD></TR>
+<TR><TD><NOBR>Short Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[576*(x^4)&#8722;12176*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +57065*(x^2)&#8722;15296*x+1024]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.40644910357261897543</TD></TR>
+<TR><TD><NOBR>Medium Edge (48): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[(x^4)&#8722;54*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +129*(x^2)&#8722;88*x+16]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.53917692400575247373</TD></TR>
+<TR><TD><NOBR>Long Edge (24): &nbsp;</NOBR></TD><TD><NOBR>sqrt(root[16*(x^4)&#8722;1608*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +10073*(x^2)&#8722;4880*x+576]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;0.57088359480145441227</TD></TR>
+<TR><TD><NOBR>Edge-scribed Radius: &nbsp;</NOBR></TD><TD>1</TD></TR>
+<TR><TD>Volume:</TD><TD><NOBR>sqrt(root[12*(x^4)&#8722;95132*(x^3) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +165179027*(x^2) &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; &#8722;52653101056*x &nbsp; &nbsp;</NOBR><BR><NOBR> &nbsp; &nbsp; +819200000000]) &nbsp; &nbsp;</NOBR></TD><TD>&#8776;4.0489004117868520143</TD></TR>
+</TABLE>
+<BR>
+<INPUT type=button value="coordinates" onClick="window.location.href='GeodesicCube4.txt'">
+</TD></TR>
+</TABLE>
+<SCRIPT src="convex.js"></SCRIPT>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2986213;
+var sc_invisible=1;
+var sc_security="bf184278";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script><noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/2986213/0/bf184278/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+</HTML>
