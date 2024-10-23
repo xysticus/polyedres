@@ -8,6 +8,7 @@ from cadquery import Face
 from cadquery import Vector
 from cadquery import Workplane
 from cadquery import Color
+import random
 
 from progress.bar import Bar
 
@@ -19,10 +20,10 @@ nom_polyedre= "LpentagonalIcositetrahedron"
 facteur = 1.6
 
 marge = [0.0]*12
-marge[5] = 0.4
+marge[5] = 0.2
 
 epaisseur = [0.0]*12
-epaisseur[5] = 0.3
+epaisseur[5] = 0.2
 
 largeur = [0.0]*12
 largeur[5] = 0.02
@@ -31,10 +32,10 @@ trottoir = [0.0]*25
 trottoir[5] = 1.20
 
 
-sphere_int_ry = 0
-sphere_ext_ry = 0 #6.18
+sphere_int_ry = 0.0
+sphere_ext_ry = 0.0 #6.18
 
-trou_perle = 0
+trou_perle = 0.0
 
 (sommets, les_faces) = aspiro(racine + nom_polyedre + ".html")
 
@@ -69,7 +70,8 @@ def Polyedre():
 
         if largeur[nb_faces] > 0:
             if marge[nb_faces] > 0:
-                    dessus = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
+                    dessus = Workplane(une_face).\
+                    faces().workplane().add(une_face).wires().toPending().\
                     offset2D(largeur[nb_faces],"arc").extrude(epaisseur[nb_faces]).faces().end().workplane().\
                     add(une_face).wires().toPending().offset2D(largeur[nb_faces]-marge[nb_faces],"arc").extrude(epaisseur[nb_faces],combine="cut")
             else:   
