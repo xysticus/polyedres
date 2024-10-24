@@ -23,7 +23,7 @@ marge = [0.0]*12 # taille entre la face et le trou
 marge[5] = 0.16
 
 epaisseur = [0.0]*12 #épaisseur de l'extrusion
-epaisseur[5] = 0.26
+epaisseur[5] = 0.20
 
 largeur = [0.0]*12 #largeur de la face
 largeur[5] = 0.05
@@ -70,9 +70,9 @@ def Polyedre():
 
         if abs(largeur[nb_faces]) > 0:
             if abs(marge[nb_faces]) > 0:
-                    dessus = Workplane(une_face).workplane(offset=2.0).add(lines).toPending().\
-                    offset2D(largeur[nb_faces],"arc").extrude(epaisseur[nb_faces]).\
-                    add(lines).toPending().offset2D(largeur[nb_faces]-marge[nb_faces],"arc").extrude(epaisseur[nb_faces],combine="cut").edges(">Z").fillet(0.125)
+                    dessus = Workplane(une_face).workplane().add(lines).toPending().\
+                    offset2D(largeur[nb_faces],"intersection").extrude(epaisseur[nb_faces]).fillet(.075).\
+                    add(lines).toPending().offset2D(largeur[nb_faces]-marge[nb_faces],"intersection").extrude(epaisseur[nb_faces],combine="cut").fillet(.075)
             else:   
                     dessus = Workplane(une_face).faces().workplane().add(une_face).wires().toPending().\
                     offset2D(largeur[nb_faces],"arc").extrude(epaisseur[nb_faces])
